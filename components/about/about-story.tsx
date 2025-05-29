@@ -1,19 +1,34 @@
-import Image from "next/image"
-
 export function AboutStory() {
   return (
     <section className="w-full py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <div className="rounded-xl overflow-hidden shadow-xl">
-              <Image
-                src="/images/step-back-leap.png"
-                alt="Publica.la at a publishing event"
-                width={600}
-                height={400}
-                className="w-full h-auto"
-              />
+            <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl p-8 text-white shadow-xl">
+              <div className="grid grid-cols-2 gap-6 mb-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold">2016</div>
+                  <div className="text-sm opacity-90">Founded</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold">8+</div>
+                  <div className="text-sm opacity-90">Years</div>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-white rounded-full"></div>
+                  <span className="text-sm">Platform Launch</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-white rounded-full"></div>
+                  <span className="text-sm">Publisher Partnerships</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-3 h-3 bg-white rounded-full"></div>
+                  <span className="text-sm">Global Expansion</span>
+                </div>
+              </div>
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-50 rounded-full z-0"></div>
           </div>

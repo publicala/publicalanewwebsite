@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Linkedin, Twitter } from "lucide-react"
 import Link from "next/link"
@@ -17,37 +16,31 @@ export function AboutTeam() {
             name="Alex Rodriguez"
             role="Founder & CEO"
             bio="Publishing industry veteran with 15+ years of experience. Passionate about the future of digital content."
-            imagePath="/placeholder.svg?height=300&width=300"
           />
           <TeamMember
             name="Maria Chen"
             role="Chief Technology Officer"
             bio="Tech innovator with expertise in building scalable platforms. Leading our engineering team since 2016."
-            imagePath="/placeholder.svg?height=300&width=300"
           />
           <TeamMember
             name="David Kim"
             role="Head of Product"
             bio="Former publisher turned product strategist. Focused on creating intuitive tools for content creators."
-            imagePath="/placeholder.svg?height=300&width=300"
           />
           <TeamMember
             name="Sarah Johnson"
             role="Chief Marketing Officer"
             bio="Digital marketing expert specializing in helping publishers build their audience and brand."
-            imagePath="/placeholder.svg?height=300&width=300"
           />
           <TeamMember
             name="Carlos Mendez"
             role="Customer Success Director"
             bio="Dedicated to ensuring our publishers get the most value from the Publica.la platform."
-            imagePath="/placeholder.svg?height=300&width=300"
           />
           <TeamMember
             name="Emma Wilson"
             role="Head of Partnerships"
             bio="Building strategic relationships across the publishing ecosystem to create more value for our users."
-            imagePath="/placeholder.svg?height=300&width=300"
           />
         </div>
 
@@ -66,17 +59,26 @@ function TeamMember({
   name,
   role,
   bio,
-  imagePath,
 }: {
   name: string
   role: string
   bio: string
-  imagePath: string
 }) {
+  const initials = name
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+  const colors = ["bg-blue-500", "bg-purple-500", "bg-green-500", "bg-orange-500", "bg-pink-500", "bg-indigo-500"]
+  const colorIndex = name.length % colors.length
+
   return (
     <Card className="border-0 shadow-md hover:shadow-lg transition-shadow overflow-hidden">
-      <div className="aspect-square relative">
-        <Image src={imagePath || "/placeholder.svg"} alt={name} fill className="object-cover" />
+      <div className="aspect-square relative flex items-center justify-center">
+        <div
+          className={`w-32 h-32 ${colors[colorIndex]} rounded-full flex items-center justify-center text-white text-3xl font-bold`}
+        >
+          {initials}
+        </div>
       </div>
       <CardContent className="p-6">
         <h3 className="text-xl font-bold mb-1 text-gray-900">{name}</h3>

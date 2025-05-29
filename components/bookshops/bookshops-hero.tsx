@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
@@ -6,8 +5,11 @@ import { ArrowRight } from "lucide-react"
 export function BookshopsHero() {
   return (
     <section className="relative w-full py-20 md:py-32 px-6 overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <Image src="/images/gradient-background.webp" alt="Background" fill className="object-cover" priority />
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/10 via-blue-50 to-purple-50">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-20 w-40 h-40 bg-primary/20 rounded-full"></div>
+          <div className="absolute bottom-20 right-20 w-32 h-32 bg-blue-200 rounded-full"></div>
+        </div>
       </div>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -35,14 +37,11 @@ export function BookshopsHero() {
             </div>
           </div>
           <div className="relative">
-            <div className="relative z-10 bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100">
-              <Image
-                src="/images/book-collection-1.png"
-                alt="Digital bookstore showcase"
-                width={600}
-                height={400}
-                className="w-full h-auto"
-              />
+            <div className="relative z-10 rounded-lg shadow-xl overflow-hidden border border-gray-100 p-8">
+              <div className="flex flex-col items-center justify-center">
+                <div className="text-6xl text-primary mb-4">📚</div>
+                <p className="text-gray-700 text-center">Visualize your digital bookstore.</p>
+              </div>
             </div>
             <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-primary/5 rounded-full z-0"></div>
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/5 rounded-full z-0"></div>

@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -12,19 +11,17 @@ export function CaseStudiesList() {
           <CaseStudyCard
             title="Forbes Colombia"
             description="How Forbes Colombia increased digital subscription sales by 15% and expanded their subscriber base with Publica.la."
-            imageSrc="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-K1krJLrBeqxlMKETgIzySh0VMRplgy.webp"
-            imageAlt="Forbes Colombia Logo"
             href="/case-studies/forbes-colombia"
             stats={["+15%", "Sales"]}
+            company="Forbes Colombia"
           />
 
           <CaseStudyCard
             title="Editorial Hammurabi"
             description="How a leading legal publisher in Argentina expanded their digital reach and modernized their operations with Publica.la."
-            imageSrc="/placeholder.svg?height=100&width=200"
-            imageAlt="Editorial Hammurabi Logo"
             href="/case-studies/hammurabi-publishing"
             stats={["Digital", "Transformation"]}
+            company="Editorial Hammurabi"
           />
 
           {/* Add more case study cards as they become available */}
@@ -38,23 +35,31 @@ export function CaseStudiesList() {
 function CaseStudyCard({
   title,
   description,
-  imageSrc,
-  imageAlt,
   href,
   stats,
+  company,
 }: {
   title: string
   description: string
-  imageSrc: string
-  imageAlt: string
   href: string
   stats?: [string, string]
+  company: string
 }) {
+  const companyInitials = company
+    .split(" ")
+    .map((word) => word[0])
+    .join("")
+    .slice(0, 2)
+  const colors = ["bg-blue-500", "bg-purple-500", "bg-green-500"]
+  const colorIndex = company.length % colors.length
+
   return (
     <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all h-full flex flex-col">
       <div className="relative h-48 bg-gray-100 flex items-center justify-center p-6">
-        <div className="relative h-full w-full">
-          <Image src={imageSrc || "/placeholder.svg"} alt={imageAlt} fill className="object-contain" />
+        <div
+          className={`w-24 h-24 ${colors[colorIndex]} rounded-lg flex items-center justify-center text-white text-2xl font-bold`}
+        >
+          {companyInitials}
         </div>
       </div>
       <CardContent className="p-6 flex-grow flex flex-col">

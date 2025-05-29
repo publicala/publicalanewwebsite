@@ -2,9 +2,15 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Users, Globe, TrendingUp, Star } from "lucide-react"
 import { DemoRequestModal } from "@/components/demo-request-modal"
-import { CustomerLogos } from "./customer-logos"
+
+const stats = [
+  { icon: Users, value: "1000+", label: "Organizations", color: "blue" },
+  { icon: Globe, value: "50+", label: "Countries", color: "green" },
+  { icon: TrendingUp, value: "300%", label: "Avg Growth", color: "purple" },
+  { icon: Star, value: "4.9/5", label: "Rating", color: "yellow" },
+]
 
 export function CTASection() {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
@@ -17,9 +23,42 @@ export function CTASection() {
           Join thousands of organizations that trust Publica.la for their enterprise publishing needs.
         </p>
 
-        {/* Customer Logos */}
+        {/* Trust indicators with visual elements */}
         <div className="mb-12">
-          <CustomerLogos />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {stats.map((stat) => {
+              const Icon = stat.icon
+              return (
+                <div key={stat.label} className="text-center">
+                  <div
+                    className={`w-16 h-16 mx-auto mb-3 rounded-full ${
+                      stat.color === "blue"
+                        ? "bg-blue-100"
+                        : stat.color === "green"
+                          ? "bg-green-100"
+                          : stat.color === "purple"
+                            ? "bg-purple-100"
+                            : "bg-yellow-100"
+                    } flex items-center justify-center`}
+                  >
+                    <Icon
+                      className={`h-8 w-8 ${
+                        stat.color === "blue"
+                          ? "text-blue-600"
+                          : stat.color === "green"
+                            ? "text-green-600"
+                            : stat.color === "purple"
+                              ? "text-purple-600"
+                              : "text-yellow-600"
+                      }`}
+                    />
+                  </div>
+                  <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
+                  <div className="text-sm text-gray-600">{stat.label}</div>
+                </div>
+              )
+            })}
+          </div>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

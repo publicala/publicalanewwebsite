@@ -1,6 +1,6 @@
 import type React from "react"
-import Image from "next/image"
 import { CheckCircle } from "lucide-react"
+import { Book } from "lucide-react"
 
 export function BookshopsDigitalInventory() {
   return (
@@ -57,17 +57,19 @@ export function BookshopsDigitalInventory() {
           </div>
 
           <div className="relative">
-            <div className="relative z-10 bg-white rounded-lg shadow-xl overflow-hidden">
-              <Image
-                src="/images/book-collection-2.png"
-                alt="Digital inventory management"
-                width={600}
-                height={400}
-                className="w-full h-auto"
-              />
+            <div className="grid grid-cols-3 gap-4 bg-white rounded-lg shadow-xl p-6">
+              {Array.from({ length: 9 }).map((_, index) => (
+                <div key={index} className="flex items-center justify-center p-4 border rounded-md">
+                  <Book className="h-6 w-6 text-primary" />
+                </div>
+              ))}
             </div>
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/5 rounded-full z-0"></div>
             <div className="absolute -top-6 -right-6 w-48 h-48 bg-primary/5 rounded-full z-0"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">
+              <div className="text-2xl font-bold text-primary">1,257</div>
+              <div className="text-sm text-gray-500">Titles Available</div>
+            </div>
           </div>
         </div>
       </div>

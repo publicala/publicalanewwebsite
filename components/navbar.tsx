@@ -2,7 +2,6 @@
 
 import React from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import {
   NavigationMenu,
@@ -23,14 +22,11 @@ export function Navbar() {
   return (
     <header className="w-full py-4 px-6 md:px-10 flex items-center justify-between z-50 relative bg-white/90 backdrop-blur-sm border-b border-gray-100">
       <Link href="/" className="flex items-center">
-        <div className="h-8 w-auto md:h-10 relative">
-          <Image
-            src="/images/logo.svg"
-            alt="Publica.la Logo"
-            width={40}
-            height={40}
-            className="w-full h-full object-contain"
-          />
+        <div className="h-8 w-auto md:h-10 relative flex items-center">
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-xl md:text-2xl px-3 py-1 rounded-lg">
+            P
+          </div>
+          <span className="ml-2 font-bold text-lg md:text-xl text-gray-900">ublica.la</span>
         </div>
       </Link>
 
@@ -45,7 +41,9 @@ export function Navbar() {
                   <li className="row-span-5">
                     <div className="flex h-full w-full select-none flex-col justify-between rounded-md bg-gradient-to-b from-primary/5 to-primary/10 p-6 pt-5 border-l-4 border-primary">
                       <div className="mb-3">
-                        <Image src="/images/logo.svg" alt="Publica.la Logo" width={80} height={80} className="mb-3" />
+                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-3xl px-4 py-2 rounded-lg inline-block mb-3">
+                          P
+                        </div>
                       </div>
                       <div>
                         <div className="text-xl font-bold mb-2">Enterprise Publishing Solutions</div>
