@@ -1,4 +1,6 @@
 import Image from "next/image"
+import { SectionHeader } from "@/components/ui/section-header"
+import { AnimatedBackground } from "@/components/ui/animated-background"
 
 interface CustomerLogosShowcaseProps {
   title?: string
@@ -67,34 +69,34 @@ export function CustomerLogosShowcase({
   const logos = getLogos()
 
   const containerClasses = {
-    homepage: "py-16 px-6 bg-gray-50 border-t border-gray-100",
-    solution: "py-12 px-6 bg-white",
-    "case-studies": "py-12 px-6 bg-gray-50",
+    homepage: "py-20 px-6 bg-gradient-to-br from-gray-50 to-white border-t border-gray-100",
+    solution: "py-16 px-6 bg-white",
+    "case-studies": "py-16 px-6 bg-gradient-to-br from-gray-50 to-white",
   }
 
   return (
-    <section className={`w-full ${containerClasses[variant]}`}>
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">{title}</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{subtitle}</p>
-        </div>
+    <section className={`w-full relative overflow-hidden ${containerClasses[variant]}`}>
+      <AnimatedBackground variant="minimal" />
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        <SectionHeader title={title} subtitle={subtitle} />
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              className="group flex items-center justify-center p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <Image
                 src={
                   logo.src ||
-                  `/placeholder.svg?height=${logo.height}&width=${logo.width}&text=${encodeURIComponent(logo.name)}`
+                  `/placeholder.svg?height=${logo.height || "/placeholder.svg"}&width=${logo.width}&text=${encodeURIComponent(logo.name)}`
                 }
                 alt={`${logo.name} logo`}
                 width={logo.width}
                 height={logo.height}
-                className="max-w-full h-auto opacity-70 hover:opacity-100 transition-opacity"
+                className="max-w-full h-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300 filter grayscale group-hover:grayscale-0"
               />
             </div>
           ))}
