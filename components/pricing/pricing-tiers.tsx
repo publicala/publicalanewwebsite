@@ -1,13 +1,65 @@
+"use client"
+
 import type React from "react"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
 import Link from "next/link"
 
 export function PricingTiers() {
+  const [isAnnual, setIsAnnual] = useState(false)
+
+  const plans = {
+    starter: {
+      monthly: 20,
+      annual: 200,
+      savings: 40,
+    },
+    growth: {
+      monthly: 249,
+      annual: 2490,
+      savings: 498,
+    },
+    enterprise: {
+      monthly: 492,
+      annual: 4920,
+      savings: 984,
+    },
+  }
+
+  const getPrice = (plan: keyof typeof plans) => {
+    return isAnnual ? plans[plan].annual : plans[plan].monthly
+  }
+
+  const getSavings = (plan: keyof typeof plans) => {
+    return plans[plan].savings
+  }
+
   return (
     <section className="w-full py-12 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
+        {/* Pricing Toggle */}
+        <div className="flex justify-center mb-8">
+          <div className="bg-gray-100 p-1 rounded-lg">
+            <button
+              onClick={() => setIsAnnual(false)}
+              className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+                !isAnnual ? "bg-white text-gray-900 shadow-sm" : "text-gray-600 hover:text-gray-900"
+              }`}
+            >
+              Monthly
+            </button>
+            <button
+              onClick={() => setIsAnnual(true)}
+              className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+                isAnnual ? "bg-white text-gray-900 shadow-sm" : "text-gray-600 hover:text-gray-900"
+              }`}
+            >
+              Annual
+            </button>
+          </div>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Starter Plan */}
           <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
@@ -17,8 +69,11 @@ export function PricingTiers() {
                 For individuals and small teams just getting started
               </CardDescription>
               <div className="mt-4">
-                <span className="text-4xl font-bold">$20</span>
-                <span className="text-gray-500 ml-2">/month</span>
+                <span className="text-4xl font-bold">${getPrice("starter")}</span>
+                <span className="text-gray-500 ml-2">/{isAnnual ? "year" : "month"}</span>
+                {isAnnual && (
+                  <div className="text-sm text-green-600 font-medium mt-1">Save ${getSavings("starter")} per year</div>
+                )}
               </div>
             </CardHeader>
             <CardContent className="pb-8">
@@ -57,8 +112,11 @@ export function PricingTiers() {
               <CardTitle className="text-2xl">Growth</CardTitle>
               <CardDescription className="text-base">For growing publishers with expanding catalogs</CardDescription>
               <div className="mt-4">
-                <span className="text-4xl font-bold">$249</span>
-                <span className="text-gray-500 ml-2">/month</span>
+                <span className="text-4xl font-bold">${getPrice("growth")}</span>
+                <span className="text-gray-500 ml-2">/{isAnnual ? "year" : "month"}</span>
+                {isAnnual && (
+                  <div className="text-sm text-green-600 font-medium mt-1">Save ${getSavings("growth")} per year</div>
+                )}
               </div>
             </CardHeader>
             <CardContent className="pb-8">
@@ -96,8 +154,13 @@ export function PricingTiers() {
               <CardTitle className="text-2xl">Enterprise</CardTitle>
               <CardDescription className="text-base">For established publishers with large catalogs</CardDescription>
               <div className="mt-4">
-                <span className="text-4xl font-bold">From $492</span>
-                <span className="text-gray-500 ml-2">/month</span>
+                <span className="text-4xl font-bold">From ${getPrice("enterprise")}</span>
+                <span className="text-gray-500 ml-2">/{isAnnual ? "year" : "month"}</span>
+                {isAnnual && (
+                  <div className="text-sm text-green-600 font-medium mt-1">
+                    Save ${getSavings("enterprise")}+ per year
+                  </div>
+                )}
               </div>
             </CardHeader>
             <CardContent className="pb-8">

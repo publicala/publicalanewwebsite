@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { FileText, Music, ImageIcon, Video, FileCode, File } from "lucide-react"
 
@@ -100,14 +99,68 @@ export function CreatorsFormats() {
               </div>
               <div className="flex justify-center">
                 <div className="relative">
-                  <Image
-                    src="/images/step-back-leap.png"
-                    alt="Text-based content example"
-                    width={300}
-                    height={600}
-                    className="rounded-3xl shadow-xl"
-                  />
-                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full z-0"></div>
+                  {/* Text Content Mockup */}
+                  <div className="w-80 h-96 bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+                    {/* Header */}
+                    <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 text-white">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                          <FileText className="h-4 w-4" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold">Digital Guide</h4>
+                          <p className="text-xs opacity-90">PDF • 45 pages</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Content Preview */}
+                    <div className="p-6 space-y-4">
+                      <div className="space-y-2">
+                        <div className="h-4 bg-gray-800 rounded w-3/4"></div>
+                        <div className="h-3 bg-gray-400 rounded w-full"></div>
+                        <div className="h-3 bg-gray-400 rounded w-5/6"></div>
+                        <div className="h-3 bg-gray-400 rounded w-4/5"></div>
+                      </div>
+
+                      <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <div className="h-3 bg-blue-300 rounded w-2/3 mb-2"></div>
+                        <div className="h-2 bg-blue-200 rounded w-full"></div>
+                        <div className="h-2 bg-blue-200 rounded w-3/4"></div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <div className="h-3 bg-gray-400 rounded w-full"></div>
+                        <div className="h-3 bg-gray-400 rounded w-4/5"></div>
+                        <div className="h-3 bg-gray-400 rounded w-5/6"></div>
+                      </div>
+
+                      {/* Chapter Navigation */}
+                      <div className="flex gap-2 pt-4">
+                        <div className="w-8 h-2 bg-blue-500 rounded-full"></div>
+                        <div className="w-8 h-2 bg-gray-300 rounded-full"></div>
+                        <div className="w-8 h-2 bg-gray-300 rounded-full"></div>
+                        <div className="w-8 h-2 bg-gray-300 rounded-full"></div>
+                      </div>
+                    </div>
+
+                    {/* Reading Progress */}
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="bg-gray-100 rounded-full p-2 flex items-center gap-2">
+                        <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                          <span className="text-xs text-white font-bold">1</span>
+                        </div>
+                        <div className="flex-1 bg-gray-300 rounded-full h-2">
+                          <div className="bg-blue-500 h-2 rounded-full w-1/4"></div>
+                        </div>
+                        <span className="text-xs text-gray-600">25%</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Decorative Elements */}
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-100 rounded-full z-0"></div>
+                  <div className="absolute -top-2 -left-2 w-16 h-16 bg-purple-100 rounded-full z-0"></div>
                 </div>
               </div>
             </div>
@@ -117,14 +170,72 @@ export function CreatorsFormats() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1 flex justify-center">
                 <div className="relative">
-                  <Image
-                    src="/images/blue-theme.png"
-                    alt="Audio content example"
-                    width={300}
-                    height={600}
-                    className="rounded-3xl shadow-xl"
-                  />
-                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-50 rounded-full z-0"></div>
+                  {/* Audio Player Mockup */}
+                  <div className="w-80 h-96 bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+                    {/* Header */}
+                    <div className="bg-gradient-to-r from-blue-500 to-indigo-600 p-4 text-white">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                          <Music className="h-4 w-4" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold">Audiobook Player</h4>
+                          <p className="text-xs opacity-90">MP3 • 8h 45m</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Album Art */}
+                    <div className="p-6">
+                      <div className="w-full h-40 bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl flex items-center justify-center mb-4">
+                        <Music className="h-16 w-16 text-white/80" />
+                      </div>
+
+                      {/* Track Info */}
+                      <div className="text-center mb-6">
+                        <h3 className="font-bold text-lg text-gray-800">Chapter 3: The Journey</h3>
+                        <p className="text-gray-500 text-sm">Digital Marketing Mastery</p>
+                      </div>
+
+                      {/* Progress Bar */}
+                      <div className="mb-4">
+                        <div className="flex justify-between text-xs text-gray-500 mb-2">
+                          <span>12:34</span>
+                          <span>45:21</span>
+                        </div>
+                        <div className="w-full bg-gray-200 rounded-full h-2">
+                          <div className="bg-blue-500 h-2 rounded-full w-1/3"></div>
+                        </div>
+                      </div>
+
+                      {/* Controls */}
+                      <div className="flex items-center justify-center gap-4 mb-4">
+                        <button className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                          <span className="text-gray-600">⏮</span>
+                        </button>
+                        <button className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                          <span className="text-white text-lg">▶</span>
+                        </button>
+                        <button className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                          <span className="text-gray-600">⏭</span>
+                        </button>
+                      </div>
+
+                      {/* Speed Control */}
+                      <div className="flex items-center justify-center gap-2">
+                        <span className="text-xs text-gray-500">Speed:</span>
+                        <div className="flex gap-1">
+                          <button className="px-2 py-1 text-xs bg-gray-100 rounded">1x</button>
+                          <button className="px-2 py-1 text-xs bg-blue-500 text-white rounded">1.5x</button>
+                          <button className="px-2 py-1 text-xs bg-gray-100 rounded">2x</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Decorative Elements */}
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-100 rounded-full z-0"></div>
+                  <div className="absolute -top-2 -left-2 w-16 h-16 bg-indigo-100 rounded-full z-0"></div>
                 </div>
               </div>
               <div className="order-1 lg:order-2">
@@ -236,14 +347,64 @@ export function CreatorsFormats() {
               </div>
               <div className="flex justify-center">
                 <div className="relative">
-                  <Image
-                    src="/images/pink-theme.png"
-                    alt="Image content example"
-                    width={300}
-                    height={600}
-                    className="rounded-3xl shadow-xl"
-                  />
-                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-pink-50 rounded-full z-0"></div>
+                  {/* Image Gallery Mockup */}
+                  <div className="w-80 h-96 bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+                    {/* Header */}
+                    <div className="bg-gradient-to-r from-pink-500 to-purple-600 p-4 text-white">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                          <ImageIcon className="h-4 w-4" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold">Photo Gallery</h4>
+                          <p className="text-xs opacity-90">JPG • 4K Resolution</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Featured Image */}
+                    <div className="p-6">
+                      <div className="w-full h-40 bg-gradient-to-br from-pink-400 to-purple-600 rounded-2xl flex items-center justify-center mb-4 relative">
+                        <ImageIcon className="h-16 w-16 text-white/80" />
+                        <div className="absolute top-2 right-2 bg-white/20 backdrop-blur-sm rounded px-2 py-1">
+                          <span className="text-xs text-white">PREVIEW</span>
+                        </div>
+                      </div>
+
+                      {/* Image Info */}
+                      <div className="text-center mb-4">
+                        <h3 className="font-bold text-lg text-gray-800">Sunset Landscape</h3>
+                        <p className="text-gray-500 text-sm">3840 x 2160 • RAW + JPG</p>
+                      </div>
+
+                      {/* Image Grid */}
+                      <div className="grid grid-cols-2 gap-2 mb-4">
+                        <div className="h-16 bg-gradient-to-br from-pink-300 to-purple-500 rounded-lg flex items-center justify-center">
+                          <ImageIcon className="h-6 w-6 text-white/80" />
+                        </div>
+                        <div className="h-16 bg-gradient-to-br from-purple-300 to-pink-500 rounded-lg flex items-center justify-center">
+                          <ImageIcon className="h-6 w-6 text-white/80" />
+                        </div>
+                        <div className="h-16 bg-gradient-to-br from-pink-400 to-purple-400 rounded-lg flex items-center justify-center">
+                          <ImageIcon className="h-6 w-6 text-white/80" />
+                        </div>
+                        <div className="h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg flex items-center justify-center">
+                          <ImageIcon className="h-6 w-6 text-white/80" />
+                        </div>
+                      </div>
+
+                      {/* Download Options */}
+                      <div className="flex gap-2 justify-center">
+                        <button className="px-3 py-1 text-xs bg-pink-500 text-white rounded-lg font-medium">JPG</button>
+                        <button className="px-3 py-1 text-xs bg-gray-100 rounded">PNG</button>
+                        <button className="px-3 py-1 text-xs bg-gray-100 rounded">RAW</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Decorative Elements */}
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-pink-100 rounded-full z-0"></div>
+                  <div className="absolute -top-2 -left-2 w-16 h-16 bg-purple-100 rounded-full z-0"></div>
                 </div>
               </div>
             </div>
@@ -253,14 +414,82 @@ export function CreatorsFormats() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1 flex justify-center">
                 <div className="relative">
-                  <Image
-                    src="/images/yellow-theme.png"
-                    alt="Video content example"
-                    width={300}
-                    height={600}
-                    className="rounded-3xl shadow-xl"
-                  />
-                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-yellow-50 rounded-full z-0"></div>
+                  {/* Video Player Mockup */}
+                  <div className="w-80 h-96 bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+                    {/* Header */}
+                    <div className="bg-gradient-to-r from-yellow-500 to-amber-600 p-4 text-white">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                          <Video className="h-4 w-4" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold">Course Player</h4>
+                          <p className="text-xs opacity-90">MP4 • HD 1080p</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Video Preview */}
+                    <div className="p-6">
+                      <div className="w-full h-40 bg-gradient-to-br from-yellow-400 to-amber-600 rounded-2xl flex items-center justify-center mb-4 relative">
+                        <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center">
+                          <div className="w-0 h-0 border-t-8 border-b-8 border-l-12 border-transparent border-l-white ml-1"></div>
+                        </div>
+                        <div className="absolute bottom-2 right-2 bg-black/50 backdrop-blur-sm rounded px-2 py-1">
+                          <span className="text-xs text-white">12:34</span>
+                        </div>
+                      </div>
+
+                      {/* Video Info */}
+                      <div className="mb-4">
+                        <h3 className="font-bold text-lg text-gray-800">Module 2: Advanced Techniques</h3>
+                        <p className="text-gray-500 text-sm">Digital Marketing Mastery Course</p>
+                      </div>
+
+                      {/* Progress Bar */}
+                      <div className="mb-4">
+                        <div className="flex justify-between text-xs text-gray-500 mb-2">
+                          <span>12:34</span>
+                          <span>45:21</span>
+                        </div>
+                        <div className="w-full bg-gray-200 rounded-full h-2">
+                          <div className="bg-yellow-500 h-2 rounded-full w-1/4"></div>
+                        </div>
+                      </div>
+
+                      {/* Course Navigation */}
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-2 p-2 bg-yellow-50 rounded-lg border border-yellow-200">
+                          <div className="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center text-white text-xs">
+                            1
+                          </div>
+                          <span className="text-sm font-medium">Introduction</span>
+                          <div className="ml-auto">
+                            <div className="w-4 h-4 bg-green-500 rounded-full"></div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2 p-2 bg-yellow-100 rounded-lg border border-yellow-300">
+                          <div className="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center text-white text-xs">
+                            2
+                          </div>
+                          <span className="text-sm font-medium">Advanced Techniques</span>
+                          <div className="ml-auto">
+                            <div className="w-4 h-4 border-2 border-yellow-500 rounded-full"></div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2 p-2 rounded-lg">
+                          <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 text-xs">
+                            3
+                          </div>
+                          <span className="text-sm text-gray-500">Case Studies</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Decorative Elements */}
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-yellow-100 rounded-full z-0"></div>
+                  <div className="absolute -top-2 -left-2 w-16 h-16 bg-amber-100 rounded-full z-0"></div>
                 </div>
               </div>
               <div className="order-1 lg:order-2">
@@ -376,14 +605,93 @@ export function CreatorsFormats() {
               </div>
               <div className="flex justify-center">
                 <div className="relative">
-                  <Image
-                    src="/images/control-panel.png"
-                    alt="Interactive content example"
-                    width={300}
-                    height={600}
-                    className="rounded-3xl shadow-xl"
-                  />
-                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full z-0"></div>
+                  {/* Interactive Content Mockup */}
+                  <div className="w-80 h-96 bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+                    {/* Header */}
+                    <div className="bg-gradient-to-r from-green-500 to-emerald-600 p-4 text-white">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                          <FileCode className="h-4 w-4" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold">Interactive Quiz</h4>
+                          <p className="text-xs opacity-90">HTML5 • Web App</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Interactive Content */}
+                    <div className="p-6">
+                      {/* Progress Bar */}
+                      <div className="mb-6">
+                        <div className="flex justify-between text-sm text-gray-600 mb-2">
+                          <span>Question 3 of 10</span>
+                          <span>30%</span>
+                        </div>
+                        <div className="w-full bg-gray-200 rounded-full h-2">
+                          <div className="bg-green-500 h-2 rounded-full w-3/10"></div>
+                        </div>
+                      </div>
+
+                      {/* Question */}
+                      <div className="mb-6">
+                        <h3 className="font-bold text-lg text-gray-800 mb-4">
+                          What is the most effective digital marketing strategy?
+                        </h3>
+                        {/* Answer Options */}
+                        <div className="space-y-3">
+                          <div className="p-3 border-2 border-gray-200 rounded-lg hover:border-green-300 cursor-pointer transition-colors">
+                            <div className="flex items-center gap-3">
+                              <div className="w-5 h-5 border-2 border-gray-300 rounded-full"></div>
+                              <span className="text-gray-700">Social Media Marketing</span>
+                            </div>
+                          </div>
+                          <div className="p-3 border-2 border-green-500 bg-green-50 rounded-lg">
+                            <div className="flex items-center gap-3">
+                              <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                                <div className="w-2 h-2 bg-white rounded-full"></div>
+                              </div>
+                              <span className="text-green-700 font-medium">Content Marketing</span>
+                            </div>
+                          </div>
+                          <div className="p-3 border-2 border-gray-200 rounded-lg hover:border-green-300 cursor-pointer transition-colors">
+                            <div className="flex items-center gap-3">
+                              <div className="w-5 h-5 border-2 border-gray-300 rounded-full"></div>
+                              <span className="text-gray-700">Email Marketing</span>
+                            </div>
+                          </div>
+                          <div className="p-3 border-2 border-gray-200 rounded-lg hover:border-green-300 cursor-pointer transition-colors">
+                            <div className="flex items-center gap-3">
+                              <div className="w-5 h-5 border-2 border-gray-300 rounded-full"></div>
+                              <span className="text-gray-700">Paid Advertising</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Action Buttons */}
+                      <div className="flex gap-3">
+                        <button className="flex-1 py-2 px-4 bg-gray-100 text-gray-600 rounded-lg font-medium">
+                          Previous
+                        </button>
+                        <button className="flex-1 py-2 px-4 bg-green-500 text-white rounded-lg font-medium">
+                          Next Question
+                        </button>
+                      </div>
+
+                      {/* Score Display */}
+                      <div className="mt-4 text-center">
+                        <div className="inline-flex items-center gap-2 bg-green-100 px-3 py-1 rounded-full">
+                          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                          <span className="text-sm text-green-700">Score: 85%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Decorative Elements */}
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-green-100 rounded-full z-0"></div>
+                  <div className="absolute -top-2 -left-2 w-16 h-16 bg-emerald-100 rounded-full z-0"></div>
                 </div>
               </div>
             </div>
@@ -393,14 +701,105 @@ export function CreatorsFormats() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1 flex justify-center">
                 <div className="relative">
-                  <Image
-                    src="/images/book-collection-1.png"
-                    alt="Content bundles example"
-                    width={300}
-                    height={600}
-                    className="rounded-3xl shadow-xl"
-                  />
-                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-green-50 rounded-full z-0"></div>
+                  {/* Content Bundle Mockup */}
+                  <div className="w-80 h-96 bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+                    {/* Header */}
+                    <div className="bg-gradient-to-r from-purple-500 to-indigo-600 p-4 text-white">
+                      <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                          <File className="h-4 w-4" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold">Complete Bundle</h4>
+                          <p className="text-xs opacity-90">Mixed Media • 5 Items</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Bundle Contents */}
+                    <div className="p-6">
+                      <div className="mb-4">
+                        <h3 className="font-bold text-lg text-gray-800 mb-2">Digital Marketing Mastery</h3>
+                        <p className="text-gray-500 text-sm">Complete learning package</p>
+                      </div>
+
+                      {/* Bundle Items */}
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-center gap-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                          <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                            <FileText className="h-4 w-4 text-white" />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-medium text-sm">Complete Guide (PDF)</h4>
+                            <p className="text-xs text-gray-500">120 pages</p>
+                          </div>
+                          <div className="w-4 h-4 bg-green-500 rounded-full"></div>
+                        </div>
+
+                        <div className="flex items-center gap-3 p-3 bg-purple-50 rounded-lg border border-purple-200">
+                          <div className="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center">
+                            <Music className="h-4 w-4 text-white" />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-medium text-sm">Audio Course</h4>
+                            <p className="text-xs text-gray-500">8 hours</p>
+                          </div>
+                          <div className="w-4 h-4 bg-green-500 rounded-full"></div>
+                        </div>
+
+                        <div className="flex items-center gap-3 p-3 bg-yellow-50 rounded-lg border border-yellow-200">
+                          <div className="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center">
+                            <Video className="h-4 w-4 text-white" />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-medium text-sm">Video Tutorials</h4>
+                            <p className="text-xs text-gray-500">12 videos</p>
+                          </div>
+                          <div className="w-4 h-4 bg-green-500 rounded-full"></div>
+                        </div>
+
+                        <div className="flex items-center gap-3 p-3 bg-green-50 rounded-lg border border-green-200">
+                          <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
+                            <FileCode className="h-4 w-4 text-white" />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-medium text-sm">Interactive Tools</h4>
+                            <p className="text-xs text-gray-500">Templates & Quizzes</p>
+                          </div>
+                          <div className="w-4 h-4 bg-green-500 rounded-full"></div>
+                        </div>
+
+                        <div className="flex items-center gap-3 p-3 bg-pink-50 rounded-lg border border-pink-200">
+                          <div className="w-8 h-8 bg-pink-500 rounded-lg flex items-center justify-center">
+                            <ImageIcon className="h-4 w-4 text-white" />
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-medium text-sm">Design Assets</h4>
+                            <p className="text-xs text-gray-500">50+ graphics</p>
+                          </div>
+                          <div className="w-4 h-4 bg-green-500 rounded-full"></div>
+                        </div>
+                      </div>
+
+                      {/* Bundle Value */}
+                      <div className="bg-gradient-to-r from-purple-100 to-indigo-100 p-3 rounded-lg">
+                        <div className="flex justify-between items-center">
+                          <div>
+                            <p className="text-sm text-gray-600">Bundle Value</p>
+                            <p className="text-xs text-gray-500 line-through">$297 individual</p>
+                          </div>
+                          <div className="text-right">
+                            <p className="text-lg font-bold text-purple-600">$197</p>
+                            <p className="text-xs text-green-600">Save 34%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Decorative Elements */}
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-purple-100 rounded-full z-0"></div>
+                  <div className="absolute -top-2 -left-2 w-16 h-16 bg-indigo-100 rounded-full z-0"></div>
                 </div>
               </div>
               <div className="order-1 lg:order-2">

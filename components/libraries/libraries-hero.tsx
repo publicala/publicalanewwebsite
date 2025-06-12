@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, BookOpen, Users, Globe } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 export function LibrariesHero() {
   return (
@@ -38,50 +38,21 @@ export function LibrariesHero() {
             </div>
           </div>
           <div className="relative">
-            <div className="relative z-10 bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100 p-6">
-              {/* Library Management Dashboard Mockup */}
-              <div className="space-y-4">
-                <div className="flex items-center justify-between border-b pb-3">
-                  <h3 className="font-semibold text-gray-900">Library Dashboard</h3>
-                  <div className="flex gap-2">
-                    <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                    <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                    <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-3 gap-3">
-                  <div className="bg-blue-50 p-3 rounded-lg text-center">
-                    <BookOpen className="h-6 w-6 text-blue-600 mx-auto mb-1" />
-                    <div className="text-sm font-medium text-blue-900">12,450</div>
-                    <div className="text-xs text-blue-600">Digital Items</div>
-                  </div>
-                  <div className="bg-green-50 p-3 rounded-lg text-center">
-                    <Users className="h-6 w-6 text-green-600 mx-auto mb-1" />
-                    <div className="text-sm font-medium text-green-900">3,280</div>
-                    <div className="text-xs text-green-600">Active Patrons</div>
-                  </div>
-                  <div className="bg-purple-50 p-3 rounded-lg text-center">
-                    <Globe className="h-6 w-6 text-purple-600 mx-auto mb-1" />
-                    <div className="text-sm font-medium text-purple-900">24/7</div>
-                    <div className="text-xs text-purple-600">Access</div>
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <div className="text-sm font-medium text-gray-700">Recent Activity</div>
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="text-gray-600">Digital checkouts today</span>
-                      <span className="font-medium">847</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-1.5">
-                      <div className="bg-primary h-1.5 rounded-full" style={{ width: "75%" }}></div>
-                    </div>
-                  </div>
-                </div>
+            {/* YouTube Video Embed */}
+            <div className="relative z-10 bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100">
+              <div className="aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/ULZaZTvsUQs"
+                  title="Publica.la Platform Overview"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
               </div>
             </div>
+
+            {/* Decorative elements */}
             <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-primary/5 rounded-full z-0"></div>
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-100 rounded-full z-0"></div>
           </div>

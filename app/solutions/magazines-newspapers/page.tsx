@@ -8,6 +8,7 @@ import { MagazinesNewspapersAnalytics } from "@/components/magazines-newspapers/
 import { MagazinesNewspapersMonetization } from "@/components/magazines-newspapers/magazines-newspapers-monetization"
 import { MagazinesNewspapersCaseStudy } from "@/components/magazines-newspapers/magazines-newspapers-case-study"
 import { MagazinesNewspapersCta } from "@/components/magazines-newspapers/magazines-newspapers-cta"
+import { CustomerLogosShowcase } from "@/components/customer-logos-showcase"
 
 export default function MagazinesNewspapersPage() {
   return (
@@ -15,6 +16,12 @@ export default function MagazinesNewspapersPage() {
       <Navbar />
       <main>
         <MagazinesNewspapersHero />
+        <CustomerLogosShowcase
+          title="Trusted by Media Organizations"
+          subtitle="Leading magazines and newspapers digitize their content with Publica.la"
+          variant="solution"
+          industry="magazines"
+        />
         <MagazinesNewspapersFeatures />
         <MagazinesNewspapersDigitalPublishing />
         <MagazinesNewspapersReaderEngagement />

@@ -37,12 +37,21 @@ export function BookshopsHero() {
             </div>
           </div>
           <div className="relative">
-            <div className="relative z-10 rounded-lg shadow-xl overflow-hidden border border-gray-100 p-8">
-              <div className="flex flex-col items-center justify-center">
-                <div className="text-6xl text-primary mb-4">📚</div>
-                <p className="text-gray-700 text-center">Visualize your digital bookstore.</p>
+            {/* YouTube Video Embed */}
+            <div className="relative z-10 bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100">
+              <div className="aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/ULZaZTvsUQs"
+                  title="Publica.la Platform Overview"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
               </div>
             </div>
+
+            {/* Decorative elements */}
             <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-primary/5 rounded-full z-0"></div>
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/5 rounded-full z-0"></div>
           </div>

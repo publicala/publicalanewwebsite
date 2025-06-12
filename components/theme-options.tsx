@@ -60,10 +60,10 @@ export function ThemeOptions() {
     <section className="w-full py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Customizable Reader Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Customizable Store Experience</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Create a branded reading experience that reflects your identity. Choose from pre-designed themes or
-            customize every detail to match your brand.
+            Create a branded STORE experience that reflects your identity. Choose from pre-designed themes or customize
+            every detail to match your brand.
           </p>
         </div>
 

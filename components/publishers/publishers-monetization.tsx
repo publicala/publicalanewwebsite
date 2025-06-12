@@ -1,5 +1,4 @@
 import type React from "react"
-import Image from "next/image"
 import { CheckCircle } from "lucide-react"
 
 export function PublishersMonetization() {
@@ -9,13 +8,70 @@ export function PublishersMonetization() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <Image
-                src="/images/payment-success.png"
-                alt="Payment success screen"
-                width={300}
-                height={600}
-                className="rounded-3xl shadow-xl mx-auto"
-              />
+              <div className="bg-white rounded-lg shadow-xl p-6 border border-gray-200">
+                <div className="space-y-6">
+                  {/* Header */}
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <div className="w-8 h-8 rounded bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
+                        <div className="w-4 h-4 text-white">💰</div>
+                      </div>
+                      <div className="h-4 bg-gray-200 rounded w-32"></div>
+                    </div>
+                    <div className="flex gap-2">
+                      <div className="w-2 h-2 rounded-full bg-red-400"></div>
+                      <div className="w-2 h-2 rounded-full bg-yellow-400"></div>
+                      <div className="w-2 h-2 rounded-full bg-green-400"></div>
+                    </div>
+                  </div>
+
+                  {/* Revenue cards */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-gradient-to-br from-green-50 to-green-100 p-4 rounded-lg border border-green-200">
+                      <div className="text-2xl font-bold text-green-700">$12,450</div>
+                      <div className="text-sm text-green-600">Monthly Revenue</div>
+                      <div className="text-xs text-green-500 mt-1">+24% from last month</div>
+                    </div>
+                    <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-lg border border-blue-200">
+                      <div className="text-2xl font-bold text-blue-700">1,247</div>
+                      <div className="text-sm text-blue-600">Active Subscribers</div>
+                      <div className="text-xs text-blue-500 mt-1">+156 this month</div>
+                    </div>
+                  </div>
+
+                  {/* Revenue chart */}
+                  <div className="bg-gray-50 rounded-lg p-4">
+                    <div className="h-3 bg-gray-200 rounded w-1/3 mb-3"></div>
+                    <div className="flex items-end gap-2 h-20">
+                      {[40, 65, 45, 80, 55, 90, 70, 85].map((height, i) => (
+                        <div
+                          key={i}
+                          className="bg-gradient-to-t from-green-500 to-green-400 rounded-t flex-1"
+                          style={{ height: `${height}%` }}
+                        ></div>
+                      ))}
+                    </div>
+                    <div className="text-xs text-gray-500 mt-2">Revenue Growth Over Time</div>
+                  </div>
+
+                  {/* Payment methods */}
+                  <div className="grid grid-cols-3 gap-3">
+                    <div className="bg-purple-50 p-3 rounded-lg border border-purple-100 text-center">
+                      <div className="w-8 h-8 bg-purple-500 rounded mx-auto mb-2"></div>
+                      <div className="text-xs text-purple-700">Credit Cards</div>
+                    </div>
+                    <div className="bg-blue-50 p-3 rounded-lg border border-blue-100 text-center">
+                      <div className="w-8 h-8 bg-blue-500 rounded mx-auto mb-2"></div>
+                      <div className="text-xs text-blue-700">PayPal</div>
+                    </div>
+                    <div className="bg-orange-50 p-3 rounded-lg border border-orange-100 text-center">
+                      <div className="w-8 h-8 bg-orange-500 rounded mx-auto mb-2"></div>
+                      <div className="text-xs text-orange-700">Crypto</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-green-50 rounded-full z-0"></div>
             </div>
           </div>

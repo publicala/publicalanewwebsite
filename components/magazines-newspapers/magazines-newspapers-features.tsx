@@ -5,8 +5,7 @@ export function MagazinesNewspapersFeatures() {
     {
       icon: FileText,
       title: "Editorial Workflow",
-      description:
-        "Streamlined content creation, editing, and approval process with collaborative tools for your editorial team.",
+      description: "Streamlined content editing and approval process with collaborative tools for your editorial team.",
       color: "blue",
     },
     {
@@ -62,7 +61,7 @@ export function MagazinesNewspapersFeatures() {
             Everything You Need for Modern Publishing
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From content creation to reader engagement, our platform provides all the tools magazines and newspapers
+            From content management to reader engagement, our platform provides all the tools magazines and newspapers
             need to thrive in the digital age.
           </p>
         </div>

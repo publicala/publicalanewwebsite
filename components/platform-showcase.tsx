@@ -128,30 +128,12 @@ export function PlatformShowcase() {
 
                     {/* Dynamic content based on active feature */}
                     {activeFeature === "content" && (
-                      <div className="space-y-4">
-                        <div className="grid grid-cols-2 gap-4">
-                          <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
-                            <div className="w-8 h-8 bg-blue-500 rounded mb-2"></div>
-                            <div className="h-3 bg-blue-200 rounded w-3/4 mb-1"></div>
-                            <div className="h-2 bg-blue-100 rounded w-1/2"></div>
-                          </div>
-                          <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
-                            <div className="w-8 h-8 bg-blue-500 rounded mb-2"></div>
-                            <div className="h-3 bg-blue-200 rounded w-3/4 mb-1"></div>
-                            <div className="h-2 bg-blue-100 rounded w-1/2"></div>
-                          </div>
-                        </div>
-                        <div className="bg-gray-50 p-4 rounded-lg">
-                          <div className="flex items-center gap-2 mb-3">
-                            <div className="w-4 h-4 bg-green-500 rounded-full"></div>
-                            <div className="h-3 bg-gray-300 rounded w-1/4"></div>
-                          </div>
-                          <div className="space-y-2">
-                            <div className="h-2 bg-gray-200 rounded w-full"></div>
-                            <div className="h-2 bg-gray-200 rounded w-4/5"></div>
-                            <div className="h-2 bg-gray-200 rounded w-3/5"></div>
-                          </div>
-                        </div>
+                      <div className="rounded-lg overflow-hidden">
+                        <img
+                          src="/images/marketplace-interface.png"
+                          alt="Publica.la marketplace interface showing content inventory management"
+                          className="w-full h-auto"
+                        />
                       </div>
                     )}
 

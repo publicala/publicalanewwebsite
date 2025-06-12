@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, FileText } from "lucide-react"
+import { ArrowRight, FileText } from "lucide-react"
 
 export function MagazinesNewspapersHero() {
   return (
@@ -31,7 +31,7 @@ export function MagazinesNewspapersHero() {
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Streamline your digital publishing process with our comprehensive platform designed for modern magazines
-                and newspapers. From content creation to reader engagement.
+                and newspapers. From content management to reader engagement.
               </p>
             </div>
 
@@ -68,94 +68,18 @@ export function MagazinesNewspapersHero() {
             </div>
           </div>
 
-          {/* Editorial Dashboard Mockup */}
+          {/* YouTube Video Embed */}
           <div className="relative">
-            <div className="bg-white rounded-2xl shadow-2xl p-6 border border-gray-200">
-              {/* Window controls */}
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex space-x-2">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                </div>
-                <div className="text-sm font-medium text-gray-600">Editorial Dashboard</div>
-                <div className="w-16"></div>
-              </div>
-
-              {/* Dashboard content */}
-              <div className="space-y-6">
-                {/* Header stats */}
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-4 rounded-lg">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <div className="text-sm text-blue-600 font-medium">Today's Articles</div>
-                        <div className="text-2xl font-bold text-blue-900">24</div>
-                      </div>
-                      <FileText className="w-8 h-8 text-blue-600" />
-                    </div>
-                  </div>
-                  <div className="bg-gradient-to-r from-green-50 to-green-100 p-4 rounded-lg">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <div className="text-sm text-green-600 font-medium">Active Readers</div>
-                        <div className="text-2xl font-bold text-green-900">12.5K</div>
-                      </div>
-                      <Users className="w-8 h-8 text-green-600" />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Content pipeline */}
-                <div className="space-y-3">
-                  <div className="text-sm font-medium text-gray-700">Content Pipeline</div>
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                        <span className="text-sm">Breaking: Market Analysis</span>
-                      </div>
-                      <span className="text-xs text-gray-500">In Review</span>
-                    </div>
-                    <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                        <span className="text-sm">Tech Weekly Roundup</span>
-                      </div>
-                      <span className="text-xs text-gray-500">Published</span>
-                    </div>
-                    <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                        <span className="text-sm">Sports Update</span>
-                      </div>
-                      <span className="text-xs text-gray-500">Draft</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Performance chart */}
-                <div className="space-y-3">
-                  <div className="text-sm font-medium text-gray-700">Reader Engagement</div>
-                  <div className="flex items-end space-x-2 h-20">
-                    {[40, 65, 45, 80, 55, 70, 85].map((height, index) => (
-                      <div
-                        key={index}
-                        className="bg-gradient-to-t from-purple-500 to-purple-400 rounded-t flex-1"
-                        style={{ height: `${height}%` }}
-                      ></div>
-                    ))}
-                  </div>
-                  <div className="flex justify-between text-xs text-gray-500">
-                    <span>Mon</span>
-                    <span>Tue</span>
-                    <span>Wed</span>
-                    <span>Thu</span>
-                    <span>Fri</span>
-                    <span>Sat</span>
-                    <span>Sun</span>
-                  </div>
-                </div>
+            <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
+              <div className="aspect-video">
+                <iframe
+                  src="https://www.youtube.com/embed/ULZaZTvsUQs"
+                  title="Publica.la Platform Overview"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
               </div>
             </div>
           </div>

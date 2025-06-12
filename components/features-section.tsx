@@ -11,7 +11,7 @@ export function FeaturesSection() {
               Enterprise-Grade Features for Professional Publishing
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Our platform provides all the tools you need to create, manage, and distribute your digital content with
+              Our platform provides all the tools you need to manage and distribute your digital content with
               confidence.
             </p>
 

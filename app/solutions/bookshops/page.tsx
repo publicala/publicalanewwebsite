@@ -1,7 +1,8 @@
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
+import { CustomerLogosShowcase } from "@/components/customer-logos-showcase"
 import { BookshopsHero } from "@/components/bookshops/bookshops-hero"
 import { BookshopsFeatures } from "@/components/bookshops/bookshops-features"
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
 import { BookshopsDigitalInventory } from "@/components/bookshops/bookshops-digital-inventory"
 import { BookshopsOnlineSales } from "@/components/bookshops/bookshops-online-sales"
 import { BookshopsEngagement } from "@/components/bookshops/bookshops-engagement"
@@ -21,6 +22,12 @@ export default function BookshopsPage() {
     <main className="min-h-screen flex flex-col">
       <Navbar />
       <BookshopsHero />
+      <CustomerLogosShowcase
+        title="Trusted by Bookshops Everywhere"
+        subtitle="Independent and chain bookstores rely on Publica.la for digital growth"
+        variant="solution"
+        industry="bookshops"
+      />
       <BookshopsFeatures />
       <BookshopsDigitalInventory />
       <BookshopsOnlineSales />

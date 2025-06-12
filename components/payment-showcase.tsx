@@ -7,7 +7,7 @@ const paymentMethods = [
   { name: "Credit Cards", icon: CreditCard, color: "blue" },
   { name: "PayPal", icon: Shield, color: "purple" },
   { name: "Bank Transfer", icon: Globe, color: "green" },
-  { name: "Digital Wallets", icon: Zap, color: "yellow" },
+  { name: "Crypto", icon: Zap, color: "yellow" },
 ]
 
 const revenueData = [
@@ -77,6 +77,7 @@ export function PaymentShowcase() {
                 <h3 className="text-xl font-semibold mb-4">Key Features</h3>
                 <div className="space-y-3">
                   {[
+                    "Sell retail licenses, subscriptions and library licenses",
                     "Secure SSL encryption for all transactions",
                     "Automatic tax calculation and compliance",
                     "Real-time payment processing and notifications",
@@ -153,16 +154,44 @@ export function PaymentShowcase() {
 
                 {/* Chart */}
                 <div className="mb-4">
-                  <div className="flex items-end gap-2 h-32">
-                    {revenueData.map((data, i) => (
-                      <div key={data.month} className="flex-1 flex flex-col items-center gap-1">
+                  <div className="relative h-40 bg-gradient-to-t from-gray-50 to-white rounded-lg p-4">
+                    <div className="flex items-end gap-3 h-32">
+                      {revenueData.map((data, i) => (
+                        <div key={data.month} className="flex-1 flex flex-col items-center gap-2">
+                          <div className="relative w-full">
+                            <div
+                              className="w-full bg-gradient-to-t from-blue-600 via-blue-500 to-blue-400 rounded-t-lg shadow-sm transition-all duration-300 hover:shadow-md"
+                              style={{ height: `${(data.amount / maxRevenue) * 100}%` }}
+                            >
+                              <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/20 rounded-t-lg"></div>
+                            </div>
+                            {/* Value label on hover */}
+                            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                              ${(data.amount / 1000).toFixed(1)}K
+                            </div>
+                          </div>
+                          <div className="text-xs font-medium text-gray-600">{data.month}</div>
+                        </div>
+                      ))}
+                    </div>
+                    {/* Grid lines */}
+                    <div className="absolute inset-4 pointer-events-none">
+                      {[25, 50, 75].map((percent) => (
                         <div
-                          className="w-full bg-gradient-to-t from-blue-500 to-blue-400 rounded-t"
-                          style={{ height: `${(data.amount / maxRevenue) * 100}%` }}
+                          key={percent}
+                          className="absolute w-full border-t border-gray-200/60"
+                          style={{ bottom: `${percent}%` }}
                         ></div>
-                        <div className="text-xs text-gray-500">{data.month}</div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
+                    {/* Y-axis labels */}
+                    <div className="absolute left-0 top-4 bottom-4 flex flex-col justify-between text-xs text-gray-500">
+                      <span>${Math.round(maxRevenue / 1000)}K</span>
+                      <span>${Math.round((maxRevenue * 0.75) / 1000)}K</span>
+                      <span>${Math.round((maxRevenue * 0.5) / 1000)}K</span>
+                      <span>${Math.round((maxRevenue * 0.25) / 1000)}K</span>
+                      <span>$0</span>
+                    </div>
                   </div>
                 </div>
 

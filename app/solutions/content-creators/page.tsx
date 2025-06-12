@@ -9,6 +9,7 @@ import { CreatorsAudience } from "@/components/creators/creators-audience"
 import { CreatorsTestimonials } from "@/components/creators/creators-testimonials"
 import { CTASection } from "@/components/cta-section"
 import { CreatorsCaseStudy } from "@/components/creators/creators-case-study"
+import { CustomerLogosShowcase } from "@/components/customer-logos-showcase"
 
 export const metadata = {
   title: "Solutions for Content Creators | Publica.la",
@@ -21,6 +22,12 @@ export default function ContentCreatorsPage() {
     <main className="min-h-screen flex flex-col">
       <Navbar />
       <CreatorsHero />
+      <CustomerLogosShowcase
+        title="Trusted by Content Creators"
+        subtitle="Successful creators and educators build their businesses with Publica.la"
+        variant="solution"
+        industry="creators"
+      />
       <CreatorsFeatures />
       <CreatorsFormats />
       <CreatorsMonetization />

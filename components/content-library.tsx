@@ -41,7 +41,7 @@ export function ContentLibrary() {
                     <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
                       <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">Multi-format support</span>
+                    <span className="text-gray-700">Support for EPUB, PDF and Audio.</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
@@ -59,7 +59,7 @@ export function ContentLibrary() {
                     <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
                       <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                     </div>
-                    <span className="text-gray-700">Version control</span>
+                    <span className="text-gray-700">Support for ONIX</span>
                   </div>
                 </div>
               </div>

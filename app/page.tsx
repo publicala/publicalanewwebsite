@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
+import { CustomerLogosShowcase } from "@/components/customer-logos-showcase"
 import { SolutionsSection } from "@/components/solutions-section"
 import { PlatformShowcase } from "@/components/platform-showcase"
 import { ContentLibrary } from "@/components/content-library"
@@ -18,6 +19,7 @@ export default function Home() {
     <main className="min-h-screen flex flex-col">
       <Navbar />
       <HeroSection />
+      <CustomerLogosShowcase />
       <SolutionsSection />
       <PlatformShowcase />
       <ThemeOptions />

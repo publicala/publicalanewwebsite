@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { DollarSign, CreditCard, Calendar, Tag, Gift } from "lucide-react"
 
 export function CreatorsMonetization() {
@@ -80,17 +79,74 @@ export function CreatorsMonetization() {
           </div>
 
           <div className="relative">
-            <div className="relative z-10">
-              <Image
-                src="/images/payment-success.png"
-                alt="Monetization options"
-                width={300}
-                height={600}
-                className="rounded-3xl shadow-xl mx-auto"
-              />
+            <div className="bg-white rounded-3xl shadow-xl p-8 mx-auto max-w-sm">
+              {/* Header */}
+              <div className="bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl p-6 mb-6 text-white text-center">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <DollarSign size={32} className="text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Payment Successful!</h3>
+                <p className="text-green-100">Your earnings are growing</p>
+              </div>
+
+              {/* Earnings Summary */}
+              <div className="space-y-4 mb-6">
+                <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                  <span className="text-gray-600">This Month</span>
+                  <span className="font-bold text-lg">$2,847</span>
+                </div>
+                <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                  <span className="text-gray-600">Total Earnings</span>
+                  <span className="font-bold text-lg text-green-600">$18,392</span>
+                </div>
+              </div>
+
+              {/* Recent Transactions */}
+              <div className="space-y-3">
+                <h4 className="font-semibold text-gray-800 mb-3">Recent Sales</h4>
+
+                <div className="flex items-center gap-3 p-2">
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                    <CreditCard size={16} className="text-blue-600" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium">Digital Course</p>
+                    <p className="text-xs text-gray-500">2 hours ago</p>
+                  </div>
+                  <span className="text-sm font-bold text-green-600">+$97</span>
+                </div>
+
+                <div className="flex items-center gap-3 p-2">
+                  <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
+                    <Calendar size={16} className="text-purple-600" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium">Monthly Subscription</p>
+                    <p className="text-xs text-gray-500">5 hours ago</p>
+                  </div>
+                  <span className="text-sm font-bold text-green-600">+$29</span>
+                </div>
+
+                <div className="flex items-center gap-3 p-2">
+                  <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
+                    <Gift size={16} className="text-orange-600" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium">Bundle Package</p>
+                    <p className="text-xs text-gray-500">1 day ago</p>
+                  </div>
+                  <span className="text-sm font-bold text-green-600">+$149</span>
+                </div>
+              </div>
+
+              {/* Growth Indicator */}
+              <div className="mt-6 p-4 bg-green-50 rounded-lg border border-green-200">
+                <div className="flex items-center gap-2 text-green-700">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-sm font-medium">↗ 23% increase this month</span>
+                </div>
+              </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-green-50 rounded-full z-0"></div>
-            <div className="absolute -top-6 -left-6 w-48 h-48 bg-primary/5 rounded-full z-0"></div>
           </div>
         </div>
       </div>
