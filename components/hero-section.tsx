@@ -4,6 +4,7 @@ import { useState, useMemo } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 import { DemoRequestModal } from "@/components/demo-request-modal"
+import Image from "next/image"
 
 // Array of taglines for A/B testing
 const TAGLINES = [
@@ -81,14 +82,42 @@ export function HeroSection() {
             </div>
             <div className="mt-8 flex items-center gap-2 text-sm text-gray-500">
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 border-2 border-white flex items-center justify-center text-xs font-medium text-white"
-                  >
-                    {i}
-                  </div>
-                ))}
+                <div className="w-8 h-8 rounded-full bg-white border-2 border-white flex items-center justify-center overflow-hidden">
+                  <Image
+                    src="/images/isologos/santillana-iso.png"
+                    alt="Santillana"
+                    width={24}
+                    height={24}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="w-8 h-8 rounded-full bg-white border-2 border-white flex items-center justify-center overflow-hidden">
+                  <Image
+                    src="/images/isologos/penguin-iso.jpeg"
+                    alt="Penguin Random House"
+                    width={24}
+                    height={24}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="w-8 h-8 rounded-full bg-white border-2 border-white flex items-center justify-center overflow-hidden">
+                  <Image
+                    src="/images/isologos/forbes-iso.png"
+                    alt="Forbes"
+                    width={24}
+                    height={24}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="w-8 h-8 rounded-full bg-white border-2 border-white flex items-center justify-center overflow-hidden">
+                  <Image
+                    src="/images/isologos/planeta-iso.gif"
+                    alt="Grupo Planeta"
+                    width={24}
+                    height={24}
+                    className="object-contain"
+                  />
+                </div>
               </div>
               <span>Trusted by 1000+ organizations worldwide</span>
             </div>
