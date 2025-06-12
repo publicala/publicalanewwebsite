@@ -54,12 +54,12 @@ export function CustomerLogosShowcase({
         ]
       default:
         return [
-          { name: "Forbes Colombia", width: 140, height: 60 },
-          { name: "Editorial Hammurabi", width: 130, height: 55 },
-          { name: "Penguin Random House", width: 135, height: 58 },
-          { name: "Planeta Publishing", width: 125, height: 52 },
-          { name: "Alpha Editorial", width: 140, height: 60 },
-          { name: "Marcombo", width: 120, height: 50 },
+          { name: "BajaLibros", src: "/images/logos/bajalibros.png", width: 160, height: 60 },
+          { name: "Penguin Random House", src: "/images/logos/penguin-random-house.png", width: 180, height: 70 },
+          { name: "Grupo Planeta", src: "/images/logos/grupo-planeta.jpeg", width: 170, height: 65 },
+          { name: "La Tercera", src: "/images/logos/la-tercera.png", width: 140, height: 50 },
+          { name: "Santillana", src: "/images/logos/santillana.png", width: 160, height: 60 },
+          { name: "Forbes", src: "/images/logos/forbes.png", width: 120, height: 45 },
         ]
     }
   }
@@ -87,7 +87,10 @@ export function CustomerLogosShowcase({
               className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
             >
               <Image
-                src={`/placeholder.svg?height=${logo.height}&width=${logo.width}&text=${encodeURIComponent(logo.name)}`}
+                src={
+                  logo.src ||
+                  `/placeholder.svg?height=${logo.height}&width=${logo.width}&text=${encodeURIComponent(logo.name)}`
+                }
                 alt={`${logo.name} logo`}
                 width={logo.width}
                 height={logo.height}
