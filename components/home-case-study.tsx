@@ -2,8 +2,9 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Quote, ArrowRight, Building2, TrendingUp, Users, BookOpen } from "lucide-react"
+import { Quote, ArrowRight, TrendingUp, Users, BookOpen } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function HomeCaseStudy() {
   return (
@@ -19,9 +20,15 @@ export function HomeCaseStudy() {
           <div className="space-y-6">
             <Card className="border border-gray-200 bg-white">
               <CardContent className="p-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center">
-                    <Building2 className="h-8 w-8 text-white" />
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 flex-shrink-0 rounded-lg bg-black flex items-center justify-center overflow-hidden">
+                    <Image
+                      src="/images/logos/hammurabi-logo.png"
+                      alt="Hammurabi Logo"
+                      width={64}
+                      height={64}
+                      className="w-full h-auto object-contain"
+                    />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold">Editorial Hammurabi</h3>

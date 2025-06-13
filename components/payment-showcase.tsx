@@ -152,44 +152,88 @@ export function PaymentShowcase() {
                   <TrendingUp className="h-5 w-5 text-green-500" />
                 </div>
 
-                {/* Chart */}
+                {/* Chart - Line Chart */}
                 <div className="mb-4">
                   <div className="relative h-40 bg-gradient-to-t from-gray-50 to-white rounded-lg p-4">
-                    <div className="flex items-end gap-3 h-32">
+                    {/* Line Chart */}
+                    <div className="relative h-32">
+                      {/* Grid lines */}
+                      {[0, 1, 2, 3].map((line) => (
+                        <div
+                          key={line}
+                          className="absolute w-full border-t border-gray-200/60"
+                          style={{ bottom: `${line * 33.33}%` }}
+                        ></div>
+                      ))}
+
+                      {/* Line chart */}
+                      <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
+                        {/* Line path */}
+                        <path
+                          d={`M ${revenueData
+                            .map(
+                              (data, i) =>
+                                `${(i / (revenueData.length - 1)) * 100}% ${100 - (data.amount / maxRevenue) * 100}%`,
+                            )
+                            .join(" L ")}`}
+                          fill="none"
+                          stroke="url(#blue-gradient)"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          vectorEffect="non-scaling-stroke"
+                        />
+
+                        {/* Area under the line */}
+                        <path
+                          d={`M 0 100% L ${revenueData
+                            .map(
+                              (data, i) =>
+                                `${(i / (revenueData.length - 1)) * 100}% ${100 - (data.amount / maxRevenue) * 100}%`,
+                            )
+                            .join(" L ")} L 100% 100% Z`}
+                          fill="url(#area-gradient)"
+                          opacity="0.2"
+                        />
+
+                        {/* Gradient definitions */}
+                        <defs>
+                          <linearGradient id="blue-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stopColor="#3b82f6" />
+                            <stop offset="100%" stopColor="#60a5fa" />
+                          </linearGradient>
+                          <linearGradient id="area-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stopColor="#3b82f6" />
+                            <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+
+                      {/* Data points */}
                       {revenueData.map((data, i) => (
-                        <div key={data.month} className="flex-1 flex flex-col items-center gap-2">
-                          <div className="relative w-full">
-                            <div
-                              className="w-full bg-gradient-to-t from-blue-600 via-blue-500 to-blue-400 rounded-t-lg shadow-sm transition-all duration-300 hover:shadow-md"
-                              style={{ height: `${(data.amount / maxRevenue) * 100}%` }}
-                            >
-                              <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white/20 rounded-t-lg"></div>
-                            </div>
-                            {/* Value label on hover */}
-                            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 hover:opacity-100 transition-opacity duration-200 pointer-events-none">
-                              ${(data.amount / 1000).toFixed(1)}K
-                            </div>
+                        <div
+                          key={data.month}
+                          className="absolute flex flex-col items-center"
+                          style={{
+                            left: `${(i / (revenueData.length - 1)) * 100}%`,
+                            bottom: `${(data.amount / maxRevenue) * 100}%`,
+                            transform: "translate(-50%, 50%)",
+                          }}
+                        >
+                          <div className="w-3 h-3 bg-white border-2 border-blue-500 rounded-full shadow-sm z-10"></div>
+                          <div className="absolute -bottom-8 text-xs font-medium text-gray-600">{data.month}</div>
+
+                          {/* Value tooltip */}
+                          <div className="absolute -top-8 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                            ${(data.amount / 1000).toFixed(1)}K
                           </div>
-                          <div className="text-xs font-medium text-gray-600">{data.month}</div>
                         </div>
                       ))}
                     </div>
-                    {/* Grid lines */}
-                    <div className="absolute inset-4 pointer-events-none">
-                      {[25, 50, 75].map((percent) => (
-                        <div
-                          key={percent}
-                          className="absolute w-full border-t border-gray-200/60"
-                          style={{ bottom: `${percent}%` }}
-                        ></div>
-                      ))}
-                    </div>
+
                     {/* Y-axis labels */}
                     <div className="absolute left-0 top-4 bottom-4 flex flex-col justify-between text-xs text-gray-500">
                       <span>${Math.round(maxRevenue / 1000)}K</span>
-                      <span>${Math.round((maxRevenue * 0.75) / 1000)}K</span>
                       <span>${Math.round((maxRevenue * 0.5) / 1000)}K</span>
-                      <span>${Math.round((maxRevenue * 0.25) / 1000)}K</span>
                       <span>$0</span>
                     </div>
                   </div>

@@ -105,6 +105,11 @@
   .gradient-text {
     @apply bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent;
   }
+
+  /* Add this to hide scrollbars */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @keyframes fadeInUp {

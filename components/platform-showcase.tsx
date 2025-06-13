@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
-import { BookOpen, Palette, BarChart3, Shield, Globe, Zap } from "lucide-react"
+import { BookOpen, BarChart3, Shield, Globe } from "lucide-react"
 
 const features = [
   {
@@ -11,13 +11,6 @@ const features = [
     description: "Organize and manage your digital library with powerful tools",
     icon: BookOpen,
     color: "blue",
-  },
-  {
-    id: "customization",
-    title: "Brand Customization",
-    description: "Create a unique branded experience for your readers",
-    icon: Palette,
-    color: "purple",
   },
   {
     id: "analytics",
@@ -39,13 +32,6 @@ const features = [
     description: "Reach readers worldwide with our distribution network",
     icon: Globe,
     color: "indigo",
-  },
-  {
-    id: "performance",
-    title: "Lightning Fast",
-    description: "Optimized for speed and performance across all devices",
-    icon: Zap,
-    color: "yellow",
   },
 ]
 
@@ -137,38 +123,6 @@ export function PlatformShowcase() {
                       </div>
                     )}
 
-                    {activeFeature === "customization" && (
-                      <div className="space-y-4">
-                        <div className="grid grid-cols-3 gap-3">
-                          <div className="bg-purple-100 p-3 rounded-lg text-center">
-                            <div className="w-full h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded mb-2"></div>
-                            <div className="text-xs text-purple-700">Purple</div>
-                          </div>
-                          <div className="bg-blue-100 p-3 rounded-lg text-center">
-                            <div className="w-full h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded mb-2"></div>
-                            <div className="text-xs text-blue-700">Blue</div>
-                          </div>
-                          <div className="bg-green-100 p-3 rounded-lg text-center">
-                            <div className="w-full h-16 bg-gradient-to-br from-green-400 to-green-600 rounded mb-2"></div>
-                            <div className="text-xs text-green-700">Green</div>
-                          </div>
-                        </div>
-                        <div className="bg-gray-50 p-4 rounded-lg">
-                          <div className="h-4 bg-purple-200 rounded w-1/3 mb-3"></div>
-                          <div className="space-y-2">
-                            <div className="flex gap-2">
-                              <div className="w-4 h-4 bg-purple-500 rounded"></div>
-                              <div className="h-3 bg-gray-200 rounded flex-1"></div>
-                            </div>
-                            <div className="flex gap-2">
-                              <div className="w-4 h-4 bg-purple-300 rounded"></div>
-                              <div className="h-3 bg-gray-200 rounded flex-1"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-
                     {activeFeature === "analytics" && (
                       <div className="space-y-4">
                         <div className="bg-green-50 p-4 rounded-lg border border-green-100">
@@ -196,9 +150,7 @@ export function PlatformShowcase() {
                       </div>
                     )}
 
-                    {(activeFeature === "security" ||
-                      activeFeature === "distribution" ||
-                      activeFeature === "performance") && (
+                    {(activeFeature === "security" || activeFeature === "distribution") && (
                       <div className="space-y-4">
                         <div className="grid grid-cols-1 gap-3">
                           {[1, 2, 3].map((i) => (
