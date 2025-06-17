@@ -1,42 +1,47 @@
-import { FileText, Users, BarChart3, Smartphone, Globe, Shield } from "lucide-react"
+import { FileText, Globe, Smartphone, BarChart3, DollarSign, Zap } from "lucide-react"
 
 export function MagazinesNewspapersFeatures() {
   const features = [
     {
       icon: FileText,
-      title: "Editorial Workflow",
-      description: "Streamlined content editing and approval process with collaborative tools for your editorial team.",
+      title: "Digital ePaper Creation",
+      description:
+        "Transform your printed magazine or newspaper into an exact digital replica with all original formatting preserved.",
       color: "blue",
     },
     {
-      icon: Globe,
-      title: "Multi-Platform Publishing",
-      description: "Publish simultaneously across web, mobile apps, print, and social media from a single platform.",
+      icon: Smartphone,
+      title: "Mobile-Ready Experience",
+      description:
+        "Your ePaper automatically adapts to all devices with Smart Zoom technology for optimal reading on any screen.",
       color: "green",
     },
     {
-      icon: Users,
-      title: "Subscriber Management",
-      description: "Comprehensive subscription management with flexible pricing, access control, and reader analytics.",
+      icon: Globe,
+      title: "Global Distribution",
+      description:
+        "Reach subscribers worldwide without geographical limits. Secure connections to your audience anywhere.",
       color: "purple",
     },
     {
-      icon: BarChart3,
-      title: "Performance Analytics",
-      description: "Real-time insights into article performance, reader engagement, and revenue optimization.",
+      icon: DollarSign,
+      title: "Revenue Expansion",
+      description:
+        "Maximize revenue by reaching more people with your ePaper content and flexible subscription models.",
       color: "orange",
     },
     {
-      icon: Smartphone,
-      title: "Mobile-First Design",
-      description: "Responsive design ensures your content looks perfect on all devices and screen sizes.",
+      icon: BarChart3,
+      title: "Real-Time Analytics",
+      description:
+        "Access comprehensive analytics of your store performance and understand your readers' behavior patterns.",
       color: "pink",
     },
     {
-      icon: Shield,
-      title: "Content Security",
+      icon: Zap,
+      title: "Marketplace Integration",
       description:
-        "Advanced DRM protection and access controls to secure your premium content and intellectual property.",
+        "Add your catalog to publica.la's marketplace so other publishers can promote and sell your publications.",
       color: "indigo",
     },
   ]
@@ -58,11 +63,11 @@ export function MagazinesNewspapersFeatures() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Everything You Need for Modern Publishing
+            Everything You Need for Digital Publishing Success
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From content management to reader engagement, our platform provides all the tools magazines and newspapers
-            need to thrive in the digital age.
+            With publica.la, magazines and newspapers gain more readers by transforming their printed editions into
+            engaging digital ePapers.
           </p>
         </div>
 

@@ -27,9 +27,9 @@ const features = [
     color: "red",
   },
   {
-    id: "distribution",
-    title: "Global Distribution",
-    description: "Reach readers worldwide with our distribution network",
+    id: "sales",
+    title: "Global Sales",
+    description: "Reach readers worldwide with our global payments infrastructure.",
     icon: Globe,
     color: "indigo",
   },
@@ -150,26 +150,72 @@ export function PlatformShowcase() {
                       </div>
                     )}
 
-                    {(activeFeature === "security" || activeFeature === "distribution") && (
+                    {(activeFeature === "security" || activeFeature === "sales") && (
                       <div className="space-y-4">
-                        <div className="grid grid-cols-1 gap-3">
-                          {[1, 2, 3].map((i) => (
-                            <div key={i} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                              <div
-                                className={`w-8 h-8 rounded-full bg-gradient-to-br ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[0]} ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[1]} flex items-center justify-center`}
-                              >
-                                <div className="w-3 h-3 bg-white rounded-full"></div>
+                        {activeFeature === "sales" ? (
+                          // Sales-specific content
+                          <div className="space-y-4">
+                            <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-100">
+                              <div className="grid grid-cols-3 gap-4 mb-4">
+                                <div className="text-center">
+                                  <div className="text-2xl font-bold text-indigo-600">$2.4M</div>
+                                  <div className="text-sm text-indigo-700">Global Revenue</div>
+                                </div>
+                                <div className="text-center">
+                                  <div className="text-2xl font-bold text-green-600">156</div>
+                                  <div className="text-sm text-green-700">Countries</div>
+                                </div>
+                                <div className="text-center">
+                                  <div className="text-2xl font-bold text-blue-600">24</div>
+                                  <div className="text-sm text-blue-700">Currencies</div>
+                                </div>
                               </div>
-                              <div className="flex-1">
-                                <div className="h-3 bg-gray-300 rounded w-3/4 mb-1"></div>
-                                <div className="h-2 bg-gray-200 rounded w-1/2"></div>
-                              </div>
-                              <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                                <div className="w-2 h-2 bg-white rounded-full"></div>
+                              <div className="text-sm text-indigo-700 text-center">
+                                Multi-currency payment processing
                               </div>
                             </div>
-                          ))}
-                        </div>
+                            <div className="grid grid-cols-2 gap-3">
+                              <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
+                                  <div className="w-3 h-3 bg-white rounded-full"></div>
+                                </div>
+                                <div className="flex-1">
+                                  <div className="text-sm font-medium">Credit Cards</div>
+                                  <div className="text-xs text-gray-600">Visa, Mastercard, Amex</div>
+                                </div>
+                              </div>
+                              <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
+                                  <div className="w-3 h-3 bg-white rounded-full"></div>
+                                </div>
+                                <div className="flex-1">
+                                  <div className="text-sm font-medium">Digital Wallets</div>
+                                  <div className="text-xs text-gray-600">PayPal, Apple Pay, Google Pay</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        ) : (
+                          // Security content (keep existing)
+                          <div className="grid grid-cols-1 gap-3">
+                            {[1, 2, 3].map((i) => (
+                              <div key={i} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                                <div
+                                  className={`w-8 h-8 rounded-full bg-gradient-to-br ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[0]} ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[1]} flex items-center justify-center`}
+                                >
+                                  <div className="w-3 h-3 bg-white rounded-full"></div>
+                                </div>
+                                <div className="flex-1">
+                                  <div className="h-3 bg-gray-300 rounded w-3/4 mb-1"></div>
+                                  <div className="h-2 bg-gray-200 rounded w-1/2"></div>
+                                </div>
+                                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                  <div className="w-2 h-2 bg-white rounded-full"></div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>

@@ -4,7 +4,6 @@ import { CustomerLogosShowcase } from "@/components/customer-logos-showcase"
 import { SolutionsSection } from "@/components/solutions-section"
 import { PlatformShowcase } from "@/components/platform-showcase"
 import { ContentLibrary } from "@/components/content-library"
-import { ThemeOptions } from "@/components/theme-options"
 import { PaymentShowcase } from "@/components/payment-showcase"
 import { AnalyticsDashboard } from "@/components/analytics-dashboard"
 import { FeaturesSection } from "@/components/features-section"
@@ -22,7 +21,6 @@ export default function Home() {
       <CustomerLogosShowcase />
       <SolutionsSection />
       <PlatformShowcase />
-      <ThemeOptions />
       <ContentLibrary />
       <PaymentShowcase />
       <HomeCaseStudy />

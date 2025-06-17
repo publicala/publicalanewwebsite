@@ -22,16 +22,16 @@ export function MagazinesNewspapersHero() {
                 For Magazines & Newspapers
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Transform Your
+                Gain Visibility with
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                   {" "}
-                  Editorial{" "}
+                  An ePaper{" "}
                 </span>
-                Workflow
+                Of Your Publication
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Streamline your digital publishing process with our comprehensive platform designed for modern magazines
-                and newspapers. From content management to reader engagement.
+                Transform your printed magazine or newspaper into a digital replica that's mobile-ready and available to
+                subscribers worldwide. Connect with your audience securely anywhere in the world.
               </p>
             </div>
 
@@ -40,7 +40,7 @@ export function MagazinesNewspapersHero() {
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
               >
-                Start Publishing
+                Get Started For Free
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button
@@ -48,38 +48,35 @@ export function MagazinesNewspapersHero() {
                 size="lg"
                 className="border-2 border-gray-300 hover:border-blue-500 px-8 py-3 rounded-lg font-semibold transition-all duration-200"
               >
-                View Demo
+                Request a Demo
               </Button>
             </div>
 
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900">500+</div>
-                <div className="text-sm text-gray-600">Publications</div>
+                <div className="text-2xl font-bold text-gray-900">400+</div>
+                <div className="text-sm text-gray-600">Customers</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900">50M+</div>
-                <div className="text-sm text-gray-600">Monthly Readers</div>
+                <div className="text-2xl font-bold text-gray-900">2M+</div>
+                <div className="text-sm text-gray-600">Users</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-gray-900">99.9%</div>
-                <div className="text-sm text-gray-600">Uptime</div>
+                <div className="text-2xl font-bold text-gray-900">1.8M+</div>
+                <div className="text-sm text-gray-600">Titles</div>
               </div>
             </div>
           </div>
 
-          {/* YouTube Video Embed */}
+          {/* ePaper Preview */}
           <div className="relative">
             <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
               <div className="aspect-video">
-                <iframe
-                  src="https://www.youtube.com/embed/ULZaZTvsUQs"
-                  title="Publica.la Platform Overview"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
+                <img
+                  src="https://sjc.microlink.io/Dt8GXBWg4buBfVDOlXUE7M5Vdfm2woqsEzoptgJ63ggnL7Bg02LZEvC8hvrltAvHp21IkZZdj6BiLcCCYwunow.jpeg"
+                  alt="publica.la ePaper Platform Preview"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

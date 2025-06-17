@@ -1,6 +1,5 @@
 import type React from "react"
 import { CheckCircle } from "lucide-react"
-import { Book } from "lucide-react"
 
 export function BookshopsDigitalInventory() {
   return (
@@ -57,18 +56,78 @@ export function BookshopsDigitalInventory() {
           </div>
 
           <div className="relative">
-            <div className="grid grid-cols-3 gap-4 bg-white rounded-lg shadow-xl p-6">
-              {Array.from({ length: 9 }).map((_, index) => (
-                <div key={index} className="flex items-center justify-center p-4 border rounded-md">
-                  <Book className="h-6 w-6 text-primary" />
-                </div>
-              ))}
+            <div className="bg-white rounded-lg shadow-xl p-6 overflow-hidden">
+              <div className="grid grid-cols-3 gap-3 mb-4">
+                {/* Row 1 - Popular Fiction */}
+                <img
+                  src="/placeholder.svg?height=120&width=80"
+                  alt="Popular Fiction"
+                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
+                />
+                <img
+                  src="/placeholder.svg?height=120&width=80"
+                  alt="Romance Novel"
+                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
+                />
+                <img
+                  src="/placeholder.svg?height=120&width=80"
+                  alt="Mystery Thriller"
+                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
+                />
+
+                {/* Row 2 - Non-Fiction */}
+                <img
+                  src="/placeholder.svg?height=120&width=80"
+                  alt="Business Book"
+                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
+                />
+                <img
+                  src="/placeholder.svg?height=120&width=80"
+                  alt="Self Help"
+                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
+                />
+                <img
+                  src="/placeholder.svg?height=120&width=80"
+                  alt="Cookbook"
+                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
+                />
+
+                {/* Row 3 - Classics & Literature */}
+                <img
+                  src="/placeholder.svg?height=120&width=80"
+                  alt="Classic Literature"
+                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
+                />
+                <img
+                  src="/placeholder.svg?height=120&width=80"
+                  alt="Science Fiction"
+                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
+                />
+                <img
+                  src="/placeholder.svg?height=120&width=80"
+                  alt="Fantasy"
+                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
+                />
+              </div>
+
+              {/* Format indicators */}
+              <div className="flex justify-center gap-4 text-xs text-gray-500">
+                <span className="flex items-center gap-1">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                  eBooks
+                </span>
+                <span className="flex items-center gap-1">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  Audiobooks
+                </span>
+              </div>
             </div>
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/5 rounded-full z-0"></div>
             <div className="absolute -top-6 -right-6 w-48 h-48 bg-primary/5 rounded-full z-0"></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">
-              <div className="text-2xl font-bold text-primary">1,257</div>
-              <div className="text-sm text-gray-500">Titles Available</div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg">
+              <div className="text-3xl font-bold text-primary">2,000,000+</div>
+              <div className="text-sm text-gray-600 font-medium">Titles Available</div>
+              <div className="text-xs text-gray-500 mt-1">eBooks & Audiobooks</div>
             </div>
           </div>
         </div>
