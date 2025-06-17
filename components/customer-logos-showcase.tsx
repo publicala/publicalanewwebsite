@@ -23,8 +23,12 @@ export function CustomerLogosShowcase({
   const [showLeftArrow, setShowLeftArrow] = useState(false)
   const [showRightArrow, setShowRightArrow] = useState(true)
   const [isPaused, setIsPaused] = useState(false)
-  const autoScrollTimerRef = useRef<NodeJS.Timeout | null>(null)
+
+  // Single refs for managing animation
+  const animationFrameRef = useRef<number | null>(null)
+  const pauseTimeoutRef = useRef<NodeJS.Timeout | null>(null)
   const scrollingRef = useRef(false)
+  const lastScrollTimeRef = useRef(0)
 
   // Define logo sets based on industry/context
   const getLogos = () => {
@@ -80,8 +84,6 @@ export function CustomerLogosShowcase({
   }
 
   const logos = getLogos()
-
-  // Duplicate logos to create a seamless loop effect
   const displayLogos = [...logos, ...logos]
 
   // Check scroll position to show/hide arrows
@@ -93,7 +95,69 @@ export function CustomerLogosShowcase({
     setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 20)
   }
 
-  // Scroll functions with debounce to prevent conflicts
+  // Clean up all timers and animations
+  const cleanup = () => {
+    if (animationFrameRef.current) {
+      cancelAnimationFrame(animationFrameRef.current)
+      animationFrameRef.current = null
+    }
+    if (pauseTimeoutRef.current) {
+      clearTimeout(pauseTimeoutRef.current)
+      pauseTimeoutRef.current = null
+    }
+  }
+
+  // Improved auto-scroll with proper cleanup
+  const startAutoScroll = () => {
+    // Clean up any existing animation
+    cleanup()
+
+    if (isPaused) return
+
+    const scrollSpeed = 0.5 // pixels per frame (much slower and consistent)
+
+    const animate = () => {
+      if (isPaused || !carouselRef.current) return
+
+      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current
+
+      // Reset to beginning when we reach halfway point
+      if (scrollLeft >= scrollWidth / 2) {
+        carouselRef.current.scrollLeft = 0
+      } else {
+        carouselRef.current.scrollLeft += scrollSpeed
+      }
+
+      checkScrollPosition()
+
+      // Schedule next frame only if not paused
+      if (!isPaused) {
+        animationFrameRef.current = requestAnimationFrame(animate)
+      }
+    }
+
+    animationFrameRef.current = requestAnimationFrame(animate)
+  }
+
+  // Pause auto-scroll with timeout to resume
+  const pauseAutoScroll = () => {
+    setIsPaused(true)
+    cleanup()
+
+    // Clear any existing pause timeout
+    if (pauseTimeoutRef.current) {
+      clearTimeout(pauseTimeoutRef.current)
+    }
+
+    // Resume after 3 seconds of inactivity
+    pauseTimeoutRef.current = setTimeout(() => {
+      if (!scrollingRef.current) {
+        setIsPaused(false)
+      }
+    }, 3000)
+  }
+
+  // Manual scroll functions
   const scrollLeft = () => {
     if (!carouselRef.current || scrollingRef.current) return
 
@@ -106,6 +170,9 @@ export function CustomerLogosShowcase({
     setTimeout(() => {
       scrollingRef.current = false
       checkScrollPosition()
+      if (!isPaused) {
+        startAutoScroll()
+      }
     }, 500)
   }
 
@@ -121,73 +188,34 @@ export function CustomerLogosShowcase({
     setTimeout(() => {
       scrollingRef.current = false
       checkScrollPosition()
+      if (!isPaused) {
+        startAutoScroll()
+      }
     }, 500)
   }
 
-  // Improved auto-scroll functionality
-  const startAutoScroll = () => {
-    if (autoScrollTimerRef.current) clearInterval(autoScrollTimerRef.current)
-
-    setIsPaused(false)
-
-    // Use requestAnimationFrame for smoother animation
-    let lastTimestamp = 0
-    const scrollSpeed = 0.12 // pixels per millisecond (significantly reduced)
-
-    const scroll = (timestamp: number) => {
-      if (isPaused) return
-
-      if (!carouselRef.current) return
-
-      if (lastTimestamp) {
-        const elapsed = timestamp - lastTimestamp
-        const scrollAmount = scrollSpeed * elapsed
-
-        const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current
-
-        // Reset to beginning when we reach halfway point (since we duplicated the logos)
-        if (scrollLeft >= scrollWidth / 2) {
-          carouselRef.current.scrollLeft = 0
-        } else {
-          carouselRef.current.scrollLeft += scrollAmount
-        }
-
-        checkScrollPosition()
-      }
-
-      lastTimestamp = timestamp
-
-      if (!isPaused) {
-        requestAnimationFrame(scroll)
-      }
-    }
-
-    requestAnimationFrame(scroll)
-  }
-
-  const pauseAutoScroll = () => {
-    setIsPaused(true)
-
-    // Restart after 5 seconds of inactivity
-    setTimeout(() => {
-      if (!scrollingRef.current) {
-        startAutoScroll()
-      }
-    }, 5000)
-  }
-
-  // Initialize auto-scroll and cleanup
+  // Initialize auto-scroll
   useEffect(() => {
-    // Short delay before starting to ensure component is fully rendered
     const timer = setTimeout(() => {
-      startAutoScroll()
+      setIsPaused(false)
     }, 1000)
 
     return () => {
       clearTimeout(timer)
-      if (autoScrollTimerRef.current) clearInterval(autoScrollTimerRef.current)
+      cleanup()
     }
   }, [])
+
+  // Start/stop auto-scroll based on isPaused state
+  useEffect(() => {
+    if (!isPaused) {
+      startAutoScroll()
+    } else {
+      cleanup()
+    }
+
+    return cleanup
+  }, [isPaused])
 
   // Add scroll event listener
   useEffect(() => {
@@ -199,7 +227,7 @@ export function CustomerLogosShowcase({
     }
 
     carousel.addEventListener("scroll", handleScroll)
-    checkScrollPosition() // Initial check
+    checkScrollPosition()
 
     return () => {
       carousel.removeEventListener("scroll", handleScroll)
@@ -231,25 +259,25 @@ export function CustomerLogosShowcase({
             <ChevronLeft className="h-6 w-6 text-gray-600" />
           </button>
 
-          {/* Carousel container - fixed height to prevent tilting */}
+          {/* Carousel container */}
           <div
             ref={carouselRef}
             className="flex overflow-x-auto scrollbar-hide gap-8 py-4 px-2"
             style={{
               scrollbarWidth: "none",
               msOverflowStyle: "none",
-              height: "120px", // Fixed height to prevent tilting
+              height: "120px",
             }}
             onMouseEnter={() => pauseAutoScroll()}
-            onMouseLeave={() => startAutoScroll()}
+            onMouseLeave={() => setIsPaused(false)}
             onTouchStart={() => pauseAutoScroll()}
-            onTouchEnd={() => startAutoScroll()}
+            onTouchEnd={() => setIsPaused(false)}
           >
             {displayLogos.map((logo, index) => (
               <div
                 key={index}
                 className="flex-none flex items-center justify-center p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 min-w-[200px] h-[100px]"
-                style={{ transform: "translateZ(0)" }} // Force GPU acceleration
+                style={{ transform: "translateZ(0)" }}
               >
                 <Image
                   src={
