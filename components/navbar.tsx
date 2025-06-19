@@ -15,6 +15,7 @@ import {
 import { cn } from "@/lib/utils"
 import { useState } from "react"
 import { Menu, X, ChevronDown } from "lucide-react"
+import { CalendlyButton } from "@/components/calendly-button"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -102,11 +103,9 @@ export function Navbar() {
           <Button variant="outline" asChild size="sm" className="rounded-md font-medium">
             <Link href="/login">Log In</Link>
           </Button>
-          <Button asChild size="sm" className="rounded-md font-medium">
-            <a href="https://app.publica.la/platform/sign-up/register/" target="_blank" rel="noopener noreferrer">
-              Start Now
-            </a>
-          </Button>
+          <CalendlyButton size="sm" className="rounded-md font-medium">
+            Start Now
+          </CalendlyButton>
         </div>
       </div>
 
@@ -160,11 +159,9 @@ export function Navbar() {
               <Button variant="outline" asChild size="sm" className="rounded-md w-full">
                 <Link href="/login">Log In</Link>
               </Button>
-              <Button asChild size="sm" className="rounded-md w-full">
-                <a href="https://app.publica.la/platform/sign-up/register/" target="_blank" rel="noopener noreferrer">
-                  Start Now
-                </a>
-              </Button>
+              <CalendlyButton size="sm" className="rounded-md w-full">
+                Start Now
+              </CalendlyButton>
             </div>
           </nav>
         </div>

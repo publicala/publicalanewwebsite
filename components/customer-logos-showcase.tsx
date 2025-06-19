@@ -35,18 +35,18 @@ export function CustomerLogosShowcase({
     switch (industry) {
       case "publishers":
         return [
-          { name: "Major Publisher 1", width: 140, height: 60 },
-          { name: "Academic Press", width: 120, height: 50 },
-          { name: "Independent Publisher", width: 130, height: 55 },
-          { name: "Educational Publisher", width: 135, height: 58 },
-          { name: "Trade Publisher", width: 125, height: 52 },
+          { name: "Penguin Random House", src: "/images/logos/penguin-random-house.png", width: 180, height: 70 },
+          { name: "Grupo Planeta", src: "/images/logos/grupo-planeta.jpeg", width: 170, height: 65 },
+          { name: "Santillana", src: "/images/logos/santillana.png", width: 160, height: 60 },
+          { name: "SAGA Egmont", src: "/images/logos/saga-egmont.webp", width: 160, height: 70 },
         ]
       case "bookshops":
         return [
-          { name: "Independent Bookstore", width: 130, height: 55 },
-          { name: "Chain Bookstore", width: 140, height: 60 },
-          { name: "Online Bookshop", width: 120, height: 50 },
-          { name: "Specialty Bookstore", width: 135, height: 58 },
+          { name: "BajaLibros", src: "/images/logos/bajalibros.png", width: 160, height: 60 },
+          { name: "Antártica Libros", src: "/images/logos/antartica-libros.png", width: 180, height: 70 },
+          { name: "Bookshop", src: "/images/logos/bookshop.png", width: 140, height: 50 },
+          { name: "Sanborns", src: "/images/logos/sanborns.webp", width: 150, height: 55 },
+          { name: "Christianbook", src: "/images/logos/christianbook.png", width: 180, height: 65 },
         ]
       case "creators":
         return [
@@ -64,10 +64,8 @@ export function CustomerLogosShowcase({
         ]
       case "magazines":
         return [
-          { name: "News Magazine", width: 130, height: 55 },
-          { name: "Trade Publication", width: 140, height: 60 },
-          { name: "Digital Magazine", width: 125, height: 52 },
-          { name: "Industry Journal", width: 135, height: 58 },
+          { name: "Forbes", src: "/images/logos/forbes.png", width: 120, height: 45 },
+          { name: "La Tercera", src: "/images/logos/la-tercera.png", width: 140, height: 50 },
         ]
       default:
         return [
@@ -79,6 +77,9 @@ export function CustomerLogosShowcase({
           { name: "Forbes", src: "/images/logos/forbes.png", width: 120, height: 45 },
           { name: "Christianbook", src: "/images/logos/christianbook.png", width: 180, height: 65 },
           { name: "SAGA Egmont", src: "/images/logos/saga-egmont.webp", width: 160, height: 70 },
+          { name: "Antártica Libros", src: "/images/logos/antartica-libros.png", width: 180, height: 70 },
+          { name: "Bookshop", src: "/images/logos/bookshop.png", width: 140, height: 50 },
+          { name: "Sanborns", src: "/images/logos/sanborns.webp", width: 150, height: 55 },
         ]
     }
   }

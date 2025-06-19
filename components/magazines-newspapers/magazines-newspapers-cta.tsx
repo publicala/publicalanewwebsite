@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, CheckCircle, FileText, Users, BarChart3 } from "lucide-react"
+import { CheckCircle, FileText, Users, BarChart3 } from "lucide-react"
+import { CalendlyButton } from "@/components/calendly-button"
 
 export function MagazinesNewspapersCta() {
   const benefits = [
@@ -46,13 +47,12 @@ export function MagazinesNewspapersCta() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
+              <CalendlyButton
                 className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+                size="lg"
               >
-                Get Started For Free
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+                Schedule a Meeting
+              </CalendlyButton>
               <Button
                 variant="outline"
                 size="lg"

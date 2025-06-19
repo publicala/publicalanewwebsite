@@ -4,10 +4,11 @@ import type React from "react"
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, Globe, TrendingUp, Star, Sparkles } from "lucide-react"
+import { Users, Globe, TrendingUp, Star, Sparkles } from "lucide-react"
 import { DemoRequestModal } from "@/components/demo-request-modal"
 import { StatsCard } from "@/components/ui/stats-card"
 import { AnimatedBackground } from "@/components/ui/animated-background"
+import { CalendlyButton } from "@/components/calendly-button"
 
 const stats = [
   { icon: Users, value: "1000+", label: "Organizations", color: "blue" as const },
@@ -58,23 +59,20 @@ export function CTASection() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              asChild
+            <CalendlyButton
               size="lg"
               className="text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
+              showArrow={true}
             >
-              <a href="https://app.publica.la/platform/sign-up/register/" target="_blank" rel="noopener noreferrer">
-                Get Started
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </a>
-            </Button>
+              Schedule a Meeting
+            </CalendlyButton>
             <Button
               variant="outline"
               size="lg"
               className="text-lg px-8 py-6 rounded-xl border-2 hover:bg-gray-50 transition-all duration-300"
               onClick={() => setIsDemoModalOpen(true)}
             >
-              Schedule a Demo
+              Watch Demo
             </Button>
           </div>
 

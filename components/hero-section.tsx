@@ -2,9 +2,10 @@
 
 import { useState, useMemo } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Play, Sparkles } from "lucide-react"
+import { Play, Sparkles } from "lucide-react"
 import { DemoRequestModal } from "@/components/demo-request-modal"
 import { AnimatedBackground } from "@/components/ui/animated-background"
+import { CalendlyButton } from "@/components/calendly-button"
 import Image from "next/image"
 
 // Array of taglines for A/B testing
@@ -68,16 +69,13 @@ export function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                asChild
+              <CalendlyButton
                 size="lg"
                 className="rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 group"
+                showArrow={true}
               >
-                <a href="https://app.publica.la/platform/sign-up/register/" target="_blank" rel="noopener noreferrer">
-                  Get Started
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </a>
-              </Button>
+                Schedule a Meeting
+              </CalendlyButton>
               <Button
                 variant="outline"
                 size="lg"

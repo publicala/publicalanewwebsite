@@ -7,24 +7,27 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Publica.la - Transform Your Content into Digital Success",
+  title: "publica.la - Digital Publishing Platform for Modern Publishers",
   description:
-    "The most robust and dynamic digital content platform for publishers, bookshops, magazines, newspapers, content creators, and libraries. Transform printed content into engaging digital experiences with ePaper technology, global distribution, and AI-powered insights.",
+    "Transform your printed content into engaging digital experiences with publica.la. The leading ePaper platform trusted by 400+ publishers, bookshops, magazines, and newspapers worldwide. Features Smart Zoom technology, global distribution, AI-powered insights, and seamless monetization tools.",
   keywords: [
+    "publica.la",
     "digital publishing platform",
     "ePaper technology",
     "digital content management",
-    "online bookstore",
+    "online bookstore platform",
     "digital magazines",
+    "newspaper digitization",
     "content monetization",
     "publishing analytics",
     "global distribution",
     "digital transformation",
-    "publica.la",
+    "Smart Zoom reader",
+    "publishing marketplace",
   ],
-  authors: [{ name: "Publica.la" }],
-  creator: "Publica.la",
-  publisher: "Publica.la",
+  authors: [{ name: "publica.la" }],
+  creator: "publica.la",
+  publisher: "publica.la",
   robots: {
     index: true,
     follow: true,
@@ -40,25 +43,25 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://publica.la",
-    siteName: "Publica.la",
-    title: "Publica.la - Transform Your Content into Digital Success",
+    siteName: "publica.la",
+    title: "publica.la - Transform Print to Digital Success",
     description:
-      "The most robust and dynamic digital content platform for publishers, bookshops, magazines, newspapers, content creators, and libraries. Join 400+ customers and 2M+ users worldwide.",
+      "The most robust ePaper platform for publishers worldwide. Transform printed magazines, newspapers, and books into engaging digital experiences. Trusted by 400+ customers across 45 countries with 2M+ active users.",
     images: [
       {
-        url: "/images/hero-desktop.png",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Publica.la Digital Content Platform",
+        alt: "publica.la - Digital Publishing Platform Homepage",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Publica.la - Transform Your Content into Digital Success",
+    title: "publica.la - Transform Print to Digital Success",
     description:
-      "The most robust and dynamic digital content platform for publishers, bookshops, magazines, newspapers, content creators, and libraries.",
-    images: ["/images/hero-desktop.png"],
+      "The most robust ePaper platform for publishers worldwide. Transform printed content into engaging digital experiences with Smart Zoom technology and global distribution.",
+    images: ["/images/og-image.png"],
     creator: "@publicala",
   },
   alternates: {
