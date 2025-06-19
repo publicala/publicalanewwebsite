@@ -59,6 +59,7 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">Company</h3>
             <ul className="space-y-2">
               <FooterLink href="/about-us">About Us</FooterLink>
+              <FooterLink href="/compare">Compare Platforms</FooterLink>
               <FooterLink href="/careers">Careers</FooterLink>
               <FooterLink href="/blog">Blog</FooterLink>
               <FooterLink href="/press">Press</FooterLink>
