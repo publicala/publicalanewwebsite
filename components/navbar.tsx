@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X, ChevronDown, ExternalLink } from "lucide-react"
 import { CalendlyButton } from "@/components/calendly-button"
 
 export function Navbar() {
@@ -84,13 +84,6 @@ export function Navbar() {
               </a>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/about-us" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle() + " text-base"}>
-                  About Us
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
               <Link href="/case-studies" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle() + " text-base"}>
                   Case Studies
@@ -100,8 +93,21 @@ export function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
         <div className="flex items-center gap-3">
-          <Button variant="outline" asChild size="sm" className="rounded-md font-medium">
-            <Link href="/login">Log In</Link>
+          <Button
+            variant="outline"
+            asChild
+            size="sm"
+            className="rounded-md font-medium border-primary text-primary hover:bg-primary hover:text-white transition-colors"
+          >
+            <a
+              href="https://ebooksdepository.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              Ebooks Depository
+              <ExternalLink size={14} />
+            </a>
           </Button>
           <CalendlyButton size="sm" className="rounded-md font-medium">
             Start Now
@@ -149,15 +155,25 @@ export function Navbar() {
             <a href="https://docs.publica.la/" target="_blank" rel="noopener noreferrer" className="font-medium">
               Developers
             </a>
-            <Link href="/about-us" className="font-medium">
-              About Us
-            </Link>
             <Link href="/case-studies" className="font-medium">
               Case Studies
             </Link>
             <div className="flex flex-col gap-2 pt-2">
-              <Button variant="outline" asChild size="sm" className="rounded-md w-full">
-                <Link href="/login">Log In</Link>
+              <Button
+                variant="outline"
+                asChild
+                size="sm"
+                className="rounded-md w-full border-primary text-primary hover:bg-primary hover:text-white transition-colors"
+              >
+                <a
+                  href="https://ebooksdepository.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2"
+                >
+                  Ebooks Depository
+                  <ExternalLink size={14} />
+                </a>
               </Button>
               <CalendlyButton size="sm" className="rounded-md w-full">
                 Start Now
