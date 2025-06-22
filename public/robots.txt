@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://publica.la/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow all other content
+Allow: /solutions/
+Allow: /features/
+Allow: /case-studies/
+Allow: /compare/
+Allow: /about-us
+Allow: /careers
+Allow: /contact
+Allow: /pricing
+Allow: /terms
+Allow: /privacy

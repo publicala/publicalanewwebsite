@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react"
 import { Button } from "@/components/ui/button"
 import { Play, Sparkles } from "lucide-react"
-import { DemoRequestModal } from "@/components/demo-request-modal"
+import { DemoVideoModal } from "@/components/demo-video-modal"
 import { AnimatedBackground } from "@/components/ui/animated-background"
 import { CalendlyButton } from "@/components/calendly-button"
 import Image from "next/image"
@@ -41,7 +41,7 @@ const TAGLINES = [
 ]
 
 export function HeroSection() {
-  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
+  const [isDemoVideoOpen, setIsDemoVideoOpen] = useState(false)
 
   // Select a random tagline on component mount
   const tagline = useMemo(() => {
@@ -80,7 +80,7 @@ export function HeroSection() {
                 variant="outline"
                 size="lg"
                 className="rounded-xl font-medium border-2 hover:bg-gray-50 transition-all duration-300"
-                onClick={() => setIsDemoModalOpen(true)}
+                onClick={() => setIsDemoVideoOpen(true)}
               >
                 <Play className="mr-2 h-4 w-4" />
                 Watch Demo
@@ -139,8 +139,8 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Demo Request Modal */}
-      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
+      {/* Demo Video Modal */}
+      <DemoVideoModal isOpen={isDemoVideoOpen} onClose={() => setIsDemoVideoOpen(false)} />
     </section>
   )
 }

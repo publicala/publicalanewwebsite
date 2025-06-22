@@ -198,22 +198,60 @@ export function PlatformShowcase() {
                         ) : (
                           // Security content (keep existing)
                           <div className="grid grid-cols-1 gap-3">
-                            {[1, 2, 3].map((i) => (
-                              <div key={i} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                                <div
-                                  className={`w-8 h-8 rounded-full bg-gradient-to-br ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[0]} ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[1]} flex items-center justify-center`}
-                                >
-                                  <div className="w-3 h-3 bg-white rounded-full"></div>
+                            <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                              <div
+                                className={`w-8 h-8 rounded-full bg-gradient-to-br ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[0]} ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[1]} flex items-center justify-center`}
+                              >
+                                <div className="w-3 h-3 bg-white rounded-full"></div>
+                              </div>
+                              <div className="flex-1">
+                                <div className="text-sm font-medium text-gray-900">
+                                  Proprietary DRM with military-grade AES encryption
                                 </div>
-                                <div className="flex-1">
-                                  <div className="h-3 bg-gray-300 rounded w-3/4 mb-1"></div>
-                                  <div className="h-2 bg-gray-200 rounded w-1/2"></div>
-                                </div>
-                                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                                  <div className="w-2 h-2 bg-white rounded-full"></div>
+                                <div className="text-xs text-gray-600">
+                                  Assets stream encrypted end-to-end, never stored locally
                                 </div>
                               </div>
-                            ))}
+                              <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                <div className="w-2 h-2 bg-white rounded-full"></div>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                              <div
+                                className={`w-8 h-8 rounded-full bg-gradient-to-br ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[0]} ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[1]} flex items-center justify-center`}
+                              >
+                                <div className="w-3 h-3 bg-white rounded-full"></div>
+                              </div>
+                              <div className="flex-1">
+                                <div className="text-sm font-medium text-gray-900">
+                                  Streaming, signed & session-scoped URLs
+                                </div>
+                                <div className="text-xs text-gray-600">
+                                  Just-in-time fragments auto-expire, stopping link-sharing
+                                </div>
+                              </div>
+                              <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                <div className="w-2 h-2 bg-white rounded-full"></div>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                              <div
+                                className={`w-8 h-8 rounded-full bg-gradient-to-br ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[0]} ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[1]} flex items-center justify-center`}
+                              >
+                                <div className="w-3 h-3 bg-white rounded-full"></div>
+                              </div>
+                              <div className="flex-1">
+                                <div className="text-sm font-medium text-gray-900">
+                                  Fine-grained observability for real-time threat response
+                                </div>
+                                <div className="text-xs text-gray-600">
+                                  Live telemetry flags anomalies and auto-mitigates
+                                </div>
+                              </div>
+                              <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                <div className="w-2 h-2 bg-white rounded-full"></div>
+                              </div>
+                            </div>
                           </div>
                         )}
                       </div>
