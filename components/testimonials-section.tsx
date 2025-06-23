@@ -27,7 +27,7 @@ export function TestimonialsSection() {
             avatar="FS"
           />
           <TestimonialCard
-            quote="The quality of the publica.la platform is intuitive and fast, allowing for the development of retail and institutional eBook business."
+            quote="The Publica.la platform is fast, user-friendly, and perfectly suited for growing both retail and institutional eBook operations."
             name="Martha Edna Suárez"
             role="CEO at Alfaeditorial Colombiana S.A."
             avatar="MS"

@@ -65,7 +65,7 @@ export function CustomerLogosShowcase({
         ]
       case "magazines":
         return [
-          { name: "Forbes", src: "/images/logos/forbes.png", width: 120, height: 45 },
+          { name: "Forbes", src: "/images/logos/forbes.png", width: 120, height: 45 }, // Path remains the same, content updated
           { name: "La Tercera", src: "/images/logos/la-tercera.png", width: 140, height: 50 },
         ]
       default: // Homepage / General
@@ -75,7 +75,7 @@ export function CustomerLogosShowcase({
           { name: "Grupo Planeta", src: "/images/logos/grupo-planeta.jpeg", width: 170, height: 65 },
           { name: "La Tercera", src: "/images/logos/la-tercera.png", width: 140, height: 50 },
           { name: "Santillana", src: "/images/logos/santillana.png", width: 160, height: 60 },
-          { name: "Forbes", src: "/images/logos/forbes.png", width: 120, height: 45 },
+          { name: "Forbes", src: "/images/logos/forbes.png", width: 120, height: 45 }, // Path remains the same, content updated
           { name: "Christianbook", src: "/images/logos/christianbook.png", width: 180, height: 65 },
           { name: "SAGA Egmont", src: "/images/logos/saga-egmont.webp", width: 160, height: 70 },
           { name: "Antártica Libros", src: "/images/logos/antartica-libros.png", width: 180, height: 70 },
