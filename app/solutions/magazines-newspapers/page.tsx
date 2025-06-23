@@ -1,6 +1,8 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { MagazinesNewspapersHero } from "@/components/magazines-newspapers/magazines-newspapers-hero"
+// No longer importing MagazinesNewspapersHero
+// import { MagazinesNewspapersHero } from "@/components/magazines-newspapers/magazines-newspapers-hero"
+import { HeroSection } from "@/components/hero-section" // Import the main HeroSection
 import { MagazinesNewspapersFeatures } from "@/components/magazines-newspapers/magazines-newspapers-features"
 import { MagazinesNewspapersDigitalPublishing } from "@/components/magazines-newspapers/magazines-newspapers-digital-publishing"
 import { MagazinesNewspapersReaderEngagement } from "@/components/magazines-newspapers/magazines-newspapers-reader-engagement"
@@ -15,7 +17,8 @@ export default function MagazinesNewspapersPage() {
     <>
       <Navbar />
       <main>
-        <MagazinesNewspapersHero />
+        {/* Replace MagazinesNewspapersHero with HeroSection */}
+        <HeroSection />
         <CustomerLogosShowcase
           title="Trusted by Media Organizations"
           subtitle="Leading magazines and newspapers digitize their content with Publica.la"

@@ -8,6 +8,7 @@ export function AboutTeam() {
     { src: "/images/team/team-virtual-meeting.jpg", alt: "Publica.la team virtual meeting" },
     { src: "/images/team/team-dinner-2.jpg", alt: "Publica.la team at a restaurant" },
     { src: "/images/team/team-dinner-3.jpg", alt: "Another Publica.la team dinner" },
+    { src: "/images/team/founders-pablo-franco.jpg", alt: "Publica.la founders at a conference" },
   ]
 
   return (
@@ -20,18 +21,24 @@ export function AboutTeam() {
         <div className="mb-16">
           <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-8 text-center">Our Founders</h3>
           <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg text-center">
-            <div className="relative w-full h-64 md:h-80 mb-6 rounded-md overflow-hidden">
+            <div className="relative w-full h-96 md:h-[480px] mb-6 rounded-md overflow-hidden">
               <Image
-                src="/images/team/founders-pablo-franco.jpg"
-                alt="Founders Pablo Laurino and Franco Gilio"
+                src="/images/team/founders-at-booth.jpg"
+                alt="Founders Pablo Laurino and Franco Gilio at a publica.la booth"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-md"
               />
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <p className="text-xl font-medium text-gray-700">Pablo Laurino</p>
-              <p className="text-xl font-medium text-gray-700">Franco Gilio</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <p className="text-xl font-medium text-gray-800">Franco Gilio</p>
+                <p className="text-md text-gray-500">CTO</p>
+              </div>
+              <div>
+                <p className="text-xl font-medium text-gray-800">Pablo Laurino</p>
+                <p className="text-md text-gray-500">CEO</p>
+              </div>
             </div>
           </div>
         </div>
