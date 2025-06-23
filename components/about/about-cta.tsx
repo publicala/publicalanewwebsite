@@ -11,10 +11,10 @@ export function AboutCTA() {
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-          Ready to transform your digital publishing strategy?
+          Ready to transform your digital publishing?
         </h2>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          Join thousands of publishers who trust Publica.la to power their digital content ecosystem.
+          Join thousands of organizations that trust Publica.la for their enterprise publishing needs.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
@@ -22,7 +22,7 @@ export function AboutCTA() {
             size="lg"
             className="rounded-md font-medium bg-blue-600 hover:bg-blue-700 text-white px-8 py-6"
           >
-            <Link href="/get-started">Get Started For Free</Link>
+            <Link href="/get-started">Get started</Link>
           </Button>
           <Button
             asChild
@@ -30,17 +30,7 @@ export function AboutCTA() {
             size="lg"
             className="rounded-md font-medium border-blue-200 text-blue-600 hover:bg-blue-50 px-8 py-6"
           >
-            <Link href="/schedule-demo">Schedule a Demo</Link>
-          </Button>
-        </div>
-
-        <div className="mt-16 p-6 bg-white rounded-lg shadow-md">
-          <p className="text-xl font-medium text-gray-900 mb-4">Have questions? We're here to help.</p>
-          <p className="text-gray-600 mb-6">
-            Our team is ready to answer your questions and help you get the most out of Publica.la.
-          </p>
-          <Button asChild variant="ghost" className="text-blue-600 hover:bg-blue-50">
-            <Link href="/contact">Contact Us →</Link>
+            <Link href="/schedule-demo">Schedule a demo</Link>
           </Button>
         </div>
       </div>

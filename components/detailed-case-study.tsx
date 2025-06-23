@@ -24,6 +24,7 @@ interface DetailedCaseStudyProps {
     src: string
     alt: string
   }>
+  logoSrc?: string
 }
 
 export function DetailedCaseStudy({
@@ -39,6 +40,7 @@ export function DetailedCaseStudy({
   testimonialRole,
   whyChooseUsList,
   additionalQuote,
+  logoSrc,
 }: DetailedCaseStudyProps) {
   const companyName = logoAlt.replace(" Logo", "")
   const companyInitials = companyName
@@ -55,9 +57,17 @@ export function DetailedCaseStudy({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center text-white text-xl font-bold">
-                  {companyInitials}
-                </div>
+                {logoSrc ? (
+                  <img
+                    src={logoSrc || "/placeholder.svg"}
+                    alt={logoAlt}
+                    className="w-12 h-12 md:w-16 md:h-16 object-contain rounded-lg"
+                  />
+                ) : (
+                  <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center text-white text-xl font-bold">
+                    {companyInitials}
+                  </div>
+                )}
                 <div>
                   <h1 className="text-3xl md:text-4xl font-bold text-gray-900">{title}</h1>
                   <p className="text-lg text-gray-600">{subtitle}</p>

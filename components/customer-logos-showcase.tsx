@@ -47,6 +47,7 @@ export function CustomerLogosShowcase({
           { name: "Bookshop", src: "/images/logos/bookshop.png", width: 140, height: 50 },
           { name: "Sanborns", src: "/images/logos/sanborns.webp", width: 150, height: 55 },
           { name: "Christianbook", src: "/images/logos/christianbook.png", width: 180, height: 65 },
+          { name: "Ebooks Patagonia", src: "/images/logos/ebooks-patagonia-logo.png", width: 170, height: 60 },
         ]
       case "creators":
         return [
@@ -67,7 +68,7 @@ export function CustomerLogosShowcase({
           { name: "Forbes", src: "/images/logos/forbes.png", width: 120, height: 45 },
           { name: "La Tercera", src: "/images/logos/la-tercera.png", width: 140, height: 50 },
         ]
-      default:
+      default: // Homepage / General
         return [
           { name: "BajaLibros", src: "/images/logos/bajalibros.png", width: 160, height: 60 },
           { name: "Penguin Random House", src: "/images/logos/penguin-random-house.png", width: 180, height: 70 },
@@ -80,6 +81,7 @@ export function CustomerLogosShowcase({
           { name: "Antártica Libros", src: "/images/logos/antartica-libros.png", width: 180, height: 70 },
           { name: "Bookshop", src: "/images/logos/bookshop.png", width: 140, height: 50 },
           { name: "Sanborns", src: "/images/logos/sanborns.webp", width: 150, height: 55 },
+          { name: "Ebooks Patagonia", src: "/images/logos/ebooks-patagonia-logo.png", width: 170, height: 60 },
         ]
     }
   }
@@ -283,11 +285,11 @@ export function CustomerLogosShowcase({
                 <Image
                   src={
                     logo.src ||
-                    `/placeholder.svg?height=${logo.height || "/placeholder.svg"}&width=${logo.width}&text=${encodeURIComponent(logo.name)}`
+                    `/placeholder.svg?height=${logo.height || "60"}&width=${logo.width || "160"}&text=${encodeURIComponent(logo.name)}`
                   }
                   alt={`${logo.name} logo`}
-                  width={logo.width}
-                  height={logo.height}
+                  width={logo.width || 160}
+                  height={logo.height || 60}
                   className="max-w-full max-h-full h-auto w-auto opacity-60 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0"
                 />
               </div>

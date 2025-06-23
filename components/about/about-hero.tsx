@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
 
 export function AboutHero() {
   return (
@@ -13,17 +12,22 @@ export function AboutHero() {
           <div className="absolute bottom-10 right-10 w-28 h-28 bg-blue-300 rounded-full"></div>
         </div>
       </div>
-      <div className="max-w-5xl mx-auto relative z-10">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-blue-600 mb-12">
-          We boost the profits of publishers, magazines, newspapers, and more
+      <div className="max-w-5xl mx-auto relative z-10 flex flex-col items-center text-center">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 text-center mb-12">
+          We are publica.la
         </h1>
+        <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto text-center">
+          We are a tech company that empowers creators, publishers, and institutions to distribute and manage their
+          digital content — simply, securely, and with full control. We work globally, move with agility, and
+          collaborate as one team.
+        </p>
         <div className="flex flex-col sm:flex-row gap-6">
           <Button
             asChild
             size="lg"
             className="rounded-md font-medium bg-blue-600 hover:bg-blue-700 text-white px-8 py-6"
           >
-            <Link href="/get-started">Get Started For Free</Link>
+            <Link href="/get-started">Get started</Link>
           </Button>
           <Button
             asChild
@@ -32,8 +36,7 @@ export function AboutHero() {
             className="rounded-md font-medium text-blue-600 hover:bg-blue-50 px-8 py-6 group"
           >
             <Link href="/schedule-demo" className="flex items-center">
-              Request a demo
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              Schedule a demo
             </Link>
           </Button>
         </div>

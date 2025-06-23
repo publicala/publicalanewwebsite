@@ -1,5 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Linkedin, Twitter } from "lucide-react"
 import Link from "next/link"
 
 export function AboutTeam() {
@@ -7,45 +5,28 @@ export function AboutTeam() {
     <section className="w-full py-20 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Meet Our Team</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">The passionate people behind Publica.la</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Meet the people behind the platform</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <TeamMember
-            name="Alex Rodriguez"
-            role="Founder & CEO"
-            bio="Publishing industry veteran with 15+ years of experience. Passionate about the future of digital content."
-          />
-          <TeamMember
-            name="Maria Chen"
-            role="Chief Technology Officer"
-            bio="Tech innovator with expertise in building scalable platforms. Leading our engineering team since 2016."
-          />
-          <TeamMember
-            name="David Kim"
-            role="Head of Product"
-            bio="Former publisher turned product strategist. Focused on creating intuitive tools for content creators."
-          />
-          <TeamMember
-            name="Sarah Johnson"
-            role="Chief Marketing Officer"
-            bio="Digital marketing expert specializing in helping publishers build their audience and brand."
-          />
-          <TeamMember
-            name="Carlos Mendez"
-            role="Customer Success Director"
-            bio="Dedicated to ensuring our publishers get the most value from the Publica.la platform."
-          />
-          <TeamMember
-            name="Emma Wilson"
-            role="Head of Partnerships"
-            bio="Building strategic relationships across the publishing ecosystem to create more value for our users."
-          />
+        <div className="mb-12">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Our Founders</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+            <FounderCard name="Pablo Laurino" />
+            <FounderCard name="Franco Gilio" />
+          </div>
+        </div>
+        <div className="mb-16 text-center">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">And our passionate team</h3>
+          <p className="text-lg text-gray-600">
+            Dedicated individuals working together to shape the future of digital publishing.
+          </p>
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-xl text-gray-600 mb-6">We're growing! Interested in joining our team?</p>
+          <p className="text-xl text-gray-600 mb-6">
+            We’re always looking for curious minds who love building useful things and want to shape the future of
+            digital publishing.
+          </p>
           <Link href="/careers" className="text-blue-600 font-medium hover:underline text-lg">
             View open positions →
           </Link>
@@ -55,44 +36,22 @@ export function AboutTeam() {
   )
 }
 
-function TeamMember({
-  name,
-  role,
-  bio,
-}: {
-  name: string
-  role: string
-  bio: string
-}) {
+function FounderCard({ name }: { name: string }) {
   const initials = name
     .split(" ")
     .map((n) => n[0])
     .join("")
-  const colors = ["bg-blue-500", "bg-purple-500", "bg-green-500", "bg-orange-500", "bg-pink-500", "bg-indigo-500"]
-  const colorIndex = name.length % colors.length
+  const colors = ["bg-blue-500", "bg-purple-500"] // Simpler colors for two founders
+  const colorIndex = name.length % colors.length // Basic way to alternate
 
   return (
-    <Card className="border-0 shadow-md hover:shadow-lg transition-shadow overflow-hidden">
-      <div className="aspect-square relative flex items-center justify-center">
-        <div
-          className={`w-32 h-32 ${colors[colorIndex]} rounded-full flex items-center justify-center text-white text-3xl font-bold`}
-        >
-          {initials}
-        </div>
+    <div className="bg-white p-6 rounded-lg shadow-md text-center">
+      <div
+        className={`w-24 h-24 ${colors[colorIndex]} rounded-full flex items-center justify-center text-white text-3xl font-bold mx-auto mb-4`}
+      >
+        {initials}
       </div>
-      <CardContent className="p-6">
-        <h3 className="text-xl font-bold mb-1 text-gray-900">{name}</h3>
-        <p className="text-blue-600 font-medium mb-3">{role}</p>
-        <p className="text-gray-600 mb-4">{bio}</p>
-        <div className="flex gap-3">
-          <Link href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
-            <Linkedin className="h-5 w-5" />
-          </Link>
-          <Link href="#" className="text-gray-400 hover:text-blue-600 transition-colors">
-            <Twitter className="h-5 w-5" />
-          </Link>
-        </div>
-      </CardContent>
-    </Card>
+      <h4 className="text-xl font-bold text-gray-900">{name}</h4>
+    </div>
   )
 }

@@ -43,7 +43,6 @@ const caseStudiesByCategory = {
           "+20% growth in total revenue within the first year",
           "30% of new subscriptions from Colombia, 25% from Mexico",
           "10,000+ app downloads in Spain during Q1 2025",
-          "50% reduction in administrative workload",
         ],
         tags: ["Digital Library", "International Expansion", "Multi-store Architecture"],
       },
@@ -52,16 +51,28 @@ const caseStudiesByCategory = {
         title: "Antártica Librería",
         subtitle: "Transforming Chile's Largest Bookstore Chain",
         description:
-          "How Chile's oldest and largest bookstore chain with 31 physical locations successfully entered the digital realm, offering eBooks and audiobooks while maintaining their trusted brand identity.",
-        image: "/placeholder.svg?height=300&width=600",
+          "How Chile's oldest and largest bookstore chain successfully entered the digital realm, offering eBooks and audiobooks while maintaining their trusted brand identity.",
+        image: "/antarctica-digital-bookstore.png",
         results: [
           "30% increase in digital content revenue within 12 months",
           "15% lift in conversion rate on digital storefront",
           "5,000+ native app downloads in first quarter",
-          "50% reduction in content-publishing cycle time",
-          "80% user satisfaction rating in post-launch surveys",
         ],
         tags: ["Brick-and-Mortar", "Digital Transformation", "Multi-format Content"],
+      },
+      {
+        id: "ebooks-patagonia",
+        title: "Ebooks Patagonia",
+        subtitle: "Driving Institutional Sales & Marketing Efficiency with a 300% ROI",
+        description:
+          "Learn how Ebooks Patagonia leveraged Publica.la to achieve a 300% ROI by expanding institutional sales and implementing data-driven marketing strategies.",
+        image: "/patagonia-ebooks-montage.png",
+        results: [
+          "300% ROI achieved in 2022",
+          "Significant growth in sales to educational institutions and libraries",
+          "Enhanced marketing effectiveness through data-driven campaigns",
+        ],
+        tags: ["Digital Bookstore", "Institutional Sales", "ROI Growth", "Data-Driven Marketing"],
       },
     ],
   },
@@ -220,7 +231,7 @@ export function CaseStudiesList() {
                   Get Started For Free
                 </Link>
                 <Link
-                  href="/about-us"
+                  href="/about-us" // Or perhaps /contact or /calendly-modal trigger
                   className="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary/5 transition-colors font-medium"
                 >
                   Request a Demo
