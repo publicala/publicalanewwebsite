@@ -55,6 +55,7 @@ interface FooterProps {
       legal: Array<{
         href: string
         text: string
+        external?: boolean
       }>
     }
   }
@@ -106,7 +107,8 @@ const defaultFooterDict = {
     legal: [
       { href: "/terms", text: "Terms of Service" },
       { href: "/privacy", text: "Privacy Policy" },
-      { href: "/cookies", text: "Cookie Policy" }
+      { href: "/cookies", text: "Cookie Policy" },
+      { href: "https://app.publica.la/platform/sign-up/init?lang=en&plan=basic_store&interval=monthly&utm_medium=Website&utm_campaign=New_website&utm_source=Direct+Traffic&utm_content=Website", text: "Create tenant", external: true }
     ]
   }
 }
@@ -195,7 +197,13 @@ export function Footer({ dict, locale = "en" }: FooterProps) {
           <p className="text-gray-400 text-sm">{footerDict.footer.copyright.replace('{year}', new Date().getFullYear().toString())}</p>
           <div className="flex gap-6">
             {footerDict.footer.legal.map((link, index) => (
-              <Link key={index} href={getLocalizedHref(link.href)} className="text-sm text-gray-400 hover:text-white">
+              <Link 
+                key={index} 
+                href={link.external ? link.href : getLocalizedHref(link.href)} 
+                className="text-sm text-gray-400 hover:text-white"
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
+              >
                 {link.text}
               </Link>
             ))}
@@ -206,10 +214,15 @@ export function Footer({ dict, locale = "en" }: FooterProps) {
   )
 }
 
-function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
+function FooterLink({ href, children, external = false }: { href: string; children: React.ReactNode; external?: boolean }) {
   return (
     <li>
-      <Link href={href} className="text-gray-400 hover:text-white transition-colors">
+      <Link 
+        href={href} 
+        className="text-gray-400 hover:text-white transition-colors"
+        target={external ? "_blank" : undefined}
+        rel={external ? "noopener noreferrer" : undefined}
+      >
         {children}
       </Link>
     </li>
