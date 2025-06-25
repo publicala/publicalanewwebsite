@@ -16,9 +16,9 @@ export const metadata = {
 export default async function PricingPage({
   params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
-  const { locale } = params
+  const { locale } = await params
   const dict = await getDictionary(locale as "en" | "es" | "pt")
 
   return (
