@@ -277,173 +277,256 @@
   },
   "navbar": {
     "solutions": {
-      "title": "Traduction française de: Solutions",
-      "description": "Traduction française de: Enterprise Publishing Solutions",
-      "subtitle": "Traduction française de: Comprehensive digital content management and distribution platform for publishers, bookshops, and content creators of all sizes.",
+      "title": "Solutions",
+      "description": "Solutions d'édition d'entreprise",
+      "subtitle": "Plateforme complète de gestion et de distribution de contenu numérique pour les éditeurs, librairies et créateurs de contenu de toutes tailles.",
       "links": [
-        { "href": "/solutions/publishers", "title": "Traduction française de: For Publishers", "description": "Traduction française de: Streamline your digital publishing workflow" },
-        { "href": "/solutions/bookshops", "title": "Traduction française de: For Bookshops", "description": "Traduction française de: Expand your reach with digital offerings" },
-        { "href": "/solutions/content-creators", "title": "Traduction française de: For Content Creators", "description": "Traduction française de: Focus on content while we handle distribution" },
-        { "href": "/solutions/libraries", "title": "Traduction française de: For Libraries", "description": "Traduction française de: Digital solutions for modern libraries" },
-        { "href": "/solutions/magazines-newspapers", "title": "Traduction française de: For Magazines & Newspapers", "description": "Traduction française de: Streamline your digital publication process" }
+        {
+          "href": "/solutions/publishers",
+          "title": "Pour les éditeurs",
+          "description": "Simplifiez votre flux de travail de publication numérique"
+        },
+        {
+          "href": "/solutions/bookshops",
+          "title": "Pour les librairies",
+          "description": "Élargissez votre portée avec des offres numériques"
+        },
+        {
+          "href": "/solutions/content-creators",
+          "title": "Pour les créateurs de contenu",
+          "description": "Concentrez-vous sur le contenu pendant que nous gérons la distribution"
+        },
+        {
+          "href": "/solutions/libraries",
+          "title": "Pour les bibliothèques",
+          "description": "Solutions numériques pour les bibliothèques modernes"
+        },
+        {
+          "href": "/solutions/magazines-newspapers",
+          "title": "Pour les magazines et journaux",
+          "description": "Simplifiez votre processus de publication numérique"
+        }
       ]
     },
-    "pricing": "Traduction française de: Pricing",
-    "developers": "Traduction française de: Developers",
-    "caseStudies": "Traduction française de: Case Studies",
-    "ebooksDepository": "Traduction française de: Ebooks Depository",
-    "startNow": "Traduction française de: Start Now"
+    "pricing": "Tarifs",
+    "developers": "Développeurs",
+    "caseStudies": "Études de cas",
+    "ebooksDepository": "Dépôt d'ebooks",
+    "startNow": "Commencer maintenant"
   },
   "aboutHero": {
-    "title": "Traduction française de: We are publica.la",
-    "description": "Traduction française de: We are a tech company that empowers creators, publishers, and institutions to distribute and manage their digital content — simply, securely, and with full control. We work globally, move with agility, and collaborate as one team.",
-    "getStartedButton": "Traduction française de: Get started",
-    "scheduleDemoButton": "Traduction française de: Schedule a demo"
+    "title": "Nous sommes publica.la",
+    "description": "Nous sommes une entreprise technologique qui permet aux créateurs, éditeurs et institutions de distribuer et gérer leur contenu numérique — simplement, en toute sécurité et avec un contrôle total. Nous travaillons mondialement, nous nous déplaçons avec agilité et collaborons comme une seule équipe.",
+    "getStartedButton": "Commencer",
+    "scheduleDemoButton": "Planifier une démo"
   },
   "aboutStory": {
     "stats": {
-      "title": "Traduction française de: Today, publica.la is trusted by…",
-      "publishers": { "value": "1,000+", "label": "Traduction française de: publishers, universities, and creators" },
-      "countries": { "value": "20+", "label": "Traduction française de: countries" },
-      "titles": { "value": "1.5M+", "label": "Traduction française de: digital titles shared" }
+      "title": "Aujourd'hui, publica.la est approuvé par…",
+      "publishers": {
+        "value": "1,000+",
+        "label": "éditeurs, universités et créateurs"
+      },
+      "countries": {
+        "value": "20+",
+        "label": "pays"
+      },
+      "titles": {
+        "value": "1.5M+",
+        "label": "titres numériques partagés"
+      }
     },
-    "title": "Traduction française de: How it all started",
+    "title": "Comment tout a commencé",
     "paragraphs": [
-      { "text": "Traduction française de: In 2016 we saw a clear opportunity: publishers, authors, and media organizations needed a better way to share and sell their digital content — directly, without intermediaries, and with full control." },
-      { "text": "Traduction française de: That's when we built publica.la — a comprehensive platform designed to help them manage, promote, and monetize their content with simplicity and efficiency. Founded by a team of publishing and technology experts, publica.la emerged as a response to the limitations of traditional models and the lack of digital tools truly built for publishers." },
-      { "text": "Traduction française de: Our goal was simple: empower content creators and retailers of all sizes to sell directly to their audiences — eliminating intermediaries, fostering real connections between creators, sellers, and consumers, and helping them grow their revenue in a digital-first world." },
-      { "text": "Traduction française de: Over time, publica.la gained international recognition and expanded rapidly, becoming a leading platform in the digital publishing industry." }
+      {
+        "text": "En 2016, nous avons vu une opportunité claire : les éditeurs, auteurs et organisations médiatiques avaient besoin d'une meilleure façon de partager et vendre leur contenu numérique — directement, sans intermédiaires et avec un contrôle total."
+      },
+      {
+        "text": "C'est alors que nous avons construit publica.la — une plateforme complète conçue pour les aider à gérer, promouvoir et monétiser leur contenu avec simplicité et efficacité. Fondée par une équipe d'experts en édition et technologie, publica.la est née en réponse aux limitations des modèles traditionnels et au manque d'outils numériques vraiment construits pour les éditeurs."
+      },
+      {
+        "text": "Notre objectif était simple : permettre aux créateurs de contenu et détaillants de toutes tailles de vendre directement à leur audience — éliminer les intermédiaires, favoriser de vraies connexions entre créateurs, vendeurs et consommateurs, et les aider à développer leurs revenus dans un monde numérique."
+      },
+      {
+        "text": "Au fil du temps, publica.la a gagné une reconnaissance internationale et s'est développée rapidement, devenant une plateforme leader dans l'industrie de l'édition numérique."
+      }
     ]
   },
   "aboutMission": {
-    "title": "Traduction française de: Where we are going",
-    "subtitle": "Traduction française de: We're working to make digital publishing easier, fairer, and more accessible — for everyone, everywhere.",
-    "mainMessage": "Traduction française de: If you create great content, we'll help you share it with the world.",
-    "simpleMessage": "Traduction française de: That simple."
+    "title": "Où nous allons",
+    "subtitle": "Nous travaillons à rendre l'édition numérique plus facile, plus équitable et plus accessible — pour tous, partout.",
+    "mainMessage": "Si vous créez un excellent contenu, nous vous aiderons à le partager avec le monde.",
+    "simpleMessage": "C'est simple."
   },
   "aboutValues": {
-    "title": "Traduction française de: We believe in",
+    "title": "Nous croyons en",
     "values": [
-      { "title": "Traduction française de: Autonomy with responsibility", "description": "Traduction française de: We own our work and results, with freedom and accountability." },
-      { "title": "Traduction française de: Teamwork", "description": "Traduction française de: We grow stronger by supporting each other and working as one." },
-      { "title": "Traduction française de: Technology & innovation", "description": "Traduction française de: We stay curious, use smart tools, and build for real impact." },
-      { "title": "Traduction française de: Customer devotion", "description": "Traduction française de: We put our users at the center — and aim to exceed expectations." },
-      { "title": "Traduction française de: Transparency", "description": "Traduction française de: We believe that clear and honest communication builds trust and alignment." }
+      {
+        "title": "Autonomie avec responsabilité",
+        "description": "Nous possédons notre travail et nos résultats, avec liberté et responsabilité."
+      },
+      {
+        "title": "Travail d'équipe",
+        "description": "Nous devenons plus forts en nous soutenant mutuellement et en travaillant comme un seul."
+      },
+      {
+        "title": "Technologie et innovation",
+        "description": "Nous restons curieux, utilisons des outils intelligents et construisons pour un impact réel."
+      },
+      {
+        "title": "Dévotion client",
+        "description": "Nous mettons nos utilisateurs au centre — et visons à dépasser les attentes."
+      },
+      {
+        "title": "Transparence",
+        "description": "Nous croyons qu'une communication claire et honnête construit la confiance et l'alignement."
+      }
     ]
   },
   "aboutTeam": {
-    "title": "Traduction française de: Meet the people behind the platform",
+    "title": "Rencontrez les personnes derrière la plateforme",
     "founders": {
-      "title": "Traduction française de: Our Founders",
-      "franco": { "name": "Traduction française de: Franco Gilio", "role": "Traduction française de: CTO" },
-      "pablo": { "name": "Traduction française de: Pablo Laurino", "role": "Traduction française de: CEO" },
-      "imageAlt": "Traduction française de: Founders Pablo Laurino and Franco Gilio at a publica.la booth"
+      "title": "Nos fondateurs",
+      "franco": {
+        "name": "Franco Gilio",
+        "role": "CTO"
+      },
+      "pablo": {
+        "name": "Pablo Laurino",
+        "role": "CEO"
+      },
+      "imageAlt": "Fondateurs Pablo Laurino et Franco Gilio à un stand publica.la"
     },
     "team": {
-      "title": "Traduction française de: And our passionate team",
-      "description": "Traduction française de: Dedicated individuals working together to shape the future of digital publishing. Here are a few moments with our amazing team."
+      "title": "Et notre équipe passionnée",
+      "description": "Des individus dédiés travaillant ensemble pour façonner l'avenir de l'édition numérique. Voici quelques moments avec notre équipe incroyable."
     },
     "careers": {
-      "description": "Traduction française de: We're always looking for curious minds who love building useful things and want to shape the future of digital publishing.",
-      "linkText": "Traduction française de: View open positions"
+      "description": "Nous cherchons toujours des esprits curieux qui aiment construire des choses utiles et veulent façonner l'avenir de l'édition numérique.",
+      "linkText": "Voir les postes ouverts"
     }
   },
   "contactHero": {
-    "title": "Traduction française de: Get in Touch",
-    "subtitle": "Traduction française de: We're here to help you succeed",
-    "description": "Traduction française de: Whether you're interested in our platform, need technical support, or want to explore partnership opportunities, our team is ready to assist you."
+    "title": "Contactez-nous",
+    "subtitle": "Nous sommes là pour vous aider à réussir",
+    "description": "Que vous soyez intéressé par notre plateforme, ayez besoin d'un support technique ou souhaitiez explorer des opportunités de partenariat, notre équipe est prête à vous assister."
   },
   "contactForm": {
-    "title": "Traduction française de: Send us a Message",
+    "title": "Envoyez-nous un message",
     "firstName": {
-      "label": "Traduction française de: First Name",
-      "placeholder": "Traduction française de: Enter your first name"
+      "label": "Prénom",
+      "placeholder": "Entrez votre prénom"
     },
     "lastName": {
-      "label": "Traduction française de: Last Name",
-      "placeholder": "Traduction française de: Enter your last name"
+      "label": "Nom de famille",
+      "placeholder": "Entrez votre nom de famille"
     },
     "email": {
-      "label": "Traduction française de: Email Address",
-      "placeholder": "Traduction française de: Enter your email address"
+      "label": "Adresse email",
+      "placeholder": "Entrez votre adresse email"
     },
     "company": {
-      "label": "Traduction française de: Company",
-      "placeholder": "Traduction française de: Enter your company name"
+      "label": "Entreprise",
+      "placeholder": "Entrez le nom de votre entreprise"
     },
     "subject": {
-      "label": "Traduction française de: Subject",
-      "placeholder": "Traduction française de: Select a subject",
+      "label": "Sujet",
+      "placeholder": "Sélectionnez un sujet",
       "options": [
-        { "value": "sales", "label": "Traduction française de: Sales Inquiry" },
-        { "value": "support", "label": "Traduction française de: Technical Support" },
-        { "value": "partnership", "label": "Traduction française de: Partnership Opportunity" },
-        { "value": "demo", "label": "Traduction française de: Request a Demo" },
-        { "value": "billing", "label": "Traduction française de: Billing Question" },
-        { "value": "other", "label": "Traduction française de: Other" }
+        {
+          "value": "sales",
+          "label": "Demande de vente"
+        },
+        {
+          "value": "support",
+          "label": "Support technique"
+        },
+        {
+          "value": "partnership",
+          "label": "Opportunité de partenariat"
+        },
+        {
+          "value": "demo",
+          "label": "Demander une démo"
+        },
+        {
+          "value": "billing",
+          "label": "Question de facturation"
+        },
+        {
+          "value": "other",
+          "label": "Autre"
+        }
       ]
     },
     "message": {
-      "label": "Traduction française de: Message",
-      "placeholder": "Traduction française de: Tell us how we can help you..."
+      "label": "Message",
+      "placeholder": "Dites-nous comment nous pouvons vous aider..."
     },
     "submitButton": {
-      "sending": "Traduction française de: Sending...",
-      "default": "Traduction française de: Send Message"
+      "sending": "Envoi...",
+      "default": "Envoyer le message"
     }
   },
   "contactInfo": {
-    "title": "Traduction française de: Contact Information",
-    "methods": [
-      {
-        "title": "Traduction française de: Email Us",
-        "details": ["hello@publica.la", "support@publica.la"],
-        "description": "Traduction française de: We typically respond within 24 hours"
-      },
-      {
-        "title": "Traduction française de: Call Us",
-        "details": ["+1 (555) 123-4567"],
-        "description": "Traduction française de: Global support line - Monday to Friday, 9 AM - 6 PM EST"
-      },
-      {
-        "title": "Traduction française de: Business Hours",
-        "details": ["Monday - Friday: 9 AM - 6 PM EST", "24/7 Priority Support Available"],
-        "description": "Traduction française de: We work across multiple time zones"
-      }
-    ],
-    "urgentHelp": {
-      "title": "Traduction française de: Need Immediate Help?",
-      "description": "Traduction française de: For urgent technical issues or critical support needs, please use our priority support channel.",
-      "prioritySupport": "Traduction française de: Priority Support",
-      "liveChat": "Traduction française de: Live Chat"
+    "title": "Informations de contact",
+    "description": "Notre équipe est disponible pour répondre à vos questions et vous aider à tirer le meilleur parti de notre plateforme.",
+    "email": {
+      "title": "Email",
+      "description": "Pour les questions générales et le support",
+      "value": "hello@publica.la"
+    },
+    "phone": {
+      "title": "Téléphone",
+      "description": "Pour les urgences et le support prioritaire",
+      "value": "+1 (555) 123-4567"
+    },
+    "hours": {
+      "title": "Heures d'ouverture",
+      "description": "Support disponible 24/7 pour les clients entreprise"
     }
   },
+  "contactOffices": {
+    "title": "Nos bureaux",
+    "description": "Nous avons des équipes dans le monde entier pour mieux servir nos clients internationaux.",
+    "offices": [
+      {
+        "city": "Buenos Aires",
+        "country": "Argentine",
+        "address": "Av. Corrientes 1234, CABA",
+        "timezone": "GMT-3"
+      },
+      {
+        "city": "Madrid",
+        "country": "Espagne",
+        "address": "Calle Gran Vía 567, Madrid",
+        "timezone": "GMT+1"
+      },
+      {
+        "city": "New York",
+        "country": "États-Unis",
+        "address": "123 Broadway, NY 10001",
+        "timezone": "GMT-5"
+      }
+    ]
+  },
   "contactPresence": {
-    "title": "Traduction française de: Our Global Presence",
-    "subtitle": "Traduction française de: We're a fully remote team with talented professionals across three continents, working together to serve our global customer base",
-    "regions": [
-      { "name": "Traduction française de: Europe", "count": 4, "color": "bg-blue-500" },
-      { "name": "Traduction française de: North America", "count": 2, "color": "bg-green-500" },
-      { "name": "Traduction française de: South America", "count": 3, "color": "bg-purple-500" }
-    ],
-    "teamLocations": {
-      "title": "Traduction française de: Team Members Located In",
-      "locations": [
-        { "city": "Traduction française de: Rome", "country": "Traduction française de: Italy", "region": "Traduction française de: Europe", "coords": { "x": 52, "y": 35 } },
-        { "city": "Traduction française de: Barcelona", "country": "Traduction française de: Spain", "region": "Traduction française de: Europe", "coords": { "x": 48, "y": 38 } },
-        { "city": "Traduction française de: Lisboa", "country": "Traduction française de: Portugal", "region": "Traduction française de: Europe", "coords": { "x": 46, "y": 40 } },
-        { "city": "Traduction française de: Madrid", "country": "Traduction française de: Spain", "region": "Traduction française de: Europe", "coords": { "x": 47, "y": 40 } },
-        { "city": "Traduction française de: Bogotá", "country": "Traduction française de: Colombia", "region": "Traduction française de: South America", "coords": { "x": 28, "y": 55 } },
-        { "city": "Traduction française de: Medellín", "country": "Traduction française de: Colombia", "region": "Traduction française de: South America", "coords": { "x": 28, "y": 56 } },
-        { "city": "Traduction française de: Mexico City", "country": "Traduction française de: Mexico", "region": "Traduction française de: North America", "coords": { "x": 22, "y": 45 } },
-        { "city": "Traduction française de: Raleigh", "country": "Traduction française de: North Carolina, USA", "region": "Traduction française de: North America", "coords": { "x": 32, "y": 42 } },
-        { "city": "Traduction française de: Buenos Aires", "country": "Traduction française de: Argentina", "region": "Traduction française de: South America", "coords": { "x": 35, "y": 72 } }
-      ]
-    },
-    "remoteWork": {
-      "title": "Traduction française de: Why We're Remote-First",
-      "description": "Traduction française de: Our distributed team model allows us to tap into global talent, provide round-the-clock support, and better understand the diverse markets we serve. This approach enables us to deliver exceptional service regardless of your location."
-    }
+    "title": "Présence mondiale",
+    "description": "Notre modèle d'équipe distribuée nous permet de puiser dans les talents mondiaux, de fournir un support 24/7 et de mieux comprendre les marchés divers que nous servons. Cette approche nous permet de fournir un service exceptionnel quel que soit votre emplacement.",
+    "stats": [
+      {
+        "value": "20+",
+        "label": "Pays servis"
+      },
+      {
+        "value": "24/7",
+        "label": "Support disponible"
+      },
+      {
+        "value": "1000+",
+        "label": "Clients satisfaits"
+      }
+    ]
   },
   "publishersSolution": {
     "hero": {
@@ -683,5 +766,191 @@
       "title": "Approuvé par les magazines et journaux du monde entier",
       "subtitle": "Les publications leaders modernisent leurs services avec Publica.la"
     }
+  },
+  "pricingSection": {
+    "hero": {
+      "title": "Tarifs simples et transparents",
+      "subtitle": "Choisissez le plan qui convient à votre entreprise. Pas de frais cachés, pas de surprises.",
+      "description": "Commencez gratuitement et évoluez selon vos besoins. Tous nos plans incluent nos fonctionnalités principales."
+    },
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "price": "Gratuit",
+        "period": "pour toujours",
+        "description": "Parfait pour commencer avec la publication numérique",
+        "features": [
+          "Jusqu'à 100 titres",
+          "Support email de base",
+          "Analyses de base",
+          "Distribution numérique"
+        ],
+        "cta": "Commencer gratuitement"
+      },
+      "professional": {
+        "name": "Professionnel",
+        "price": "99€",
+        "period": "/mois",
+        "description": "Pour les éditeurs et créateurs en croissance",
+        "features": [
+          "Titres illimités",
+          "Support prioritaire",
+          "Analyses avancées",
+          "Monétisation complète",
+          "API d'accès"
+        ],
+        "cta": "Commencer l'essai gratuit",
+        "popular": "Le plus populaire"
+      },
+      "enterprise": {
+        "name": "Entreprise",
+        "price": "Sur mesure",
+        "period": "",
+        "description": "Solutions personnalisées pour les grandes organisations",
+        "features": [
+          "Tout du plan Professionnel",
+          "Support dédié 24/7",
+          "Intégrations personnalisées",
+          "SLA garanti",
+          "Formation sur mesure"
+        ],
+        "cta": "Contacter les ventes"
+      }
+    },
+    "faq": {
+      "title": "Questions fréquemment posées",
+      "questions": [
+        {
+          "question": "Puis-je changer de plan à tout moment ?",
+          "answer": "Oui, vous pouvez mettre à niveau ou rétrograder votre plan à tout moment. Les changements prennent effet immédiatement."
+        },
+        {
+          "question": "Y a-t-il des frais de configuration ?",
+          "answer": "Non, il n'y a pas de frais de configuration. Vous pouvez commencer immédiatement avec votre plan choisi."
+        },
+        {
+          "question": "Qu'est-ce qui est inclus dans l'essai gratuit ?",
+          "answer": "L'essai gratuit de 14 jours inclut toutes les fonctionnalités du plan Professionnel, sans engagement."
+        }
+      ]
+    }
+  },
+  "careersSection": {
+    "hero": {
+      "title": "Rejoignez notre mission",
+      "subtitle": "Aidez-nous à transformer l'avenir de l'édition numérique",
+      "description": "Nous construisons la plateforme de contenu numérique la plus robuste pour les éditeurs du monde entier. Rejoignez notre équipe passionnée et faites un impact sur la façon dont le contenu est créé, distribué et consommé mondialement."
+    },
+    "benefits": {
+      "title": "Pourquoi travailler chez Publica.la",
+      "benefits": [
+        {
+          "title": "Travail à distance",
+          "description": "Travaillez de n'importe où dans le monde avec notre équipe distribuée"
+        },
+        {
+          "title": "Croissance personnelle",
+          "description": "Opportunités d'apprentissage continu et de développement de carrière"
+        },
+        {
+          "title": "Impact mondial",
+          "description": "Faites partie d'une plateforme utilisée par des milliers d'éditeurs"
+        },
+        {
+          "title": "Culture d'équipe",
+          "description": "Environnement collaboratif avec des collègues passionnés"
+        }
+      ]
+    },
+    "openings": {
+      "title": "Postes ouverts",
+      "description": "Nous cherchons des talents dans tous les domaines. Découvrez les opportunités qui correspondent à vos compétences.",
+      "positions": [
+        {
+          "title": "Développeur Full Stack",
+          "department": "Ingénierie",
+          "location": "À distance",
+          "type": "Temps plein"
+        },
+        {
+          "title": "Responsable Marketing Produit",
+          "department": "Marketing",
+          "location": "À distance",
+          "type": "Temps plein"
+        },
+        {
+          "title": "Spécialiste Support Client",
+          "department": "Support",
+          "location": "À distance",
+          "type": "Temps plein"
+        }
+      ]
+    }
+  },
+  "caseStudiesSection": {
+    "hero": {
+      "title": "Histoires de succès de",
+      "titleHighlight": "éditeurs leaders",
+      "subtitle": "Découvrez comment les éditeurs et créateurs de contenu du monde entier obtiennent des résultats remarquables avec la plateforme de publication numérique Publica.la."
+    },
+    "list": {
+      "title": "Histoires de succès par solution",
+      "subtitle": "Explorez comment les organisations de différents secteurs obtiennent le succès de publication numérique avec Publica.la",
+      "categories": {
+        "publishers": {
+          "title": "Éditeurs",
+          "cases": [
+            {
+              "id": "hammurabi-publishing",
+              "title": "Editorial Hammurabi",
+              "subtitle": "Expansion de la portée numérique dans l'édition juridique",
+              "description": "Comment un éditeur juridique leader en Argentine a modernisé ses opérations et étendu son audience avec des solutions de publication numérique.",
+              "results": [
+                "Augmentation significative des ventes et nouveaux abonnés",
+                "Audience nationale et internationale étendue",
+                "Position renforcée en tant qu'éditeur juridique avant-gardiste"
+              ],
+              "tags": ["Édition juridique", "Transformation numérique", "PME"]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "featuresOverview": {
+    "title": "Fonctionnalités de niveau entreprise",
+    "subtitle": "Tout ce dont vous avez besoin pour gérer et distribuer votre contenu numérique avec confiance et à grande échelle.",
+    "features": [
+      {
+        "title": "Gestion de contenu avancée",
+        "description": "Simplifiez votre flux de travail avec notre système de gestion de contenu intuitif conçu pour les éditeurs.",
+        "icon": "BookOpen"
+      },
+      {
+        "title": "Publication multi-format",
+        "description": "Support des formats EPUB, PDF, audio et contenu interactif avec conversion transparente.",
+        "icon": "FileText"
+      },
+      {
+        "title": "Gestion des droits numériques sécurisée",
+        "description": "Protégez votre contenu avec des fonctionnalités DRM de niveau entreprise et de contrôle d'accès.",
+        "icon": "Shield"
+      },
+      {
+        "title": "Analyses complètes",
+        "description": "Obtenez des insights détaillés sur le comportement des lecteurs, les performances de vente et l'engagement du contenu.",
+        "icon": "BarChart3"
+      },
+      {
+        "title": "Réseau de distribution mondial",
+        "description": "Atteignez les lecteurs du monde entier avec notre infrastructure de distribution et de livraison étendue.",
+        "icon": "Globe"
+      },
+      {
+        "title": "Outils de monétisation",
+        "description": "Modèles de tarification flexibles, gestion des abonnements et fonctionnalités d'optimisation des revenus.",
+        "icon": "DollarSign"
+      }
+    ]
   }
 } 
