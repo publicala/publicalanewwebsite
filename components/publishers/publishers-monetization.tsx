@@ -1,7 +1,7 @@
 import type React from "react"
 import { CheckCircle } from "lucide-react"
 
-export function PublishersMonetization() {
+export function PublishersMonetization({ dict }: { dict: any }) {
   return (
     <section className="w-full py-20 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -28,14 +28,14 @@ export function PublishersMonetization() {
                   {/* Revenue cards */}
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-gradient-to-br from-green-50 to-green-100 p-4 rounded-lg border border-green-200">
-                      <div className="text-2xl font-bold text-green-700">$12,450</div>
-                      <div className="text-sm text-green-600">Monthly Revenue</div>
-                      <div className="text-xs text-green-500 mt-1">+24% from last month</div>
+                      <div className="text-2xl font-bold text-green-700">{dict.revenueCard.monthlyRevenue}</div>
+                      <div className="text-sm text-green-600">{dict.revenueCard.monthlyRevenueLabel}</div>
+                      <div className="text-xs text-green-500 mt-1">{dict.revenueCard.monthlyRevenueChange}</div>
                     </div>
                     <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-lg border border-blue-200">
-                      <div className="text-2xl font-bold text-blue-700">1,247</div>
-                      <div className="text-sm text-blue-600">Active Subscribers</div>
-                      <div className="text-xs text-blue-500 mt-1">+156 this month</div>
+                      <div className="text-2xl font-bold text-blue-700">{dict.revenueCard.activeSubscribers}</div>
+                      <div className="text-sm text-blue-600">{dict.revenueCard.activeSubscribersLabel}</div>
+                      <div className="text-xs text-blue-500 mt-1">{dict.revenueCard.activeSubscribersChange}</div>
                     </div>
                   </div>
 
@@ -51,23 +51,17 @@ export function PublishersMonetization() {
                         ></div>
                       ))}
                     </div>
-                    <div className="text-xs text-gray-500 mt-2">Revenue Growth Over Time</div>
+                    <div className="text-xs text-gray-500 mt-2">{dict.revenueGrowth}</div>
                   </div>
 
                   {/* Payment methods */}
                   <div className="grid grid-cols-3 gap-3">
-                    <div className="bg-purple-50 p-3 rounded-lg border border-purple-100 text-center">
-                      <div className="w-8 h-8 bg-purple-500 rounded mx-auto mb-2"></div>
-                      <div className="text-xs text-purple-700">Credit Cards</div>
-                    </div>
-                    <div className="bg-blue-50 p-3 rounded-lg border border-blue-100 text-center">
-                      <div className="w-8 h-8 bg-blue-500 rounded mx-auto mb-2"></div>
-                      <div className="text-xs text-blue-700">PayPal</div>
-                    </div>
-                    <div className="bg-orange-50 p-3 rounded-lg border border-orange-100 text-center">
-                      <div className="w-8 h-8 bg-orange-500 rounded mx-auto mb-2"></div>
-                      <div className="text-xs text-orange-700">Crypto</div>
-                    </div>
+                    {dict.paymentMethods.map((method: string, idx: number) => (
+                      <div key={method} className={`bg-${['purple','blue','orange'][idx]}-50 p-3 rounded-lg border border-${['purple','blue','orange'][idx]}-100 text-center`}>
+                        <div className={`w-8 h-8 bg-${['purple','blue','orange'][idx]}-500 rounded mx-auto mb-2`}></div>
+                        <div className={`text-xs text-${['purple','blue','orange'][idx]}-700`}>{method}</div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -77,56 +71,34 @@ export function PublishersMonetization() {
           </div>
 
           <div className="order-1 lg:order-2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Flexible Monetization Strategies</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">{dict.title}</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Maximize your revenue with multiple monetization options tailored to your publishing goals and audience
-              preferences.
+              {dict.subtitle}
             </p>
 
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-bold mb-2">Subscription Models</h3>
-                <p className="text-gray-600 mb-4">
-                  Create recurring revenue streams with flexible subscription options.
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <CheckItem>Monthly subscriptions</CheckItem>
-                  <CheckItem>Annual plans with discounts</CheckItem>
-                  <CheckItem>Tiered access levels</CheckItem>
-                  <CheckItem>Free trials to convert readers</CheckItem>
-                </div>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-bold mb-2">Pay-Per-Content</h3>
-                <p className="text-gray-600 mb-4">
-                  Offer individual purchases for readers who prefer à la carte options.
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <CheckItem>Single book purchases</CheckItem>
-                  <CheckItem>Chapter-by-chapter sales</CheckItem>
-                  <CheckItem>Bundle packages</CheckItem>
-                  <CheckItem>Time-limited access</CheckItem>
-                </div>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-bold mb-2">Hybrid Approaches</h3>
-                <p className="text-gray-600 mb-4">
-                  Combine multiple strategies to maximize revenue and reader satisfaction.
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <CheckItem>Freemium models</CheckItem>
-                  <CheckItem>Premium content upgrades</CheckItem>
-                  <CheckItem>Institutional licensing</CheckItem>
-                  <CheckItem>Advertising opportunities</CheckItem>
-                </div>
-              </div>
+              <MonetizationBlock dict={dict.subscription} />
+              <MonetizationBlock dict={dict.payPerContent} />
+              <MonetizationBlock dict={dict.hybrid} />
             </div>
           </div>
         </div>
       </div>
     </section>
+  )
+}
+
+function MonetizationBlock({ dict }: { dict: any }) {
+  return (
+    <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+      <h3 className="text-xl font-bold mb-2">{dict.title}</h3>
+      <p className="text-gray-600 mb-4">{dict.desc}</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {dict.items.map((item: string) => (
+          <CheckItem key={item}>{item}</CheckItem>
+        ))}
+      </div>
+    </div>
   )
 }
 

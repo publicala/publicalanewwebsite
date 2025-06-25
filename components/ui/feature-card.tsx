@@ -38,9 +38,7 @@ export function FeatureCard({
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-2 text-gray-900">{title}</h3>
-            <p className="text-gray-600 leading-relaxed">
-              Encrypted streaming DRM, expiring signed URLs, live threat telemetry
-            </p>
+            <p className="text-gray-600 leading-relaxed">{description}</p>
           </div>
         </div>
       </CardContent>

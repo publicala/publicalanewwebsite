@@ -7,7 +7,58 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Check } from "lucide-react"
 import Link from "next/link"
 
-export function PricingTiers() {
+interface PricingTiersProps {
+  dict: {
+    pricingTiers: {
+      toggle: {
+        monthly: string
+        annual: string
+      }
+      plans: {
+        starter: {
+          name: string
+          description: string
+          description2: string
+          keyFeatures: string[]
+          features: string[]
+          buttonText: string
+        }
+        growth: {
+          name: string
+          description: string
+          description2: string
+          keyFeatures: string[]
+          features: string[]
+          buttonText: string
+          popular: string
+        }
+        enterprise: {
+          name: string
+          description: string
+          description2: string
+          keyFeatures: string[]
+          features: string[]
+          buttonText: string
+        }
+      }
+      savings: {
+        save: string
+        perYear: string
+        plusPerYear: string
+      }
+      period: {
+        month: string
+        year: string
+      }
+      customPlan: {
+        text: string
+        linkText: string
+      }
+    }
+  }
+}
+
+export function PricingTiers({ dict }: PricingTiersProps) {
   const [isAnnual, setIsAnnual] = useState(false)
 
   const plans = {
@@ -48,7 +99,7 @@ export function PricingTiers() {
                 !isAnnual ? "bg-white text-gray-900 shadow-sm" : "text-gray-600 hover:text-gray-900"
               }`}
             >
-              Monthly
+              {dict.pricingTiers.toggle.monthly}
             </button>
             <button
               onClick={() => setIsAnnual(true)}
@@ -56,7 +107,7 @@ export function PricingTiers() {
                 isAnnual ? "bg-white text-gray-900 shadow-sm" : "text-gray-600 hover:text-gray-900"
               }`}
             >
-              Annual
+              {dict.pricingTiers.toggle.annual}
             </button>
           </div>
         </div>
@@ -64,41 +115,41 @@ export function PricingTiers() {
           {/* Starter Plan */}
           <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
             <CardHeader className="pb-8">
-              <CardTitle className="text-2xl">Starter</CardTitle>
+              <CardTitle className="text-2xl">{dict.pricingTiers.plans.starter.name}</CardTitle>
               <CardDescription className="text-base">
-                For individuals and small teams just getting started
+                {dict.pricingTiers.plans.starter.description}
               </CardDescription>
               <div className="mt-4">
                 <span className="text-4xl font-bold">${getPrice("starter")}</span>
-                <span className="text-gray-500 ml-2">/{isAnnual ? "year" : "month"}</span>
+                <span className="text-gray-500 ml-2">/{isAnnual ? dict.pricingTiers.period.year : dict.pricingTiers.period.month}</span>
                 {isAnnual && (
-                  <div className="text-sm text-green-600 font-medium mt-1">Save ${getSavings("starter")} per year</div>
+                  <div className="text-sm text-green-600 font-medium mt-1">
+                    {dict.pricingTiers.savings.save} ${getSavings("starter")} {dict.pricingTiers.savings.perYear}
+                  </div>
                 )}
               </div>
             </CardHeader>
             <CardContent className="pb-8">
-              <p className="text-sm text-gray-500 mb-6">Everything you need to start publishing digital content</p>
+              <p className="text-sm text-gray-500 mb-6">{dict.pricingTiers.plans.starter.description2}</p>
 
               {/* Key features with highlight */}
               <div className="mb-6 space-y-3">
-                <div className="bg-primary/5 p-3 rounded-lg border-l-4 border-primary">
-                  <p className="text-sm font-medium">Up to 10 publications</p>
-                </div>
-                <div className="bg-primary/5 p-3 rounded-lg border-l-4 border-primary">
-                  <p className="text-sm font-medium">Earn 70% from each sale</p>
-                </div>
+                {dict.pricingTiers.plans.starter.keyFeatures.map((feature, index) => (
+                  <div key={index} className="bg-primary/5 p-3 rounded-lg border-l-4 border-primary">
+                    <p className="text-sm font-medium">{feature}</p>
+                  </div>
+                ))}
               </div>
 
               <ul className="space-y-3">
-                <PricingFeatureItem>Basic reader analytics</PricingFeatureItem>
-                <PricingFeatureItem>Standard customization options</PricingFeatureItem>
-                <PricingFeatureItem>Single payment gateway</PricingFeatureItem>
-                <PricingFeatureItem>Email support</PricingFeatureItem>
+                {dict.pricingTiers.plans.starter.features.map((feature, index) => (
+                  <PricingFeatureItem key={index}>{feature}</PricingFeatureItem>
+                ))}
               </ul>
             </CardContent>
             <CardFooter>
               <Button asChild className="w-full rounded-md" variant="outline">
-                <Link href="/signup?plan=starter">Get Started</Link>
+                <Link href="/signup?plan=starter">{dict.pricingTiers.plans.starter.buttonText}</Link>
               </Button>
             </CardFooter>
           </Card>
@@ -106,44 +157,42 @@ export function PricingTiers() {
           {/* Growth Plan */}
           <Card className="border-2 border-primary shadow-lg relative">
             <div className="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">
-              MOST POPULAR
+              {dict.pricingTiers.plans.growth.popular}
             </div>
             <CardHeader className="pb-8">
-              <CardTitle className="text-2xl">Growth</CardTitle>
-              <CardDescription className="text-base">For growing publishers with expanding catalogs</CardDescription>
+              <CardTitle className="text-2xl">{dict.pricingTiers.plans.growth.name}</CardTitle>
+              <CardDescription className="text-base">{dict.pricingTiers.plans.growth.description}</CardDescription>
               <div className="mt-4">
                 <span className="text-4xl font-bold">${getPrice("growth")}</span>
-                <span className="text-gray-500 ml-2">/{isAnnual ? "year" : "month"}</span>
+                <span className="text-gray-500 ml-2">/{isAnnual ? dict.pricingTiers.period.year : dict.pricingTiers.period.month}</span>
                 {isAnnual && (
-                  <div className="text-sm text-green-600 font-medium mt-1">Save ${getSavings("growth")} per year</div>
+                  <div className="text-sm text-green-600 font-medium mt-1">
+                    {dict.pricingTiers.savings.save} ${getSavings("growth")} {dict.pricingTiers.savings.perYear}
+                  </div>
                 )}
               </div>
             </CardHeader>
             <CardContent className="pb-8">
-              <p className="text-sm text-gray-500 mb-6">Advanced features for professional publishers</p>
+              <p className="text-sm text-gray-500 mb-6">{dict.pricingTiers.plans.growth.description2}</p>
 
               {/* Key features with highlight */}
               <div className="mb-6 space-y-3">
-                <div className="bg-primary/5 p-3 rounded-lg border-l-4 border-primary">
-                  <p className="text-sm font-medium">Up to 300 publications</p>
-                </div>
-                <div className="bg-primary/5 p-3 rounded-lg border-l-4 border-primary">
-                  <p className="text-sm font-medium">Earn 80% from each sale</p>
-                </div>
+                {dict.pricingTiers.plans.growth.keyFeatures.map((feature, index) => (
+                  <div key={index} className="bg-primary/5 p-3 rounded-lg border-l-4 border-primary">
+                    <p className="text-sm font-medium">{feature}</p>
+                  </div>
+                ))}
               </div>
 
               <ul className="space-y-3">
-                <PricingFeatureItem>Advanced reader analytics</PricingFeatureItem>
-                <PricingFeatureItem>Enhanced customization options</PricingFeatureItem>
-                <PricingFeatureItem>Multiple payment gateways</PricingFeatureItem>
-                <PricingFeatureItem>Priority email support</PricingFeatureItem>
-                <PricingFeatureItem>Custom domain</PricingFeatureItem>
-                <PricingFeatureItem>Subscription management</PricingFeatureItem>
+                {dict.pricingTiers.plans.growth.features.map((feature, index) => (
+                  <PricingFeatureItem key={index}>{feature}</PricingFeatureItem>
+                ))}
               </ul>
             </CardContent>
             <CardFooter>
               <Button asChild className="w-full rounded-md">
-                <Link href="/signup?plan=growth">Get Started</Link>
+                <Link href="/signup?plan=growth">{dict.pricingTiers.plans.growth.buttonText}</Link>
               </Button>
             </CardFooter>
           </Card>
@@ -151,45 +200,39 @@ export function PricingTiers() {
           {/* Enterprise Plan */}
           <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
             <CardHeader className="pb-8">
-              <CardTitle className="text-2xl">Enterprise</CardTitle>
-              <CardDescription className="text-base">For established publishers with large catalogs</CardDescription>
+              <CardTitle className="text-2xl">{dict.pricingTiers.plans.enterprise.name}</CardTitle>
+              <CardDescription className="text-base">{dict.pricingTiers.plans.enterprise.description}</CardDescription>
               <div className="mt-4">
                 <span className="text-4xl font-bold">From ${getPrice("enterprise")}</span>
-                <span className="text-gray-500 ml-2">/{isAnnual ? "year" : "month"}</span>
+                <span className="text-gray-500 ml-2">/{isAnnual ? dict.pricingTiers.period.year : dict.pricingTiers.period.month}</span>
                 {isAnnual && (
                   <div className="text-sm text-green-600 font-medium mt-1">
-                    Save ${getSavings("enterprise")}+ per year
+                    {dict.pricingTiers.savings.save} ${getSavings("enterprise")}+ {dict.pricingTiers.savings.plusPerYear}
                   </div>
                 )}
               </div>
             </CardHeader>
             <CardContent className="pb-8">
-              <p className="text-sm text-gray-500 mb-6">Everything you need for large-scale publishing</p>
+              <p className="text-sm text-gray-500 mb-6">{dict.pricingTiers.plans.enterprise.description2}</p>
 
               {/* Key features with highlight */}
               <div className="mb-6 space-y-3">
-                <div className="bg-primary/5 p-3 rounded-lg border-l-4 border-primary">
-                  <p className="text-sm font-medium">Unlimited publications</p>
-                </div>
-                <div className="bg-primary/5 p-3 rounded-lg border-l-4 border-primary">
-                  <p className="text-sm font-medium">Earn 90% from each sale</p>
-                </div>
+                {dict.pricingTiers.plans.enterprise.keyFeatures.map((feature, index) => (
+                  <div key={index} className="bg-primary/5 p-3 rounded-lg border-l-4 border-primary">
+                    <p className="text-sm font-medium">{feature}</p>
+                  </div>
+                ))}
               </div>
 
               <ul className="space-y-3">
-                <PricingFeatureItem>Comprehensive analytics dashboard</PricingFeatureItem>
-                <PricingFeatureItem>Full white-labeling</PricingFeatureItem>
-                <PricingFeatureItem>All payment gateways</PricingFeatureItem>
-                <PricingFeatureItem>24/7 priority support</PricingFeatureItem>
-                <PricingFeatureItem>Multiple custom domains</PricingFeatureItem>
-                <PricingFeatureItem>Advanced DRM options</PricingFeatureItem>
-                <PricingFeatureItem>API access</PricingFeatureItem>
-                <PricingFeatureItem>Dedicated account manager</PricingFeatureItem>
+                {dict.pricingTiers.plans.enterprise.features.map((feature, index) => (
+                  <PricingFeatureItem key={index}>{feature}</PricingFeatureItem>
+                ))}
               </ul>
             </CardContent>
             <CardFooter>
               <Button asChild className="w-full rounded-md" variant="outline">
-                <Link href="/signup?plan=enterprise">Contact Sales</Link>
+                <Link href="/signup?plan=enterprise">{dict.pricingTiers.plans.enterprise.buttonText}</Link>
               </Button>
             </CardFooter>
           </Card>
@@ -197,9 +240,9 @@ export function PricingTiers() {
 
         <div className="mt-12 text-center">
           <p className="text-gray-500">
-            Need a custom plan?{" "}
+            {dict.pricingTiers.customPlan.text}{" "}
             <Link href="/contact" className="text-primary font-medium hover:underline">
-              Contact our sales team
+              {dict.pricingTiers.customPlan.linkText}
             </Link>
           </p>
         </div>

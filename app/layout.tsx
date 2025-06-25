@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://publica.la"),
   title: "publica.la - Digital Publishing Platform for Modern Publishers",
   description:
     "Transform your printed content into engaging digital experiences with publica.la. The leading ePaper platform trusted by 400+ publishers, bookshops, magazines, and newspapers worldwide. Features Smart Zoom technology, global distribution, AI-powered insights, and seamless monetization tools.",
@@ -85,12 +86,31 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.png" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.png" />
         <meta name="theme-color" content="#ec4899" />
         <meta name="msapplication-TileColor" content="#ec4899" />
+        <link rel="alternate" href="https://publica.la/en" hrefLang="en" />
+        <link rel="alternate" href="https://publica.la/es" hrefLang="es" />
+        <link rel="alternate" href="https://publica.la/pt" hrefLang="pt" />
+        <link rel="alternate" href="https://publica.la" hrefLang="x-default" />
+        <link rel="canonical" href="https://publica.la" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "publica.la",
+          "url": "https://publica.la",
+          "logo": "https://publica.la/images/logo.svg",
+          "sameAs": [
+            "https://twitter.com/publicala",
+            "https://www.linkedin.com/company/publica-la/"
+          ]
+        }) }} />
+        {/* Google Analytics GA4 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-347437097"></script>
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-347437097');` }} />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
@@ -99,4 +119,4 @@ export default function RootLayout({
       </body>
     </html>
   )
-}
+} 

@@ -4,54 +4,62 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { BookOpen, Store, Pen, Library, Newspaper, ArrowRight } from "lucide-react"
 
-export function SolutionsSection() {
+interface SolutionsSectionProps {
+  dict: {
+    solutionsSection: {
+      title: string
+      subtitle: string
+      solutions: Array<{
+        title: string
+        description: string
+        href: string
+      }>
+      customSolution: {
+        title: string
+        description: string
+        buttonText: string
+      }
+      learnMore: string
+    }
+  }
+}
+
+export function SolutionsSection({ dict }: SolutionsSectionProps) {
+  const solutionIcons = [
+    <BookOpen key="publishers" className="h-8 w-8" />,
+    <Store key="bookshops" className="h-8 w-8" />,
+    <Pen key="creators" className="h-8 w-8" />,
+    <Library key="libraries" className="h-8 w-8" />,
+    <Newspaper key="magazines" className="h-8 w-8" />,
+  ]
+
   return (
     <section className="w-full py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Enterprise Solutions for Every Need</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{dict.solutionsSection.title}</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Tailored digital publishing solutions for organizations across the content ecosystem
+            {dict.solutionsSection.subtitle}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <SolutionCard
-            icon={<BookOpen className="h-8 w-8" />}
-            title="For Publishers"
-            description="Streamline your ebook and audiobooks ecommerce workflow with our comprehensive platform designed for publishers of all sizes."
-            href="/solutions/publishers"
-          />
-          <SolutionCard
-            icon={<Store className="h-8 w-8" />}
-            title="For Bookshops"
-            description="Expand your reach with digital offerings and create new revenue streams for your bookshop."
-            href="/solutions/bookshops"
-          />
-          <SolutionCard
-            icon={<Pen className="h-8 w-8" />}
-            title="For Content Creators"
-            description="Focus on creating exceptional content while we handle the technical aspects of distribution and monetization."
-            href="/solutions/content-creators"
-          />
-          <SolutionCard
-            icon={<Library className="h-8 w-8" />}
-            title="For Libraries"
-            description="Modernize your library with digital solutions that make content more accessible to your community."
-            href="/solutions/libraries"
-          />
-          <SolutionCard
-            icon={<Newspaper className="h-8 w-8" />}
-            title="For Magazines & Newspapers"
-            description="Streamline your replica edition and digital subscription process and reach readers across all devices and platforms."
-            href="/solutions/magazines-newspapers"
-          />
+          {dict.solutionsSection.solutions.map((solution, index) => (
+            <SolutionCard
+              key={index}
+              icon={solutionIcons[index]}
+              title={solution.title}
+              description={solution.description}
+              href={solution.href}
+              learnMore={dict.solutionsSection.learnMore}
+            />
+          ))}
           <Card className="border border-dashed border-gray-300 bg-gray-50 flex flex-col justify-center items-center p-6">
             <CardContent className="p-0 text-center">
-              <h3 className="text-xl font-medium mb-2">Need a custom solution?</h3>
-              <p className="text-muted-foreground mb-4">Contact our team to discuss your specific requirements</p>
+              <h3 className="text-xl font-medium mb-2">{dict.solutionsSection.customSolution.title}</h3>
+              <p className="text-muted-foreground mb-4">{dict.solutionsSection.customSolution.description}</p>
               <Button asChild variant="outline">
-                <Link href="/contact">Contact Sales</Link>
+                <Link href="/contact">{dict.solutionsSection.customSolution.buttonText}</Link>
               </Button>
             </CardContent>
           </Card>
@@ -66,11 +74,13 @@ function SolutionCard({
   title,
   description,
   href,
+  learnMore,
 }: {
   icon: React.ReactNode
   title: string
   description: string
   href: string
+  learnMore: string
 }) {
   return (
     <Card className="border border-gray-200 transition-all hover:shadow-md hover:border-primary/30 h-full">
@@ -88,7 +98,7 @@ function SolutionCard({
           className="p-0 h-auto font-medium text-primary hover:text-primary/80 hover:bg-transparent"
         >
           <Link href={href} className="flex items-center gap-1">
-            Learn more <ArrowRight className="h-4 w-4" />
+            {learnMore} <ArrowRight className="h-4 w-4" />
           </Link>
         </Button>
       </CardContent>

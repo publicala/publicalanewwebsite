@@ -25,6 +25,13 @@ interface DetailedCaseStudyProps {
     alt: string
   }>
   logoSrc?: string
+  sectionTitles: {
+    about: string
+    challenge: string
+    solution: string
+    results: string
+    whyChoose: string
+  }
 }
 
 export function DetailedCaseStudy({
@@ -41,6 +48,7 @@ export function DetailedCaseStudy({
   whyChooseUsList,
   additionalQuote,
   logoSrc,
+  sectionTitles,
 }: DetailedCaseStudyProps) {
   const companyName = logoAlt.replace(" Logo", "")
   const companyInitials = companyName
@@ -97,7 +105,7 @@ export function DetailedCaseStudy({
       {/* Client Description */}
       <section className="w-full py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">About {companyName}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">{sectionTitles.about} {companyName}</h2>
           <p className="text-lg text-gray-600 leading-relaxed">{clientDescription}</p>
         </div>
       </section>
@@ -105,7 +113,7 @@ export function DetailedCaseStudy({
       {/* Challenges */}
       <section className="w-full py-16 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">The Challenge</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">{sectionTitles.challenge}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {challengesList.map((challenge, index) => (
               <Card key={index} className="border-0 shadow-md">
@@ -126,7 +134,7 @@ export function DetailedCaseStudy({
       {/* Solution */}
       <section className="w-full py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">The Solution</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">{sectionTitles.solution}</h2>
           <div className="bg-primary/5 rounded-lg p-8">
             <p className="text-lg text-gray-700 leading-relaxed">{solutionText}</p>
           </div>
@@ -136,7 +144,7 @@ export function DetailedCaseStudy({
       {/* Results */}
       <section className="w-full py-16 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">The Results</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">{sectionTitles.results}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {resultsList.map((result, index) => (
               <Card key={index} className="border-0 shadow-md">
@@ -174,7 +182,7 @@ export function DetailedCaseStudy({
       {/* Why Choose Us */}
       <section className="w-full py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">Why {companyName} Chose Publica.la</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">{sectionTitles.whyChoose.replace('{company}', companyName)}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyChooseUsList.map((reason, index) => (
               <Card key={index} className="border-0 shadow-md">

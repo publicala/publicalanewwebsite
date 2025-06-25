@@ -1,4 +1,14 @@
-export function PricingHero() {
+interface PricingHeroProps {
+  dict: {
+    pricingHero: {
+      title: string
+      titleHighlight: string
+      subtitle: string
+    }
+  }
+}
+
+export function PricingHero({ dict }: PricingHeroProps) {
   return (
     <section className="relative w-full py-16 md:py-24 px-6 overflow-hidden">
       {/* Background gradient instead of image */}
@@ -11,10 +21,10 @@ export function PricingHero() {
 
       <div className="max-w-4xl mx-auto relative z-10 text-center">
         <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900 mb-6">
-          Simple, Transparent <span className="text-primary">Pricing</span>
+          {dict.pricingHero.title} <span className="text-primary">{dict.pricingHero.titleHighlight}</span>
         </h1>
         <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-          Choose the perfect plan for your publishing needs. Scale as your catalog and audience grow.
+          {dict.pricingHero.subtitle}
         </p>
       </div>
     </section>

@@ -2,36 +2,42 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Quote } from "lucide-react"
 
-export function TestimonialsSection() {
+interface TestimonialsSectionProps {
+  dict: {
+    testimonialsSection: {
+      title: string
+      subtitle: string
+      testimonials: Array<{
+        quote: string
+        name: string
+        role: string
+        avatar: string
+      }>
+    }
+  }
+}
+
+export function TestimonialsSection({ dict }: TestimonialsSectionProps) {
   return (
     <section className="w-full py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Industry Leaders</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{dict.testimonialsSection.title}</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See what our customers have to say about their experience with Publica.la
+            {dict.testimonialsSection.subtitle}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <TestimonialCard
-            quote="The subscription tools, the ability to build libraries, and the flexibility to manage marketing alternatives make it an irreplaceable ally for the business. I couldn't do without it."
-            name="Candelaria Pagella"
-            role="Head of Marketing y Communication at Santillana"
-            avatar="CP"
-          />
-          <TestimonialCard
-            quote="Our digital sales have increased by 100% because we embarked on the digital adventure together."
-            name="Fernando Sánchez"
-            role="Head of Revista Barcelona"
-            avatar="FS"
-          />
-          <TestimonialCard
-            quote="The Publica.la platform is fast, user-friendly, and perfectly suited for growing both retail and institutional eBook operations."
-            name="Martha Edna Suárez"
-            role="CEO at Alfaeditorial Colombiana S.A."
-            avatar="MS"
-          />
+          {dict.testimonialsSection.testimonials.map((t, i) => (
+            <TestimonialCard
+              key={i}
+              quote={t.quote}
+              name={t.name}
+              role={t.role}
+              avatar={t.avatar}
+            />
+          ))}
         </div>
       </div>
     </section>

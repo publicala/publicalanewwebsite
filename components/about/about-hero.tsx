@@ -1,7 +1,18 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-export function AboutHero() {
+interface AboutHeroProps {
+  dict: {
+    aboutHero: {
+      title: string
+      description: string
+      getStartedButton: string
+      scheduleDemoButton: string
+    }
+  }
+}
+
+export function AboutHero({ dict }: AboutHeroProps) {
   return (
     <section className="relative w-full py-24 md:py-32 px-6 overflow-hidden">
       <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
@@ -14,12 +25,10 @@ export function AboutHero() {
       </div>
       <div className="max-w-5xl mx-auto relative z-10 flex flex-col items-center text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 text-center mb-12">
-          We are publica.la
+          {dict.aboutHero.title}
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto text-center">
-          We are a tech company that empowers creators, publishers, and institutions to distribute and manage their
-          digital content — simply, securely, and with full control. We work globally, move with agility, and
-          collaborate as one team.
+          {dict.aboutHero.description}
         </p>
         <div className="flex flex-col sm:flex-row gap-6">
           <Button
@@ -27,7 +36,7 @@ export function AboutHero() {
             size="lg"
             className="rounded-md font-medium bg-blue-600 hover:bg-blue-700 text-white px-8 py-6"
           >
-            <Link href="/get-started">Get started</Link>
+            <Link href="/get-started">{dict.aboutHero.getStartedButton}</Link>
           </Button>
           <Button
             asChild
@@ -36,7 +45,7 @@ export function AboutHero() {
             className="rounded-md font-medium text-blue-600 hover:bg-blue-50 px-8 py-6 group"
           >
             <Link href="/schedule-demo" className="flex items-center">
-              Schedule a demo
+              {dict.aboutHero.scheduleDemoButton}
             </Link>
           </Button>
         </div>

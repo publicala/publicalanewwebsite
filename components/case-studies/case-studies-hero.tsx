@@ -1,4 +1,8 @@
-export function CaseStudiesHero() {
+interface CaseStudiesHeroProps {
+  dict: any
+}
+
+export function CaseStudiesHero({ dict }: CaseStudiesHeroProps) {
   return (
     <section className="relative w-full py-16 md:py-24 px-6 overflow-hidden">
       <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/10 via-blue-50 to-purple-50">
@@ -10,11 +14,10 @@ export function CaseStudiesHero() {
       </div>
       <div className="max-w-4xl mx-auto relative z-10 text-center">
         <h1 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900 mb-6">
-          Success Stories from <span className="text-primary">Leading Publishers</span>
+          {dict.caseStudies.hero.title} <span className="text-primary">{dict.caseStudies.hero.titleHighlight}</span>
         </h1>
         <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-          Discover how publishers and content creators around the world are achieving remarkable results with
-          Publica.la's digital publishing platform.
+          {dict.caseStudies.hero.subtitle}
         </p>
       </div>
     </section>

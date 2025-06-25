@@ -3,37 +3,55 @@
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { BookOpen, BarChart3, Shield, Globe } from "lucide-react"
+import React from "react"
 
-const features = [
-  {
-    id: "content",
-    title: "Content Management",
-    description: "Organize and manage your digital library with powerful tools",
-    icon: BookOpen,
-    color: "blue",
-  },
-  {
-    id: "analytics",
-    title: "Advanced Analytics",
-    description: "Track performance and reader engagement in real-time",
-    icon: BarChart3,
-    color: "green",
-  },
-  {
-    id: "security",
-    title: "Enterprise Security",
-    description: "Protect your content with industry-leading security",
-    icon: Shield,
-    color: "red",
-  },
-  {
-    id: "sales",
-    title: "Global Sales",
-    description: "Reach readers worldwide with our global payments infrastructure.",
-    icon: Globe,
-    color: "indigo",
-  },
-]
+interface PlatformShowcaseProps {
+  dict: {
+    platformShowcase: {
+      title: string
+      subtitle: string
+      features: Array<{
+        id: string
+        title: string
+        description: string
+        color: string
+      }>
+      analytics: {
+        revenueGrowth: string
+        thisMonth: string
+        totalUsers: string
+      }
+      sales: {
+        globalRevenue: string
+        countries: string
+        currencies: string
+        multiCurrency: string
+        creditCards: {
+          title: string
+          description: string
+        }
+        digitalWallets: {
+          title: string
+          description: string
+        }
+      }
+      security: {
+        drm: {
+          title: string
+          description: string
+        }
+        streaming: {
+          title: string
+          description: string
+        }
+        observability: {
+          title: string
+          description: string
+        }
+      }
+    }
+  }
+}
 
 const colorClasses = {
   blue: "from-blue-500 to-blue-600 bg-blue-50 text-blue-600 border-blue-200",
@@ -44,26 +62,28 @@ const colorClasses = {
   yellow: "from-yellow-500 to-yellow-600 bg-yellow-50 text-yellow-600 border-yellow-200",
 }
 
-export function PlatformShowcase() {
+export function PlatformShowcase({ dict }: PlatformShowcaseProps) {
   const [activeFeature, setActiveFeature] = useState("content")
 
-  const activeFeatureData = features.find((f) => f.id === activeFeature)
+  const featureIcons = [BookOpen, BarChart3, Shield, Globe]
+  const activeFeatureData = dict.platformShowcase.features.find((f) => f.id === activeFeature)
+  const activeFeatureIcon = featureIcons[dict.platformShowcase.features.findIndex((f) => f.id === activeFeature)]
 
   return (
     <section className="w-full py-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Powerful Platform Features</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{dict.platformShowcase.title}</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Everything you need to create, manage, and monetize your digital content in one comprehensive platform.
+            {dict.platformShowcase.subtitle}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Feature tabs */}
           <div className="space-y-4">
-            {features.map((feature) => {
-              const Icon = feature.icon
+            {dict.platformShowcase.features.map((feature, index) => {
+              const Icon = featureIcons[index]
               const isActive = activeFeature === feature.id
               const colors = colorClasses[feature.color as keyof typeof colorClasses].split(" ")
 
@@ -104,7 +124,7 @@ export function PlatformShowcase() {
                       <div
                         className={`w-16 h-16 rounded-xl bg-gradient-to-br ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[0]} ${colorClasses[activeFeatureData.color as keyof typeof colorClasses].split(" ")[1]} flex items-center justify-center`}
                       >
-                        <activeFeatureData.icon className="h-8 w-8 text-white" />
+                        {React.createElement(activeFeatureIcon, { className: "h-8 w-8 text-white" })}
                       </div>
                       <div>
                         <h3 className="text-2xl font-bold">{activeFeatureData.title}</h3>
@@ -135,16 +155,16 @@ export function PlatformShowcase() {
                               ></div>
                             ))}
                           </div>
-                          <div className="text-sm text-green-700">Revenue Growth</div>
+                          <div className="text-sm text-green-700">{dict.platformShowcase.analytics.revenueGrowth}</div>
                         </div>
                         <div className="grid grid-cols-2 gap-4">
                           <div className="bg-gray-50 p-3 rounded-lg">
                             <div className="text-2xl font-bold text-green-600">+24%</div>
-                            <div className="text-sm text-gray-600">This Month</div>
+                            <div className="text-sm text-gray-600">{dict.platformShowcase.analytics.thisMonth}</div>
                           </div>
                           <div className="bg-gray-50 p-3 rounded-lg">
                             <div className="text-2xl font-bold text-blue-600">89.2K</div>
-                            <div className="text-sm text-gray-600">Total Users</div>
+                            <div className="text-sm text-gray-600">{dict.platformShowcase.analytics.totalUsers}</div>
                           </div>
                         </div>
                       </div>
@@ -159,19 +179,19 @@ export function PlatformShowcase() {
                               <div className="grid grid-cols-3 gap-4 mb-4">
                                 <div className="text-center">
                                   <div className="text-2xl font-bold text-indigo-600">$2.4M</div>
-                                  <div className="text-sm text-indigo-700">Global Revenue</div>
+                                  <div className="text-sm text-indigo-700">{dict.platformShowcase.sales.globalRevenue}</div>
                                 </div>
                                 <div className="text-center">
                                   <div className="text-2xl font-bold text-green-600">156</div>
-                                  <div className="text-sm text-green-700">Countries</div>
+                                  <div className="text-sm text-green-700">{dict.platformShowcase.sales.countries}</div>
                                 </div>
                                 <div className="text-center">
                                   <div className="text-2xl font-bold text-blue-600">24</div>
-                                  <div className="text-sm text-blue-700">Currencies</div>
+                                  <div className="text-sm text-blue-700">{dict.platformShowcase.sales.currencies}</div>
                                 </div>
                               </div>
                               <div className="text-sm text-indigo-700 text-center">
-                                Multi-currency payment processing
+                                {dict.platformShowcase.sales.multiCurrency}
                               </div>
                             </div>
                             <div className="grid grid-cols-2 gap-3">
@@ -180,8 +200,8 @@ export function PlatformShowcase() {
                                   <div className="w-3 h-3 bg-white rounded-full"></div>
                                 </div>
                                 <div className="flex-1">
-                                  <div className="text-sm font-medium">Credit Cards</div>
-                                  <div className="text-xs text-gray-600">Visa, Mastercard, Amex</div>
+                                  <div className="text-sm font-medium">{dict.platformShowcase.sales.creditCards.title}</div>
+                                  <div className="text-xs text-gray-600">{dict.platformShowcase.sales.creditCards.description}</div>
                                 </div>
                               </div>
                               <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
@@ -189,14 +209,14 @@ export function PlatformShowcase() {
                                   <div className="w-3 h-3 bg-white rounded-full"></div>
                                 </div>
                                 <div className="flex-1">
-                                  <div className="text-sm font-medium">Digital Wallets</div>
-                                  <div className="text-xs text-gray-600">PayPal, Apple Pay, Google Pay</div>
+                                  <div className="text-sm font-medium">{dict.platformShowcase.sales.digitalWallets.title}</div>
+                                  <div className="text-xs text-gray-600">{dict.platformShowcase.sales.digitalWallets.description}</div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         ) : (
-                          // Security content (keep existing)
+                          // Security content
                           <div className="grid grid-cols-1 gap-3">
                             <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
                               <div
@@ -206,10 +226,10 @@ export function PlatformShowcase() {
                               </div>
                               <div className="flex-1">
                                 <div className="text-sm font-medium text-gray-900">
-                                  Proprietary DRM with military-grade AES encryption
+                                  {dict.platformShowcase.security.drm.title}
                                 </div>
                                 <div className="text-xs text-gray-600">
-                                  Assets stream encrypted end-to-end, never stored locally
+                                  {dict.platformShowcase.security.drm.description}
                                 </div>
                               </div>
                               <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
@@ -224,10 +244,10 @@ export function PlatformShowcase() {
                               </div>
                               <div className="flex-1">
                                 <div className="text-sm font-medium text-gray-900">
-                                  Streaming, signed & session-scoped URLs
+                                  {dict.platformShowcase.security.streaming.title}
                                 </div>
                                 <div className="text-xs text-gray-600">
-                                  Just-in-time fragments auto-expire, stopping link-sharing
+                                  {dict.platformShowcase.security.streaming.description}
                                 </div>
                               </div>
                               <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
@@ -242,10 +262,10 @@ export function PlatformShowcase() {
                               </div>
                               <div className="flex-1">
                                 <div className="text-sm font-medium text-gray-900">
-                                  Fine-grained observability for real-time threat response
+                                  {dict.platformShowcase.security.observability.title}
                                 </div>
                                 <div className="text-xs text-gray-600">
-                                  Live telemetry flags anomalies and auto-mitigates
+                                  {dict.platformShowcase.security.observability.description}
                                 </div>
                               </div>
                               <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">

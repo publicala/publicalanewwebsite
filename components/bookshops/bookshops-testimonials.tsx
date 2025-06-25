@@ -1,37 +1,28 @@
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { Quote } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
+import { Star } from "lucide-react"
 
-export function BookshopsTestimonials() {
+export function BookshopsTestimonials({ dict }: { dict: any }) {
   return (
     <section className="w-full py-20 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">What Bookshops Say About Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{dict.title}</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Hear from bookshops that have expanded their business with our digital platform
+            {dict.subtitle}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <TestimonialCard
-            quote="Adding digital offerings through Publica.la has been a game-changer for our independent bookshop. We've reached new customers and created an additional revenue stream without any inventory costs."
-            name="Emily Chen"
-            role="Owner, Lighthouse Books"
-            avatar="EC"
-          />
-          <TestimonialCard
-            quote="Our customers love being able to instantly purchase and download ebooks from us. The platform was easy to integrate with our existing website and POS system."
-            name="Marcus Johnson"
-            role="Manager, Cornerstone Bookstore"
-            avatar="MJ"
-          />
-          <TestimonialCard
-            quote="The digital bookstore has allowed us to compete with larger retailers by offering a unique, curated selection of digital content that reflects our shop's personality and expertise."
-            name="Sofia Rodriguez"
-            role="Co-founder, Chapter One Books"
-            avatar="SR"
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {dict.testimonials.map((testimonial: any) => (
+            <TestimonialCard
+              key={testimonial.name}
+              quote={testimonial.quote}
+              name={testimonial.name}
+              role={testimonial.role}
+              bookshop={testimonial.bookshop}
+              rating={testimonial.rating}
+            />
+          ))}
         </div>
 
         <div className="mt-16 bg-white border border-gray-100 rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-8">
@@ -53,36 +44,37 @@ export function BookshopsTestimonials() {
   )
 }
 
-function TestimonialCard({
-  quote,
-  name,
-  role,
-  avatar,
-}: {
-  quote: string
-  name: string
-  role: string
-  avatar: string
+function TestimonialCard({ quote, name, role, bookshop, rating }: { 
+  quote: string; 
+  name: string; 
+  role: string; 
+  bookshop: string; 
+  rating: number; 
 }) {
   return (
-    <Card className="bg-white border border-gray-200 shadow-sm h-full flex flex-col">
-      <CardContent className="pt-6 flex-1 relative">
-        <div className="absolute top-6 left-6 text-primary/10">
-          <Quote size={48} />
+    <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+      <CardContent className="p-6">
+        <div className="flex mb-4">
+          {Array.from({ length: 5 }).map((_, i) => (
+            <Star
+              key={i}
+              size={16}
+              className={`${i < rating ? "text-yellow-400 fill-current" : "text-gray-300"}`}
+            />
+          ))}
         </div>
-        <p className="text-lg relative z-10 pl-4">{quote}</p>
-      </CardContent>
-      <CardFooter className="border-t pt-4">
+        <blockquote className="text-gray-600 mb-4 italic">"{quote}"</blockquote>
         <div className="flex items-center gap-3">
-          <Avatar>
-            <AvatarFallback className="bg-primary/10 text-primary">{avatar}</AvatarFallback>
-          </Avatar>
+          <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+            <span className="text-primary font-medium text-sm">{name.split(" ").map(n => n[0]).join("")}</span>
+          </div>
           <div>
-            <p className="font-medium">{name}</p>
-            <p className="text-sm text-muted-foreground">{role}</p>
+            <div className="font-medium text-gray-900">{name}</div>
+            <div className="text-sm text-gray-500">{role}</div>
+            <div className="text-sm text-primary font-medium">{bookshop}</div>
           </div>
         </div>
-      </CardFooter>
+      </CardContent>
     </Card>
   )
 }

@@ -1,0 +1,2187 @@
+{
+  "navigation": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "features": "Features",
+    "pricing": "Pricing",
+    "caseStudies": "Case Studies",
+    "about": "About Us",
+    "contact": "Contact",
+    "careers": "Careers"
+  },
+  "hero": {
+    "taglines": [
+      {
+        "heading": "Sell Smarter. Showcase Better.",
+        "subheading": "The ultimate platform to manage digital libraries and power your content ecommerce."
+      },
+      {
+        "heading": "Your Digital Library. Your Online Store. One Platform.",
+        "subheading": "Build, brand, and monetize your digital content with ease."
+      },
+      {
+        "heading": "Ecommerce Meets Content Management",
+        "subheading": "Organize your digital library and sell ebooks, audiobooks, and more — all in one place."
+      },
+      {
+        "heading": "From Library to Checkout in Seconds",
+        "subheading": "A seamless platform for managing digital collections and selling content globally."
+      },
+      {
+        "heading": "Turn Your Digital Library Into a Revenue Engine",
+        "subheading": "Comprehensive tools to manage, showcase, and monetize your content catalog."
+      },
+      {
+        "heading": "Where Digital Libraries and Ecommerce Converge",
+        "subheading": "Simplify content management and boost revenue with a single, powerful platform."
+      },
+      {
+        "heading": "Build Your Digital Library. Sell to the World.",
+        "subheading": "Publica.la helps you organize, customize, and monetize your content at scale."
+      }
+    ],
+    "trustedBy": "Trusted by 1000+ organizations worldwide",
+    "scheduleMeeting": "Schedule a Meeting",
+    "watchDemo": "Watch Demo",
+    "joinLeaders": "Join industry leaders",
+    "noCreditCard": "No credit card required",
+    "hero": {
+      "badge": "Solutions for Publishers",
+      "title": "Transform Your <1>Publishing</1> Business",
+      "subtitle": "Empower your publishing strategy with our comprehensive digital platform designed to help you distribute and monetize content effectively.",
+      "getStarted": "Get Started",
+      "requestDemo": "Request a Demo",
+      "videoTitle": "Publica.la Platform Overview"
+    },
+    "customerLogos": {
+      "title": "Trusted by Publishers Worldwide",
+      "subtitle": "Leading publishers choose Publica.la for their digital transformation"
+    }
+  },
+  "solutions": {
+    "publishers": "Publishers",
+    "libraries": "Libraries",
+    "bookshops": "Bookshops",
+    "contentCreators": "Content Creators",
+    "magazinesNewspapers": "Magazines & Newspapers"
+  },
+  "features": {
+    "title": "Features",
+    "integrations": "Integrations",
+    "nativeApp": "Native App",
+    "vitoAI": "Vito AI"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "getStarted": "Get Started",
+    "contactSales": "Contact Sales"
+  },
+  "footer": {
+    "description": "The most robust and dynamic digital content platform for publishers and content creators, empowering you to create, manage, and distribute exceptional content.",
+    "sections": {
+      "solutions": {
+        "title": "Solutions",
+        "links": [
+          {
+            "href": "/solutions/publishers",
+            "text": "For Publishers"
+          },
+          {
+            "href": "/solutions/bookshops",
+            "text": "For Bookshops"
+          },
+          {
+            "href": "/solutions/content-creators",
+            "text": "For Content Creators"
+          },
+          {
+            "href": "/solutions/libraries",
+            "text": "For Libraries"
+          },
+          {
+            "href": "/solutions/magazines-newspapers",
+            "text": "For Magazines & Newspapers"
+          }
+        ]
+      },
+      "features": {
+        "title": "Features",
+        "links": [
+          {
+            "href": "/features/vito-ai",
+            "text": "Vito AI"
+          },
+          {
+            "href": "/features/native-app",
+            "text": "Native App"
+          },
+          {
+            "href": "/features/integrations",
+            "text": "Integrations"
+          }
+        ]
+      },
+      "company": {
+        "title": "Company",
+        "links": [
+          {
+            "href": "/about-us",
+            "text": "About Us"
+          },
+          {
+            "href": "/compare",
+            "text": "Compare Platforms"
+          },
+          {
+            "href": "/careers",
+            "text": "Careers"
+          },
+          {
+            "href": "/blog",
+            "text": "Blog"
+          },
+          {
+            "href": "/press",
+            "text": "Press"
+          },
+          {
+            "href": "/contact",
+            "text": "Contact"
+          },
+          {
+            "href": "https://publicala.featurebase.app/changelog",
+            "text": "Changelog"
+          },
+          {
+            "href": "https://status.publica.la/",
+            "text": "Status page"
+          }
+        ]
+      },
+      "subscribe": {
+        "title": "Subscribe",
+        "description": "Stay updated with the latest news and features",
+        "placeholder": "Your email",
+        "button": "Subscribe"
+      }
+    },
+    "copyright": "© {year} Publica.la. All rights reserved.",
+    "legal": [
+      {
+        "href": "/terms",
+        "text": "Terms of Service"
+      },
+      {
+        "href": "/privacy",
+        "text": "Privacy Policy"
+      },
+      {
+        "href": "/cookies",
+        "text": "Cookie Policy"
+      }
+    ]
+  },
+  "testimonialsSection": {
+    "title": "Trusted by Industry Leaders",
+    "subtitle": "See what our customers have to say about their experience with Publica.la",
+    "testimonials": [
+      {
+        "quote": "The subscription tools, the ability to build libraries, and the flexibility to manage marketing alternatives make it an irreplaceable ally for the business. I couldn't do without it.",
+        "name": "Candelaria Pagella",
+        "role": "Head of Marketing y Communication at Santillana",
+        "avatar": "CP"
+      },
+      {
+        "quote": "Our digital sales have increased by 100% because we embarked on the digital adventure together.",
+        "name": "Fernando Sánchez",
+        "role": "Head of Revista Barcelona",
+        "avatar": "FS"
+      },
+      {
+        "quote": "The Publica.la platform is fast, user-friendly, and perfectly suited for growing both retail and institutional eBook operations.",
+        "name": "Martha Edna Suárez",
+        "role": "CEO at Alfaeditorial Colombiana S.A.",
+        "avatar": "MS"
+      }
+    ]
+  },
+  "solutionsSection": {
+    "title": "Enterprise Solutions for Every Need",
+    "subtitle": "Tailored digital publishing solutions for organizations across the content ecosystem",
+    "solutions": [
+      {
+        "title": "For Publishers",
+        "description": "Streamline your ebook and audiobooks ecommerce workflow with our comprehensive platform designed for publishers of all sizes.",
+        "href": "/solutions/publishers"
+      },
+      {
+        "title": "For Bookshops",
+        "description": "Expand your reach with digital offerings and create new revenue streams for your bookshop.",
+        "href": "/solutions/bookshops"
+      },
+      {
+        "title": "For Content Creators",
+        "description": "Focus on creating exceptional content while we handle the technical aspects of distribution and monetization.",
+        "href": "/solutions/content-creators"
+      },
+      {
+        "title": "For Libraries",
+        "description": "Modernize your library with digital solutions that make content more accessible to your community.",
+        "href": "/solutions/libraries"
+      },
+      {
+        "title": "For Magazines & Newspapers",
+        "description": "Streamline your replica edition and digital subscription process and reach readers across all devices and platforms.",
+        "href": "/solutions/magazines-newspapers"
+      }
+    ],
+    "customSolution": {
+      "title": "Need a custom solution?",
+      "description": "Contact our team to discuss your specific requirements",
+      "buttonText": "Contact Sales"
+    },
+    "learnMore": "Learn more"
+  },
+  "featuresSection": {
+    "title": "Enterprise-Grade Features for Professional Publishing",
+    "subtitle": "Our platform provides all the tools you need to manage and distribute your digital content with confidence and scale.",
+    "features": [
+      {
+        "title": "Advanced Content Management",
+        "description": "Streamline your workflow with our intuitive content management system designed for publishers."
+      },
+      {
+        "title": "Multi-format Publishing",
+        "description": "Support for EPUB, PDF, audio, and interactive content formats with seamless conversion."
+      },
+      {
+        "title": "Secure Digital Rights Management",
+        "description": "Protect your content with enterprise-grade DRM and access control features."
+      },
+      {
+        "title": "Comprehensive Analytics",
+        "description": "Get detailed insights into reader behavior, sales performance, and content engagement."
+      },
+      {
+        "title": "Global Distribution Network",
+        "description": "Reach readers worldwide with our extensive distribution and delivery infrastructure."
+      },
+      {
+        "title": "Monetization Tools",
+        "description": "Flexible pricing models, subscription management, and revenue optimization features."
+      },
+      {
+        "title": "API Access for Developers",
+        "description": "Integrate with your existing systems using our comprehensive REST API and webhooks."
+      },
+      {
+        "title": "99.9% Uptime Guarantee",
+        "description": "Reliable infrastructure with enterprise-grade hosting and 24/7 monitoring."
+      },
+      {
+        "title": "Enterprise-grade Security",
+        "description": "SOC 2 compliant with advanced encryption and security monitoring."
+      }
+    ],
+    "demoSection": {
+      "title": "Ready to see it in action?",
+      "description": "Experience the power of our platform with a personalized demo tailored to your publishing needs.",
+      "benefits": [
+        {
+          "text": "Live platform walkthrough"
+        },
+        {
+          "text": "Custom use case discussion"
+        }
+      ]
+    }
+  },
+  "platformShowcase": {
+    "title": "Powerful Platform Features",
+    "subtitle": "Everything you need to create, manage, and monetize your digital content in one comprehensive platform.",
+    "features": [
+      {
+        "id": "content",
+        "title": "Content Management",
+        "description": "Organize and manage your digital library with powerful tools",
+        "color": "blue"
+      },
+      {
+        "id": "analytics",
+        "title": "Advanced Analytics",
+        "description": "Track performance and reader engagement in real-time",
+        "color": "green"
+      },
+      {
+        "id": "security",
+        "title": "Enterprise Security",
+        "description": "Protect your content with industry-leading security",
+        "color": "red"
+      },
+      {
+        "id": "sales",
+        "title": "Global Sales",
+        "description": "Reach readers worldwide with our global payments infrastructure.",
+        "color": "indigo"
+      }
+    ],
+    "analytics": {
+      "revenueGrowth": "Revenue Growth",
+      "thisMonth": "This Month",
+      "totalUsers": "Total Users"
+    },
+    "sales": {
+      "globalRevenue": "Global Revenue",
+      "countries": "Countries",
+      "currencies": "Currencies",
+      "multiCurrency": "Multi-currency payment processing",
+      "creditCards": {
+        "title": "Credit Cards",
+        "description": "Visa, Mastercard, Amex"
+      },
+      "digitalWallets": {
+        "title": "Digital Wallets",
+        "description": "PayPal, Apple Pay, Google Pay"
+      }
+    },
+    "security": {
+      "drm": {
+        "title": "Proprietary DRM with military-grade AES encryption",
+        "description": "Assets stream encrypted end-to-end, never stored locally"
+      },
+      "streaming": {
+        "title": "Streaming, signed & session-scoped URLs",
+        "description": "Just-in-time fragments auto-expire, stopping link-sharing"
+      },
+      "observability": {
+        "title": "Fine-grained observability for real-time threat response",
+        "description": "Live telemetry flags anomalies and auto-mitigates"
+      }
+    }
+  },
+  "customerLogosShowcase": {
+    "title": "Trusted by Leading Organizations",
+    "subtitle": "Join thousands of content creators and publishers who trust Publica.la"
+  },
+  "ctaSection": {
+    "badge": "Ready to get started?",
+    "title": "Ready to transform your",
+    "titleHighlight": "digital publishing?",
+    "subtitle": "Join thousands of organizations that trust Publica.la for their enterprise publishing needs.",
+    "stats": [
+      {
+        "value": "1000+",
+        "label": "Organizations"
+      },
+      {
+        "value": "50+",
+        "label": "Countries"
+      },
+      {
+        "value": "300%",
+        "label": "Avg Growth"
+      },
+      {
+        "value": "4.9/5",
+        "label": "Rating"
+      }
+    ],
+    "scheduleButton": "Schedule a Meeting",
+    "watchDemoButton": "Watch Demo",
+    "benefits": [
+      {
+        "text": "No credit card required"
+      },
+      {
+        "text": "14-day free trial"
+      },
+      {
+        "text": "Cancel anytime"
+      }
+    ]
+  },
+  "navbar": {
+    "solutions": {
+      "title": "Solutions",
+      "description": "Enterprise Publishing Solutions",
+      "subtitle": "Comprehensive digital content management and distribution platform for publishers, bookshops, and content creators of all sizes.",
+      "links": [
+        {
+          "href": "/solutions/publishers",
+          "title": "For Publishers",
+          "description": "Streamline your digital publishing workflow"
+        },
+        {
+          "href": "/solutions/bookshops",
+          "title": "For Bookshops",
+          "description": "Expand your reach with digital offerings"
+        },
+        {
+          "href": "/solutions/content-creators",
+          "title": "For Content Creators",
+          "description": "Focus on content while we handle distribution"
+        },
+        {
+          "href": "/solutions/libraries",
+          "title": "For Libraries",
+          "description": "Digital solutions for modern libraries"
+        },
+        {
+          "href": "/solutions/magazines-newspapers",
+          "title": "For Magazines & Newspapers",
+          "description": "Streamline your digital publication process"
+        }
+      ]
+    },
+    "pricing": "Pricing",
+    "developers": "Developers",
+    "caseStudies": "Case Studies",
+    "ebooksDepository": "Ebooks Depository",
+    "startNow": "Start Now"
+  },
+  "aboutHero": {
+    "title": "We are publica.la",
+    "description": "We are a tech company that empowers creators, publishers, and institutions to distribute and manage their digital content — simply, securely, and with full control. We work globally, move with agility, and collaborate as one team.",
+    "getStartedButton": "Get started",
+    "scheduleDemoButton": "Schedule a demo"
+  },
+  "aboutStory": {
+    "stats": {
+      "title": "Today, publica.la is trusted by…",
+      "publishers": {
+        "value": "1,000+",
+        "label": "publishers, universities, and creators"
+      },
+      "countries": {
+        "value": "20+",
+        "label": "countries"
+      },
+      "titles": {
+        "value": "1.5M+",
+        "label": "digital titles shared"
+      }
+    },
+    "title": "How it all started",
+    "paragraphs": [
+      {
+        "text": "In 2016 we saw a clear opportunity: publishers, authors, and media organizations needed a better way to share and sell their digital content — directly, without intermediaries, and with full control."
+      },
+      {
+        "text": "That's when we built publica.la — a comprehensive platform designed to help them manage, promote, and monetize their content with simplicity and efficiency. Founded by a team of publishing and technology experts, publica.la emerged as a response to the limitations of traditional models and the lack of digital tools truly built for publishers."
+      },
+      {
+        "text": "Our goal was simple: empower content creators and retailers of all sizes to sell directly to their audiences — eliminating intermediaries, fostering real connections between creators, sellers, and consumers, and helping them grow their revenue in a digital-first world."
+      },
+      {
+        "text": "Over time, publica.la gained international recognition and expanded rapidly, becoming a leading platform in the digital publishing industry."
+      }
+    ]
+  },
+  "aboutMission": {
+    "title": "Where we are going",
+    "subtitle": "We're working to make digital publishing easier, fairer, and more accessible — for everyone, everywhere.",
+    "mainMessage": "If you create great content, we'll help you share it with the world.",
+    "simpleMessage": "That simple."
+  },
+  "aboutValues": {
+    "title": "We believe in",
+    "values": [
+      {
+        "title": "Autonomy with responsibility",
+        "description": "We own our work and results, with freedom and accountability."
+      },
+      {
+        "title": "Teamwork",
+        "description": "We grow stronger by supporting each other and working as one."
+      },
+      {
+        "title": "Technology & innovation",
+        "description": "We stay curious, use smart tools, and build for real impact."
+      },
+      {
+        "title": "Customer devotion",
+        "description": "We put our users at the center — and aim to exceed expectations."
+      },
+      {
+        "title": "Transparency",
+        "description": "We believe that clear and honest communication builds trust and alignment."
+      }
+    ]
+  },
+  "aboutTeam": {
+    "title": "Meet the people behind the platform",
+    "founders": {
+      "title": "Our Founders",
+      "franco": {
+        "name": "Franco Gilio",
+        "role": "CTO"
+      },
+      "pablo": {
+        "name": "Pablo Laurino",
+        "role": "CEO"
+      },
+      "imageAlt": "Founders Pablo Laurino and Franco Gilio at a publica.la booth"
+    },
+    "team": {
+      "title": "And our passionate team",
+      "description": "Dedicated individuals working together to shape the future of digital publishing. Here are a few moments with our amazing team."
+    },
+    "careers": {
+      "description": "We're always looking for curious minds who love building useful things and want to shape the future of digital publishing.",
+      "linkText": "View open positions"
+    }
+  },
+  "contactHero": {
+    "title": "Get in Touch",
+    "subtitle": "We're here to help you succeed",
+    "description": "Whether you're interested in our platform, need technical support, or want to explore partnership opportunities, our team is ready to assist you."
+  },
+  "contactForm": {
+    "title": "Send us a Message",
+    "firstName": {
+      "label": "First Name",
+      "placeholder": "Enter your first name"
+    },
+    "lastName": {
+      "label": "Last Name",
+      "placeholder": "Enter your last name"
+    },
+    "email": {
+      "label": "Email Address",
+      "placeholder": "Enter your email address"
+    },
+    "company": {
+      "label": "Company",
+      "placeholder": "Enter your company name"
+    },
+    "subject": {
+      "label": "Subject",
+      "placeholder": "Select a subject",
+      "options": [
+        {
+          "value": "sales",
+          "label": "Sales Inquiry"
+        },
+        {
+          "value": "support",
+          "label": "Technical Support"
+        },
+        {
+          "value": "partnership",
+          "label": "Partnership Opportunity"
+        },
+        {
+          "value": "demo",
+          "label": "Request a Demo"
+        },
+        {
+          "value": "billing",
+          "label": "Billing Question"
+        },
+        {
+          "value": "other",
+          "label": "Other"
+        }
+      ]
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Tell us how we can help you..."
+    },
+    "submitButton": {
+      "sending": "Sending...",
+      "default": "Send Message"
+    }
+  },
+  "contactInfo": {
+    "title": "Contact Information",
+    "methods": [
+      {
+        "title": "Email Us",
+        "details": ["hello@publica.la", "support@publica.la"],
+        "description": "We typically respond within 24 hours"
+      },
+      {
+        "title": "Call Us",
+        "details": ["+1 (555) 123-4567"],
+        "description": "Global support line - Monday to Friday, 9 AM - 6 PM EST"
+      },
+      {
+        "title": "Business Hours",
+        "details": ["Monday - Friday: 9 AM - 6 PM EST", "24/7 Priority Support Available"],
+        "description": "We work across multiple time zones"
+      }
+    ],
+    "urgentHelp": {
+      "title": "Need Immediate Help?",
+      "description": "For urgent technical issues or critical support needs, please use our priority support channel.",
+      "prioritySupport": "Priority Support",
+      "liveChat": "Live Chat"
+    }
+  },
+  "contactPresence": {
+    "title": "Our Global Presence",
+    "subtitle": "We're a fully remote team with talented professionals across three continents, working together to serve our global customer base",
+    "regions": [
+      {
+        "name": "Europe",
+        "count": 4,
+        "color": "bg-blue-500"
+      },
+      {
+        "name": "North America",
+        "count": 2,
+        "color": "bg-green-500"
+      },
+      {
+        "name": "South America",
+        "count": 3,
+        "color": "bg-purple-500"
+      }
+    ],
+    "teamLocations": {
+      "title": "Team Members Located In",
+      "locations": [
+        {
+          "city": "Rome",
+          "country": "Italy",
+          "region": "Europe",
+          "coords": { "x": 52, "y": 35 }
+        },
+        {
+          "city": "Barcelona",
+          "country": "Spain",
+          "region": "Europe",
+          "coords": { "x": 48, "y": 38 }
+        },
+        {
+          "city": "Lisboa",
+          "country": "Portugal",
+          "region": "Europe",
+          "coords": { "x": 46, "y": 40 }
+        },
+        {
+          "city": "Madrid",
+          "country": "Spain",
+          "region": "Europe",
+          "coords": { "x": 47, "y": 40 }
+        },
+        {
+          "city": "Bogotá",
+          "country": "Colombia",
+          "region": "South America",
+          "coords": { "x": 28, "y": 55 }
+        },
+        {
+          "city": "Medellín",
+          "country": "Colombia",
+          "region": "South America",
+          "coords": { "x": 28, "y": 56 }
+        },
+        {
+          "city": "Mexico City",
+          "country": "Mexico",
+          "region": "North America",
+          "coords": { "x": 22, "y": 45 }
+        },
+        {
+          "city": "Raleigh",
+          "country": "North Carolina, USA",
+          "region": "North America",
+          "coords": { "x": 32, "y": 42 }
+        },
+        {
+          "city": "Buenos Aires",
+          "country": "Argentina",
+          "region": "South America",
+          "coords": { "x": 35, "y": 72 }
+        }
+      ]
+    },
+    "remoteWork": {
+      "title": "Why We're Remote-First",
+      "description": "Our distributed team model allows us to tap into global talent, provide round-the-clock support, and better understand the diverse markets we serve. This approach enables us to deliver exceptional service regardless of your location."
+    }
+  },
+  "pricingHero": {
+    "title": "Simple, Transparent",
+    "titleHighlight": "Pricing",
+    "subtitle": "Choose the perfect plan for your publishing needs. Scale as your catalog and audience grow."
+  },
+  "pricingTiers": {
+    "toggle": {
+      "monthly": "Monthly",
+      "annual": "Annual"
+    },
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "For individuals and small teams just getting started",
+        "description2": "Everything you need to start publishing digital content",
+        "keyFeatures": [
+          "Up to 10 publications",
+          "Earn 70% from each sale"
+        ],
+        "features": [
+          "Basic reader analytics",
+          "Standard customization options",
+          "Single payment gateway",
+          "Email support"
+        ],
+        "buttonText": "Get Started"
+      },
+      "growth": {
+        "name": "Growth",
+        "description": "For growing publishers with expanding catalogs",
+        "description2": "Advanced features for professional publishers",
+        "keyFeatures": [
+          "Up to 300 publications",
+          "Earn 80% from each sale"
+        ],
+        "features": [
+          "Advanced reader analytics",
+          "Enhanced customization options",
+          "Multiple payment gateways",
+          "Priority email support",
+          "Custom domain",
+          "Subscription management"
+        ],
+        "buttonText": "Get Started",
+        "popular": "MOST POPULAR"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "For established publishers with large catalogs",
+        "description2": "Everything you need for large-scale publishing",
+        "keyFeatures": [
+          "Unlimited publications",
+          "Earn 90% from each sale"
+        ],
+        "features": [
+          "Comprehensive analytics dashboard",
+          "Full white-labeling",
+          "All payment gateways",
+          "24/7 priority support",
+          "Multiple custom domains",
+          "Advanced DRM options",
+          "API access",
+          "Dedicated account manager"
+        ],
+        "buttonText": "Contact Sales"
+      }
+    },
+    "savings": {
+      "save": "Save",
+      "perYear": "per year",
+      "plusPerYear": "per year"
+    },
+    "period": {
+      "month": "month",
+      "year": "year"
+    },
+    "customPlan": {
+      "text": "Need a custom plan?",
+      "linkText": "Contact our sales team"
+    }
+  },
+  "pricingFeatures": {
+    "title": "Compare Plans",
+    "subtitle": "Detailed comparison of features available in each pricing tier",
+    "headers": {
+      "features": "Features",
+      "starter": "Starter",
+      "growth": "Growth",
+      "enterprise": "Enterprise"
+    },
+    "categories": [
+      {
+        "title": "🧩 Administration Users",
+        "features": [
+          {
+            "name": "Admin Users",
+            "starter": "Up to 1",
+            "growth": "Up to 5",
+            "enterprise": "Unlimited"
+          }
+        ]
+      },
+      {
+        "title": "📈 Sales & Analytics",
+        "features": [
+          {
+            "name": "Retail and subscription sales",
+            "starter": true,
+            "growth": true,
+            "enterprise": true
+          },
+          {
+            "name": "Sales and subscription analysis",
+            "starter": true,
+            "growth": true,
+            "enterprise": true
+          },
+          {
+            "name": "Real-time consumption analysis",
+            "starter": true,
+            "growth": true,
+            "enterprise": true
+          }
+        ]
+      },
+      {
+        "title": "🛍️ Store & Customization",
+        "features": [
+          {
+            "name": "Store customization",
+            "starter": true,
+            "growth": true,
+            "enterprise": true
+          },
+          {
+            "name": "Offline Reading app",
+            "starter": true,
+            "growth": true,
+            "enterprise": true
+          },
+          {
+            "name": "Free content",
+            "starter": true,
+            "growth": true,
+            "enterprise": true
+          },
+          {
+            "name": "Custom domain",
+            "starter": true,
+            "growth": true,
+            "enterprise": true
+          },
+          {
+            "name": "Advanced customization - CSS",
+            "starter": false,
+            "growth": true,
+            "enterprise": true
+          }
+        ]
+      },
+      {
+        "title": "🎟️ Coupons & Smart Features",
+        "features": [
+          {
+            "name": "Coupon creation",
+            "starter": true,
+            "growth": true,
+            "enterprise": true
+          },
+          {
+            "name": "Smart Zoom (Interactive PDFs)",
+            "starter": true,
+            "growth": true,
+            "enterprise": true
+          },
+          {
+            "name": "Google Analytics creation",
+            "starter": true,
+            "growth": true,
+            "enterprise": true
+          },
+          {
+            "name": "Bulk coupon creation",
+            "starter": false,
+            "growth": true,
+            "enterprise": true
+          }
+        ]
+      },
+      {
+        "title": "🏢 Institutional & Marketplace",
+        "features": [
+          {
+            "name": "Institutional sales",
+            "starter": false,
+            "growth": true,
+            "enterprise": true
+          },
+          {
+            "name": "Sell 3rd-party content via marketplace",
+            "starter": false,
+            "growth": true,
+            "enterprise": true
+          }
+        ]
+      },
+      {
+        "title": "🤝 Support & Advisory",
+        "features": [
+          {
+            "name": "Dedicated Account Manager",
+            "starter": false,
+            "growth": false,
+            "enterprise": true
+          },
+          {
+            "name": "Prioritized support",
+            "starter": false,
+            "growth": false,
+            "enterprise": true
+          },
+          {
+            "name": "Personalized sales advisory",
+            "starter": false,
+            "growth": false,
+            "enterprise": true
+          }
+        ]
+      },
+      {
+        "title": "🔌 Integrations",
+        "features": [
+          {
+            "name": "API integrations",
+            "starter": true,
+            "growth": true,
+            "enterprise": true
+          },
+          {
+            "name": "SAML, LTI, IP, Referrer integrations",
+            "starter": false,
+            "growth": true,
+            "enterprise": true
+          }
+        ]
+      },
+      {
+        "title": "📚 Extra Services",
+        "features": [
+          {
+            "name": "publica.la Bookshop",
+            "starter": true,
+            "growth": true,
+            "enterprise": true
+          },
+          {
+            "name": "100% Off Coupon Codes",
+            "starter": "$5 each",
+            "growth": "$1 each",
+            "enterprise": "Contact sales"
+          },
+          {
+            "name": "Additional publication",
+            "starter": "$2 each",
+            "growth": "$2 each",
+            "enterprise": "Contact sales"
+          }
+        ]
+      }
+    ],
+    "addons": {
+      "title": "🧩 Add-ons (All Plans)",
+      "items": [
+        {
+          "name": "Customized Offline Reading App",
+          "value": "Contact sales"
+        },
+        {
+          "name": "Sell Printed Content (publica.la Paper)",
+          "value": "Contact sales"
+        },
+        {
+          "name": "CarPlay Integration",
+          "value": "Contact sales"
+        },
+        {
+          "name": "Access to Premium Catalog",
+          "value": "Contact sales"
+        }
+      ]
+    }
+  },
+  "pricingFAQ": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our pricing and plans",
+    "questions": [
+      {
+        "question": "How do I know which plan is right for me?",
+        "answer": "The best plan depends on the size of your catalog and your specific needs. The Starter plan at $20/month is ideal for individuals and small teams just getting started with digital publishing. The Growth plan at $249/month is designed for growing publishers with expanding catalogs and more advanced needs. The Enterprise plan starting from $492/month is for established publishers with large catalogs requiring comprehensive features and support."
+      },
+      {
+        "question": "Can I upgrade or downgrade my plan later?",
+        "answer": "Yes, you can upgrade or downgrade your plan at any time. When upgrading, the new features will be available immediately, and you'll be billed the prorated difference for the remainder of your billing cycle. When downgrading, the changes will take effect at the start of your next billing cycle."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept all major credit cards (Visa, Mastercard, American Express, Discover) and PayPal. For Enterprise plans, we also offer invoice payment options. Contact our sales team for more information."
+      },
+      {
+        "question": "Is there a free trial available?",
+        "answer": "Yes, we offer a 14-day free trial for all plans. No credit card is required to start your trial. You can explore all the features of your chosen plan during the trial period before making a commitment."
+      },
+      {
+        "question": "What happens if I exceed my plan limits?",
+        "answer": "If you approach your plan limits (such as number of publications or storage), we'll notify you so you can either upgrade to a higher plan or manage your resources. We don't automatically charge for overages, but continued usage beyond your plan limits may affect performance."
+      },
+      {
+        "question": "Do you offer discounts for educational institutions or non-profits?",
+        "answer": "Yes, we offer special pricing for educational institutions, non-profit organizations, and libraries. Please contact our sales team to learn more about our discount programs and eligibility requirements."
+      },
+      {
+        "question": "What kind of support is included with each plan?",
+        "answer": "The Basic plan includes standard email support with a response time of 24-48 hours. The Professional plan includes priority email support with a response time of 12-24 hours. The Enterprise plan includes 24/7 priority support via email and phone, plus a dedicated account manager to help with your specific needs."
+      },
+      {
+        "question": "Can I cancel my subscription at any time?",
+        "answer": "Yes, you can cancel your subscription at any time. When you cancel, you'll continue to have access to your plan until the end of your current billing cycle. We don't offer refunds for partial months of service."
+      }
+    ]
+  },
+  "featuresHero": {
+    "title": "Powerful Features for",
+    "titleHighlight": "Modern Publishing",
+    "subtitle": "Discover the tools and capabilities that make Publica.la the leading platform for digital content creators and publishers."
+  },
+  "featuresOverview": {
+    "title": "Powerful Platform Features",
+    "subtitle": "Explore the advanced capabilities that make Publica.la the leading choice for digital publishing",
+    "features": [
+      {
+        "title": "Vito AI",
+        "description": "Interactive AI assistant that enhances the reading experience with summaries and self-assessments",
+        "href": "/features/vito-ai",
+        "featured": true,
+        "new": "New"
+      },
+      {
+        "title": "Native App",
+        "description": "Provide your readers with a seamless mobile experience through customizable native apps for iOS and Android",
+        "href": "/features/native-app",
+        "featured": false
+      },
+      {
+        "title": "Integrations",
+        "description": "Connect your publishing platform with your favorite tools and services through extensive integration options",
+        "href": "/features/integrations",
+        "featured": false
+      },
+      {
+        "title": "Interactive Reader",
+        "description": "Engage readers with a beautiful, responsive reading experience across all devices",
+        "href": "/features/interactive-reader",
+        "featured": false
+      },
+      {
+        "title": "Global Distribution",
+        "description": "Reach readers worldwide with multi-language support and international payment processing",
+        "href": "/features/global-distribution",
+        "featured": false
+      },
+      {
+        "title": "Analytics Dashboard",
+        "description": "Gain valuable insights into reader behavior and content performance",
+        "href": "/features/analytics",
+        "featured": false
+      }
+    ],
+    "learnMore": "Learn more"
+  },
+  "caseStudies": {
+    "hero": {
+      "title": "Success Stories from",
+      "titleHighlight": "Leading Publishers",
+      "subtitle": "Discover how publishers and content creators around the world are achieving remarkable results with Publica.la's digital publishing platform."
+    },
+    "list": {
+      "title": "Success Stories by Solution",
+      "subtitle": "Explore how organizations across different industries achieve digital publishing success with Publica.la",
+      "categories": {
+        "publishers": {
+          "title": "Publishers",
+          "cases": [
+            {
+              "id": "hammurabi-publishing",
+              "title": "Editorial Hammurabi",
+              "subtitle": "Expanding Digital Reach in Legal Publishing",
+              "description": "How a leading legal publisher in Argentina modernized their operations and expanded their audience with digital publishing solutions.",
+              "results": [
+                "Significant increase in sales and new subscribers",
+                "Expanded national and international audience",
+                "Strengthened position as forward-thinking legal publisher"
+              ],
+              "tags": ["Legal Publishing", "Digital Transformation", "SME"]
+            }
+          ]
+        },
+        "bookshops": {
+          "title": "Bookshops",
+          "cases": [
+            {
+              "id": "bajalibros",
+              "title": "BajaLibros",
+              "subtitle": "Expanding Digital Library Across Borders",
+              "description": "How Argentina's leading eBook and audiobook platform successfully launched in Colombia, Mexico and Spain using multi-store architecture and localized payment solutions.",
+              "results": [
+                "+20% growth in total revenue within the first year",
+                "30% of new subscriptions from Colombia, 25% from Mexico",
+                "10,000+ app downloads in Spain during Q1 2025"
+              ],
+              "tags": ["Digital Library", "International Expansion", "Multi-store Architecture"]
+            },
+            {
+              "id": "antartica-libreria",
+              "title": "Antártica Librería",
+              "subtitle": "Transforming Chile's Largest Bookstore Chain",
+              "description": "How Chile's oldest and largest bookstore chain successfully entered the digital realm, offering eBooks and audiobooks while maintaining their trusted brand identity.",
+              "results": [
+                "30% increase in digital content revenue within 12 months",
+                "15% lift in conversion rate on digital storefront",
+                "5,000+ native app downloads in first quarter"
+              ],
+              "tags": ["Brick-and-Mortar", "Digital Transformation", "Multi-format Content"]
+            },
+            {
+              "id": "ebooks-patagonia",
+              "title": "Ebooks Patagonia",
+              "subtitle": "Driving Institutional Sales & Marketing Efficiency with a 300% ROI",
+              "description": "Learn how Ebooks Patagonia leveraged Publica.la to achieve a 300% ROI by expanding institutional sales and implementing data-driven marketing strategies.",
+              "results": [
+                "300% ROI achieved in 2022",
+                "Significant growth in sales to educational institutions and libraries",
+                "Enhanced marketing effectiveness through data-driven campaigns"
+              ],
+              "tags": ["Digital Bookstore", "Institutional Sales", "ROI Growth", "Data-Driven Marketing"]
+            }
+          ]
+        },
+        "newspapers-magazines": {
+          "title": "Newspapers & Magazines",
+          "cases": [
+            {
+              "id": "forbes-colombia",
+              "title": "Forbes Colombia",
+              "subtitle": "Digital Content Management and Monetization",
+              "description": "Discover how Forbes Colombia increased digital subscription sales by 15% and expanded their subscriber base with comprehensive digital publishing solutions.",
+              "results": [
+                "+15% increase in subscription sales in 2022",
+                "22% of total subscription sales in 2023 came through publica.la",
+                "Significant expansion in subscriber base"
+              ],
+              "tags": ["Business Magazine", "Subscription Growth", "Digital Monetization"]
+            }
+          ]
+        },
+        "content-creators": {
+          "title": "Content Creators",
+          "cases": []
+        },
+        "libraries": {
+          "title": "Libraries",
+          "cases": []
+        }
+      },
+      "keyResults": "Key Results:",
+      "readFullCaseStudy": "Read Full Case Study",
+      "caseStudy": "Case Study",
+      "caseStudies": "Case Studies"
+    },
+    "ebooksPatagonia": {
+      "logoAlt": "Ebooks Patagonia Logo",
+      "title": "Ebooks Patagonia: Boosting Sales and Customer Relationships with Publica.la",
+      "subtitle": "How a Patagonian digital publisher leveraged Publica.la to expand its market reach, enhance marketing efforts, and achieve a 300% ROI.",
+      "heroImageAlt": "Ebooks Patagonia platform showcase",
+      "clientDescription": "Ebooks Patagonia, a prominent digital book publisher based in the Patagonian region, achieved remarkable success by partnering with Publica.la to launch its own virtual digital bookstore. This move aimed to tap into the growing digital market and provide their unique content to a wider audience.",
+      "challengesList": [
+        "Expanding business horizons by effectively entering the burgeoning digital market.",
+        "Finding a robust and adaptable platform capable of meeting their specific digital content delivery and sales needs.",
+        "Developing strategies to effectively reach and sell to institutional clients, such as educational institutions and libraries.",
+        "Improving marketing efficiency and building stronger, data-informed relationships with readers."
+      ],
+      "solutionText": "Ebooks Patagonia leveraged Publica.la to launch a branded digital bookstore with flexible institutional sales models. The platform enabled strategic data collection for targeted marketing and provided personalized support, including collaborative development of new features to meet their specific needs. This comprehensive solution empowered them to offer their content digitally with full control over their customer experience and sales strategies.",
+      "resultsList": [
+        { "highlight": "300% ROI", "text": "Achieved in 2022, demonstrating significant financial success and platform effectiveness." },
+        { "text": "Significantly improved sales to educational institutions and libraries through flexible and customizable business models like volume licensing and institutional subscriptions." },
+        { "text": "Developed more efficient and targeted marketing campaigns using a strategic customer database built on reader insights from the Publica.la platform." },
+        { "text": "Strengthened customer relationships by offering personalized content, promotions, and a direct sales channel." },
+        { "text": "Benefited from exceptional, personalized support and collaborative development of new platform functionalities tailored to their evolving needs." }
+      ],
+      "testimonialQuote": "We are delighted with the results we have obtained by working with Publica.la. The platform has allowed us to expand our sales to institutions and strengthen our relationship with customers. In addition, the Publica.la support team has been exceptional, providing us with personalized support and developing new functions according to our needs. We are eager to continue our successful collaboration.",
+      "testimonialAuthor": "Javier Sepúlveda Hales",
+      "testimonialRole": "CEO - Ebooks Patagonia",
+      "whyChooseUsList": [
+        "Exceptional, personalized support team that acted as a valuable ally throughout the implementation and beyond.",
+        "Collaborative approach to development, with Publica.la willing to build new, tailored features to meet specific client requirements.",
+        "Highly flexible platform enabling adaptation and customization of business models for diverse client needs, especially institutional sales.",
+        "Robust data collection and analytics capabilities for strategic marketing, improved customer understanding, and data-driven decisions.",
+        "Comprehensive, all-in-one solution for creating a branded digital storefront and managing digital content sales effectively."
+      ],
+      "additionalImages": [
+        { "src": "/patagonia-ebooks-montage.png", "alt": "Ebooks Patagonia digital bookstore and content montage" },
+        { "src": "/ebooks-patagonia-interface.png", "alt": "Ebooks Patagonia platform interface example" }
+      ],
+      "sectionTitles": {
+        "about": "About",
+        "challenge": "The Challenge",
+        "solution": "The Solution",
+        "results": "The Results",
+        "whyChoose": "Why {company} Chose Publica.la"
+      }
+    },
+    "bajalibros": {
+      "logoAlt": "BajaLibros Logo",
+      "title": "BajaLibros",
+      "subtitle": "Expanding Digital Library Across Borders",
+      "heroImageAlt": "BajaLibros Platform Screenshot",
+      "clientDescription": "BajaLibros is a digital library platform that centralizes your content in one place and lets you take your reading anywhere with its mobile app and online store ar.bajalibros.com. Launched in 2013, the platform offers a broad catalogue of Spanish-language eBooks and audiobooks spanning genres such as fiction, self-help, business and technical manuals.",
+      "challengesList": [
+        "Launch fully localized storefronts in Colombia and Mexico with local branding, currency and payment methods",
+        "Adapt catalogues, pricing and tax rules to meet diverse regional requirements and consumer habits",
+        "Build brand awareness and establish market presence in Spain's competitive European digital-reading landscape",
+        "Scale operations efficiently with a single back-end managing multiple country-specific stores"
+      ],
+      "solutionText": "Publica.la partnered with BajaLibros to design a multi-store architecture that supports country-specific storefronts under a unified dashboard. Each store features secure eBook and audiobook delivery, fully automated multi-currency payment processing, and flexible content management tools to adapt catalogues per market. The solution included interactive readers via Native App and web, along with Vito AI-powered recommendations for personalized reading experiences.",
+      "resultsList": [
+        { "highlight": "+20%", "text": "growth in total revenue within the first year after launching international stores" },
+        { "highlight": "30%", "text": "of all new subscriptions originated from Colombia in 2024" },
+        { "highlight": "25%", "text": "of all new subscriptions originated from Mexico in 2024" },
+        { "highlight": "10,000+", "text": "app downloads in Spain during Q1 2025, establishing a European market foothold" },
+        { "highlight": "50%", "text": "reduction in content-management and administrative workload thanks to unified dashboard" },
+        { "highlight": "35%", "text": "increase in average session duration through AI-driven recommendations" }
+      ],
+      "testimonialQuote": "Publica.la's multi-store architecture allowed us to expand internationally while maintaining operational efficiency. We now serve readers across four countries with localized experiences, all managed from a single dashboard.",
+      "testimonialAuthor": "BajaLibros Team",
+      "testimonialRole": "Digital Strategy Team",
+      "whyChooseUsList": [
+        "Multi-store architecture with unified management dashboard",
+        "Localized payment processing for each market",
+        "Interactive reading experience across web and mobile",
+        "AI-powered recommendations to increase engagement",
+        "Flexible business models including subscriptions and retail",
+        "Comprehensive analytics for data-driven decisions"
+      ],
+      "additionalQuote": "The ability to manage multiple country-specific stores from a single dashboard while offering localized experiences has been transformative for our international expansion strategy.",
+      "sectionTitles": {
+        "about": "About",
+        "challenge": "The Challenge",
+        "solution": "The Solution",
+        "results": "The Results",
+        "whyChoose": "Why {company} Chose Publica.la"
+      }
+    },
+    "forbesColombia": {
+      "logoAlt": "Forbes Colombia Logo",
+      "title": "Success Story: Forbes Colombia",
+      "subtitle": "Digital Content Management and Monetization",
+      "heroImageAlt": "Forbes Colombia digital magazine on laptop",
+      "clientDescription": "Forbes Colombia is a prestigious business and economics magazine that has made a significant impact on the global publishing industry. It has become a leading authority in the business and financial world. Throughout its history, Forbes Colombia has been recognized for its rigorous editorial standards and its ability to analyze and evaluate the success and influence of top companies and entrepreneurs. The magazine stands out for its comprehensive coverage of business leaders, economic trends, investment strategies, and current topics related to the corporate world. Today, Forbes Colombia remains an invaluable source of knowledge and guidance for those seeking to understand and succeed in the world of business.",
+      "challengesList": [
+        "Offering subscription plans that granted access to both the archive and new issues.",
+        "Implementing an automated and efficient payment system that didn't require hours of administrative work.",
+        "Finding a secure platform to publish digital content.",
+        "Ultimately, they needed an all-in-one solution to effectively manage and monetize their digital content."
+      ],
+      "solutionText": "Forbes Colombia partnered with Publica.la to implement a comprehensive digital publishing solution that addressed their specific challenges. The platform provided them with the tools to create flexible subscription plans, secure content delivery, and an automated payment system, all while maintaining their prestigious brand identity and editorial standards.",
+      "resultsList": [
+        { "highlight": "+15% in sales in 2022", "text": "Significant increase in subscription sales during the first year" },
+        { "text": "A 15% increase in subscription sales during the first year of implementation (2022)." },
+        { "text": "22% of total subscription sales in 2023 came through publica.la." },
+        { "text": "A significant expansion in their subscriber base." },
+        { "text": "Efficient content management and effective digital monetization." },
+        { "text": "Greater market presence and editorial reach." },
+        { "text": "Access to detailed analytics that support strategic decision-making." }
+      ],
+      "testimonialQuote": "These numbers show the positive impact publica.la has had on our business—driving sustainable growth, increasing market share, and improving how we manage our subscriptions. We're very satisfied with the results and value our collaboration with publica.la to keep advancing in the publishing industry.",
+      "testimonialAuthor": "Edgar Gonzales",
+      "testimonialRole": "Production Director, Forbes Colombia",
+      "whyChooseUsList": [
+        "Focus on the reader experience through an interactive reader.",
+        "Customizable content, including links, additional info, etc.",
+        "Flexible subscription plans tailored to boost sales.",
+        "Reliable technical support that ensured smooth implementation and operation.",
+        "Enhanced reader experience through an interactive reader."
+      ],
+      "additionalQuote": "We're excited about the positive impact publica.la has had on our business and look forward to continued growth together with the platform.",
+      "additionalImages": [
+        { "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Disen%CC%83o%20sin%20ti%CC%81tulo%20%2825%29-DY2Yf5OETLZuhSkJvy6htRkLpGe9EU.webp", "alt": "Forbes Colombia mobile app showing magazine issues" },
+        { "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Disen%CC%83o%20sin%20ti%CC%81tulo%20%2824%29-WVVs049RrKoGqeHeVN1IlgYJeu8rnR.png", "alt": "Forbes Colombia digital magazine purchase page" }
+      ],
+      "sectionTitles": {
+        "about": "About",
+        "challenge": "The Challenge",
+        "solution": "The Solution",
+        "results": "The Results",
+        "whyChoose": "Why {company} Chose Publica.la"
+      }
+    },
+    "antarticaLibreria": {
+      "logoAlt": "Antártica Librería Logo",
+      "title": "Antártica Librería",
+      "subtitle": "Transforming Chile's Largest Bookstore Chain",
+      "heroImageAlt": "Antártica Librería Digital Platform",
+      "clientDescription": "Antártica Librería is Chile's oldest and largest bookstore chain. Founded originally as an importer and distributor in 1958 and opening its first retail store in 1981, today it operates 31 physical locations (21 in Santiago and 10 in regional centers) alongside a digital storefront for eBooks and audiobooks at ebooks.antartica.cl/library.",
+      "challengesList": [
+        "Leverage a network of 31 brick-and-mortar stores without diluting Antártica's trusted brand identity.",
+        "Attract both traditional readers and digital natives by offering eBooks, audiobooks and more in a single platform.",
+        "Implement a unified back-end capable of handling uploads, metadata, DRM and catalog updates across formats.",
+        "Ensure smooth discovery, purchase and consumption via web and native mobile apps, matching customer expectations for modern digital services."
+      ],
+      "solutionText": "Publica.la partnered with Antártica Librería to launch a rich digital store integrated into their existing infrastructure. The implementation included comprehensive content management with bulk upload of EPUB, PDF and audio files, metadata handling and ONIX support. The solution provided secure delivery & payments with industry-grade DRM, SSL-protected checkouts and automated, multi-currency payment processing. Users enjoy an engaging reader experience through embedded web reader and native mobile apps with offline sync, bookmarks and Vito AI–driven recommendations. The platform delivers real-time analytics dashboards for sales, user engagement and geographic insights, enabling data-driven marketing and inventory decisions.",
+      "resultsList": [
+        { "highlight": "30%", "text": "increase in digital content revenue within 12 months of launch" },
+        { "highlight": "15%", "text": "lift in conversion rate on the digital storefront" },
+        { "highlight": "5,000+", "text": "native app downloads in the first quarter" },
+        { "highlight": "50%", "text": "reduction in content-publishing cycle time thanks to automated workflows" },
+        { "highlight": "80%", "text": "user satisfaction rating in post-launch surveys" }
+      ],
+      "testimonialQuote": "Publica.la's platform allowed us to transition effortlessly into the digital market. We now manage our entire catalog from one console, reach new audiences, and offer our customers a modern reading experience without compromising our heritage.",
+      "testimonialAuthor": "The Antártica Librería Team",
+      "testimonialRole": "Digital Transformation",
+      "whyChooseUsList": [
+        "Scalable Multi-Format Management: One dashboard for all digital assets",
+        "Localized Payments: Support for Chilean pesos and regional payment methods",
+        "Interactive Web & Mobile Readers: Seamless reading experiences on any device",
+        "AI-Powered Personalization: Boost engagement with smart recommendations",
+        "Dedicated Onboarding & Support: Expert guidance through every step"
+      ],
+      "sectionTitles": {
+        "about": "About",
+        "challenge": "The Challenge",
+        "solution": "The Solution",
+        "results": "The Results",
+        "whyChoose": "Why {company} Chose Publica.la"
+      }
+    },
+    "hammurabiPublishing": {
+      "logoAlt": "Editorial Hammurabi Logo",
+      "title": "Expanding Editorial Hammurabi's Digital Reach",
+      "subtitle": "How a leading legal publisher in Argentina modernized their operations with digital publishing",
+      "heroImageAlt": "Hammurabi digital platform on laptop showing a legal publication",
+      "clientDescription": "Editorial Hammurabi is a family-owned SME and a leading publisher of legal texts in Argentina. With decades of experience and a strong reputation in the legal sector, the company sought to modernize its operations and better serve an evolving audience by entering the digital publishing space.",
+      "challengesList": [
+        "Transition from traditional print to digital formats",
+        "Overcome skepticism from legal professionals unfamiliar with digital reading platforms",
+        "Find a reliable and scalable solution to distribute and monetize their content online",
+        "Create a seamless experience for both their internal teams and their end users"
+      ],
+      "solutionText": "Partnering with publica.la provided Hammurabi with the tools they needed to succeed in the digital space. The platform allowed them to create a branded digital content store to showcase and sell their legal publications, streamline content distribution with one-click access for users, continuously update materials to keep their audience informed with the latest legal developments, and launch a subscription-based model offering unlimited access to their full library. The option to offer free trials played a key role in building trust among legal professionals, helping them experience the benefits of digital access firsthand.",
+      "resultsList": [
+        { "text": "A significant increase in sales and new subscribers" },
+        { "text": "Greater internal collaboration and efficiency in managing digital content" },
+        { "text": "An expanded national and international audience, thanks to the ease of access and flexibility of the platform" },
+        { "text": "Strengthened position as a forward-thinking legal publisher, providing professionals with instant, reliable access to high-quality legal texts" }
+      ],
+      "testimonialQuote": "Publica.la has transformed how we deliver our legal content to professionals across Argentina and beyond. The platform's flexibility and ease of use have helped us overcome the initial skepticism from our traditional audience and opened new opportunities for growth.",
+      "testimonialAuthor": "Editorial Hammurabi Team",
+      "testimonialRole": "Leadership Team, Editorial Hammurabi S.R.L.",
+      "whyChooseUsList": [
+        "Reliable support and onboarding: Close collaboration ensured a smooth transition and continuous support",
+        "Agile content management: Instant updates to legal materials, keeping everything accurate and up-to-date",
+        "Scalable distribution model: Their custom digital store opened new market opportunities and revenue streams"
+      ],
+      "additionalImages": [
+        { "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Disen%CC%83o%20sin%20ti%CC%81tulo%20%2822%29-1-PTl9oSv5wlQFiijKWcR3j4xPoTlak1.webp", "alt": "Hammurabi digital platform on mobile devices showing catalog and publication details" }
+      ],
+      "sectionTitles": {
+        "about": "About",
+        "challenge": "The Challenge",
+        "solution": "The Solution",
+        "results": "The Results",
+        "whyChoose": "Why {company} Chose Publica.la"
+      }
+    }
+  },
+  "publishersSolution": {
+    "hero": {
+      "badge": "Solutions for Publishers",
+      "title": "Transform Your <1>Publishing</1> Business",
+      "subtitle": "Empower your publishing strategy with our comprehensive digital platform designed to help you distribute and monetize content effectively.",
+      "getStarted": "Get Started",
+      "requestDemo": "Request a Demo",
+      "videoTitle": "Publica.la Platform Overview"
+    },
+    "customerLogos": {
+      "title": "Trusted by Publishers Worldwide",
+      "subtitle": "Leading publishers choose Publica.la for their digital transformation"
+    },
+    "features": {
+      "title": "Comprehensive Publishing Solutions",
+      "subtitle": "Everything you need to succeed in the digital publishing landscape",
+      "cards": [
+        { "title": "Content Management", "description": "Easily upload, organize, and manage your digital publications in various formats." },
+        { "title": "Advanced Analytics", "description": "Gain valuable insights into reader behavior and content performance." },
+        { "title": "Audience Engagement", "description": "Build stronger relationships with your readers through interactive features." },
+        { "title": "Global Distribution", "description": "Reach readers worldwide with multi-platform distribution capabilities." },
+        { "title": "Digital Rights Management", "description": "Protect your intellectual property with robust DRM solutions." },
+        { "title": "Flexible Monetization", "description": "Implement various revenue models to maximize your publishing income." }
+      ]
+    },
+    "monetization": {
+      "title": "Flexible Monetization Strategies",
+      "subtitle": "Maximize your revenue with multiple monetization options tailored to your publishing goals and audience preferences.",
+      "subscription": {
+        "title": "Subscription Models",
+        "desc": "Create recurring revenue streams with flexible subscription options.",
+        "items": ["Monthly subscriptions", "Annual plans with discounts", "Tiered access levels", "Free trials to convert readers"]
+      },
+      "payPerContent": {
+        "title": "Pay-Per-Content",
+        "desc": "Offer individual purchases for readers who prefer à la carte options.",
+        "items": ["Single book purchases", "Chapter-by-chapter sales", "Bundle packages", "Time-limited access"]
+      },
+      "hybrid": {
+        "title": "Hybrid Approaches",
+        "desc": "Combine multiple strategies to maximize revenue and reader satisfaction.",
+        "items": ["Freemium models", "Premium content upgrades", "Institutional licensing", "Advertising opportunities"]
+      },
+      "revenueCard": {"monthlyRevenue": "$12,450", "monthlyRevenueLabel": "Monthly Revenue", "monthlyRevenueChange": "+24% from last month", "activeSubscribers": "1,247", "activeSubscribersLabel": "Active Subscribers", "activeSubscribersChange": "+156 this month"},
+      "revenueGrowth": "Revenue Growth Over Time",
+      "paymentMethods": ["Credit Cards", "PayPal", "Crypto"]
+    },
+    "engagement": {
+      "title": "Powerful Audience Engagement Tools",
+      "subtitle": "Build stronger relationships with your readers and keep them coming back for more",
+      "tabs": {"readerExperience": "Reader Experience", "customization": "Customization", "interaction": "Interaction"},
+      "readerExperience": {
+        "title": "Exceptional Reading Experience",
+        "desc": "Provide your readers with a beautiful, intuitive reading experience that keeps them engaged with your content.",
+        "features": [
+          {"title": "Responsive Design", "desc": "Content adapts perfectly to any device, from desktops to smartphones."},
+          {"title": "Reading Preferences", "desc": "Readers can customize font size, background color, and layout to suit their preferences."},
+          {"title": "Bookmarking & Progress", "desc": "Automatic bookmarking and progress tracking across devices."},
+          {"title": "Offline Reading", "desc": "Readers can download content for offline access, ensuring uninterrupted reading."}
+        ]
+      },
+      "customization": {
+        "title": "Brand Customization",
+        "desc": "Showcase your unique brand identity with customizable storefronts and reading experiences."
+      },
+      "interaction": {
+        "title": "Interactive Features",
+        "desc": "Engage readers with comments, highlights, and sharing options."
+      },
+      "dashboard": {
+        "readerDashboard": "Reader Dashboard",
+        "activeReaders": "Active Readers",
+        "avgReading": "Avg. Reading",
+        "readingProgress": "Reading Progress",
+        "recentActivity": "Recent Activity",
+        "newBookmark": "New bookmark added",
+        "commentPosted": "Comment posted",
+        "contentShared": "Content shared",
+        "continueReading": "Continue Reading"
+      }
+    },
+    "analytics": {
+      "title": "Data-Driven Publishing Decisions",
+      "subtitle": "Gain valuable insights into your content performance and reader behavior with our comprehensive analytics dashboard.",
+      "cards": [
+        {"title": "Reader Engagement", "desc": "+12% from last month", "value": "87%"},
+        {"title": "Content Views", "desc": "+18% from last month", "value": "24.5K"}
+      ],
+      "features": [
+        {"title": "Reader Behavior Analytics", "desc": "Track how readers interact with your content, including reading time, completion rates, and popular sections."},
+        {"title": "Sales & Revenue Tracking", "desc": "Monitor sales performance, subscription growth, and revenue streams with detailed financial analytics."},
+        {"title": "Audience Demographics", "desc": "Understand your audience with demographic data, geographic distribution, and device usage statistics."}
+      ],
+      "dashboard": {
+        "title": "Analytics Dashboard",
+        "pageViews": "Page Views",
+        "avgReading": "Avg. Reading",
+        "monthlyRevenue": "Monthly Revenue",
+        "topLocations": "Top Locations",
+        "countries": ["United States", "United Kingdom", "Canada"]
+      }
+    },
+    "caseStudy": {
+      "title": "Publisher Success: Global Publishing House",
+      "subtitle": "How a traditional publisher transformed their digital strategy",
+      "overview": "Global Publishing House is a mid-sized publisher with a catalog of over 5,000 titles across fiction and non-fiction categories. Despite their established reputation, they were struggling to adapt to the digital publishing landscape and losing market share to more digitally-savvy competitors.",
+      "challenges": [
+        "Outdated digital distribution system with limited features",
+        "High costs and technical complexity of maintaining their own platform",
+        "Limited data on reader engagement and content performance",
+        "Difficulty implementing flexible pricing and subscription models",
+        "Increasing competition from self-publishing platforms"
+      ],
+      "solution": "Global Publishing House migrated their entire digital catalog to Publica.la, taking advantage of the platform's comprehensive publishing tools, analytics, and monetization options. They implemented a hybrid approach with both individual book sales and a subscription service for their most popular series.",
+      "results": [
+        "Reduced technical overhead costs by 65%",
+        "Increased digital revenue by 42% in the first year",
+        "Gained valuable insights into reader behavior and preferences",
+        "Successfully launched a subscription service with 15,000 subscribers",
+        "Improved author satisfaction with better royalty reporting and payment systems"
+      ],
+      "quote": "Publica.la has transformed our digital publishing strategy. We now have the tools and insights to compete effectively in the digital space while maintaining our editorial standards and brand identity. The platform's flexibility has allowed us to experiment with new business models that weren't possible before.",
+      "quoteName": "Sarah Johnson",
+      "quoteRole": "Digital Director, Global Publishing House",
+      "imageAlt": "Global Publishing House digital platform and analytics dashboard"
+    }
+  },
+  "bookshopsSolution": {
+    "hero": {
+      "badge": "Solutions for Bookshops & Retailers",
+      "title": "Expand Your Bookshop with <1>Digital Offerings</1>",
+      "subtitle": "Complement your physical inventory with a curated digital bookstore. Sell ebooks, audiobooks, and digital content to reach more customers and create new revenue streams.",
+      "getStarted": "Get Started",
+      "requestDemo": "Request a Demo",
+      "videoTitle": "Publica.la Platform Overview",
+      "videoDescription": "See how bookshops are expanding their digital reach",
+      "stats": [
+        { "value": "2M+", "label": "Digital Titles Available" },
+        { "value": "30%", "label": "Average Revenue Increase" }
+      ]
+    },
+    "features": {
+      "title": "Digital Solutions for Modern Bookshops",
+      "subtitle": "Everything you need to expand your bookshop's offerings into the digital realm",
+      "cards": [
+        { "title": "Digital Inventory", "description": "Offer ebooks, audiobooks, and digital content alongside your physical inventory." },
+        { "title": "Online Sales", "description": "Sell digital content directly to customers through your own branded storefront." },
+        { "title": "Customer Engagement", "description": "Build stronger relationships with readers through personalized recommendations and content." },
+        { "title": "Sales Analytics", "description": "Gain insights into customer preferences and purchasing patterns to optimize your offerings." },
+        { "title": "Expanded Reach", "description": "Reach customers beyond your physical location and sell globally without shipping costs." },
+        { "title": "Seamless Integration", "description": "Integrate digital offerings with your existing point-of-sale and inventory systems." }
+      ]
+    },
+    "digitalInventory": {
+      "title": "Curate Your Digital Inventory",
+      "subtitle": "Expand your bookshop's offerings without the constraints of physical shelf space. Curate a digital inventory that complements your physical store and reflects your unique brand.",
+      "features": [
+        { "title": "Extensive Catalog", "desc": "Access a vast library of digital content from major publishers and independent authors." },
+        { "title": "Zero Inventory Costs", "desc": "Offer an unlimited selection without the overhead of physical inventory management." },
+        { "title": "Curation Tools", "desc": "Powerful tools to help you curate a digital inventory that reflects your bookshop's unique identity." }
+      ],
+      "dashboard": {
+        "title": "Digital Inventory Dashboard",
+        "totalBooks": "15,247",
+        "totalBooksLabel": "Digital Titles",
+        "digitalSales": "$8,450",
+        "digitalSalesLabel": "Monthly Sales",
+        "categories": "Top Categories",
+        "categoryList": [
+          { "name": "Fiction", "count": "5,234" },
+          { "name": "Non-Fiction", "count": "4,891" },
+          { "name": "Children's", "count": "2,156" },
+          { "name": "Academic", "count": "2,966" }
+        ],
+        "recentAdditions": "Recent Additions",
+        "recentBooks": [
+          { "title": "The Midnight Library", "author": "Matt Haig", "price": "$12.99" },
+          { "title": "Atomic Habits", "author": "James Clear", "price": "$14.99" },
+          { "title": "Project Hail Mary", "author": "Andy Weir", "price": "$16.99" }
+        ]
+      }
+    },
+    "onlineSales": {
+      "title": "Seamless Online Sales",
+      "subtitle": "Sell digital content directly to your customers through a branded online storefront that integrates with your existing website and systems.",
+      "features": [
+        { "title": "Branded Digital Storefront", "desc": "Create a custom-branded digital bookstore that reflects your shop's unique identity and seamlessly integrates with your existing website." },
+        { "title": "Flexible Payment Options", "desc": "Offer customers multiple payment methods and purchasing options, including one-time purchases, bundles, and subscriptions." },
+        { "title": "Promotional Tools", "desc": "Create special offers, discount codes, and promotional bundles to drive sales and engage customers with your digital inventory." },
+        { "title": "Global Reach", "desc": "Expand your customer base beyond your local area and sell to readers worldwide without shipping costs or logistics." }
+      ],
+      "dashboard": {
+        "title": "Sales Dashboard",
+        "monthlyRevenue": "$8,450",
+        "monthlyRevenueLabel": "Monthly Revenue",
+        "monthlyRevenueChange": "+12% this month",
+        "totalOrders": "127",
+        "totalOrdersLabel": "Total Orders",
+        "totalOrdersChange": "+8% this week",
+        "topSellers": "Top Sellers",
+        "bestSellers": [
+          { "title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "sales": "45", "revenue": "$584" },
+          { "title": "Mystery Tales", "author": "Agatha Christie", "sales": "38", "revenue": "$494" },
+          { "title": "Business Strategy", "author": "Peter Drucker", "sales": "32", "revenue": "$416" }
+        ],
+        "salesChart": "Daily Sales",
+        "salesGrowth": "Revenue Growth Over Time"
+      }
+    },
+    "engagement": {
+      "title": "Engage Your Readers",
+      "subtitle": "Build stronger relationships with your customers through personalized digital experiences",
+      "tabs": {
+        "recommendations": "Recommendations",
+        "community": "Community",
+        "loyalty": "Loyalty"
+      },
+      "recommendations": {
+        "title": "Personalized Reading Experiences",
+        "desc": "Offer your customers personalized reading experiences that keep them engaged with your bookshop.",
+        "features": [
+          { "title": "Customized Recommendations", "desc": "Suggest titles based on customers' reading history and preferences." },
+          { "title": "Reading Lists", "desc": "Create curated reading lists for different interests, genres, and occasions." },
+          { "title": "Personalized Notifications", "desc": "Alert customers when new titles are available from their favorite authors or genres." },
+          { "title": "Reading Progress Tracking", "desc": "Help customers track their reading progress across devices and formats." }
+        ]
+      },
+      "community": {
+        "title": "Build a Reading Community",
+        "desc": "Foster a sense of community among your customers with digital tools that encourage engagement and discussion."
+      },
+      "loyalty": {
+        "title": "Loyalty Programs",
+        "desc": "Implement digital loyalty programs to reward your most engaged customers."
+      },
+      "dashboard": {
+        "recommendationsTitle": "Personalized Recommendations",
+        "forYou": "Recommended For You",
+        "recommendedBooks": [
+          { "title": "The Alchemist", "author": "Paulo Coelho", "match": "95% match" },
+          { "title": "1984", "author": "George Orwell", "match": "87% match" },
+          { "title": "Dune", "author": "Frank Herbert", "match": "82% match" }
+        ],
+        "communityTitle": "Book Club",
+        "communityDesc": "Join our virtual book club discussions and connect with fellow readers."
+      }
+    },
+    "integration": {
+      "title": "Seamless Integration with Your Physical Store",
+      "subtitle": "Bridge the gap between your physical and digital offerings for a unified customer experience",
+      "integrations": [
+        {
+          "title": "Point-of-Sale Integration",
+          "description": "Connect your digital inventory to your existing POS system for unified sales tracking and reporting.",
+          "flowDiagram": "POS → Server → Cloud"
+        },
+        {
+          "title": "In-Store Digital Access",
+          "description": "Create in-store kiosks or QR codes that allow customers to browse and purchase digital content while in your shop.",
+          "flowDiagram": "Users → Kiosk → Digital Content"
+        },
+        {
+          "title": "Unified Customer Accounts",
+          "description": "Give customers a single account for both physical and digital purchases, with unified loyalty programs and rewards.",
+          "flowDiagram": "Users → Account → Unified Experience"
+        }
+      ],
+      "hybridStrategies": {
+        "title": "Hybrid Sales Strategies",
+        "subtitle": "Implement innovative hybrid sales strategies that leverage both physical and digital inventory.",
+        "strategies": [
+          "Bundle physical books with digital companions or bonus content",
+          "Offer digital samples of physical books to help customers discover new titles",
+          "Create \"read now, buy physical later\" options for impatient readers",
+          "Implement digital gift cards that can be redeemed for both physical and digital products",
+          "Create subscription services that combine physical and digital deliveries"
+        ]
+      }
+    },
+    "testimonials": {
+      "title": "What Bookshops Say About Us",
+      "subtitle": "Hear from bookshops that have expanded their business with our digital platform",
+      "testimonials": [
+        {
+          "quote": "Adding digital offerings through Publica.la has been a game-changer for our independent bookshop. We've reached new customers and created an additional revenue stream without any inventory costs.",
+          "name": "Emily Chen",
+          "role": "Owner",
+          "bookshop": "Lighthouse Books",
+          "rating": 5
+        },
+        {
+          "quote": "Our customers love being able to instantly purchase and download ebooks from us. The platform was easy to integrate with our existing website and POS system.",
+          "name": "Marcus Johnson",
+          "role": "Manager",
+          "bookshop": "Cornerstone Bookstore",
+          "rating": 5
+        },
+        {
+          "quote": "The digital bookstore has allowed us to compete with larger retailers by offering a unique, curated selection of digital content that reflects our shop's personality and expertise.",
+          "name": "Sofia Rodriguez",
+          "role": "Co-founder",
+          "bookshop": "Chapter One Books",
+          "rating": 5
+        }
+      ]
+    },
+    "caseStudy": {
+      "title": "Success Story: BajaLibros",
+      "subtitle": "How Argentina's leading digital library expanded across Latin America and Spain",
+      "overview": "BajaLibros is a digital library platform that centralizes content in one place and lets users take their reading anywhere with its mobile app and online store. Launched in 2013, the platform offers a broad catalogue of Spanish-language eBooks and audiobooks spanning genres such as fiction, self-help, business and technical manuals.",
+      "challenges": [
+        "Launch fully localized storefronts in Colombia and Mexico with local branding, currency and payment methods",
+        "Adapt catalogues, pricing and tax rules to meet diverse regional requirements and consumer habits",
+        "Build brand awareness and establish market presence in Spain's competitive European digital-reading landscape",
+        "Scale operations efficiently with a single back-end managing multiple country-specific stores"
+      ],
+      "solution": "Publica.la partnered with BajaLibros to design a multi-store architecture that supports country-specific storefronts under a unified dashboard. Each store features secure eBook and audiobook delivery, fully automated multi-currency payment processing, and flexible content management tools to adapt catalogues per market. The solution included interactive readers via Native App and web, along with Vito AI-powered recommendations for personalized reading experiences.",
+      "results": [
+        "20% growth in total revenue within the first year after launching international stores",
+        "30% of all new subscriptions originated from Colombia and 25% from Mexico in 2024",
+        "10,000+ app downloads in Spain during Q1 2025, establishing a European market foothold",
+        "50% reduction in content-management and administrative workload thanks to unified dashboard",
+        "35% increase in average session duration through AI-driven recommendations",
+        "98% checkout success rate across all markets with localized payment gateways"
+      ],
+      "quote": "Publica.la's multi-store architecture allowed us to expand internationally while maintaining operational efficiency. We now serve readers across four countries with localized experiences, all managed from a single dashboard.",
+      "quoteName": "BajaLibros Team",
+      "quoteRole": "Digital Strategy Team",
+      "imageAlt": "BajaLibros multi-store dashboard showing Argentina, Colombia, Mexico and Spain storefronts"
+    },
+    "cta": {
+      "badge": "Ready to get started?",
+      "title": "Ready to expand your bookshop with digital offerings?",
+      "subtitle": "Join hundreds of bookshops that trust Publica.la for their digital transformation.",
+      "stats": [
+        { "value": "500+", "label": "Bookshops" },
+        { "value": "2M+", "label": "Digital Titles" }
+      ],
+      "scheduleButton": "Schedule a Meeting",
+      "watchDemoButton": "Watch Demo",
+      "benefits": [
+        { "text": "No credit card required" },
+        { "text": "14-day free trial" },
+        { "text": "Cancel anytime" }
+      ],
+      "dashboard": {
+        "title": "Bookshop Success Dashboard",
+        "revenue": "$12,450",
+        "revenueLabel": "Monthly Revenue",
+        "customers": "2,847",
+        "customersLabel": "Active Customers",
+        "features": "Key Features",
+        "featureList": [
+          "Digital inventory management",
+          "Online sales platform",
+          "Customer analytics",
+          "Loyalty programs"
+        ]
+      }
+    },
+    "customerLogos": {
+      "title": "Trusted by Bookshops Everywhere",
+      "subtitle": "Independent and chain bookstores rely on Publica.la for digital growth"
+    }
+  },
+  "creatorsSolution": {
+    "hero": {
+      "badge": "Solutions for Content Creators",
+      "title": "Empower Your <1>Creative Business</1>",
+      "subtitle": "Sell any type of digital content - from photos and audio to books, PDFs, and more. Focus on creating while we handle distribution and monetization.",
+      "getStarted": "Get Started",
+      "requestDemo": "Request a Demo",
+      "videoTitle": "Publica.la Platform Overview",
+      "videoDescription": "See how content creators are building successful businesses",
+      "stats": [
+        { "value": "50K+", "label": "Content Creators" },
+        { "value": "200%", "label": "Average Revenue Growth" }
+      ]
+    },
+    "customerLogos": {
+      "title": "Trusted by Content Creators",
+      "subtitle": "Successful creators and educators build their businesses with Publica.la"
+    },
+    "features": {
+      "title": "Everything You Need to Succeed",
+      "subtitle": "Comprehensive tools to create, manage, and monetize your digital content",
+      "cards": [
+        { "title": "Multiple Content Formats", "description": "Sell ebooks, audiobooks, PDFs, videos, and any digital content format." },
+        { "title": "Custom Branding", "description": "Create your own branded storefront that reflects your unique style." },
+        { "title": "Flexible Pricing", "description": "Set your own prices with one-time purchases, subscriptions, or bundles." },
+        { "title": "Global Reach", "description": "Sell to customers worldwide with multi-currency support." },
+        { "title": "Analytics & Insights", "description": "Track sales, customer behavior, and content performance." },
+        { "title": "Secure Delivery", "description": "Protect your content with industry-leading DRM and security." }
+      ]
+    },
+    "formats": {
+      "title": "Support for Any Content Format",
+      "subtitle": "Whether you create books, courses, art, or audio, we've got you covered",
+      "formats": [
+        { "title": "Ebooks & PDFs", "description": "Sell digital books, guides, and documents" },
+        { "title": "Audiobooks", "description": "Distribute audio content with streaming and download options" },
+        { "title": "Video Content", "description": "Sell courses, tutorials, and video content" },
+        { "title": "Digital Art", "description": "Sell digital downloads, prints, and artwork" },
+        { "title": "Music & Audio", "description": "Distribute music, podcasts, and audio content" },
+        { "title": "Software & Apps", "description": "Sell digital tools, templates, and applications" }
+      ]
+    },
+    "monetization": {
+      "title": "Flexible Monetization Options",
+      "subtitle": "Choose the pricing model that works best for your content and audience",
+      "options": [
+        { "title": "One-Time Sales", "description": "Sell individual pieces of content at your chosen price" },
+        { "title": "Subscriptions", "description": "Create recurring revenue with subscription models" },
+        { "title": "Bundles", "description": "Package multiple items together for better value" },
+        { "title": "Pay-What-You-Want", "description": "Let customers choose their price" },
+        { "title": "Tiered Access", "description": "Offer different levels of access and content" },
+        { "title": "Affiliate Programs", "description": "Partner with others to expand your reach" }
+      ]
+    },
+    "workflow": {
+      "title": "Streamlined Content Workflow",
+      "subtitle": "From creation to sale, we make the process simple and efficient",
+      "steps": [
+        { "title": "Upload Content", "description": "Easily upload your files in any format" },
+        { "title": "Set Pricing", "description": "Choose your pricing strategy and set prices" },
+        { "title": "Customize Store", "description": "Brand your storefront to match your style" },
+        { "title": "Launch & Promote", "description": "Go live and start selling immediately" },
+        { "title": "Track Performance", "description": "Monitor sales and customer engagement" },
+        { "title": "Scale & Grow", "description": "Expand your business with new content and strategies" }
+      ]
+    },
+    "audience": {
+      "title": "Build Your Audience",
+      "subtitle": "Connect with your customers and grow your community",
+      "features": [
+        { "title": "Customer Profiles", "description": "Understand your audience with detailed customer insights" },
+        { "title": "Email Marketing", "description": "Build relationships with automated email campaigns" },
+        { "title": "Social Integration", "description": "Share and promote your content on social media" },
+        { "title": "Community Features", "description": "Foster engagement with comments and discussions" },
+        { "title": "Referral Programs", "description": "Encourage word-of-mouth marketing" },
+        { "title": "Analytics Dashboard", "description": "Track audience growth and engagement metrics" }
+      ]
+    },
+    "caseStudy": {
+      "title": "Success Story: Digital Course Creator",
+      "subtitle": "How one creator built a $50K/month business with Publica.la",
+      "overview": "A professional educator transformed their expertise into a thriving digital business by leveraging Publica.la's platform to sell online courses and educational content.",
+      "challenges": [
+        "Finding a reliable platform to sell digital courses",
+        "Managing multiple content formats and pricing tiers",
+        "Building a global audience and handling international payments",
+        "Scaling the business while maintaining quality"
+      ],
+      "solution": "Publica.la provided a comprehensive solution with flexible content management, global payment processing, and powerful analytics to track student engagement and revenue growth.",
+      "results": [
+        "Built a $50K/month recurring revenue stream",
+        "Reached students in 25+ countries",
+        "Automated course delivery and customer support",
+        "Increased course completion rates by 40%"
+      ],
+      "quote": "Publica.la transformed my teaching business. I can focus on creating great content while the platform handles everything else - from payments to delivery to analytics.",
+      "quoteName": "Sarah Johnson",
+      "quoteRole": "Digital Course Creator"
+    },
+    "testimonials": {
+      "title": "What Content Creators Say",
+      "subtitle": "Hear from creators who have built successful businesses with our platform",
+      "testimonials": [
+        {
+          "quote": "Publica.la made it incredibly easy to start selling my digital art. The platform is intuitive and the support team is amazing.",
+          "name": "Alex Chen",
+          "role": "Digital Artist",
+          "rating": 5
+        },
+        {
+          "quote": "I've tried many platforms, but Publica.la is the only one that truly understands content creators. The flexibility and features are unmatched.",
+          "name": "Maria Rodriguez",
+          "role": "Course Creator",
+          "rating": 5
+        },
+        {
+          "quote": "The analytics and customer insights have helped me understand my audience better and grow my business significantly.",
+          "name": "David Kim",
+          "role": "Author & Educator",
+          "rating": 5
+        }
+      ]
+    }
+  },
+  "librariesSolution": {
+    "hero": {
+      "badge": "Solutions for Libraries",
+      "title": "Modernize Your <1>Library Services</1>",
+      "subtitle": "Transform your library with digital collections, enhanced patron engagement, and powerful analytics. Serve your community better with modern digital tools.",
+      "getStarted": "Get Started",
+      "requestDemo": "Request a Demo",
+      "videoTitle": "Publica.la Platform Overview",
+      "videoDescription": "See how libraries are modernizing their services",
+      "stats": [
+        { "value": "500+", "label": "Libraries Worldwide" },
+        { "value": "2M+", "label": "Digital Titles" }
+      ]
+    },
+    "customerLogos": {
+      "title": "Trusted by Libraries Worldwide",
+      "subtitle": "Public and academic libraries modernize their services with Publica.la"
+    },
+    "features": {
+      "title": "Comprehensive Library Solutions",
+      "subtitle": "Everything you need to modernize your library and serve your community better",
+      "cards": [
+        { "title": "Digital Collections", "description": "Build and manage extensive digital collections of ebooks, audiobooks, and multimedia content." },
+        { "title": "Patron Engagement", "description": "Enhance patron experience with personalized recommendations and interactive features." },
+        { "title": "Advanced Analytics", "description": "Gain insights into usage patterns, popular content, and patron behavior." },
+        { "title": "Seamless Integration", "description": "Integrate with existing library management systems and workflows." },
+        { "title": "Accessibility", "description": "Ensure content is accessible to all patrons with inclusive design features." },
+        { "title": "Cost Efficiency", "description": "Reduce physical storage costs while expanding your digital offerings." }
+      ]
+    },
+    "digitalCollection": {
+      "title": "Build Your Digital Collection",
+      "subtitle": "Create a comprehensive digital library that serves your community's diverse needs",
+      "features": [
+        { "title": "Extensive Catalog", "desc": "Access millions of titles across all genres and formats." },
+        { "title": "Flexible Licensing", "desc": "Choose from various licensing models to fit your budget and needs." },
+        { "title": "Content Curation", "desc": "Curate collections that reflect your community's interests and needs." }
+      ]
+    },
+    "patronEngagement": {
+      "title": "Enhance Patron Engagement",
+      "subtitle": "Create meaningful connections with your patrons through personalized experiences",
+      "features": [
+        { "title": "Personalized Recommendations", "desc": "Help patrons discover new content based on their reading history." },
+        { "title": "Reading Lists", "desc": "Create curated reading lists for different interests and age groups." },
+        { "title": "Social Features", "desc": "Enable patrons to share and discuss books with each other." }
+      ]
+    },
+    "analytics": {
+      "title": "Data-Driven Library Management",
+      "subtitle": "Make informed decisions with comprehensive analytics and reporting",
+      "features": [
+        { "title": "Usage Analytics", "desc": "Track which content is most popular and when it's accessed." },
+        { "title": "Patron Insights", "desc": "Understand your community's reading preferences and habits." },
+        { "title": "Collection Performance", "desc": "Evaluate the effectiveness of your digital collection." }
+      ]
+    },
+    "integration": {
+      "title": "Seamless System Integration",
+      "subtitle": "Integrate with your existing library infrastructure for a smooth workflow",
+      "features": [
+        { "title": "ILS Integration", "desc": "Connect with your Integrated Library System for unified management." },
+        { "title": "Single Sign-On", "desc": "Provide seamless access with existing patron authentication." },
+        { "title": "API Access", "desc": "Customize and extend functionality with our robust API." }
+      ]
+    },
+    "caseStudy": {
+      "title": "Success Story: University Library",
+      "subtitle": "How a major university library increased digital access by 300%",
+      "overview": "A leading university library transformed their digital services by implementing Publica.la's comprehensive library solution, resulting in unprecedented growth in digital content access and patron engagement.",
+      "challenges": [
+        "Limited digital collection with outdated access methods",
+        "Low patron engagement with existing digital services",
+        "Difficulty tracking usage and demonstrating value",
+        "Complex integration with existing library systems"
+      ],
+      "solution": "The university implemented Publica.la's library solution with seamless ILS integration, comprehensive analytics, and enhanced patron engagement features.",
+      "results": [
+        "300% increase in digital content access",
+        "50% improvement in patron satisfaction scores",
+        "Streamlined workflow with existing library systems",
+        "Better data for collection development decisions"
+      ],
+      "quote": "Publica.la has revolutionized how we serve our community. The platform's analytics help us make data-driven decisions about our collection, while the enhanced patron experience has increased engagement significantly.",
+      "quoteName": "Dr. Sarah Johnson",
+      "quoteRole": "Director of Digital Services"
+    },
+    "cta": {
+      "badge": "Ready to modernize?",
+      "title": "Ready to transform your library?",
+      "subtitle": "Join hundreds of libraries that trust Publica.la for their digital transformation.",
+      "stats": [
+        { "value": "500+", "label": "Libraries" },
+        { "value": "2M+", "label": "Digital Titles" }
+      ],
+      "scheduleButton": "Schedule a Meeting",
+      "watchDemoButton": "Watch Demo",
+      "benefits": [
+        { "text": "No credit card required" },
+        { "text": "14-day free trial" },
+        { "text": "Cancel anytime" }
+      ]
+    }
+  },
+  "magazinesNewspapersSolution": {
+    "hero": {
+      "badge": "Solutions for Magazines & Newspapers",
+      "title": "Transform Your <1>Digital Publishing</1>",
+      "subtitle": "Modernize your magazine or newspaper with digital-first publishing tools, enhanced reader engagement, and powerful monetization options.",
+      "getStarted": "Get Started",
+      "requestDemo": "Request a Demo",
+      "videoTitle": "Publica.la Platform Overview",
+      "videoDescription": "See how magazines and newspapers are going digital",
+      "stats": [
+        { "value": "200+", "label": "Publications" },
+        { "value": "5M+", "label": "Digital Readers" }
+      ]
+    },
+    "customerLogos": {
+      "title": "Trusted by Publications Worldwide",
+      "subtitle": "Leading magazines and newspapers digitize their content with Publica.la"
+    },
+    "features": {
+      "title": "Complete Digital Publishing Solution",
+      "subtitle": "Everything you need to transform your publication for the digital age",
+      "cards": [
+        { "title": "Digital Publishing", "description": "Publish content across multiple digital formats with ease." },
+        { "title": "Reader Engagement", "description": "Build deeper connections with your audience through interactive features." },
+        { "title": "Monetization", "description": "Diversify revenue streams with subscriptions, ads, and premium content." },
+        { "title": "Analytics", "description": "Track reader behavior and content performance in real-time." },
+        { "title": "Multi-Platform", "description": "Reach readers on web, mobile, and tablet devices." },
+        { "title": "Content Management", "description": "Streamline your editorial workflow with powerful CMS tools." }
+      ]
+    },
+    "digitalPublishing": {
+      "title": "Digital-First Publishing",
+      "subtitle": "Publish content that looks great on any device and engages your readers",
+      "features": [
+        { "title": "Responsive Design", "desc": "Content automatically adapts to any screen size." },
+        { "title": "Rich Media Support", "desc": "Include images, videos, and interactive elements." },
+        { "title": "Real-time Updates", "desc": "Publish updates instantly without waiting for print cycles." }
+      ]
+    },
+    "readerEngagement": {
+      "title": "Enhanced Reader Engagement",
+      "subtitle": "Create meaningful connections with your audience through interactive features",
+      "features": [
+        { "title": "Comments & Discussions", "desc": "Foster community around your content." },
+        { "title": "Social Sharing", "desc": "Make it easy for readers to share your content." },
+        { "title": "Personalization", "desc": "Deliver content tailored to reader preferences." }
+      ]
+    },
+    "monetization": {
+      "title": "Flexible Monetization",
+      "subtitle": "Diversify your revenue streams with multiple monetization options",
+      "features": [
+        { "title": "Digital Subscriptions", "desc": "Offer premium content behind paywalls." },
+        { "title": "Advertising", "desc": "Integrate ads seamlessly into your digital content." },
+        { "title": "Premium Content", "desc": "Sell exclusive articles, reports, and special editions." }
+      ]
+    },
+    "analytics": {
+      "title": "Data-Driven Publishing",
+      "subtitle": "Make informed editorial decisions with comprehensive analytics",
+      "features": [
+        { "title": "Reader Analytics", "desc": "Understand how readers interact with your content." },
+        { "title": "Content Performance", "desc": "Track which articles and topics perform best." },
+        { "title": "Audience Insights", "desc": "Learn about your readers' demographics and preferences." }
+      ]
+    },
+    "caseStudy": {
+      "title": "Success Story: Digital Magazine",
+      "subtitle": "How a traditional magazine increased digital revenue by 300%",
+      "overview": "A well-established magazine transformed their digital presence by implementing Publica.la's comprehensive publishing solution, resulting in unprecedented growth in digital readership and revenue.",
+      "challenges": [
+        "Limited digital presence with basic website",
+        "Low reader engagement with digital content",
+        "Difficulty monetizing digital offerings",
+        "Outdated content management system"
+      ],
+      "solution": "The magazine implemented Publica.la's digital publishing platform with enhanced reader engagement features, flexible monetization options, and comprehensive analytics.",
+      "results": [
+        "300% increase in digital revenue",
+        "50% growth in digital readership",
+        "Improved reader engagement and retention",
+        "Streamlined editorial workflow"
+      ],
+      "quote": "Publica.la has transformed how we publish and engage with our readers. The platform's analytics help us understand what content resonates, while the monetization options have opened new revenue streams we never thought possible.",
+      "quoteName": "Maria Rodriguez",
+      "quoteRole": "Digital Editor"
+    },
+    "cta": {
+      "badge": "Ready to go digital?",
+      "title": "Ready to transform your publication?",
+      "subtitle": "Join hundreds of publications that trust Publica.la for their digital transformation.",
+      "stats": [
+        { "value": "200+", "label": "Publications" },
+        { "value": "5M+", "label": "Digital Readers" }
+      ],
+      "scheduleButton": "Schedule a Meeting",
+      "watchDemoButton": "Watch Demo",
+      "benefits": [
+        { "text": "No credit card required" },
+        { "text": "14-day free trial" },
+        { "text": "Cancel anytime" }
+      ]
+    }
+  },
+  "integrationsFeature": {
+    "badge": "Seamless Connections",
+    "title": "Powerful Integrations",
+    "subtitle": "Connect your publishing platform with your favorite tools and services through our extensive integration options.",
+    "exploreButton": "Explore Integrations",
+    "demoButton": "Request a Demo",
+    "previewText": "Integrations Preview"
+  },
+  "compare": {
+    "hero": {
+      "title": "Platform ",
+      "titleHighlight": "Comparisons",
+      "subtitle": "See how publica.la compares to other digital publishing platforms. Make an informed decision with detailed feature comparisons."
+    },
+    "supadu": {
+      "title": "Platform vs. Presentation",
+      "subtitle": "Compare publica.la's comprehensive platform approach with Supadu's marketing-focused presentation tools.",
+      "features": [
+        "100% White-labeled Platform",
+        "Native Digital Delivery & DRM",
+        "Global Tax Compliance",
+        "Built-in Subscriptions & Rentals"
+      ]
+    },
+    "vitalSource": {
+      "title": "Inclusive Platform vs. Academic Ecosystem",
+      "subtitle": "Compare publica.la's flexible publisher-first platform with VitalSource's academic-focused institutional delivery system.",
+      "features": [
+        "All Publisher Types Supported",
+        "Direct-to-Consumer Storefronts",
+        "Built-in eCommerce (B2C & B2B)",
+        "Physical + Digital Book Support"
+      ]
+    },
+    "viewComparison": "View Detailed Comparison",
+    "cta": {
+      "title": "Ready to See publica.la in Action?",
+      "subtitle": "Schedule a personalized demo to see how publica.la can transform your digital publishing strategy.",
+      "button": "Schedule a Demo"
+    }
+  },
+  "vitoAIFeature": {
+    "hero": {
+      "badge": "AI-Powered Reading Assistant",
+      "title1": "Meet",
+      "title2": "Vito AI",
+      "subtitle": "An intelligent reading companion that enhances comprehension through interactive summaries, self-assessments, and personalized learning experiences.",
+      "getStarted": "Try Vito AI",
+      "requestDemo": "See Demo",
+      "assistantName": "Vito AI Assistant",
+      "assistantStatus": "Online",
+      "chat1": "Hi! I've just finished reading Chapter 3. Can you provide a summary?",
+      "chat2": "Of course! Chapter 3 covers three key concepts: market analysis, competitive positioning, and strategic planning. Would you like me to create a quick quiz to test your understanding?",
+      "quizButton": "Yes, create quiz",
+      "detailsButton": "More details"
+    },
+    "features": {
+      "title": "Intelligent Reading Features",
+      "subtitle": "Vito AI transforms passive reading into an interactive learning experience",
+      "cards": [
+        {"title": "Interactive Summaries", "description": "Get instant chapter summaries and key takeaways to reinforce learning"},
+        {"title": "Self-Assessments", "description": "Test comprehension with AI-generated quizzes and knowledge checks"},
+        {"title": "Progress Tracking", "description": "Monitor reading progress and learning outcomes with detailed analytics"},
+        {"title": "Instant Answers", "description": "Ask questions about content and get immediate, contextual responses"},
+        {"title": "Personalized Learning", "description": "Adaptive recommendations based on reading patterns and preferences"},
+        {"title": "Knowledge Retention", "description": "Spaced repetition and review systems to improve long-term retention"}
+      ]
+    },
+    "howItWorks": {
+      "title": "How Vito AI Works",
+      "subtitle": "Simple, seamless, and intelligent",
+      "steps": [
+        {"title": "Read & Engage", "description": "Read your content while Vito AI analyzes and understands the material in real-time"},
+        {"title": "Ask & Learn", "description": "Ask questions, request summaries, or take assessments at any point during your reading"},
+        {"title": "Track & Improve", "description": "Monitor your progress and receive personalized recommendations for better learning outcomes"}
+      ]
+    },
+    "benefits": {
+      "title": "Benefits for Publishers & Readers",
+      "items": [
+        {"title": "Increased Engagement", "description": "Readers spend 40% more time with content when using Vito AI"},
+        {"title": "Better Comprehension", "description": "Interactive features improve understanding and knowledge retention"},
+        {"title": "Higher Completion Rates", "description": "AI-assisted reading leads to 60% higher content completion rates"},
+        {"title": "Valuable Analytics", "description": "Publishers gain insights into reader behavior and content effectiveness"}
+      ],
+      "statsTitle": "Reader Engagement Stats",
+      "stats": [
+        {"label": "Time on Content", "value": "+40%"},
+        {"label": "Completion Rate", "value": "+60%"},
+        {"label": "Knowledge Retention", "value": "+75%"}
+      ]
+    }
+  },
+  "nativeAppFeature": {
+    "badge": "Mobile Experience",
+    "title": "Native App for iOS and Android",
+    "subtitle": "Provide your readers with a seamless mobile experience through our customizable native apps for iOS and Android.",
+    "learnMore": "Learn More",
+    "requestDemo": "Request a Demo",
+    "previewText": "Native App Preview"
+  }
+} 

@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-export function PublishersHero() {
+export function PublishersHero({ dict }: { dict: any }) {
   return (
     <section className="relative w-full py-20 md:py-32 px-6 overflow-hidden">
       <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/5 via-background to-primary/10"></div>
@@ -12,24 +12,21 @@ export function PublishersHero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-              Solutions for Publishers
+              {dict.badge}
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
-              Transform Your <span className="text-primary">Publishing</span> Business
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900" dangerouslySetInnerHTML={{ __html: dict.title.replace("<1>", '<span class="text-primary">').replace("</1>", "</span>") }} />
             <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-xl">
-              Empower your publishing strategy with our comprehensive digital platform designed to help you distribute
-              and monetize content effectively.
+              {dict.subtitle}
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="rounded-md font-medium">
                 <Link href="/get-started">
-                  Get Started
+                  {dict.getStarted}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-md font-medium">
-                <Link href="/schedule-demo">Request a Demo</Link>
+                <Link href="/schedule-demo">{dict.requestDemo}</Link>
               </Button>
             </div>
           </div>
@@ -39,7 +36,7 @@ export function PublishersHero() {
               <div className="aspect-video">
                 <iframe
                   src="https://www.youtube.com/embed/ULZaZTvsUQs"
-                  title="Publica.la Platform Overview"
+                  title={dict.videoTitle}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen

@@ -1,32 +1,45 @@
 import { Globe, Users, MapPin } from "lucide-react"
 
-export function ContactPresence() {
-  const teamLocations = [
-    { city: "Rome", country: "Italy", region: "Europe", coords: { x: 52, y: 35 } },
-    { city: "Barcelona", country: "Spain", region: "Europe", coords: { x: 48, y: 38 } },
-    { city: "Lisboa", country: "Portugal", region: "Europe", coords: { x: 46, y: 40 } },
-    { city: "Madrid", country: "Spain", region: "Europe", coords: { x: 47, y: 40 } },
-    { city: "Bogotá", country: "Colombia", region: "South America", coords: { x: 28, y: 55 } },
-    { city: "Medellín", country: "Colombia", region: "South America", coords: { x: 28, y: 56 } },
-    { city: "Mexico City", country: "Mexico", region: "North America", coords: { x: 22, y: 45 } },
-    { city: "Raleigh", country: "North Carolina, USA", region: "North America", coords: { x: 32, y: 42 } },
-    { city: "Buenos Aires", country: "Argentina", region: "South America", coords: { x: 35, y: 72 } },
-  ]
+interface ContactPresenceProps {
+  dict: {
+    contactPresence: {
+      title: string
+      subtitle: string
+      regions: Array<{
+        name: string
+        count: number
+        color: string
+      }>
+      teamLocations: {
+        title: string
+        locations: Array<{
+          city: string
+          country: string
+          region: string
+          coords: {
+            x: number
+            y: number
+          }
+        }>
+      }
+      remoteWork: {
+        title: string
+        description: string
+      }
+    }
+  }
+}
 
-  const regions = [
-    { name: "Europe", count: 4, color: "bg-blue-500" },
-    { name: "North America", count: 2, color: "bg-green-500" },
-    { name: "South America", count: 3, color: "bg-purple-500" },
-  ]
+export function ContactPresence({ dict }: ContactPresenceProps) {
+  const teamLocations = dict.contactPresence.teamLocations.locations
 
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Our Global Presence</h2>
+          <h2 className="text-3xl font-bold mb-4">{dict.contactPresence.title}</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're a fully remote team with talented professionals across three continents, working together to serve our
-            global customer base
+            {dict.contactPresence.subtitle}
           </p>
         </div>
 
@@ -63,7 +76,7 @@ export function ContactPresence() {
 
         {/* Regional Statistics */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {regions.map((region, index) => (
+          {dict.contactPresence.regions.map((region, index) => (
             <div key={index} className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 text-center">
               <div className={`w-12 h-12 ${region.color} rounded-lg flex items-center justify-center mx-auto mb-4`}>
                 <Globe className="h-6 w-6 text-white" />
@@ -77,7 +90,7 @@ export function ContactPresence() {
 
         {/* Team Locations List */}
         <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
-          <h3 className="text-xl font-semibold mb-6 text-center">Team Members Located In</h3>
+          <h3 className="text-xl font-semibold mb-6 text-center">{dict.contactPresence.teamLocations.title}</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {teamLocations.map((location, index) => (
               <div key={index} className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors">
@@ -95,11 +108,9 @@ export function ContactPresence() {
         <div className="mt-12 text-center">
           <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-8">
             <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-4">Why We're Remote-First</h3>
+            <h3 className="text-xl font-semibold mb-4">{dict.contactPresence.remoteWork.title}</h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Our distributed team model allows us to tap into global talent, provide round-the-clock support, and
-              better understand the diverse markets we serve. This approach enables us to deliver exceptional service
-              regardless of your location.
+              {dict.contactPresence.remoteWork.description}
             </p>
           </div>
         </div>

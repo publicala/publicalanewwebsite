@@ -1,39 +1,39 @@
+import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
 
-export function BookshopsHero() {
+export function BookshopsHero({ dict }: { dict: any }) {
   return (
     <section className="relative w-full py-20 md:py-32 px-6 overflow-hidden">
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/10 via-blue-50 to-purple-50">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 left-20 w-40 h-40 bg-primary/20 rounded-full"></div>
-          <div className="absolute bottom-20 right-20 w-32 h-32 bg-blue-200 rounded-full"></div>
-        </div>
-      </div>
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/5 via-background to-primary/10"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-              Solutions for Bookshops & Retailers
+              {dict.badge}
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
-              Expand Your Bookshop with <span className="text-primary">Digital Offerings</span>
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900" dangerouslySetInnerHTML={{ __html: dict.title.replace("<1>", '<span class="text-primary">').replace("</1>", "</span>") }} />
             <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-xl">
-              Complement your physical inventory with a curated digital bookstore. Sell ebooks, audiobooks, and digital
-              content to reach more customers and create new revenue streams.
+              {dict.subtitle}
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="rounded-md font-medium">
                 <Link href="/get-started">
-                  Get Started
+                  {dict.getStarted}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-md font-medium">
-                <Link href="/schedule-demo">Request a Demo</Link>
+                <Link href="/schedule-demo">{dict.requestDemo}</Link>
               </Button>
+            </div>
+            <div className="grid grid-cols-2 gap-6 mt-8">
+              {dict.stats.map((stat: any) => (
+                <div key={stat.value}>
+                  <div className="text-2xl font-bold text-primary">{stat.value}</div>
+                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                </div>
+              ))}
             </div>
           </div>
           <div className="relative">
@@ -42,7 +42,7 @@ export function BookshopsHero() {
               <div className="aspect-video">
                 <iframe
                   src="https://www.youtube.com/embed/ULZaZTvsUQs"
-                  title="Publica.la Platform Overview"
+                  title={dict.videoTitle}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -50,7 +50,6 @@ export function BookshopsHero() {
                 ></iframe>
               </div>
             </div>
-
             {/* Decorative elements */}
             <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-primary/5 rounded-full z-0"></div>
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/5 rounded-full z-0"></div>

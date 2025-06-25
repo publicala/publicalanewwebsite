@@ -1,134 +1,83 @@
 import type React from "react"
 import { CheckCircle } from "lucide-react"
 
-export function BookshopsDigitalInventory() {
+export function BookshopsDigitalInventory({ dict }: { dict: any }) {
   return (
     <section className="w-full py-20 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Curate Your Digital Inventory</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">{dict.title}</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Expand your bookshop's offerings without the constraints of physical shelf space. Curate a digital
-              inventory that complements your physical store and reflects your unique brand.
+              {dict.subtitle}
             </p>
 
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-bold mb-2">Extensive Catalog</h3>
-                <p className="text-gray-600 mb-4">
-                  Access a vast library of digital content from major publishers and independent authors.
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <CheckItem>Bestselling titles</CheckItem>
-                  <CheckItem>Indie publications</CheckItem>
-                  <CheckItem>Local authors</CheckItem>
-                  <CheckItem>Niche genres</CheckItem>
+              {dict.features.map((feature: any) => (
+                <div key={feature.title} className="flex items-start gap-3">
+                  <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-medium text-gray-900">{feature.title}</h4>
+                    <p className="text-gray-600">{feature.desc}</p>
+                  </div>
                 </div>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-bold mb-2">Zero Inventory Costs</h3>
-                <p className="text-gray-600 mb-4">
-                  Offer an unlimited selection without the overhead of physical inventory management.
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <CheckItem>No storage costs</CheckItem>
-                  <CheckItem>No shipping logistics</CheckItem>
-                  <CheckItem>No returns processing</CheckItem>
-                  <CheckItem>No inventory depreciation</CheckItem>
-                </div>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-xl font-bold mb-2">Curation Tools</h3>
-                <p className="text-gray-600 mb-4">
-                  Powerful tools to help you curate a digital inventory that reflects your bookshop's unique identity.
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <CheckItem>Custom collections</CheckItem>
-                  <CheckItem>Staff picks highlighting</CheckItem>
-                  <CheckItem>Themed promotions</CheckItem>
-                  <CheckItem>Seasonal showcases</CheckItem>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
           <div className="relative">
-            <div className="bg-white rounded-lg shadow-xl p-6 overflow-hidden">
-              <div className="grid grid-cols-3 gap-3 mb-4">
-                {/* Row 1 - Popular Fiction */}
-                <img
-                  src="/placeholder.svg?height=120&width=80"
-                  alt="Popular Fiction"
-                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
-                />
-                <img
-                  src="/placeholder.svg?height=120&width=80"
-                  alt="Romance Novel"
-                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
-                />
-                <img
-                  src="/placeholder.svg?height=120&width=80"
-                  alt="Mystery Thriller"
-                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
-                />
+            <div className="bg-white rounded-3xl shadow-xl p-8 border border-gray-200">
+              <div className="space-y-6">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-lg font-semibold">{dict.dashboard.title}</h3>
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                </div>
 
-                {/* Row 2 - Non-Fiction */}
-                <img
-                  src="/placeholder.svg?height=120&width=80"
-                  alt="Business Book"
-                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
-                />
-                <img
-                  src="/placeholder.svg?height=120&width=80"
-                  alt="Self Help"
-                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
-                />
-                <img
-                  src="/placeholder.svg?height=120&width=80"
-                  alt="Cookbook"
-                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
-                />
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-xl">
+                    <div className="text-2xl font-bold text-blue-600">{dict.dashboard.totalBooks}</div>
+                    <div className="text-sm text-blue-500">{dict.dashboard.totalBooksLabel}</div>
+                  </div>
+                  <div className="bg-gradient-to-br from-green-50 to-green-100 p-4 rounded-xl">
+                    <div className="text-2xl font-bold text-green-600">{dict.dashboard.digitalSales}</div>
+                    <div className="text-sm text-green-500">{dict.dashboard.digitalSalesLabel}</div>
+                  </div>
+                </div>
 
-                {/* Row 3 - Classics & Literature */}
-                <img
-                  src="/placeholder.svg?height=120&width=80"
-                  alt="Classic Literature"
-                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
-                />
-                <img
-                  src="/placeholder.svg?height=120&width=80"
-                  alt="Science Fiction"
-                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
-                />
-                <img
-                  src="/placeholder.svg?height=120&width=80"
-                  alt="Fantasy"
-                  className="w-full h-24 object-cover rounded shadow-sm hover:shadow-md transition-shadow"
-                />
-              </div>
+                <div className="space-y-4">
+                  <h4 className="font-medium text-gray-800">{dict.dashboard.categories}</h4>
+                  <div className="space-y-3">
+                    {dict.dashboard.categoryList.map((category: any) => (
+                      <div key={category.name} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <span className="text-sm text-gray-700">{category.name}</span>
+                        <span className="text-sm font-medium text-gray-900">{category.count}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
-              {/* Format indicators */}
-              <div className="flex justify-center gap-4 text-xs text-gray-500">
-                <span className="flex items-center gap-1">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  eBooks
-                </span>
-                <span className="flex items-center gap-1">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  Audiobooks
-                </span>
+                <div className="space-y-4">
+                  <h4 className="font-medium text-gray-800">{dict.dashboard.recentAdditions}</h4>
+                  <div className="space-y-2">
+                    {dict.dashboard.recentBooks.map((book: any) => (
+                      <div key={book.title} className="flex items-center gap-3 p-2 bg-gray-50 rounded-lg">
+                        <div className="w-8 h-8 bg-primary/10 rounded flex items-center justify-center">
+                          <span className="text-xs font-medium text-primary">📚</span>
+                        </div>
+                        <div className="flex-1">
+                          <div className="text-sm font-medium text-gray-700">{book.title}</div>
+                          <div className="text-xs text-gray-500">{book.author}</div>
+                        </div>
+                        <div className="text-xs text-green-600 font-medium">{book.price}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/5 rounded-full z-0"></div>
-            <div className="absolute -top-6 -right-6 w-48 h-48 bg-primary/5 rounded-full z-0"></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg">
-              <div className="text-3xl font-bold text-primary">2,000,000+</div>
-              <div className="text-sm text-gray-600 font-medium">Titles Available</div>
-              <div className="text-xs text-gray-500 mt-1">eBooks & Audiobooks</div>
-            </div>
+
+            <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/10 rounded-full z-0"></div>
+            <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-primary/5 rounded-full z-0"></div>
           </div>
         </div>
       </div>

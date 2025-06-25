@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Play, Sparkles } from "lucide-react"
 import { DemoVideoModal } from "@/components/demo-video-modal"
@@ -8,46 +8,64 @@ import { AnimatedBackground } from "@/components/ui/animated-background"
 import { CalendlyButton } from "@/components/calendly-button"
 import Image from "next/image"
 
-// Array of taglines for A/B testing
-const TAGLINES = [
-  {
-    heading: "Sell Smarter. Showcase Better.",
-    subheading: "The ultimate platform to manage digital libraries and power your content ecommerce.",
-  },
-  {
-    heading: "Your Digital Library. Your Online Store. One Platform.",
-    subheading: "Build, brand, and monetize your digital content with ease.",
-  },
-  {
-    heading: "Ecommerce Meets Content Management",
-    subheading: "Organize your digital library and sell ebooks, audiobooks, and more — all in one place.",
-  },
-  {
-    heading: "From Library to Checkout in Seconds",
-    subheading: "A seamless platform for managing digital collections and selling content globally.",
-  },
-  {
-    heading: "Turn Your Digital Library Into a Revenue Engine",
-    subheading: "Comprehensive tools to manage, showcase, and monetize your content catalog.",
-  },
-  {
-    heading: "Where Digital Libraries and Ecommerce Converge",
-    subheading: "Simplify content management and boost revenue with a single, powerful platform.",
-  },
-  {
-    heading: "Build Your Digital Library. Sell to the World.",
-    subheading: "Publica.la helps you organize, customize, and monetize your content at scale.",
-  },
-]
+interface HeroSectionProps {
+  dict?: {
+    hero: {
+      taglines: Array<{
+        heading: string
+        subheading: string
+      }>
+      trustedBy: string
+      scheduleMeeting: string
+      watchDemo: string
+      joinLeaders: string
+      noCreditCard: string
+    }
+  }
+}
 
-export function HeroSection() {
+export function HeroSection({ dict }: HeroSectionProps) {
   const [isDemoVideoOpen, setIsDemoVideoOpen] = useState(false)
+  
+  // Use dictionary taglines if available, otherwise fall back to default
+  const taglines = dict?.hero.taglines || [
+    {
+      heading: "Sell Smarter. Showcase Better.",
+      subheading: "The ultimate platform to manage digital libraries and power your content ecommerce.",
+    },
+    {
+      heading: "Your Digital Library. Your Online Store. One Platform.",
+      subheading: "Build, brand, and monetize your digital content with ease.",
+    },
+    {
+      heading: "Ecommerce Meets Content Management",
+      subheading: "Organize your digital library and sell ebooks, audiobooks, and more — all in one place.",
+    },
+    {
+      heading: "From Library to Checkout in Seconds",
+      subheading: "A seamless platform for managing digital collections and selling content globally.",
+    },
+    {
+      heading: "Turn Your Digital Library Into a Revenue Engine",
+      subheading: "Comprehensive tools to manage, showcase, and monetize your content catalog.",
+    },
+    {
+      heading: "Where Digital Libraries and Ecommerce Converge",
+      subheading: "Simplify content management and boost revenue with a single, powerful platform.",
+    },
+    {
+      heading: "Build Your Digital Library. Sell to the World.",
+      subheading: "Publica.la helps you organize, customize, and monetize your content at scale.",
+    },
+  ]
+  
+  const [tagline, setTagline] = useState(taglines[0]) // Start with first tagline
 
-  // Select a random tagline on component mount
-  const tagline = useMemo(() => {
-    const randomIndex = Math.floor(Math.random() * TAGLINES.length)
-    return TAGLINES[randomIndex]
-  }, [])
+  // Select a random tagline only on client side
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * taglines.length)
+    setTagline(taglines[randomIndex])
+  }, [taglines])
 
   return (
     <section className="relative w-full py-20 md:py-32 px-6 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
@@ -58,7 +76,7 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
               <Sparkles className="h-4 w-4" />
-              <span>Trusted by 1000+ organizations worldwide</span>
+              <span>{dict?.hero.trustedBy || "Trusted by 1000+ organizations worldwide"}</span>
             </div>
 
             <div className="space-y-6">
@@ -74,7 +92,7 @@ export function HeroSection() {
                 className="rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 group"
                 showArrow={true}
               >
-                Schedule a Meeting
+                {dict?.hero.scheduleMeeting || "Schedule a Meeting"}
               </CalendlyButton>
               <Button
                 variant="outline"
@@ -83,7 +101,7 @@ export function HeroSection() {
                 onClick={() => setIsDemoVideoOpen(true)}
               >
                 <Play className="mr-2 h-4 w-4" />
-                Watch Demo
+                {dict?.hero.watchDemo || "Watch Demo"}
               </Button>
             </div>
 
@@ -110,9 +128,9 @@ export function HeroSection() {
                 ))}
               </div>
               <div className="text-sm text-gray-600">
-                <span className="font-medium">Join industry leaders</span>
+                <span className="font-medium">{dict?.hero.joinLeaders || "Join industry leaders"}</span>
                 <br />
-                <span className="text-xs">No credit card required</span>
+                <span className="text-xs">{dict?.hero.noCreditCard || "No credit card required"}</span>
               </div>
             </div>
           </div>

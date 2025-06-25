@@ -1,7 +1,35 @@
 import Link from "next/link"
 import Image from "next/image"
 
-export function AboutTeam() {
+interface AboutTeamProps {
+  dict: {
+    aboutTeam: {
+      title: string
+      founders: {
+        title: string
+        franco: {
+          name: string
+          role: string
+        }
+        pablo: {
+          name: string
+          role: string
+        }
+        imageAlt: string
+      }
+      team: {
+        title: string
+        description: string
+      }
+      careers: {
+        description: string
+        linkText: string
+      }
+    }
+  }
+}
+
+export function AboutTeam({ dict }: AboutTeamProps) {
   const teamImages = [
     { src: "/images/team/team-dinner-1.jpg", alt: "Publica.la team dinner" },
     { src: "/images/team/team-gathering-1.jpg", alt: "Publica.la team gathering" },
@@ -15,16 +43,16 @@ export function AboutTeam() {
     <section className="w-full py-20 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Meet the people behind the platform</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">{dict.aboutTeam.title}</h2>
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-8 text-center">Our Founders</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-8 text-center">{dict.aboutTeam.founders.title}</h3>
           <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg text-center">
             <div className="relative w-full h-96 md:h-[480px] mb-6 rounded-md overflow-hidden">
               <Image
                 src="/images/team/founders-at-booth.jpg"
-                alt="Founders Pablo Laurino and Franco Gilio at a publica.la booth"
+                alt={dict.aboutTeam.founders.imageAlt}
                 layout="fill"
                 objectFit="cover"
                 className="rounded-md"
@@ -32,22 +60,21 @@ export function AboutTeam() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <p className="text-xl font-medium text-gray-800">Franco Gilio</p>
-                <p className="text-md text-gray-500">CTO</p>
+                <p className="text-xl font-medium text-gray-800">{dict.aboutTeam.founders.franco.name}</p>
+                <p className="text-md text-gray-500">{dict.aboutTeam.founders.franco.role}</p>
               </div>
               <div>
-                <p className="text-xl font-medium text-gray-800">Pablo Laurino</p>
-                <p className="text-md text-gray-500">CEO</p>
+                <p className="text-xl font-medium text-gray-800">{dict.aboutTeam.founders.pablo.name}</p>
+                <p className="text-md text-gray-500">{dict.aboutTeam.founders.pablo.role}</p>
               </div>
             </div>
           </div>
         </div>
 
         <div className="mb-16 text-center">
-          <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">And our passionate team</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">{dict.aboutTeam.team.title}</h3>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Dedicated individuals working together to shape the future of digital publishing. Here are a few moments
-            with our amazing team.
+            {dict.aboutTeam.team.description}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamImages.map((image, index) => (
@@ -69,11 +96,10 @@ export function AboutTeam() {
 
         <div className="mt-20 text-center">
           <p className="text-xl text-gray-600 mb-6">
-            We’re always looking for curious minds who love building useful things and want to shape the future of
-            digital publishing.
+            {dict.aboutTeam.careers.description}
           </p>
           <Link href="/careers" className="text-blue-600 font-medium hover:underline text-lg">
-            View open positions →
+            {dict.aboutTeam.careers.linkText} →
           </Link>
         </div>
       </div>

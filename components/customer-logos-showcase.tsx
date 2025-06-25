@@ -11,18 +11,29 @@ interface CustomerLogosShowcaseProps {
   subtitle?: string
   variant?: "homepage" | "solution" | "case-studies"
   industry?: "publishers" | "bookshops" | "creators" | "libraries" | "magazines"
+  dict?: {
+    customerLogosShowcase: {
+      title: string
+      subtitle: string
+    }
+  }
 }
 
 export function CustomerLogosShowcase({
-  title = "Trusted by Leading Organizations",
-  subtitle = "Join thousands of content creators and publishers who trust Publica.la",
+  title,
+  subtitle,
   variant = "homepage",
   industry,
+  dict,
 }: CustomerLogosShowcaseProps) {
   const carouselRef = useRef<HTMLDivElement>(null)
   const [showLeftArrow, setShowLeftArrow] = useState(false)
   const [showRightArrow, setShowRightArrow] = useState(true)
   const [isPaused, setIsPaused] = useState(false)
+
+  // Use dict values if provided, otherwise fall back to props or defaults
+  const displayTitle = dict?.customerLogosShowcase?.title || title || "Trusted by Leading Organizations"
+  const displaySubtitle = dict?.customerLogosShowcase?.subtitle || subtitle || "Join thousands of content creators and publishers who trust Publica.la"
 
   // Single refs for managing animation
   const animationFrameRef = useRef<number | null>(null)
@@ -248,7 +259,7 @@ export function CustomerLogosShowcase({
       <AnimatedBackground variant="minimal" />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <SectionHeader title={title} subtitle={subtitle} />
+        <SectionHeader title={displayTitle} subtitle={displaySubtitle} />
 
         <div className="relative mt-12">
           {/* Left scroll button */}

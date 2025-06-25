@@ -5,14 +5,117 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
 
-export function Footer() {
+interface FooterProps {
+  dict?: {
+    footer: {
+      description: string
+      sections: {
+        solutions: {
+          title: string
+          links: Array<{
+            href: string
+            text: string
+          }>
+        }
+        features: {
+          title: string
+          links: Array<{
+            href: string
+            text: string
+          }>
+        }
+        company: {
+          title: string
+          links: Array<{
+            href: string
+            text: string
+          }>
+        }
+        subscribe: {
+          title: string
+          description: string
+          placeholder: string
+          button: string
+        }
+      }
+      copyright: string
+      legal: Array<{
+        href: string
+        text: string
+      }>
+    }
+  }
+  locale?: string
+}
+
+// Default English values for backward compatibility
+const defaultFooterDict = {
+  footer: {
+    description: "The most robust and dynamic digital content platform for publishers and content creators, empowering you to create, manage, and distribute exceptional content.",
+    sections: {
+      solutions: {
+        title: "Solutions",
+        links: [
+          { href: "/solutions/publishers", text: "For Publishers" },
+          { href: "/solutions/bookshops", text: "For Bookshops" },
+          { href: "/solutions/content-creators", text: "For Content Creators" },
+          { href: "/solutions/libraries", text: "For Libraries" },
+          { href: "/solutions/magazines-newspapers", text: "For Magazines & Newspapers" }
+        ]
+      },
+      features: {
+        title: "Features",
+        links: [
+          { href: "/features/vito-ai", text: "Vito AI" },
+          { href: "/features/native-app", text: "Native App" },
+          { href: "/features/integrations", text: "Integrations" }
+        ]
+      },
+      company: {
+        title: "Company",
+        links: [
+          { href: "/about-us", text: "About Us" },
+          { href: "/compare", text: "Compare Platforms" },
+          { href: "/careers", text: "Careers" },
+          { href: "/blog", text: "Blog" },
+          { href: "/press", text: "Press" },
+          { href: "/contact", text: "Contact" }
+        ]
+      },
+      subscribe: {
+        title: "Subscribe",
+        description: "Stay updated with the latest news and features",
+        placeholder: "Your email",
+        button: "Subscribe"
+      }
+    },
+    copyright: "© {year} Publica.la. All rights reserved.",
+    legal: [
+      { href: "/terms", text: "Terms of Service" },
+      { href: "/privacy", text: "Privacy Policy" },
+      { href: "/cookies", text: "Cookie Policy" }
+    ]
+  }
+}
+
+export function Footer({ dict, locale = "en" }: FooterProps) {
+  const footerDict = dict || defaultFooterDict
+
+  // Helper function to add locale to internal links
+  const getLocalizedHref = (href: string) => {
+    if (href.startsWith('/')) {
+      return `/${locale}${href}`
+    }
+    return href
+  }
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center mb-4">
-              <div className="h-10 w-auto relative">
+            <Link href={`/${locale}`} className="flex items-center mb-4">
+              <div className="h-8 w-auto md:h-10 relative flex items-center">
                 <Image
                   src="/images/logo.svg"
                   alt="Publica.la Logo"
@@ -23,8 +126,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-gray-400 mb-4">
-              The most robust and dynamic digital content platform for publishers and content creators, empowering you
-              to create, manage, and distribute exceptional content.
+              {footerDict.footer.description}
             </p>
             <div className="flex gap-4">
               <SocialLink href="#" icon={<Facebook size={18} />} />
@@ -36,59 +138,54 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Solutions</h3>
+            <h3 className="font-bold text-lg mb-4">{footerDict.footer.sections.solutions.title}</h3>
             <ul className="space-y-2">
-              <FooterLink href="/solutions/publishers">For Publishers</FooterLink>
-              <FooterLink href="/solutions/bookshops">For Bookshops</FooterLink>
-              <FooterLink href="/solutions/content-creators">For Content Creators</FooterLink>
-              <FooterLink href="/solutions/libraries">For Libraries</FooterLink>
-              <FooterLink href="/solutions/magazines-newspapers">For Magazines & Newspapers</FooterLink>
+              {footerDict.footer.sections.solutions.links.map((link, index) => (
+                <FooterLink key={index} href={getLocalizedHref(link.href)}>{link.text}</FooterLink>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Features</h3>
+            <h3 className="font-bold text-lg mb-4">{footerDict.footer.sections.features.title}</h3>
             <ul className="space-y-2">
-              <FooterLink href="/features/vito-ai">Vito AI</FooterLink>
-              <FooterLink href="/features/native-app">Native App</FooterLink>
-              <FooterLink href="/features/integrations">Integrations</FooterLink>
+              {footerDict.footer.sections.features.links.map((link, index) => (
+                <FooterLink key={index} href={getLocalizedHref(link.href)}>{link.text}</FooterLink>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Company</h3>
+            <h3 className="font-bold text-lg mb-4">{footerDict.footer.sections.company.title}</h3>
             <ul className="space-y-2">
-              <FooterLink href="/about-us">About Us</FooterLink>
-              <FooterLink href="/compare">Compare Platforms</FooterLink>
-              <FooterLink href="/careers">Careers</FooterLink>
-              <FooterLink href="/blog">Blog</FooterLink>
-              <FooterLink href="/press">Press</FooterLink>
-              <FooterLink href="/contact">Contact</FooterLink>
+              {footerDict.footer.sections.company.links.map((link, index) => (
+                <FooterLink key={index} href={getLocalizedHref(link.href)}>{link.text}</FooterLink>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Subscribe</h3>
-            <p className="text-gray-400 mb-4">Stay updated with the latest news and features</p>
+            <h3 className="font-bold text-lg mb-4">{footerDict.footer.sections.subscribe.title}</h3>
+            <p className="text-gray-400 mb-4">{footerDict.footer.sections.subscribe.description}</p>
             <div className="flex gap-2">
-              <Input type="email" placeholder="Your email" className="bg-gray-800 border-gray-700 text-white" />
-              <Button>Subscribe</Button>
+              <Input 
+                type="email" 
+                placeholder={footerDict.footer.sections.subscribe.placeholder} 
+                className="bg-gray-800 border-gray-700 text-white" 
+              />
+              <Button>{footerDict.footer.sections.subscribe.button}</Button>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Publica.la. All rights reserved.</p>
+          <p className="text-gray-400 text-sm">{footerDict.footer.copyright.replace('{year}', new Date().getFullYear().toString())}</p>
           <div className="flex gap-6">
-            <Link href="/terms" className="text-sm text-gray-400 hover:text-white">
-              Terms of Service
-            </Link>
-            <Link href="/privacy" className="text-sm text-gray-400 hover:text-white">
-              Privacy Policy
-            </Link>
-            <Link href="/cookies" className="text-sm text-gray-400 hover:text-white">
-              Cookie Policy
-            </Link>
+            {footerDict.footer.legal.map((link, index) => (
+              <Link key={index} href={getLocalizedHref(link.href)} className="text-sm text-gray-400 hover:text-white">
+                {link.text}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
