@@ -1,8 +1,13 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { CalendlyButton } from "@/components/calendly-button"
+import { Play } from "lucide-react"
+import { DemoVideoModal } from "@/components/demo-video-modal"
+import { useState } from "react"
 
 export function LibrariesHero() {
+  const [isDemoVideoOpen, setIsDemoVideoOpen] = useState(false)
   return (
     <section className="relative w-full py-20 md:py-32 px-6 overflow-hidden">
       <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
@@ -26,14 +31,21 @@ export function LibrariesHero() {
               resources while building stronger community connections.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="rounded-md font-medium">
-                <Link href="/get-started">
-                  Get Started
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-md font-medium">
-                <Link href="/schedule-demo">Request a Demo</Link>
+              <CalendlyButton
+                size="lg"
+                className="rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 group"
+                showArrow={true}
+              >
+                Schedule a Meeting
+              </CalendlyButton>
+              <Button
+                variant="outline"
+                size="lg"
+                className="rounded-xl font-medium border-2 hover:bg-gray-50 transition-all duration-300"
+                onClick={() => setIsDemoVideoOpen(true)}
+              >
+                <Play className="mr-2 h-4 w-4" />
+                Watch Demo
               </Button>
             </div>
           </div>
@@ -58,6 +70,7 @@ export function LibrariesHero() {
           </div>
         </div>
       </div>
+      <DemoVideoModal isOpen={isDemoVideoOpen} onClose={() => setIsDemoVideoOpen(false)} />
     </section>
   )
 }
