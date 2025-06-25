@@ -8,7 +8,7 @@ import { Play } from "lucide-react"
 import { DemoVideoModal } from "@/components/demo-video-modal"
 import { useState } from "react"
 
-export function LibrariesHero() {
+export function LibrariesHero({ dict }: { dict: any }) {
   const [isDemoVideoOpen, setIsDemoVideoOpen] = useState(false)
   return (
     <section className="relative w-full py-20 md:py-32 px-6 overflow-hidden">
@@ -23,14 +23,11 @@ export function LibrariesHero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-              Solutions for Libraries
+              {dict.badge}
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
-              Modernize Your Library with <span className="text-primary">Digital Collections</span>
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900" dangerouslySetInnerHTML={{ __html: dict.title.replace("<1>", '<span class="text-primary">').replace("</1>", "</span>") }} />
             <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-xl">
-              Transform your library into a digital hub. Provide 24/7 access to ebooks, audiobooks, and digital
-              resources while building stronger community connections.
+              {dict.subtitle}
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <CalendlyButton
@@ -38,7 +35,7 @@ export function LibrariesHero() {
                 className="rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 group"
                 showArrow={true}
               >
-                Schedule a Meeting
+                {dict.getStarted}
               </CalendlyButton>
               <Button
                 variant="outline"
@@ -47,7 +44,7 @@ export function LibrariesHero() {
                 onClick={() => setIsDemoVideoOpen(true)}
               >
                 <Play className="mr-2 h-4 w-4" />
-                Watch Demo
+                {dict.requestDemo}
               </Button>
             </div>
           </div>
@@ -57,7 +54,7 @@ export function LibrariesHero() {
               <div className="aspect-video">
                 <iframe
                   src="https://www.youtube.com/embed/ULZaZTvsUQs"
-                  title="Publica.la Platform Overview"
+                  title={dict.videoTitle}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen

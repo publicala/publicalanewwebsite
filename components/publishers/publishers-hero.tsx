@@ -28,7 +28,7 @@ export function PublishersHero({ dict }: { dict: any }) {
                 className="rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 group"
                 showArrow={true}
               >
-                Schedule a Meeting
+                {dict.getStarted}
               </CalendlyButton>
               <Button
                 variant="outline"
@@ -37,7 +37,7 @@ export function PublishersHero({ dict }: { dict: any }) {
                 onClick={() => setIsDemoVideoOpen(true)}
               >
                 <Play className="mr-2 h-4 w-4" />
-                Watch Demo
+                {dict.requestDemo}
               </Button>
             </div>
           </div>

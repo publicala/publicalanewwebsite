@@ -1,0 +1,460 @@
+{
+  "navigation": {
+    "home": "Traduction française de: Home",
+    "solutions": "Traduction française de: Solutions",
+    "features": "Traduction française de: Features",
+    "pricing": "Traduction française de: Pricing",
+    "caseStudies": "Traduction française de: Case Studies",
+    "about": "Traduction française de: About Us",
+    "contact": "Traduction française de: Contact",
+    "careers": "Traduction française de: Careers"
+  },
+  "hero": {
+    "taglines": [
+      {
+        "heading": "Traduction française de: Sell Smarter. Showcase Better.",
+        "subheading": "Traduction française de: The ultimate platform to manage digital libraries and power your content ecommerce."
+      },
+      {
+        "heading": "Traduction française de: Your Digital Library. Your Online Store. One Platform.",
+        "subheading": "Traduction française de: Build, brand, and monetize your digital content with ease."
+      },
+      {
+        "heading": "Traduction française de: Ecommerce Meets Content Management",
+        "subheading": "Traduction française de: Organize your digital library and sell ebooks, audiobooks, and more — all in one place."
+      },
+      {
+        "heading": "Traduction française de: From Library to Checkout in Seconds",
+        "subheading": "Traduction française de: A seamless platform for managing digital collections and selling content globally."
+      },
+      {
+        "heading": "Traduction française de: Turn Your Digital Library Into a Revenue Engine",
+        "subheading": "Traduction française de: Comprehensive tools to manage, showcase, and monetize your content catalog."
+      },
+      {
+        "heading": "Traduction française de: Where Digital Libraries and Ecommerce Converge",
+        "subheading": "Traduction française de: Simplify content management and boost revenue with a single, powerful platform."
+      },
+      {
+        "heading": "Traduction française de: Build Your Digital Library. Sell to the World.",
+        "subheading": "Traduction française de: Publica.la helps you organize, customize, and monetize your content at scale."
+      }
+    ],
+    "trustedBy": "Traduction française de: Trusted by 1000+ organizations worldwide",
+    "scheduleMeeting": "Traduction française de: Schedule a Meeting",
+    "watchDemo": "Traduction française de: Watch Demo",
+    "joinLeaders": "Traduction française de: Join industry leaders",
+    "noCreditCard": "Traduction française de: No credit card required",
+    "hero": {
+      "badge": "Traduction française de: Solutions for Publishers",
+      "title": "Traduction française de: Transform Your <1>Publishing</1> Business",
+      "subtitle": "Traduction française de: Empower your publishing strategy with our comprehensive digital platform designed to help you distribute and monetize content effectively.",
+      "getStarted": "Traduction française de: Get Started",
+      "requestDemo": "Traduction française de: Request a Demo",
+      "videoTitle": "Traduction française de: Publica.la Platform Overview"
+    },
+    "customerLogos": {
+      "title": "Traduction française de: Trusted by Publishers Worldwide",
+      "subtitle": "Traduction française de: Leading publishers choose Publica.la for their digital transformation"
+    }
+  },
+  "solutions": {
+    "publishers": "Traduction française de: Publishers",
+    "libraries": "Traduction française de: Libraries",
+    "bookshops": "Traduction française de: Bookshops",
+    "contentCreators": "Traduction française de: Content Creators",
+    "magazinesNewspapers": "Traduction française de: Magazines & Newspapers"
+  },
+  "features": {
+    "title": "Traduction française de: Features",
+    "integrations": "Traduction française de: Integrations",
+    "nativeApp": "Traduction française de: Native App",
+    "vitoAI": "Traduction française de: Vito AI"
+  },
+  "pricing": {
+    "title": "Traduction française de: Pricing",
+    "getStarted": "Traduction française de: Get Started",
+    "contactSales": "Traduction française de: Contact Sales"
+  },
+  "footer": {
+    "description": "Traduction française de: The most robust and dynamic digital content platform for publishers and content creators, empowering you to create, manage, and distribute exceptional content.",
+    "sections": {
+      "solutions": {
+        "title": "Traduction française de: Solutions",
+        "links": [
+          { "href": "/solutions/publishers", "text": "Traduction française de: For Publishers" },
+          { "href": "/solutions/bookshops", "text": "Traduction française de: For Bookshops" },
+          { "href": "/solutions/content-creators", "text": "Traduction française de: For Content Creators" },
+          { "href": "/solutions/libraries", "text": "Traduction française de: For Libraries" },
+          { "href": "/solutions/magazines-newspapers", "text": "Traduction française de: For Magazines & Newspapers" }
+        ]
+      },
+      "features": {
+        "title": "Traduction française de: Features",
+        "links": [
+          { "href": "/features/vito-ai", "text": "Traduction française de: Vito AI" },
+          { "href": "/features/native-app", "text": "Traduction française de: Native App" },
+          { "href": "/features/integrations", "text": "Traduction française de: Integrations" }
+        ]
+      },
+      "company": {
+        "title": "Traduction française de: Company",
+        "links": [
+          { "href": "/about-us", "text": "Traduction française de: About Us" },
+          { "href": "/compare", "text": "Traduction française de: Compare Platforms" },
+          { "href": "/careers", "text": "Traduction française de: Careers" },
+          { "href": "/blog", "text": "Traduction française de: Blog" },
+          { "href": "/press", "text": "Traduction française de: Press" },
+          { "href": "/contact", "text": "Traduction française de: Contact" },
+          { "href": "https://publicala.featurebase.app/changelog", "text": "Traduction française de: Changelog", "external": true },
+          { "href": "https://status.publica.la/", "text": "Traduction française de: Status page", "external": true }
+        ]
+      },
+      "subscribe": {
+        "title": "Traduction française de: Subscribe",
+        "description": "Traduction française de: Stay updated with the latest news and features",
+        "placeholder": "Traduction française de: Your email",
+        "button": "Traduction française de: Subscribe"
+      }
+    },
+    "copyright": "Traduction française de: © {year} Publica.la. All rights reserved.",
+    "legal": [
+      { "href": "/terms", "text": "Traduction française de: Terms of Service" },
+      { "href": "/privacy", "text": "Traduction française de: Privacy Policy" },
+      { "href": "/cookies", "text": "Traduction française de: Cookie Policy" },
+      { "href": "https://app.publica.la/platform/sign-up/init?lang=en&plan=basic_store&interval=monthly&utm_medium=Website&utm_campaign=New_website&utm_source=Direct+Traffic&utm_content=Website", "text": "Traduction française de: Create tenant", "external": true }
+    ]
+  },
+  "testimonialsSection": {
+    "title": "Traduction française de: Trusted by Industry Leaders",
+    "subtitle": "Traduction française de: See what our customers have to say about their experience with Publica.la",
+    "testimonials": [
+      {
+        "quote": "Traduction française de: The subscription tools, the ability to build libraries, and the flexibility to manage marketing alternatives make it an irreplaceable ally for the business. I couldn't do without it.",
+        "name": "Traduction française de: Candelaria Pagella",
+        "role": "Traduction française de: Head of Marketing y Communication at Santillana",
+        "avatar": "CP"
+      },
+      {
+        "quote": "Traduction française de: Our digital sales have increased by 100% because we embarked on the digital adventure together.",
+        "name": "Traduction française de: Fernando Sánchez",
+        "role": "Traduction française de: Head of Revista Barcelona",
+        "avatar": "FS"
+      },
+      {
+        "quote": "Traduction française de: The Publica.la platform is fast, user-friendly, and perfectly suited for growing both retail and institutional eBook operations.",
+        "name": "Traduction française de: Martha Edna Suárez",
+        "role": "Traduction française de: CEO at Alfaeditorial Colombiana S.A.",
+        "avatar": "MS"
+      }
+    ]
+  },
+  "solutionsSection": {
+    "title": "Traduction française de: Enterprise Solutions for Every Need",
+    "subtitle": "Traduction française de: Tailored digital publishing solutions for organizations across the content ecosystem",
+    "solutions": [
+      {
+        "title": "Traduction française de: For Publishers",
+        "description": "Traduction française de: Streamline your ebook and audiobooks ecommerce workflow with our comprehensive platform designed for publishers of all sizes.",
+        "href": "/solutions/publishers"
+      },
+      {
+        "title": "Traduction française de: For Bookshops",
+        "description": "Traduction française de: Expand your reach with digital offerings and create new revenue streams for your bookshop.",
+        "href": "/solutions/bookshops"
+      },
+      {
+        "title": "Traduction française de: For Content Creators",
+        "description": "Traduction française de: Focus on creating exceptional content while we handle the technical aspects of distribution and monetization.",
+        "href": "/solutions/content-creators"
+      },
+      {
+        "title": "Traduction française de: For Libraries",
+        "description": "Traduction française de: Modernize your library with digital solutions that make content more accessible to your community.",
+        "href": "/solutions/libraries"
+      },
+      {
+        "title": "Traduction française de: For Magazines & Newspapers",
+        "description": "Traduction française de: Streamline your replica edition and digital subscription process and reach readers across all devices and platforms.",
+        "href": "/solutions/magazines-newspapers"
+      }
+    ],
+    "customSolution": {
+      "title": "Traduction française de: Need a custom solution?",
+      "description": "Traduction française de: Contact our team to discuss your specific requirements",
+      "buttonText": "Traduction française de: Contact Sales"
+    },
+    "learnMore": "Traduction française de: Learn more"
+  },
+  "featuresSection": {
+    "title": "Traduction française de: Enterprise-Grade Features for Professional Publishing",
+    "subtitle": "Traduction française de: Our platform provides all the tools you need to manage and distribute your digital content with confidence and scale.",
+    "features": [
+      {
+        "title": "Traduction française de: Advanced Content Management",
+        "description": "Traduction française de: Streamline your workflow with our intuitive content management system designed for publishers."
+      },
+      {
+        "title": "Traduction française de: Multi-format Publishing",
+        "description": "Traduction française de: Support for EPUB, PDF, audio, and interactive content formats with seamless conversion."
+      },
+      {
+        "title": "Traduction française de: Secure Digital Rights Management",
+        "description": "Traduction française de: Protect your content with enterprise-grade DRM and access control features."
+      },
+      {
+        "title": "Traduction française de: Comprehensive Analytics",
+        "description": "Traduction française de: Get detailed insights into reader behavior, sales performance, and content engagement."
+      },
+      {
+        "title": "Traduction française de: Global Distribution Network",
+        "description": "Traduction française de: Reach readers worldwide with our extensive distribution and delivery infrastructure."
+      },
+      {
+        "title": "Traduction française de: Monetization Tools",
+        "description": "Traduction française de: Flexible pricing models, subscription management, and revenue optimization features."
+      },
+      {
+        "title": "Traduction française de: API Access for Developers",
+        "description": "Traduction française de: Integrate with your existing systems using our comprehensive REST API and webhooks."
+      },
+      {
+        "title": "Traduction française de: 99.9% Uptime Guarantee",
+        "description": "Traduction française de: Reliable infrastructure with enterprise-grade hosting and 24/7 monitoring."
+      },
+      {
+        "title": "Traduction française de: Enterprise-grade Security",
+        "description": "Traduction française de: SOC 2 compliant with advanced encryption and security monitoring."
+      }
+    ],
+    "demoSection": {
+      "title": "Traduction française de: Ready to see it in action?",
+      "description": "Traduction française de: Experience the power of our platform with a personalized demo tailored to your publishing needs.",
+      "benefits": [
+        { "text": "Traduction française de: Live platform walkthrough" },
+        { "text": "Traduction française de: Custom use case discussion" }
+      ]
+    }
+  },
+  "platformShowcase": {
+    "title": "Traduction française de: Powerful Platform Features",
+    "subtitle": "Traduction française de: Everything you need to create, manage, and monetize your digital content in one comprehensive platform.",
+    "features": [
+      { "id": "content", "title": "Traduction française de: Content Management", "description": "Traduction française de: Organize and manage your digital library with powerful tools", "color": "blue" },
+      { "id": "analytics", "title": "Traduction française de: Advanced Analytics", "description": "Traduction française de: Track performance and reader engagement in real-time", "color": "green" },
+      { "id": "security", "title": "Traduction française de: Enterprise Security", "description": "Traduction française de: Protect your content with industry-leading security", "color": "red" },
+      { "id": "sales", "title": "Traduction française de: Global Sales", "description": "Traduction française de: Reach readers worldwide with our global payments infrastructure.", "color": "indigo" }
+    ],
+    "analytics": {
+      "revenueGrowth": "Traduction française de: Revenue Growth",
+      "thisMonth": "Traduction française de: This Month",
+      "totalUsers": "Traduction française de: Total Users"
+    },
+    "sales": {
+      "globalRevenue": "Traduction française de: Global Revenue",
+      "countries": "Traduction française de: Countries",
+      "currencies": "Traduction française de: Currencies",
+      "multiCurrency": "Traduction française de: Multi-currency payment processing",
+      "creditCards": { "title": "Traduction française de: Credit Cards", "description": "Traduction française de: Visa, Mastercard, Amex" },
+      "digitalWallets": { "title": "Traduction française de: Digital Wallets", "description": "Traduction française de: PayPal, Apple Pay, Google Pay" }
+    },
+    "security": {
+      "drm": { "title": "Traduction française de: Proprietary DRM with military-grade AES encryption", "description": "Traduction française de: Assets stream encrypted end-to-end, never stored locally" },
+      "streaming": { "title": "Traduction française de: Streaming, signed & session-scoped URLs", "description": "Traduction française de: Just-in-time fragments auto-expire, stopping link-sharing" },
+      "observability": { "title": "Traduction française de: Fine-grained observability for real-time threat response", "description": "Traduction française de: Live telemetry flags anomalies and auto-mitigates" }
+    }
+  },
+  "customerLogosShowcase": {
+    "title": "Traduction française de: Trusted by Leading Organizations",
+    "subtitle": "Traduction française de: Join thousands of content creators and publishers who trust Publica.la"
+  },
+  "ctaSection": {
+    "badge": "Traduction française de: Ready to get started?",
+    "title": "Traduction française de: Ready to transform your",
+    "titleHighlight": "Traduction française de: digital publishing?",
+    "subtitle": "Traduction française de: Join thousands of organizations that trust Publica.la for their enterprise publishing needs.",
+    "stats": [
+      { "value": "1000+", "label": "Traduction française de: Organizations" },
+      { "value": "50+", "label": "Traduction française de: Countries" },
+      { "value": "300%", "label": "Traduction française de: Avg Growth" },
+      { "value": "4.9/5", "label": "Traduction française de: Rating" }
+    ],
+    "scheduleButton": "Traduction française de: Schedule a Meeting",
+    "watchDemoButton": "Traduction française de: Watch Demo",
+    "benefits": [
+      { "text": "Traduction française de: No credit card required" },
+      { "text": "Traduction française de: 14-day free trial" },
+      { "text": "Traduction française de: Cancel anytime" }
+    ]
+  },
+  "navbar": {
+    "solutions": {
+      "title": "Traduction française de: Solutions",
+      "description": "Traduction française de: Enterprise Publishing Solutions",
+      "subtitle": "Traduction française de: Comprehensive digital content management and distribution platform for publishers, bookshops, and content creators of all sizes.",
+      "links": [
+        { "href": "/solutions/publishers", "title": "Traduction française de: For Publishers", "description": "Traduction française de: Streamline your digital publishing workflow" },
+        { "href": "/solutions/bookshops", "title": "Traduction française de: For Bookshops", "description": "Traduction française de: Expand your reach with digital offerings" },
+        { "href": "/solutions/content-creators", "title": "Traduction française de: For Content Creators", "description": "Traduction française de: Focus on content while we handle distribution" },
+        { "href": "/solutions/libraries", "title": "Traduction française de: For Libraries", "description": "Traduction française de: Digital solutions for modern libraries" },
+        { "href": "/solutions/magazines-newspapers", "title": "Traduction française de: For Magazines & Newspapers", "description": "Traduction française de: Streamline your digital publication process" }
+      ]
+    },
+    "pricing": "Traduction française de: Pricing",
+    "developers": "Traduction française de: Developers",
+    "caseStudies": "Traduction française de: Case Studies",
+    "ebooksDepository": "Traduction française de: Ebooks Depository",
+    "startNow": "Traduction française de: Start Now"
+  },
+  "aboutHero": {
+    "title": "Traduction française de: We are publica.la",
+    "description": "Traduction française de: We are a tech company that empowers creators, publishers, and institutions to distribute and manage their digital content — simply, securely, and with full control. We work globally, move with agility, and collaborate as one team.",
+    "getStartedButton": "Traduction française de: Get started",
+    "scheduleDemoButton": "Traduction française de: Schedule a demo"
+  },
+  "aboutStory": {
+    "stats": {
+      "title": "Traduction française de: Today, publica.la is trusted by…",
+      "publishers": { "value": "1,000+", "label": "Traduction française de: publishers, universities, and creators" },
+      "countries": { "value": "20+", "label": "Traduction française de: countries" },
+      "titles": { "value": "1.5M+", "label": "Traduction française de: digital titles shared" }
+    },
+    "title": "Traduction française de: How it all started",
+    "paragraphs": [
+      { "text": "Traduction française de: In 2016 we saw a clear opportunity: publishers, authors, and media organizations needed a better way to share and sell their digital content — directly, without intermediaries, and with full control." },
+      { "text": "Traduction française de: That's when we built publica.la — a comprehensive platform designed to help them manage, promote, and monetize their content with simplicity and efficiency. Founded by a team of publishing and technology experts, publica.la emerged as a response to the limitations of traditional models and the lack of digital tools truly built for publishers." },
+      { "text": "Traduction française de: Our goal was simple: empower content creators and retailers of all sizes to sell directly to their audiences — eliminating intermediaries, fostering real connections between creators, sellers, and consumers, and helping them grow their revenue in a digital-first world." },
+      { "text": "Traduction française de: Over time, publica.la gained international recognition and expanded rapidly, becoming a leading platform in the digital publishing industry." }
+    ]
+  },
+  "aboutMission": {
+    "title": "Traduction française de: Where we are going",
+    "subtitle": "Traduction française de: We're working to make digital publishing easier, fairer, and more accessible — for everyone, everywhere.",
+    "mainMessage": "Traduction française de: If you create great content, we'll help you share it with the world.",
+    "simpleMessage": "Traduction française de: That simple."
+  },
+  "aboutValues": {
+    "title": "Traduction française de: We believe in",
+    "values": [
+      { "title": "Traduction française de: Autonomy with responsibility", "description": "Traduction française de: We own our work and results, with freedom and accountability." },
+      { "title": "Traduction française de: Teamwork", "description": "Traduction française de: We grow stronger by supporting each other and working as one." },
+      { "title": "Traduction française de: Technology & innovation", "description": "Traduction française de: We stay curious, use smart tools, and build for real impact." },
+      { "title": "Traduction française de: Customer devotion", "description": "Traduction française de: We put our users at the center — and aim to exceed expectations." },
+      { "title": "Traduction française de: Transparency", "description": "Traduction française de: We believe that clear and honest communication builds trust and alignment." }
+    ]
+  },
+  "aboutTeam": {
+    "title": "Traduction française de: Meet the people behind the platform",
+    "founders": {
+      "title": "Traduction française de: Our Founders",
+      "franco": { "name": "Traduction française de: Franco Gilio", "role": "Traduction française de: CTO" },
+      "pablo": { "name": "Traduction française de: Pablo Laurino", "role": "Traduction française de: CEO" },
+      "imageAlt": "Traduction française de: Founders Pablo Laurino and Franco Gilio at a publica.la booth"
+    },
+    "team": {
+      "title": "Traduction française de: And our passionate team",
+      "description": "Traduction française de: Dedicated individuals working together to shape the future of digital publishing. Here are a few moments with our amazing team."
+    },
+    "careers": {
+      "description": "Traduction française de: We're always looking for curious minds who love building useful things and want to shape the future of digital publishing.",
+      "linkText": "Traduction française de: View open positions"
+    }
+  },
+  "contactHero": {
+    "title": "Traduction française de: Get in Touch",
+    "subtitle": "Traduction française de: We're here to help you succeed",
+    "description": "Traduction française de: Whether you're interested in our platform, need technical support, or want to explore partnership opportunities, our team is ready to assist you."
+  },
+  "contactForm": {
+    "title": "Traduction française de: Send us a Message",
+    "firstName": {
+      "label": "Traduction française de: First Name",
+      "placeholder": "Traduction française de: Enter your first name"
+    },
+    "lastName": {
+      "label": "Traduction française de: Last Name",
+      "placeholder": "Traduction française de: Enter your last name"
+    },
+    "email": {
+      "label": "Traduction française de: Email Address",
+      "placeholder": "Traduction française de: Enter your email address"
+    },
+    "company": {
+      "label": "Traduction française de: Company",
+      "placeholder": "Traduction française de: Enter your company name"
+    },
+    "subject": {
+      "label": "Traduction française de: Subject",
+      "placeholder": "Traduction française de: Select a subject",
+      "options": [
+        { "value": "sales", "label": "Traduction française de: Sales Inquiry" },
+        { "value": "support", "label": "Traduction française de: Technical Support" },
+        { "value": "partnership", "label": "Traduction française de: Partnership Opportunity" },
+        { "value": "demo", "label": "Traduction française de: Request a Demo" },
+        { "value": "billing", "label": "Traduction française de: Billing Question" },
+        { "value": "other", "label": "Traduction française de: Other" }
+      ]
+    },
+    "message": {
+      "label": "Traduction française de: Message",
+      "placeholder": "Traduction française de: Tell us how we can help you..."
+    },
+    "submitButton": {
+      "sending": "Traduction française de: Sending...",
+      "default": "Traduction française de: Send Message"
+    }
+  },
+  "contactInfo": {
+    "title": "Traduction française de: Contact Information",
+    "methods": [
+      {
+        "title": "Traduction française de: Email Us",
+        "details": ["hello@publica.la", "support@publica.la"],
+        "description": "Traduction française de: We typically respond within 24 hours"
+      },
+      {
+        "title": "Traduction française de: Call Us",
+        "details": ["+1 (555) 123-4567"],
+        "description": "Traduction française de: Global support line - Monday to Friday, 9 AM - 6 PM EST"
+      },
+      {
+        "title": "Traduction française de: Business Hours",
+        "details": ["Monday - Friday: 9 AM - 6 PM EST", "24/7 Priority Support Available"],
+        "description": "Traduction française de: We work across multiple time zones"
+      }
+    ],
+    "urgentHelp": {
+      "title": "Traduction française de: Need Immediate Help?",
+      "description": "Traduction française de: For urgent technical issues or critical support needs, please use our priority support channel.",
+      "prioritySupport": "Traduction française de: Priority Support",
+      "liveChat": "Traduction française de: Live Chat"
+    }
+  },
+  "contactPresence": {
+    "title": "Traduction française de: Our Global Presence",
+    "subtitle": "Traduction française de: We're a fully remote team with talented professionals across three continents, working together to serve our global customer base",
+    "regions": [
+      { "name": "Traduction française de: Europe", "count": 4, "color": "bg-blue-500" },
+      { "name": "Traduction française de: North America", "count": 2, "color": "bg-green-500" },
+      { "name": "Traduction française de: South America", "count": 3, "color": "bg-purple-500" }
+    ],
+    "teamLocations": {
+      "title": "Traduction française de: Team Members Located In",
+      "locations": [
+        { "city": "Traduction française de: Rome", "country": "Traduction française de: Italy", "region": "Traduction française de: Europe", "coords": { "x": 52, "y": 35 } },
+        { "city": "Traduction française de: Barcelona", "country": "Traduction française de: Spain", "region": "Traduction française de: Europe", "coords": { "x": 48, "y": 38 } },
+        { "city": "Traduction française de: Lisboa", "country": "Traduction française de: Portugal", "region": "Traduction française de: Europe", "coords": { "x": 46, "y": 40 } },
+        { "city": "Traduction française de: Madrid", "country": "Traduction française de: Spain", "region": "Traduction française de: Europe", "coords": { "x": 47, "y": 40 } },
+        { "city": "Traduction française de: Bogotá", "country": "Traduction française de: Colombia", "region": "Traduction française de: South America", "coords": { "x": 28, "y": 55 } },
+        { "city": "Traduction française de: Medellín", "country": "Traduction française de: Colombia", "region": "Traduction française de: South America", "coords": { "x": 28, "y": 56 } },
+        { "city": "Traduction française de: Mexico City", "country": "Traduction française de: Mexico", "region": "Traduction française de: North America", "coords": { "x": 22, "y": 45 } },
+        { "city": "Traduction française de: Raleigh", "country": "Traduction française de: North Carolina, USA", "region": "Traduction française de: North America", "coords": { "x": 32, "y": 42 } },
+        { "city": "Traduction française de: Buenos Aires", "country": "Traduction française de: Argentina", "region": "Traduction française de: South America", "coords": { "x": 35, "y": 72 } }
+      ]
+    },
+    "remoteWork": {
+      "title": "Traduction française de: Why We're Remote-First",
+      "description": "Traduction française de: Our distributed team model allows us to tap into global talent, provide round-the-clock support, and better understand the diverse markets we serve. This approach enables us to deliver exceptional service regardless of your location."
+    }
+  }
+} 
