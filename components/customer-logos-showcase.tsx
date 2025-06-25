@@ -6,6 +6,13 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { SectionHeader } from "@/components/ui/section-header"
 import { AnimatedBackground } from "@/components/ui/animated-background"
 
+type Logo = {
+  name: string
+  src?: string
+  width: number
+  height: number
+}
+
 interface CustomerLogosShowcaseProps {
   title?: string
   subtitle?: string
@@ -42,7 +49,7 @@ export function CustomerLogosShowcase({
   const lastScrollTimeRef = useRef(0)
 
   // Define logo sets based on industry/context
-  const getLogos = () => {
+  const getLogos = (): Logo[] => {
     switch (industry) {
       case "publishers":
         return [
@@ -62,10 +69,8 @@ export function CustomerLogosShowcase({
         ]
       case "creators":
         return [
-          { name: "Content Creator 1", width: 125, height: 52 },
-          { name: "Digital Author", width: 130, height: 55 },
-          { name: "Course Creator", width: 135, height: 58 },
-          { name: "Media Producer", width: 140, height: 60 },
+          { name: "Patrick Mork", src: "/images/logos/mork.png", width: 160, height: 60 },
+          { name: "Draper", src: "/images/logos/draper.webp", width: 160, height: 60 },
         ]
       case "libraries":
         return [
