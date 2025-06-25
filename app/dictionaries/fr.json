@@ -1,230 +1,230 @@
 {
   "navigation": {
-    "home": "Traduction française de: Home",
-    "solutions": "Traduction française de: Solutions",
-    "features": "Traduction française de: Features",
-    "pricing": "Traduction française de: Pricing",
-    "caseStudies": "Traduction française de: Case Studies",
-    "about": "Traduction française de: About Us",
-    "contact": "Traduction française de: Contact",
-    "careers": "Traduction française de: Careers"
+    "home": "Accueil",
+    "solutions": "Solutions",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "caseStudies": "Études de cas",
+    "about": "À propos",
+    "contact": "Contact",
+    "careers": "Carrières"
   },
   "hero": {
     "taglines": [
       {
-        "heading": "Traduction française de: Sell Smarter. Showcase Better.",
-        "subheading": "Traduction française de: The ultimate platform to manage digital libraries and power your content ecommerce."
+        "heading": "Vendez plus intelligemment. Présentez mieux.",
+        "subheading": "La plateforme ultime pour gérer vos bibliothèques numériques et alimenter votre e-commerce de contenu."
       },
       {
-        "heading": "Traduction française de: Your Digital Library. Your Online Store. One Platform.",
-        "subheading": "Traduction française de: Build, brand, and monetize your digital content with ease."
+        "heading": "Votre bibliothèque numérique. Votre boutique en ligne. Une plateforme.",
+        "subheading": "Créez, personnalisez et monétisez votre contenu numérique en toute simplicité."
       },
       {
-        "heading": "Traduction française de: Ecommerce Meets Content Management",
-        "subheading": "Traduction française de: Organize your digital library and sell ebooks, audiobooks, and more — all in one place."
+        "heading": "L'e-commerce rencontre la gestion de contenu",
+        "subheading": "Organisez votre bibliothèque numérique et vendez des ebooks, des livres audio et plus encore — le tout en un seul endroit."
       },
       {
-        "heading": "Traduction française de: From Library to Checkout in Seconds",
-        "subheading": "Traduction française de: A seamless platform for managing digital collections and selling content globally."
+        "heading": "De la bibliothèque à l'achat en quelques secondes",
+        "subheading": "Une plateforme fluide pour gérer vos collections numériques et vendre du contenu dans le monde entier."
       },
       {
-        "heading": "Traduction française de: Turn Your Digital Library Into a Revenue Engine",
-        "subheading": "Traduction française de: Comprehensive tools to manage, showcase, and monetize your content catalog."
+        "heading": "Transformez votre bibliothèque numérique en moteur de revenus",
+        "subheading": "Des outils complets pour gérer, présenter et monétiser votre catalogue de contenu."
       },
       {
-        "heading": "Traduction française de: Where Digital Libraries and Ecommerce Converge",
-        "subheading": "Traduction française de: Simplify content management and boost revenue with a single, powerful platform."
+        "heading": "Là où les bibliothèques numériques et l'e-commerce convergent",
+        "subheading": "Simplifiez la gestion de contenu et augmentez vos revenus avec une plateforme unique et puissante."
       },
       {
-        "heading": "Traduction française de: Build Your Digital Library. Sell to the World.",
-        "subheading": "Traduction française de: Publica.la helps you organize, customize, and monetize your content at scale."
+        "heading": "Construisez votre bibliothèque numérique. Vendez au monde entier.",
+        "subheading": "Publica.la vous aide à organiser, personnaliser et monétiser votre contenu à grande échelle."
       }
     ],
-    "trustedBy": "Traduction française de: Trusted by 1000+ organizations worldwide",
-    "scheduleMeeting": "Traduction française de: Schedule a Meeting",
-    "watchDemo": "Traduction française de: Watch Demo",
-    "joinLeaders": "Traduction française de: Join industry leaders",
-    "noCreditCard": "Traduction française de: No credit card required",
+    "trustedBy": "Approuvé par plus de 1000 organisations dans le monde",
+    "scheduleMeeting": "Planifier une réunion",
+    "watchDemo": "Voir la démo",
+    "joinLeaders": "Rejoignez les leaders de l'industrie",
+    "noCreditCard": "Aucune carte de crédit requise",
     "hero": {
-      "badge": "Traduction française de: Solutions for Publishers",
-      "title": "Traduction française de: Transform Your <1>Publishing</1> Business",
-      "subtitle": "Traduction française de: Empower your publishing strategy with our comprehensive digital platform designed to help you distribute and monetize content effectively.",
-      "getStarted": "Traduction française de: Get Started",
-      "requestDemo": "Traduction française de: Request a Demo",
-      "videoTitle": "Traduction française de: Publica.la Platform Overview"
+      "badge": "Solutions pour les éditeurs",
+      "title": "Transformez votre <1>entreprise d'édition</1>",
+      "subtitle": "Renforcez votre stratégie d'édition avec notre plateforme numérique complète conçue pour vous aider à distribuer et monétiser le contenu efficacement.",
+      "getStarted": "Commencer",
+      "requestDemo": "Demander une démo",
+      "videoTitle": "Aperçu de la plateforme Publica.la"
     },
     "customerLogos": {
-      "title": "Traduction française de: Trusted by Publishers Worldwide",
-      "subtitle": "Traduction française de: Leading publishers choose Publica.la for their digital transformation"
+      "title": "Approuvé par les éditeurs du monde entier",
+      "subtitle": "Les éditeurs leaders choisissent Publica.la pour leur transformation numérique"
     }
   },
   "solutions": {
-    "publishers": "Traduction française de: Publishers",
-    "libraries": "Traduction française de: Libraries",
-    "bookshops": "Traduction française de: Bookshops",
-    "contentCreators": "Traduction française de: Content Creators",
-    "magazinesNewspapers": "Traduction française de: Magazines & Newspapers"
+    "publishers": "Éditeurs",
+    "libraries": "Bibliothèques",
+    "bookshops": "Librairies",
+    "contentCreators": "Créateurs de contenu",
+    "magazinesNewspapers": "Magazines et journaux"
   },
   "features": {
-    "title": "Traduction française de: Features",
-    "integrations": "Traduction française de: Integrations",
-    "nativeApp": "Traduction française de: Native App",
-    "vitoAI": "Traduction française de: Vito AI"
+    "title": "Fonctionnalités",
+    "integrations": "Intégrations",
+    "nativeApp": "Application native",
+    "vitoAI": "Vito IA"
   },
   "pricing": {
-    "title": "Traduction française de: Pricing",
-    "getStarted": "Traduction française de: Get Started",
-    "contactSales": "Traduction française de: Contact Sales"
+    "title": "Tarifs",
+    "getStarted": "Commencer",
+    "contactSales": "Contacter les ventes"
   },
   "footer": {
-    "description": "Traduction française de: The most robust and dynamic digital content platform for publishers and content creators, empowering you to create, manage, and distribute exceptional content.",
+    "description": "La plateforme de contenu numérique la plus robuste et dynamique pour les éditeurs et créateurs de contenu, vous permettant de créer, gérer et distribuer un contenu exceptionnel.",
     "sections": {
       "solutions": {
-        "title": "Traduction française de: Solutions",
+        "title": "Solutions",
         "links": [
-          { "href": "/solutions/publishers", "text": "Traduction française de: For Publishers" },
-          { "href": "/solutions/bookshops", "text": "Traduction française de: For Bookshops" },
-          { "href": "/solutions/content-creators", "text": "Traduction française de: For Content Creators" },
-          { "href": "/solutions/libraries", "text": "Traduction française de: For Libraries" },
-          { "href": "/solutions/magazines-newspapers", "text": "Traduction française de: For Magazines & Newspapers" }
+          { "href": "/solutions/publishers", "text": "Pour les éditeurs" },
+          { "href": "/solutions/bookshops", "text": "Pour les librairies" },
+          { "href": "/solutions/content-creators", "text": "Pour les créateurs de contenu" },
+          { "href": "/solutions/libraries", "text": "Pour les bibliothèques" },
+          { "href": "/solutions/magazines-newspapers", "text": "Pour les magazines et journaux" }
         ]
       },
       "features": {
-        "title": "Traduction française de: Features",
+        "title": "Fonctionnalités",
         "links": [
-          { "href": "/features/vito-ai", "text": "Traduction française de: Vito AI" },
-          { "href": "/features/native-app", "text": "Traduction française de: Native App" },
-          { "href": "/features/integrations", "text": "Traduction française de: Integrations" }
+          { "href": "/features/vito-ai", "text": "Vito IA" },
+          { "href": "/features/native-app", "text": "Application native" },
+          { "href": "/features/integrations", "text": "Intégrations" }
         ]
       },
       "company": {
-        "title": "Traduction française de: Company",
+        "title": "Entreprise",
         "links": [
-          { "href": "/about-us", "text": "Traduction française de: About Us" },
-          { "href": "/compare", "text": "Traduction française de: Compare Platforms" },
-          { "href": "/careers", "text": "Traduction française de: Careers" },
-          { "href": "/blog", "text": "Traduction française de: Blog" },
-          { "href": "/press", "text": "Traduction française de: Press" },
-          { "href": "/contact", "text": "Traduction française de: Contact" },
-          { "href": "https://publicala.featurebase.app/changelog", "text": "Traduction française de: Changelog", "external": true },
-          { "href": "https://status.publica.la/", "text": "Traduction française de: Status page", "external": true }
+          { "href": "/about-us", "text": "À propos de nous" },
+          { "href": "/compare", "text": "Comparer les plateformes" },
+          { "href": "/careers", "text": "Carrières" },
+          { "href": "/blog", "text": "Blog" },
+          { "href": "/press", "text": "Presse" },
+          { "href": "/contact", "text": "Contact" },
+          { "href": "https://publicala.featurebase.app/changelog", "text": "Journal des modifications", "external": true },
+          { "href": "https://status.publica.la/", "text": "Page de statut", "external": true }
         ]
       },
       "subscribe": {
-        "title": "Traduction française de: Subscribe",
-        "description": "Traduction française de: Stay updated with the latest news and features",
-        "placeholder": "Traduction française de: Your email",
-        "button": "Traduction française de: Subscribe"
+        "title": "S'abonner",
+        "description": "Restez informé des dernières nouvelles et fonctionnalités",
+        "placeholder": "Votre email",
+        "button": "S'abonner"
       }
     },
-    "copyright": "Traduction française de: © {year} Publica.la. All rights reserved.",
+    "copyright": "© {year} Publica.la. Tous droits réservés.",
     "legal": [
-      { "href": "/terms", "text": "Traduction française de: Terms of Service" },
-      { "href": "/privacy", "text": "Traduction française de: Privacy Policy" },
-      { "href": "/cookies", "text": "Traduction française de: Cookie Policy" },
-      { "href": "https://app.publica.la/platform/sign-up/init?lang=en&plan=basic_store&interval=monthly&utm_medium=Website&utm_campaign=New_website&utm_source=Direct+Traffic&utm_content=Website", "text": "Traduction française de: Create tenant", "external": true }
+      { "href": "/terms", "text": "Conditions d'utilisation" },
+      { "href": "/privacy", "text": "Politique de confidentialité" },
+      { "href": "/cookies", "text": "Politique des cookies" },
+      { "href": "https://app.publica.la/platform/sign-up/init?lang=en&plan=basic_store&interval=monthly&utm_medium=Website&utm_campaign=New_website&utm_source=Direct+Traffic&utm_content=Website", "text": "Créer un locataire", "external": true }
     ]
   },
   "testimonialsSection": {
-    "title": "Traduction française de: Trusted by Industry Leaders",
-    "subtitle": "Traduction française de: See what our customers have to say about their experience with Publica.la",
+    "title": "Approuvé par les leaders de l'industrie",
+    "subtitle": "Découvrez ce que nos clients disent de leur expérience avec Publica.la",
     "testimonials": [
       {
-        "quote": "Traduction française de: The subscription tools, the ability to build libraries, and the flexibility to manage marketing alternatives make it an irreplaceable ally for the business. I couldn't do without it.",
-        "name": "Traduction française de: Candelaria Pagella",
-        "role": "Traduction française de: Head of Marketing y Communication at Santillana",
+        "quote": "Les outils d'abonnement, la capacité de construire des bibliothèques et la flexibilité pour gérer les alternatives marketing en font un allié irremplaçable pour l'entreprise. Je ne pourrais pas m'en passer.",
+        "name": "Candelaria Pagella",
+        "role": "Responsable marketing et communication chez Santillana",
         "avatar": "CP"
       },
       {
-        "quote": "Traduction française de: Our digital sales have increased by 100% because we embarked on the digital adventure together.",
-        "name": "Traduction française de: Fernando Sánchez",
-        "role": "Traduction française de: Head of Revista Barcelona",
+        "quote": "Nos ventes numériques ont augmenté de 100% parce que nous avons embarqué ensemble dans l'aventure numérique.",
+        "name": "Fernando Sánchez",
+        "role": "Responsable de Revista Barcelona",
         "avatar": "FS"
       },
       {
-        "quote": "Traduction française de: The Publica.la platform is fast, user-friendly, and perfectly suited for growing both retail and institutional eBook operations.",
-        "name": "Traduction française de: Martha Edna Suárez",
-        "role": "Traduction française de: CEO at Alfaeditorial Colombiana S.A.",
+        "quote": "La plateforme Publica.la est rapide, conviviale et parfaitement adaptée pour développer les opérations d'eBooks tant au détail qu'institutionnelles.",
+        "name": "Martha Edna Suárez",
+        "role": "PDG d'Alfaeditorial Colombiana S.A.",
         "avatar": "MS"
       }
     ]
   },
   "solutionsSection": {
-    "title": "Traduction française de: Enterprise Solutions for Every Need",
-    "subtitle": "Traduction française de: Tailored digital publishing solutions for organizations across the content ecosystem",
+    "title": "Solutions d'entreprise pour tous les besoins",
+    "subtitle": "Solutions d'édition numérique personnalisées pour les organisations de l'écosystème de contenu",
     "solutions": [
       {
-        "title": "Traduction française de: For Publishers",
-        "description": "Traduction française de: Streamline your ebook and audiobooks ecommerce workflow with our comprehensive platform designed for publishers of all sizes.",
+        "title": "Pour les éditeurs",
+        "description": "Simplifiez votre flux de travail e-commerce d'ebooks et de livres audio avec notre plateforme complète conçue pour les éditeurs de toutes tailles.",
         "href": "/solutions/publishers"
       },
       {
-        "title": "Traduction française de: For Bookshops",
-        "description": "Traduction française de: Expand your reach with digital offerings and create new revenue streams for your bookshop.",
+        "title": "Pour les librairies",
+        "description": "Élargissez votre portée avec des offres numériques et créez de nouveaux flux de revenus pour votre librairie.",
         "href": "/solutions/bookshops"
       },
       {
-        "title": "Traduction française de: For Content Creators",
-        "description": "Traduction française de: Focus on creating exceptional content while we handle the technical aspects of distribution and monetization.",
+        "title": "Pour les créateurs de contenu",
+        "description": "Concentrez-vous sur la création de contenu exceptionnel pendant que nous gérons les aspects techniques de la distribution et de la monétisation.",
         "href": "/solutions/content-creators"
       },
       {
-        "title": "Traduction française de: For Libraries",
-        "description": "Traduction française de: Modernize your library with digital solutions that make content more accessible to your community.",
+        "title": "Pour les bibliothèques",
+        "description": "Modernisez votre bibliothèque avec des solutions numériques qui rendent le contenu plus accessible à votre communauté.",
         "href": "/solutions/libraries"
       },
       {
-        "title": "Traduction française de: For Magazines & Newspapers",
-        "description": "Traduction française de: Streamline your replica edition and digital subscription process and reach readers across all devices and platforms.",
+        "title": "Pour les magazines et journaux",
+        "description": "Simplifiez votre processus d'édition réplique et d'abonnement numérique et atteignez les lecteurs sur tous les appareils et plateformes.",
         "href": "/solutions/magazines-newspapers"
       }
     ],
     "customSolution": {
-      "title": "Traduction française de: Need a custom solution?",
-      "description": "Traduction française de: Contact our team to discuss your specific requirements",
-      "buttonText": "Traduction française de: Contact Sales"
+      "title": "Besoin d'une solution personnalisée ?",
+      "description": "Contactez notre équipe pour discuter de vos besoins spécifiques",
+      "buttonText": "Contacter les ventes"
     },
-    "learnMore": "Traduction française de: Learn more"
+    "learnMore": "En savoir plus"
   },
   "featuresSection": {
-    "title": "Traduction française de: Enterprise-Grade Features for Professional Publishing",
-    "subtitle": "Traduction française de: Our platform provides all the tools you need to manage and distribute your digital content with confidence and scale.",
+    "title": "Fonctionnalités de niveau entreprise pour l'édition professionnelle",
+    "subtitle": "Notre plateforme fournit tous les outils dont vous avez besoin pour gérer et distribuer votre contenu numérique avec confiance et à grande échelle.",
     "features": [
       {
-        "title": "Traduction française de: Advanced Content Management",
-        "description": "Traduction française de: Streamline your workflow with our intuitive content management system designed for publishers."
+        "title": "Gestion de contenu avancée",
+        "description": "Simplifiez votre flux de travail avec notre système de gestion de contenu intuitif conçu pour les éditeurs."
       },
       {
-        "title": "Traduction française de: Multi-format Publishing",
-        "description": "Traduction française de: Support for EPUB, PDF, audio, and interactive content formats with seamless conversion."
+        "title": "Publication multi-format",
+        "description": "Support des formats EPUB, PDF, audio et contenu interactif avec conversion transparente."
       },
       {
-        "title": "Traduction française de: Secure Digital Rights Management",
-        "description": "Traduction française de: Protect your content with enterprise-grade DRM and access control features."
+        "title": "Gestion des droits numériques sécurisée",
+        "description": "Protégez votre contenu avec des fonctionnalités DRM de niveau entreprise et de contrôle d'accès."
       },
       {
-        "title": "Traduction française de: Comprehensive Analytics",
-        "description": "Traduction française de: Get detailed insights into reader behavior, sales performance, and content engagement."
+        "title": "Analyses complètes",
+        "description": "Obtenez des insights détaillés sur le comportement des lecteurs, les performances de vente et l'engagement du contenu."
       },
       {
-        "title": "Traduction française de: Global Distribution Network",
-        "description": "Traduction française de: Reach readers worldwide with our extensive distribution and delivery infrastructure."
+        "title": "Réseau de distribution mondial",
+        "description": "Atteignez les lecteurs du monde entier avec notre infrastructure de distribution et de livraison étendue."
       },
       {
-        "title": "Traduction française de: Monetization Tools",
-        "description": "Traduction française de: Flexible pricing models, subscription management, and revenue optimization features."
+        "title": "Outils de monétisation",
+        "description": "Modèles de tarification flexibles, gestion des abonnements et fonctionnalités d'optimisation des revenus."
       },
       {
-        "title": "Traduction française de: API Access for Developers",
-        "description": "Traduction française de: Integrate with your existing systems using our comprehensive REST API and webhooks."
+        "title": "Accès API pour les développeurs",
+        "description": "Intégrez avec vos systèmes existants en utilisant notre API REST complète et webhooks."
       },
       {
-        "title": "Traduction française de: 99.9% Uptime Guarantee",
-        "description": "Traduction française de: Reliable infrastructure with enterprise-grade hosting and 24/7 monitoring."
+        "title": "Garantie de disponibilité 99,9%",
+        "description": "Infrastructure fiable avec hébergement de niveau entreprise et surveillance 24/7."
       },
       {
-        "title": "Traduction française de: Enterprise-grade Security",
-        "description": "Traduction française de: SOC 2 compliant with advanced encryption and security monitoring."
+        "title": "Sécurité de niveau entreprise",
+        "description": "Conforme SOC 2 avec chiffrement avancé et surveillance de sécurité."
       }
     ],
     "demoSection": {
@@ -269,23 +269,11 @@
     "subtitle": "Traduction française de: Join thousands of content creators and publishers who trust Publica.la"
   },
   "ctaSection": {
-    "badge": "Traduction française de: Ready to get started?",
-    "title": "Traduction française de: Ready to transform your",
-    "titleHighlight": "Traduction française de: digital publishing?",
-    "subtitle": "Traduction française de: Join thousands of organizations that trust Publica.la for their enterprise publishing needs.",
-    "stats": [
-      { "value": "1000+", "label": "Traduction française de: Organizations" },
-      { "value": "50+", "label": "Traduction française de: Countries" },
-      { "value": "300%", "label": "Traduction française de: Avg Growth" },
-      { "value": "4.9/5", "label": "Traduction française de: Rating" }
-    ],
-    "scheduleButton": "Traduction française de: Schedule a Meeting",
-    "watchDemoButton": "Traduction française de: Watch Demo",
-    "benefits": [
-      { "text": "Traduction française de: No credit card required" },
-      { "text": "Traduction française de: 14-day free trial" },
-      { "text": "Traduction française de: Cancel anytime" }
-    ]
+    "title": "Prêt à transformer votre entreprise de contenu ?",
+    "subtitle": "Rejoignez des milliers d'éditeurs et de créateurs qui font confiance à Publica.la pour leur succès numérique.",
+    "getStarted": "Commencer maintenant",
+    "scheduleDemo": "Planifier une démo",
+    "noCreditCard": "Aucune carte de crédit requise"
   },
   "navbar": {
     "solutions": {
@@ -455,6 +443,245 @@
     "remoteWork": {
       "title": "Traduction française de: Why We're Remote-First",
       "description": "Traduction française de: Our distributed team model allows us to tap into global talent, provide round-the-clock support, and better understand the diverse markets we serve. This approach enables us to deliver exceptional service regardless of your location."
+    }
+  },
+  "publishersSolution": {
+    "hero": {
+      "badge": "Solutions pour les éditeurs",
+      "title": "Transformez votre <1>entreprise d'édition</1>",
+      "subtitle": "Renforcez votre stratégie d'édition avec notre plateforme numérique complète conçue pour vous aider à distribuer et monétiser le contenu efficacement.",
+      "getStarted": "Commencer",
+      "requestDemo": "Demander une démo",
+      "videoTitle": "Aperçu de la plateforme Publica.la"
+    },
+    "customerLogos": {
+      "title": "Approuvé par les éditeurs du monde entier",
+      "subtitle": "Les éditeurs leaders choisissent Publica.la pour leur transformation numérique"
+    },
+    "features": {
+      "title": "Fonctionnalités complètes pour les éditeurs",
+      "subtitle": "Tout ce dont vous avez besoin pour moderniser vos opérations d'édition et servir vos lecteurs plus efficacement",
+      "cards": [
+        { "title": "Gestion de contenu avancée", "description": "Organisez et gérez vos catalogues numériques avec des métadonnées puissantes et des capacités de recherche." },
+        { "title": "Distribution multi-canal", "description": "Distribuez votre contenu sur tous les canaux et plateformes depuis un seul endroit." },
+        { "title": "Monétisation flexible", "description": "Choisissez parmi plusieurs modèles de tarification pour maximiser vos revenus." },
+        { "title": "Analyses détaillées", "description": "Obtenez des insights sur le comportement des lecteurs et les performances de vente." },
+        { "title": "Gestion des droits numériques", "description": "Protégez votre contenu avec des fonctionnalités DRM de niveau entreprise." },
+        { "title": "Intégrations API", "description": "Connectez-vous avec vos systèmes existants pour un flux de travail transparent." }
+      ]
+    },
+    "monetization": {
+      "title": "Stratégies de monétisation flexibles",
+      "subtitle": "Maximisez vos revenus avec des modèles de tarification adaptés à votre stratégie commerciale",
+      "subscription": {
+        "title": "Abonnements",
+        "description": "Créez des revenus récurrents avec des abonnements mensuels ou annuels. Offrez différents niveaux avec des accès variables."
+      },
+      "payPerContent": {
+        "title": "Paiement par contenu",
+        "description": "Vendez des articles individuels ou des bundles pour un paiement unique. Fixez vos propres prix et proposez des promotions spéciales."
+      },
+      "hybrid": {
+        "title": "Modèle hybride",
+        "description": "Combinez les abonnements et les achats individuels pour maximiser l'engagement et les revenus."
+      },
+      "revenueCard": {
+        "monthlyRevenue": "45,2K €",
+        "monthlyRevenueLabel": "Revenus mensuels",
+        "monthlyRevenueChange": "+12% ce mois",
+        "activeSubscribers": "2,847",
+        "activeSubscribersLabel": "Abonnés actifs",
+        "activeSubscribersChange": "+8% ce mois"
+      },
+      "revenueGrowth": "Croissance des revenus sur 8 mois",
+      "paymentMethods": ["Carte de crédit", "PayPal", "Apple Pay"]
+    },
+    "engagement": {
+      "title": "Engagement des lecteurs et personnalisation",
+      "subtitle": "Créez des expériences de lecture exceptionnelles qui engagent et fidélisent votre audience",
+      "tabs": {
+        "readerExperience": "Expérience lecteur",
+        "customization": "Personnalisation",
+        "interaction": "Interaction"
+      },
+      "readerExperience": {
+        "title": "Expérience de lecture optimisée",
+        "desc": "Offrez une expérience de lecture fluide et engageante sur tous les appareils avec des fonctionnalités avancées.",
+        "features": [
+          { "title": "Lecture adaptative", "desc": "Interface qui s'adapte automatiquement à la taille de l'écran et aux préférences de l'utilisateur." },
+          { "title": "Navigation intuitive", "desc": "Navigation facile entre les chapitres, sections et contenus liés." },
+          { "title": "Accessibilité", "desc": "Fonctionnalités d'accessibilité complètes pour tous les lecteurs." }
+        ]
+      },
+      "customization": {
+        "title": "Personnalisation de la marque",
+        "desc": "Personnalisez l'apparence et la sensation de votre plateforme pour refléter votre identité de marque unique."
+      },
+      "interaction": {
+        "title": "Fonctionnalités interactives",
+        "desc": "Engagez vos lecteurs avec des fonctionnalités interactives comme les annotations, les commentaires et les partages sociaux."
+      },
+      "dashboard": {
+        "readerDashboard": "Tableau de bord lecteur",
+        "activeReaders": "Lecteurs actifs",
+        "avgReading": "Temps de lecture moyen",
+        "continueReading": "Continuer la lecture"
+      }
+    },
+    "analytics": {
+      "title": "Analyses et insights détaillés",
+      "subtitle": "Prenez des décisions éclairées avec des analyses complètes et des outils de reporting conçus pour les éditeurs",
+      "cards": [
+        { "title": "Lecteurs actifs", "value": "2,847", "desc": "+12% ce mois" },
+        { "title": "Pages vues", "value": "45,2K", "desc": "+8% ce mois" }
+      ],
+      "features": [
+        { "title": "Analyse du comportement des lecteurs", "desc": "Comprenez comment vos lecteurs interagissent avec votre contenu." },
+        { "title": "Suivi des performances de vente", "desc": "Surveillez les ventes, les revenus et les tendances de croissance." },
+        { "title": "Rapports personnalisés", "desc": "Créez des rapports personnalisés pour suivre les métriques importantes." }
+      ],
+      "dashboard": {
+        "title": "Tableau de bord des analyses",
+        "pageViews": "Pages vues",
+        "avgReading": "Temps de lecture moyen",
+        "monthlyRevenue": "Revenus mensuels",
+        "topLocations": "Meilleures localisations",
+        "countries": ["États-Unis", "Canada", "Royaume-Uni"]
+      }
+    },
+    "caseStudy": {
+      "title": "Étude de cas : Casa Editorial Global",
+      "subtitle": "Comment un éditeur leader a transformé ses opérations numériques",
+      "overview": "Casa Editorial Global est un éditeur leader en Amérique latine qui cherchait à moderniser ses opérations numériques et à étendre sa portée internationale.",
+      "challenges": [
+        "Processus de publication numérique fragmenté et inefficace",
+        "Difficulté à atteindre les marchés internationaux",
+        "Manque d'analyses détaillées sur le comportement des lecteurs",
+        "Capacités de monétisation limitées"
+      ],
+      "solution": "Casa Editorial Global a adopté la plateforme Publica.la pour centraliser ses opérations numériques, améliorer l'expérience utilisateur et étendre sa portée mondiale.",
+      "results": [
+        "Augmentation de 150% des ventes numériques en 12 mois",
+        "Expansion dans 15 nouveaux marchés internationaux",
+        "Amélioration de 40% du temps d'engagement des lecteurs",
+        "Réduction de 60% des coûts opérationnels"
+      ],
+      "quote": "Publica.la a transformé notre stratégie de publication numérique. Nous avons maintenant les outils et les insights pour concurrencer efficacement dans l'espace numérique tout en maintenant nos standards éditoriaux et notre identité de marque.",
+      "quoteName": "Sarah Johnson",
+      "quoteRole": "Directrice numérique, Casa Editorial Global",
+      "imageAlt": "Plateforme numérique et tableau de bord d'analyse de Casa Editorial Global"
+    }
+  },
+  "librariesSolution": {
+    "hero": {
+      "badge": "Solutions pour les bibliothèques",
+      "title": "Modernisez vos <1>services de bibliothèque</1>",
+      "subtitle": "Transformez votre bibliothèque avec des collections numériques, un engagement accru des utilisateurs et des analyses puissantes. Servez mieux votre communauté avec des outils numériques modernes.",
+      "getStarted": "Commencer",
+      "requestDemo": "Demander une démo",
+      "videoTitle": "Aperçu de la plateforme Publica.la",
+      "videoDescription": "Découvrez comment les bibliothèques modernisent leurs services",
+      "stats": [
+        { "value": "500+", "label": "Bibliothèques dans le monde" },
+        { "value": "2M+", "label": "Titres numériques" }
+      ]
+    },
+    "customerLogos": {
+      "title": "Approuvé par les bibliothèques du monde entier",
+      "subtitle": "Les bibliothèques publiques et académiques modernisent leurs services avec Publica.la"
+    },
+    "features": {
+      "title": "Solutions complètes pour les bibliothèques",
+      "subtitle": "Tout ce dont vous avez besoin pour moderniser votre bibliothèque et mieux servir votre communauté",
+      "cards": [
+        { "title": "Collections numériques", "description": "Construisez et gérez des collections numériques étendues d'ebooks, de livres audio et de contenu multimédia." },
+        { "title": "Engagement des usagers", "description": "Améliorez l'expérience des usagers avec des recommandations personnalisées et des fonctionnalités interactives." },
+        { "title": "Analyses avancées", "description": "Obtenez des insights sur les modèles d'utilisation, le contenu populaire et le comportement des usagers." },
+        { "title": "Intégration transparente", "description": "Intégrez avec vos systèmes de gestion de bibliothèque existants et flux de travail." },
+        { "title": "Accessibilité", "description": "Assurez-vous que le contenu est accessible à tous les usagers avec des fonctionnalités de conception inclusive." },
+        { "title": "Efficacité des coûts", "description": "Réduisez les coûts de stockage physique tout en étendant vos offres numériques." }
+      ]
+    }
+  },
+  "bookshopsSolution": {
+    "hero": {
+      "badge": "Solutions pour les librairies et détaillants",
+      "title": "Élargissez votre librairie avec des <1>offres numériques</1>",
+      "subtitle": "Complétez votre inventaire physique avec une librairie numérique sélectionnée. Vendez des ebooks, des livres audio et du contenu numérique pour atteindre plus de clients et créer de nouveaux flux de revenus.",
+      "getStarted": "Commencer",
+      "requestDemo": "Demander une démo",
+      "videoTitle": "Aperçu de la plateforme Publica.la",
+      "videoDescription": "Découvrez comment les librairies élargissent leur portée numérique",
+      "stats": [
+        { "value": "2M+", "label": "Titres numériques disponibles" },
+        { "value": "30%", "label": "Augmentation moyenne des revenus" }
+      ]
+    },
+    "customerLogos": {
+      "title": "Approuvé par les librairies du monde entier",
+      "subtitle": "Les librairies leaders choisissent Publica.la pour leur transformation numérique"
+    },
+    "features": {
+      "title": "Solutions numériques pour les librairies modernes",
+      "subtitle": "Tout ce dont vous avez besoin pour étendre les offres de votre librairie dans le domaine numérique",
+      "cards": [
+        { "title": "Inventaire numérique", "description": "Proposez des ebooks, des livres audio et du contenu numérique aux côtés de votre inventaire physique." },
+        { "title": "Ventes en ligne", "description": "Vendez du contenu numérique directement aux clients via votre propre vitrine de marque." },
+        { "title": "Engagement client", "description": "Construisez des relations plus fortes avec les lecteurs grâce à des recommandations personnalisées et du contenu." },
+        { "title": "Analyses de vente", "description": "Obtenez des insights sur les préférences client et les modèles d'achat pour optimiser vos offres." },
+        { "title": "Portée étendue", "description": "Atteignez les clients au-delà de votre emplacement physique et vendez mondialement sans coûts d'expédition." },
+        { "title": "Intégration transparente", "description": "Intégrez les offres numériques avec vos systèmes de point de vente et d'inventaire existants." }
+      ]
+    }
+  },
+  "creatorsSolution": {
+    "hero": {
+      "badge": "Solutions pour les créateurs de contenu",
+      "title": "Potencialisez votre <1>entreprise créative</1>",
+      "subtitle": "Vendez tout type de contenu numérique - depuis les photos et l'audio jusqu'aux livres, PDFs et plus encore. Concentrez-vous sur la création pendant que nous gérons la distribution et la monétisation.",
+      "getStarted": "Commencer",
+      "requestDemo": "Demander une démo",
+      "videoTitle": "Aperçu de la plateforme Publica.la",
+      "videoDescription": "Découvrez comment les créateurs de contenu construisent des entreprises réussies",
+      "stats": [
+        { "value": "50K+", "label": "Créateurs de contenu" },
+        { "value": "200%", "label": "Croissance moyenne des revenus" }
+      ]
+    },
+    "customerLogos": {
+      "title": "Approuvé par les créateurs de contenu",
+      "subtitle": "Les créateurs et éducateurs réussis construisent leurs entreprises avec Publica.la"
+    },
+    "features": {
+      "title": "Tout ce dont vous avez besoin pour réussir",
+      "subtitle": "Outils complets pour créer, gérer et monétiser votre contenu numérique",
+      "cards": [
+        { "title": "Formats de contenu multiples", "description": "Vendez des ebooks, des livres audio, des PDFs, des vidéos et tout format de contenu numérique." },
+        { "title": "Marque personnalisée", "description": "Créez votre propre vitrine de marque qui reflète votre style unique." },
+        { "title": "Prix flexibles", "description": "Fixez vos propres prix avec des achats uniques, des abonnements ou des bundles." },
+        { "title": "Portée mondiale", "description": "Vendez aux clients du monde entier avec le support multi-devises." },
+        { "title": "Analyses et insights", "description": "Suivez les ventes, le comportement client et les performances du contenu." },
+        { "title": "Livraison sécurisée", "description": "Protégez votre contenu avec DRM et sécurité de niveau entreprise." }
+      ]
+    }
+  },
+  "magazinesNewspapersSolution": {
+    "hero": {
+      "badge": "Solutions pour les magazines et journaux",
+      "title": "Transformez votre <1>publication numérique</1>",
+      "subtitle": "Simplifiez votre processus d'édition réplique et d'abonnement numérique et atteignez les lecteurs sur tous les appareils et plateformes.",
+      "getStarted": "Commencer",
+      "requestDemo": "Demander une démo",
+      "videoTitle": "Aperçu de la plateforme Publica.la",
+      "videoDescription": "Découvrez comment les magazines et journaux modernisent leurs services",
+      "stats": [
+        { "value": "1M+", "label": "Lecteurs numériques" },
+        { "value": "85%", "label": "Taux de rétention" }
+      ]
+    },
+    "customerLogos": {
+      "title": "Approuvé par les magazines et journaux du monde entier",
+      "subtitle": "Les publications leaders modernisent leurs services avec Publica.la"
     }
   }
 } 
