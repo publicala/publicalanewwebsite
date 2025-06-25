@@ -114,6 +114,8 @@ export default function RootLayout({
         {/* Google Analytics GA4 */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-347437097"></script>
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-347437097');` }} />
+        {/* HubSpot Tracking Code */}
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4911580.js"></script>
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
