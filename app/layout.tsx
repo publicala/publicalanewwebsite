@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     description:
       "The most robust ePaper platform for publishers worldwide. Transform printed content into engaging digital experiences with Smart Zoom technology and global distribution.",
     images: ["/images/og-image-new.png"],
-    creator: "@publicala",
+    creator: "@getpublicala",
   },
   alternates: {
     canonical: "https://publica.la",
@@ -104,8 +104,11 @@ export default function RootLayout({
           "url": "https://publica.la",
           "logo": "https://publica.la/images/logo.svg",
           "sameAs": [
-            "https://twitter.com/publicala",
-            "https://www.linkedin.com/company/publica-la/"
+            "https://x.com/getpublicala",
+            "https://www.linkedin.com/company/publica-la",
+            "https://www.facebook.com/getpublicala",
+            "https://www.instagram.com/getpublicala",
+            "https://www.youtube.com/@Publicala"
           ]
         }) }} />
         {/* Google Analytics GA4 */}
