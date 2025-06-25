@@ -66,7 +66,7 @@ export function PublishersMonetization({ dict }: { dict: any }) {
                 </div>
               </div>
 
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-green-50 rounded-full z-0"></div>
+              <div className="absolute -bottom-10 -left-20 w-24 h-24 bg-green-50 rounded-full z-0"></div>
             </div>
           </div>
 
