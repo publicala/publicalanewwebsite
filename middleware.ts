@@ -24,4 +24,4 @@ export const config = {
     // Skip all internal paths (_next)
     '/((?!_next|api|_vercel|.*\\..*).*)',
   ],
-} 
+}
