@@ -12,9 +12,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: string }>
+  params: { locale: string }
 }): Promise<Metadata> {
-  const { locale } = await params
+  const { locale } = params
   
   return {
     title: "publica.la - Digital Publishing Platform for Modern Publishers",
@@ -31,9 +31,9 @@ export default async function LocaleLayout({
   params,
 }: Readonly<{
   children: React.ReactNode
-  params: Promise<{ locale: string }>
+  params: { locale: string }
 }>) {
-  const { locale } = await params
+  const { locale } = params
   
   return (
     <div lang={locale}>
