@@ -166,6 +166,11 @@
       {
         "href": "/cookies",
         "text": "Política de Cookies"
+      },
+      {
+        "href": "https://app.publica.la/platform/sign-up/init?lang=es&plan=basic_store&interval=monthly&utm_medium=Website&utm_campaign=New_website&utm_source=Direct+Traffic&utm_content=Website",
+        "text": "Crear tenant",
+        "external": true
       }
     ]
   },
