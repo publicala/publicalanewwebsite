@@ -50,7 +50,7 @@ export const metadata: Metadata = {
       "The most robust ePaper platform for publishers worldwide. Transform printed magazines, newspapers, and books into engaging digital experiences. Trusted by 400+ customers across 45 countries with 2M+ active users.",
     images: [
       {
-        url: "/images/og-image-new.png",
+        url: "https://publica.la/images/og-image-new.png",
         width: 1200,
         height: 630,
         alt: "publica.la - Digital Publishing Platform",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "publica.la - Transform Print to Digital Success",
     description:
       "The most robust ePaper platform for publishers worldwide. Transform printed content into engaging digital experiences with Smart Zoom technology and global distribution.",
-    images: ["/images/og-image-new.png"],
+    images: ["https://publica.la/images/og-image-new.png"],
     creator: "@getpublicala",
   },
   alternates: {
@@ -119,7 +119,7 @@ export default function RootLayout({
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="publica.la - Digital Publishing Platform for Modern Publishers" />
         <meta property="og:description" content="Transform your printed content into engaging digital experiences with publica.la. The leading ePaper platform trusted by 400+ publishers, bookshops, magazines, and newspapers worldwide. Features Smart Zoom technology, global distribution, AI-powered insights, and seamless monetization tools." />
-        <meta property="og:image" content="/images/og-image-new.png" />
+        <meta property="og:image" content="https://publica.la/images/og-image-new.png" />
         <meta property="og:url" content="https://publica.la" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="publica.la" />
