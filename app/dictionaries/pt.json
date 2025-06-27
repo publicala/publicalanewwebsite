@@ -1355,32 +1355,32 @@
     "hammurabiPublishing": {
       "logoAlt": "Logo da Editorial Hammurabi",
       "title": "Expandindo o Alcance Digital da Editorial Hammurabi",
-      "subtitle": "Como uma editorial legal líder na Argentina modernizou suas operações com publicação digital",
-      "heroImageAlt": "Plataforma digital Hammurabi em laptop mostrando uma publicação legal",
-      "clientDescription": "A Editorial Hammurabi é uma PYME familiar e uma editorial líder de textos legais na Argentina. Com décadas de experiência e uma sólida reputação no setor legal, a empresa buscou modernizar suas operações e servir melhor a uma audiência em evolução ingressando no espaço de publicação digital.",
+      "subtitle": "Como uma editora jurídica líder na Argentina modernizou suas operações com publicação digital",
+      "heroImageAlt": "Plataforma digital da Hammurabi em laptop mostrando uma publicação jurídica",
+      "clientDescription": "A Editorial Hammurabi é uma PME familiar e uma das principais editoras de textos jurídicos na Argentina. Com décadas de experiência e uma forte reputação no setor jurídico, a empresa buscava modernizar suas operações e servir melhor a uma audiência em evolução entrando no mundo digital.",
       "challengesList": [
-        "Transição de formatos impressos tradicionais para digitais",
-        "Superar o ceticismo de profissionais legais não familiarizados com plataformas de leitura digital",
+        "Transição do formato impresso tradicional para o digital",
+        "Superar o ceticismo dos profissionais jurídicos pouco familiarizados com plataformas de leitura digital",
         "Encontrar uma solução confiável e escalável para distribuir e monetizar seu conteúdo online",
-        "Criar uma experiência fluida tanto para suas equipes internas quanto para seus usuários finais"
+        "Criar uma experiência fluida tanto para suas equipes internas quanto para os usuários finais"
       ],
-      "solutionText": "Associar-se à publica.la forneceu à Hammurabi as ferramentas que precisavam para ter sucesso no espaço digital. A plataforma lhes permitiu criar uma loja de conteúdo digital com marca para mostrar e vender suas publicações legais, agilizar a distribuição de conteúdo com acesso de um clique para os usuários, atualizar continuamente os materiais para manter informada sua audiência sobre os últimos desenvolvimentos legais, e lançar um modelo baseado em assinatura que oferece acesso ilimitado à sua biblioteca completa. A opção de oferecer testes gratuitos jogou um papel chave em construir confiança entre os profissionais legais, ajudando-os a experimentar os benefícios do acesso digital em primeira mão.",
+      "solutionText": "Parceria com a publica.la forneceu à Hammurabi as ferramentas necessárias para ter sucesso no espaço digital. A plataforma permitiu que eles criassem uma loja digital de conteúdo com marca para exibir e vender suas publicações jurídicas, agilizar a distribuição de conteúdo com acesso de um clique para os usuários, atualizar materiais continuamente para manter sua audiência informada com os últimos desenvolvimentos jurídicos e lançar um modelo baseado em assinatura oferecendo acesso ilimitado à sua biblioteca completa. A opção de oferecer testes gratuitos foi fundamental para construir confiança entre os profissionais jurídicos, ajudando-os a experimentar os benefícios do acesso digital em primeira mão.",
       "resultsList": [
-        { "text": "Um aumento significativo nas vendas e novos assinantes" },
+        { "text": "Um aumento significativo em vendas e novos assinantes" },
         { "text": "Maior colaboração interna e eficiência na gestão de conteúdo digital" },
-        { "text": "Uma audiência nacional e internacional expandida, graças à facilidade de acesso e flexibilidade da plataforma" },
-        { "text": "Posição fortalecida como editorial legal visionária, fornecendo aos profissionais acesso instantâneo e confiável a textos legais de alta qualidade" }
+        { "text": "Uma audiência nacional e internacional ampliada, graças à facilidade de acesso e flexibilidade da plataforma" },
+        { "text": "Posição fortalecida como editora jurídica inovadora, fornecendo aos profissionais acesso instantâneo e confiável a textos jurídicos de alta qualidade" }
       ],
-      "testimonialQuote": "A Publica.la transformou como entregamos nosso conteúdo legal a profissionais na Argentina e além. A flexibilidade e facilidade de uso da plataforma nos ajudaram a superar o ceticismo inicial de nossa audiência tradicional e abriram novas oportunidades de crescimento.",
-      "testimonialAuthor": "Equipe da Editorial Hammurabi",
+      "testimonialQuote": "A Publica.la transformou como entregamos nosso conteúdo jurídico para profissionais em toda a Argentina e além. A flexibilidade e facilidade de uso da plataforma nos ajudaram a superar o ceticismo inicial de nossa audiência tradicional e abriram novas oportunidades de crescimento.",
+      "testimonialAuthor": "Equipe Editorial Hammurabi",
       "testimonialRole": "Equipe de Liderança, Editorial Hammurabi S.R.L.",
       "whyChooseUsList": [
-        "Suporte e integração confiável: Colaboração próxima garantiu uma transição fluida e suporte contínuo",
-        "Gestão de conteúdo ágil: Atualizações instantâneas de materiais legais, mantendo tudo preciso e atualizado",
+        "Suporte confiável e integração: Colaboração próxima garantiu uma transição suave e suporte contínuo",
+        "Gestão ágil de conteúdo: Atualizações instantâneas de materiais jurídicos, mantendo tudo preciso e atualizado",
         "Modelo de distribuição escalável: Sua loja digital personalizada abriu novas oportunidades de mercado e fluxos de receita"
       ],
       "additionalImages": [
-        { "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Disen%CC%83o%20sin%20ti%CC%81tulo%20%2822%29-1-PTl9oSv5wlQFiijKWcR3j4xPoTlak1.webp", "alt": "Plataforma digital Hammurabi em dispositivos móveis mostrando catálogo e detalhes de publicação" }
+        { "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Disen%CC%83o%20sin%20ti%CC%81tulo%20%2822%29-1-PTl9oSv5wlQFiijKWcR3j4xPoTlak1.webp", "alt": "Plataforma digital da Hammurabi em dispositivos móveis mostrando catálogo e detalhes de publicação" }
       ],
       "sectionTitles": {
         "about": "Sobre",
