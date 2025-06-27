@@ -116,6 +116,26 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-347437097');` }} />
         {/* HubSpot Tracking Code */}
         <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/4911580.js"></script>
+        {/* HubSpot Chat Widget Configuration */}
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.addEventListener('load', function() {
+            // Wait for HubSpot to load
+            var checkHubSpot = setInterval(function() {
+              if (window._hsq) {
+                clearInterval(checkHubSpot);
+                // Enable chat widget
+                if (window._hsq.push) {
+                  window._hsq.push(['do', 'chat', {
+                    'portalId': '4911580',
+                    'region': 'na1'
+                  }]);
+                }
+              }
+            }, 100);
+          });
+        ` }} />
+        {/* HubSpot Forms API for Chat Widget */}
+        <script type="text/javascript" id="hs-forms-loader" async defer src="//js-na1.hsforms.net/forms/embed/v2.js"></script>
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="publica.la - Digital Publishing Platform for Modern Publishers" />
         <meta property="og:description" content="Transform your printed content into engaging digital experiences with publica.la. The leading ePaper platform trusted by 400+ publishers, bookshops, magazines, and newspapers worldwide. Features Smart Zoom technology, global distribution, AI-powered insights, and seamless monetization tools." />
