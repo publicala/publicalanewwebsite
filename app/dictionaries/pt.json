@@ -1580,19 +1580,7 @@
         "Construir consciência de marca e estabelecer presença no competitivo cenário europeu de leitura digital da Espanha",
         "Escalar operações eficientemente com um único backend gerenciando múltiplas lojas específicas por país"
       ],
-      "solution": "A Publica.la se associou com a BajaLibros para projetar uma arquitetura multi-loja que suporta lojas específicas por país sob um painel unificado. Cada loja conta com entrega segura de eBooks e audiolivros, processamento de pagamentos multi-moeda completamente automatizado, e ferramentas flexíveis de gestão de conteúdo para adaptar catálogos por mercado. A solução incluiu leitores interativos via Native App e web, junto com recomendações impulsionadas por Vito AI para experiências de leitura personalizadas.",
-      "results": [
-        "20% de crescimento na receita total dentro do primeiro ano após o lançamento das lojas internacionais",
-        "30% de todas as novas assinaturas se originaram na Colômbia e 25% no México em 2024",
-        "Mais de 10.000 downloads de aplicativo na Espanha durante Q1 2025, estabelecendo uma presença no mercado europeu",
-        "50% de redução na carga de trabalho de gestão de conteúdo e administrativa graças ao painel unificado",
-        "35% de aumento na duração média de sessão através de recomendações impulsionadas por IA",
-        "98% de taxa de sucesso no checkout em todos os mercados com gateways de pagamento localizados"
-      ],
-      "quote": "A arquitetura multi-loja da Publica.la nos permitiu expandir internacionalmente enquanto mantemos a eficiência operacional. Agora servimos leitores em quatro países com experiências localizadas, tudo gerenciado a partir de um único painel.",
-      "quoteName": "Equipe BajaLibros",
-      "quoteRole": "Equipe de Estratégia Digital",
-      "imageAlt": "Painel multi-loja da BajaLibros mostrando lojas da Argentina, Colômbia, México e Espanha"
+      "solution": "A Publica.la se associou com a BajaLibros para projetar uma arquitetura multi-loja que suporta lojas específicas por país sob um painel unificado. Cada loja conta com entrega segura de eBooks e audiolivros, processamento de pagamentos multi-moeda completamente automatizado, e ferramentas flexíveis de gestão de conteúdo para adaptar catálogos por mercado. A solução incluiu leitores interativos via Native App e web, junto com recomendações impulsionadas por Vito AI para experiências de leitura personalizadas."
     },
     "cta": {
       "badge": "Pronto para começar?",

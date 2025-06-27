@@ -1358,18 +1358,18 @@
       "subtitle": "How a leading legal publisher in Argentina modernized their operations with digital publishing",
       "heroImageAlt": "Hammurabi digital platform on laptop showing a legal publication",
       "clientDescription": "Editorial Hammurabi is a family-owned SME and a leading publisher of legal texts in Argentina. With decades of experience and a strong reputation in the legal sector, the company sought to modernize its operations and better serve an evolving audience by entering the digital publishing space.",
-      "challengesList": [
+      "challenges": [
         "Transition from traditional print to digital formats",
         "Overcome skepticism from legal professionals unfamiliar with digital reading platforms",
         "Find a reliable and scalable solution to distribute and monetize their content online",
         "Create a seamless experience for both their internal teams and their end users"
       ],
-      "solutionText": "Partnering with publica.la provided Hammurabi with the tools they needed to succeed in the digital space. The platform allowed them to create a branded digital content store to showcase and sell their legal publications, streamline content distribution with one-click access for users, continuously update materials to keep their audience informed with the latest legal developments, and launch a subscription-based model offering unlimited access to their full library. The option to offer free trials played a key role in building trust among legal professionals, helping them experience the benefits of digital access firsthand.",
-      "resultsList": [
-        { "text": "A significant increase in sales and new subscribers" },
-        { "text": "Greater internal collaboration and efficiency in managing digital content" },
-        { "text": "An expanded national and international audience, thanks to the ease of access and flexibility of the platform" },
-        { "text": "Strengthened position as a forward-thinking legal publisher, providing professionals with instant, reliable access to high-quality legal texts" }
+      "solution": "Partnering with publica.la provided Hammurabi with the tools they needed to succeed in the digital space. The platform allowed them to create a branded digital content store to showcase and sell their legal publications, streamline content distribution with one-click access for users, continuously update materials to keep their audience informed with the latest legal developments, and launch a subscription-based model offering unlimited access to their full library. The option to offer free trials played a key role in building trust among legal professionals, helping them experience the benefits of digital access firsthand.",
+      "results": [
+        "A significant increase in sales and new subscribers",
+        "Greater internal collaboration and efficiency in managing digital content",
+        "An expanded national and international audience, thanks to the ease of access and flexibility of the platform",
+        "Strengthened position as a forward-thinking legal publisher, providing professionals with instant, reliable access to high-quality legal texts"
       ],
       "testimonialQuote": "Publica.la has transformed how we deliver our legal content to professionals across Argentina and beyond. The platform's flexibility and ease of use have helped us overcome the initial skepticism from our traditional audience and opened new opportunities for growth.",
       "testimonialAuthor": "Editorial Hammurabi Team",
@@ -1707,19 +1707,7 @@
         "Build brand awareness and establish market presence in Spain's competitive European digital-reading landscape",
         "Scale operations efficiently with a single back-end managing multiple country-specific stores"
       ],
-      "solution": "Publica.la partnered with BajaLibros to design a multi-store architecture that supports country-specific storefronts under a unified dashboard. Each store features secure eBook and audiobook delivery, fully automated multi-currency payment processing, and flexible content management tools to adapt catalogues per market. The solution included interactive readers via Native App and web, along with Vito AI-powered recommendations for personalized reading experiences.",
-      "results": [
-        "20% growth in total revenue within the first year after launching international stores",
-        "30% of all new subscriptions originated from Colombia and 25% from Mexico in 2024",
-        "10,000+ app downloads in Spain during Q1 2025, establishing a European market foothold",
-        "50% reduction in content-management and administrative workload thanks to unified dashboard",
-        "35% increase in average session duration through AI-driven recommendations",
-        "98% checkout success rate across all markets with localized payment gateways"
-      ],
-      "quote": "Publica.la's multi-store architecture allowed us to expand internationally while maintaining operational efficiency. We now serve readers across four countries with localized experiences, all managed from a single dashboard.",
-      "quoteName": "BajaLibros Team",
-      "quoteRole": "Digital Strategy Team",
-      "imageAlt": "BajaLibros multi-store dashboard showing Argentina, Colombia, Mexico and Spain storefronts"
+      "solution": "Publica.la partnered with BajaLibros to design a multi-store architecture that supports country-specific storefronts under a unified dashboard. Each store features secure eBook and audiobook delivery, fully automated multi-currency payment processing, and flexible content management tools to adapt catalogues per market. The solution included interactive readers via Native App and web, along with Vito AI-powered recommendations for personalized reading experiences."
     },
     "cta": {
       "badge": "Ready to get started?",

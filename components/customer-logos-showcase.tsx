@@ -83,6 +83,10 @@ export function CustomerLogosShowcase({
         return [
           { name: "Forbes", src: "/images/logos/forbes.png", width: 120, height: 45 }, // Path remains the same, content updated
           { name: "La Tercera", src: "/images/logos/la-tercera.png", width: 140, height: 50 },
+          { name: "Barcelona", src: "/images/logos/barcelona.webp", width: 140, height: 50 },
+          { name: "Página 12", src: "/images/logos/pagina12.png", width: 140, height: 50 },
+          { name: "La Diaria", src: "/images/logos/ladiaria.png", width: 140, height: 50 },
+          { name: "Caras y Caretas", src: "/images/logos/carasycaretas.png", width: 140, height: 50 },
         ]
       default: // Homepage / General
         return [
