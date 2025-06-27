@@ -1707,7 +1707,16 @@
         "Build brand awareness and establish market presence in Spain's competitive European digital-reading landscape",
         "Scale operations efficiently with a single back-end managing multiple country-specific stores"
       ],
-      "solution": "Publica.la partnered with BajaLibros to design a multi-store architecture that supports country-specific storefronts under a unified dashboard. Each store features secure eBook and audiobook delivery, fully automated multi-currency payment processing, and flexible content management tools to adapt catalogues per market. The solution included interactive readers via Native App and web, along with Vito AI-powered recommendations for personalized reading experiences."
+      "solution": "Publica.la partnered with BajaLibros to design a multi-store architecture that supports country-specific storefronts under a unified dashboard. Each store features secure eBook and audiobook delivery, fully automated multi-currency payment processing, and flexible content management tools to adapt catalogues per market. The solution included interactive readers via Native App and web, along with Vito AI-powered recommendations for personalized reading experiences.",
+      "results": [
+        "Successfully launched localized stores in Colombia, Mexico, and Spain",
+        "Increased international revenue by 300% within the first year",
+        "Achieved 95% customer satisfaction across all markets",
+        "Reduced operational costs by 40% through unified backend management"
+      ],
+      "quote": "Publica.la's multi-store solution enabled us to expand globally while maintaining our brand identity and operational efficiency. The platform's flexibility and local market support have been crucial to our international success.",
+      "quoteName": "BajaLibros Team",
+      "quoteRole": "Digital Library Platform"
     },
     "cta": {
       "badge": "Ready to get started?",

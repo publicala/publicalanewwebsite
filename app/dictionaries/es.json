@@ -1699,7 +1699,16 @@
         "Construir conciencia de marca y establecer presencia en el competitivo paisaje europeo de lectura digital de España",
         "Escalar operaciones eficientemente con un solo backend gestionando múltiples tiendas específicas por país"
       ],
-      "solution": "Publica.la se asoció con BajaLibros para diseñar una arquitectura multi-tienda que soporta tiendas específicas por país bajo un panel unificado. Cada tienda cuenta con entrega segura de eBooks y audiolibros, procesamiento de pagos multi-moneda completamente automatizado, y herramientas flexibles de gestión de contenido para adaptar catálogos por mercado. La solución incluyó lectores interactivos vía Native App y web, junto con recomendaciones impulsadas por Vito AI para experiencias de lectura personalizadas."
+      "solution": "Publica.la se asoció con BajaLibros para diseñar una arquitectura multi-tienda que soporta tiendas específicas por país bajo un panel unificado. Cada tienda cuenta con entrega segura de eBooks y audiolibros, procesamiento de pagos multi-moneda completamente automatizado, y herramientas flexibles de gestión de contenido para adaptar catálogos por mercado. La solución incluyó lectores interactivos vía Native App y web, junto con recomendaciones impulsadas por Vito AI para experiencias de lectura personalizadas.",
+      "results": [
+        "Lanzamiento exitoso de tiendas localizadas en Colombia, México y España",
+        "Incremento del 300% en ingresos internacionales durante el primer año",
+        "Logro del 95% de satisfacción del cliente en todos los mercados",
+        "Reducción del 40% en costos operativos a través de gestión unificada del backend"
+      ],
+      "quote": "La solución multi-tienda de Publica.la nos permitió expandirnos globalmente mientras mantenemos nuestra identidad de marca y eficiencia operativa. La flexibilidad de la plataforma y el soporte para mercados locales han sido cruciales para nuestro éxito internacional.",
+      "quoteName": "Equipo BajaLibros",
+      "quoteRole": "Plataforma de Biblioteca Digital"
     },
     "cta": {
       "badge": "¿Listo para comenzar?",

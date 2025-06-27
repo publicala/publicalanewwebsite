@@ -1580,7 +1580,16 @@
         "Construir consciência de marca e estabelecer presença no competitivo cenário europeu de leitura digital da Espanha",
         "Escalar operações eficientemente com um único backend gerenciando múltiplas lojas específicas por país"
       ],
-      "solution": "A Publica.la se associou com a BajaLibros para projetar uma arquitetura multi-loja que suporta lojas específicas por país sob um painel unificado. Cada loja conta com entrega segura de eBooks e audiolivros, processamento de pagamentos multi-moeda completamente automatizado, e ferramentas flexíveis de gestão de conteúdo para adaptar catálogos por mercado. A solução incluiu leitores interativos via Native App e web, junto com recomendações impulsionadas por Vito AI para experiências de leitura personalizadas."
+      "solution": "A Publica.la se associou com a BajaLibros para projetar uma arquitetura multi-loja que suporta lojas específicas por país sob um painel unificado. Cada loja conta com entrega segura de eBooks e audiolivros, processamento de pagamentos multi-moeda completamente automatizado, e ferramentas flexíveis de gestão de conteúdo para adaptar catálogos por mercado. A solução incluiu leitores interativos via Native App e web, junto com recomendações impulsionadas por Vito AI para experiências de leitura personalizadas.",
+      "results": [
+        "Lançamento bem-sucedido de lojas localizadas na Colômbia, México e Espanha",
+        "Aumento de 300% na receita internacional no primeiro ano",
+        "Alcance de 95% de satisfação do cliente em todos os mercados",
+        "Redução de 40% nos custos operacionais através de gestão unificada do backend"
+      ],
+      "quote": "A solução multi-loja da Publica.la nos permitiu expandir globalmente enquanto mantemos nossa identidade de marca e eficiência operacional. A flexibilidade da plataforma e o suporte para mercados locais têm sido cruciais para nosso sucesso internacional.",
+      "quoteName": "Equipe BajaLibros",
+      "quoteRole": "Plataforma de Biblioteca Digital"
     },
     "cta": {
       "badge": "Pronto para começar?",
