@@ -115,7 +115,7 @@ export default function RootLayout({
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-347437097"></script>
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-347437097');` }} />
         {/* HubSpot Tracking Code */}
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4911580.js"></script>
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/4911580.js"></script>
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="publica.la - Digital Publishing Platform for Modern Publishers" />
         <meta property="og:description" content="Transform your printed content into engaging digital experiences with publica.la. The leading ePaper platform trusted by 400+ publishers, bookshops, magazines, and newspapers worldwide. Features Smart Zoom technology, global distribution, AI-powered insights, and seamless monetization tools." />
