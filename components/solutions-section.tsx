@@ -5,6 +5,7 @@ import Link from "next/link"
 import { BookOpen, Store, Pen, Library, Newspaper, ArrowRight } from "lucide-react"
 
 interface SolutionsSectionProps {
+  locale?: string
   dict: {
     solutionsSection: {
       title: string
@@ -24,7 +25,14 @@ interface SolutionsSectionProps {
   }
 }
 
-export function SolutionsSection({ dict }: SolutionsSectionProps) {
+export function SolutionsSection({ dict, locale }: SolutionsSectionProps) {
+  const getLocalizedHref = (href: string) => {
+    if (href.startsWith('/')) {
+      return `/${locale}${href}`
+    }
+    return href
+  }
+  
   const solutionIcons = [
     <BookOpen key="publishers" className="h-8 w-8" />,
     <Store key="bookshops" className="h-8 w-8" />,
@@ -50,7 +58,7 @@ export function SolutionsSection({ dict }: SolutionsSectionProps) {
               icon={solutionIcons[index]}
               title={solution.title}
               description={solution.description}
-              href={solution.href}
+              href={getLocalizedHref(solution.href)}
               learnMore={dict.solutionsSection.learnMore}
             />
           ))}
@@ -59,7 +67,7 @@ export function SolutionsSection({ dict }: SolutionsSectionProps) {
               <h3 className="text-xl font-medium mb-2">{dict.solutionsSection.customSolution.title}</h3>
               <p className="text-muted-foreground mb-4">{dict.solutionsSection.customSolution.description}</p>
               <Button asChild variant="outline">
-                <Link href="/contact">{dict.solutionsSection.customSolution.buttonText}</Link>
+                <Link href={getLocalizedHref("/contact")}>{dict.solutionsSection.customSolution.buttonText}</Link>
               </Button>
             </CardContent>
           </Card>

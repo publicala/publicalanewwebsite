@@ -1,7 +1,11 @@
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { CalendlyButton } from "@/components/calendly-button"
+import { DemoRequestModal } from "@/components/demo-request-modal"
 
 export function PricingCTA() {
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
+  
   return (
     <section className="w-full py-20 px-6 bg-primary/5 relative overflow-hidden">
       <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -11,11 +15,19 @@ export function PricingCTA() {
           $20/month with no hidden fees.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button asChild size="lg" className="text-lg px-8 py-6 rounded-md">
-            <Link href="/signup">Start Your Free Trial</Link>
-          </Button>
-          <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 rounded-md">
-            <Link href="/contact">Contact Sales</Link>
+          <CalendlyButton
+            size="lg"
+            className="text-lg px-8 py-6 rounded-md"
+          >
+            Start Your Free Trial
+          </CalendlyButton>
+          <Button
+            variant="outline"
+            size="lg"
+            className="text-lg px-8 py-6 rounded-md"
+            onClick={() => setIsDemoModalOpen(true)}
+          >
+            Contact Sales
           </Button>
         </div>
 
@@ -45,6 +57,9 @@ export function PricingCTA() {
 
       <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-primary/5 rounded-full z-0"></div>
       <div className="absolute -top-24 -left-24 w-64 h-64 bg-primary/5 rounded-full z-0"></div>
+      
+      {/* Demo Request Modal */}
+      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </section>
   )
 }

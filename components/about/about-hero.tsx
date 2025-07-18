@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+"use client"
+
+import { CalendlyButton } from "@/components/calendly-button"
 
 interface AboutHeroProps {
   dict: {
@@ -30,24 +31,13 @@ export function AboutHero({ dict }: AboutHeroProps) {
         <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto text-center">
           {dict.aboutHero.description}
         </p>
-        <div className="flex flex-col sm:flex-row gap-6">
-          <Button
-            asChild
+        <div className="flex justify-center">
+          <CalendlyButton
             size="lg"
             className="rounded-md font-medium bg-blue-600 hover:bg-blue-700 text-white px-8 py-6"
           >
-            <Link href="/get-started">{dict.aboutHero.getStartedButton}</Link>
-          </Button>
-          <Button
-            asChild
-            variant="ghost"
-            size="lg"
-            className="rounded-md font-medium text-blue-600 hover:bg-blue-50 px-8 py-6 group"
-          >
-            <Link href="/schedule-demo" className="flex items-center">
-              {dict.aboutHero.scheduleDemoButton}
-            </Link>
-          </Button>
+            {dict.aboutHero.getStartedButton}
+          </CalendlyButton>
         </div>
       </div>
     </section>

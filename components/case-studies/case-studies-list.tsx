@@ -6,6 +6,7 @@ import { ArrowRight, Building2, Newspaper, BookOpen, Users, Library } from "luci
 
 interface CaseStudiesListProps {
   dict: any
+  locale?: string
 }
 
 const icons = {
@@ -32,7 +33,14 @@ const images = {
   "forbes-colombia": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Disen%CC%83o%20sin%20ti%CC%81tulo%20%2823%29-nGfFDP1fjrcLQcjPTdbSwt6bMGHjp8.png",
 }
 
-export function CaseStudiesList({ dict }: CaseStudiesListProps) {
+export function CaseStudiesList({ dict, locale }: CaseStudiesListProps) {
+  const getLocalizedHref = (href: string) => {
+    if (href.startsWith('/')) {
+      return `/${locale}${href}`
+    }
+    return href
+  }
+  
   return (
     <section className="w-full py-20 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -104,7 +112,7 @@ export function CaseStudiesList({ dict }: CaseStudiesListProps) {
                           </div>
 
                           <Link
-                            href={`/case-studies/${caseStudy.id}`}
+                            href={getLocalizedHref(`/case-studies/${caseStudy.id}`)}
                             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium group/link"
                           >
                             {dict.caseStudies.list.readFullCaseStudy}
@@ -139,13 +147,13 @@ export function CaseStudiesList({ dict }: CaseStudiesListProps) {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/pricing"
+                  href={getLocalizedHref("/pricing")}
                   className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
                 >
                   Get Started For Free
                 </Link>
                 <Link
-                  href="/about-us" // Or perhaps /contact or /calendly-modal trigger
+                  href={getLocalizedHref("/about-us")}
                   className="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary/5 transition-colors font-medium"
                 >
                   Request a Demo

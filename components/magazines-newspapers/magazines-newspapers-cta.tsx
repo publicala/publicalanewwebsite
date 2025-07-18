@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { CheckCircle, FileText, Users, BarChart3 } from "lucide-react"
 import { CalendlyButton } from "@/components/calendly-button"
 
@@ -46,20 +45,13 @@ export function MagazinesNewspapersCta() {
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex">
               <CalendlyButton
                 className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
                 size="lg"
               >
                 Schedule a Meeting
               </CalendlyButton>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition-all duration-200"
-              >
-                Request a Demo
-              </Button>
             </div>
 
             <div className="flex items-center space-x-8 pt-4">

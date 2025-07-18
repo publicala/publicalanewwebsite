@@ -1,6 +1,7 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+"use client"
+
 import { ArrowRight, Plug } from "lucide-react"
+import { CalendlyButton } from "@/components/calendly-button"
 
 interface IntegrationsFeatureProps {
   dict: any
@@ -8,6 +9,7 @@ interface IntegrationsFeatureProps {
 
 export function IntegrationsFeature({ dict }: IntegrationsFeatureProps) {
   const integrationsDict = dict.integrationsFeature
+  
   return (
     <section className="relative w-full py-16 md:py-24 px-6 bg-gradient-to-b from-primary/5 to-white">
       <div className="max-w-7xl mx-auto">
@@ -21,16 +23,14 @@ export function IntegrationsFeature({ dict }: IntegrationsFeatureProps) {
             <p className="text-lg text-gray-600 mb-8">
               {integrationsDict.subtitle}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="rounded-md">
-                <Link href="/get-started">
-                  {integrationsDict.exploreButton}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-md">
-                <Link href="/schedule-demo">{integrationsDict.demoButton}</Link>
-              </Button>
+            <div>
+              <CalendlyButton
+                size="lg"
+                className="rounded-md"
+                showArrow={true}
+              >
+                {integrationsDict.exploreButton}
+              </CalendlyButton>
             </div>
           </div>
           <div className="relative">

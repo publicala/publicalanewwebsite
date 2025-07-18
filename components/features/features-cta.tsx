@@ -1,8 +1,11 @@
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { DemoRequestModal } from "@/components/demo-request-modal"
 
 export function FeaturesCTA() {
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
+  
   return (
     <section className="w-full py-20 px-6 bg-primary/5">
       <div className="max-w-4xl mx-auto text-center">
@@ -18,11 +21,19 @@ export function FeaturesCTA() {
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
-          <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 rounded-md">
-            <Link href="/schedule-demo">Schedule a Demo</Link>
+          <Button
+            variant="outline"
+            size="lg"
+            className="text-lg px-8 py-6 rounded-md"
+            onClick={() => setIsDemoModalOpen(true)}
+          >
+            Schedule a Demo
           </Button>
         </div>
       </div>
+      
+      {/* Demo Request Modal */}
+      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </section>
   )
 }

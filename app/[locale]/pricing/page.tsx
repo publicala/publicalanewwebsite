@@ -25,7 +25,7 @@ export default async function PricingPage({
     <main className="min-h-screen flex flex-col">
       <Navbar dict={dict} locale={locale} />
       <PricingHero dict={dict} />
-      <PricingTiers dict={dict} />
+      <PricingTiers dict={dict} locale={locale} />
       <PricingFeatures dict={dict} />
       <PricingFAQ dict={dict} />
       <CTASection dict={dict} />

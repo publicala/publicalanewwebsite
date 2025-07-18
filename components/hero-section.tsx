@@ -1,9 +1,8 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Play, Sparkles } from "lucide-react"
-import { DemoVideoModal } from "@/components/demo-video-modal"
+import { useEffect } from "react"
+import { useState } from "react"
+import { Sparkles } from "lucide-react"
 import { AnimatedBackground } from "@/components/ui/animated-background"
 import { CalendlyButton } from "@/components/calendly-button"
 import Image from "next/image"
@@ -25,7 +24,6 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ dict }: HeroSectionProps) {
-  const [isDemoVideoOpen, setIsDemoVideoOpen] = useState(false)
   
   // Use dictionary taglines if available, otherwise fall back to default
   const taglines = dict?.hero.taglines || [
@@ -94,15 +92,6 @@ export function HeroSection({ dict }: HeroSectionProps) {
               >
                 {dict?.hero.scheduleMeeting || "Schedule a Meeting"}
               </CalendlyButton>
-              <Button
-                variant="outline"
-                size="lg"
-                className="rounded-xl font-medium border-2 hover:bg-gray-50 transition-all duration-300"
-                onClick={() => setIsDemoVideoOpen(true)}
-              >
-                <Play className="mr-2 h-4 w-4" />
-                {dict?.hero.watchDemo || "Watch Demo"}
-              </Button>
             </div>
 
             <div className="flex items-center gap-4">
@@ -156,9 +145,6 @@ export function HeroSection({ dict }: HeroSectionProps) {
           </div>
         </div>
       </div>
-
-      {/* Demo Video Modal */}
-      <DemoVideoModal isOpen={isDemoVideoOpen} onClose={() => setIsDemoVideoOpen(false)} />
     </section>
   )
 }

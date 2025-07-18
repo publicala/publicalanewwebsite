@@ -1,14 +1,8 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { ArrowRight, Play } from "lucide-react"
 import { CalendlyButton } from "@/components/calendly-button"
-import { DemoVideoModal } from "@/components/demo-video-modal"
-import { useState } from "react"
 
 export function CreatorsHero({ dict }: { dict: any }) {
-  const [isDemoVideoOpen, setIsDemoVideoOpen] = useState(false)
   return (
     <section className="relative w-full py-20 md:py-32 px-6 overflow-hidden">
       {/* Gradient Background */}
@@ -24,7 +18,7 @@ export function CreatorsHero({ dict }: { dict: any }) {
             <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-xl">
               {dict.subtitle}
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8">
               <CalendlyButton
                 size="lg"
                 className="rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 group"
@@ -32,15 +26,6 @@ export function CreatorsHero({ dict }: { dict: any }) {
               >
                 {dict.getStarted}
               </CalendlyButton>
-              <Button
-                variant="outline"
-                size="lg"
-                className="rounded-xl font-medium border-2 hover:bg-gray-50 transition-all duration-300"
-                onClick={() => setIsDemoVideoOpen(true)}
-              >
-                <Play className="mr-2 h-4 w-4" />
-                {dict.requestDemo}
-              </Button>
             </div>
           </div>
 
@@ -65,7 +50,6 @@ export function CreatorsHero({ dict }: { dict: any }) {
           </div>
         </div>
       </div>
-      <DemoVideoModal isOpen={isDemoVideoOpen} onClose={() => setIsDemoVideoOpen(false)} />
     </section>
   )
 }

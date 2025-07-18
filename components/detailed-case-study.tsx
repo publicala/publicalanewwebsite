@@ -1,7 +1,8 @@
+"use client"
+
 import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { CheckCircle, TrendingUp, Users, Quote } from "lucide-react"
-import Link from "next/link"
+import { CalendlyButton } from "@/components/calendly-button"
 
 interface DetailedCaseStudyProps {
   logoAlt: string
@@ -219,18 +220,14 @@ export function DetailedCaseStudy({
           <p className="text-lg mb-8 opacity-90">
             Join {companyName} and hundreds of other publishers who are growing their business with Publica.la.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="rounded-md font-medium">
-              <Link href="/get-started">Get Started Free</Link>
-            </Button>
-            <Button
-              asChild
+          <div className="flex justify-center">
+            <CalendlyButton
               size="lg"
-              variant="outline"
-              className="rounded-md font-medium border-white text-white hover:bg-white hover:text-primary"
+              variant="secondary"
+              className="rounded-md font-medium"
             >
-              <Link href="/schedule-demo">Schedule a Demo</Link>
-            </Button>
+              Get Started Free
+            </CalendlyButton>
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 interface AboutTeamProps {
+  locale?: string
   dict: {
     aboutTeam: {
       title: string
@@ -29,7 +30,14 @@ interface AboutTeamProps {
   }
 }
 
-export function AboutTeam({ dict }: AboutTeamProps) {
+export function AboutTeam({ dict, locale }: AboutTeamProps) {
+  const getLocalizedHref = (href: string) => {
+    if (href.startsWith('/')) {
+      return `/${locale}${href}`
+    }
+    return href
+  }
+  
   const teamImages = [
     { src: "/images/team/team-dinner-1.jpg", alt: "Publica.la team dinner" },
     { src: "/images/team/team-gathering-1.jpg", alt: "Publica.la team gathering" },
@@ -98,7 +106,7 @@ export function AboutTeam({ dict }: AboutTeamProps) {
           <p className="text-xl text-gray-600 mb-6">
             {dict.aboutTeam.careers.description}
           </p>
-          <Link href="/careers" className="text-blue-600 font-medium hover:underline text-lg">
+          <Link href={getLocalizedHref("/careers")} className="text-blue-600 font-medium hover:underline text-lg">
             {dict.aboutTeam.careers.linkText} →
           </Link>
         </div>

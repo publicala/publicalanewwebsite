@@ -2,10 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
 import { Users, Globe, TrendingUp, Star, Sparkles } from "lucide-react"
-import { DemoRequestModal } from "@/components/demo-request-modal"
 import { StatsCard } from "@/components/ui/stats-card"
 import { AnimatedBackground } from "@/components/ui/animated-background"
 import { CalendlyButton } from "@/components/calendly-button"
@@ -54,8 +51,6 @@ const defaultCTADict = {
 }
 
 export function CTASection({ dict }: CTASectionProps) {
-  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
-  
   // Handle both cases: when dict is the entire dictionary or just the ctaSection
   const ctaDict = dict || defaultCTADict
   const ctaSection = ctaDict.ctaSection || ctaDict
@@ -100,7 +95,7 @@ export function CTASection({ dict }: CTASectionProps) {
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <CalendlyButton
               size="lg"
               className="text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
@@ -108,14 +103,6 @@ export function CTASection({ dict }: CTASectionProps) {
             >
               {ctaSection.scheduleButton}
             </CalendlyButton>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-lg px-8 py-6 rounded-xl border-2 hover:bg-gray-50 transition-all duration-300"
-              onClick={() => setIsDemoModalOpen(true)}
-            >
-              {ctaSection.watchDemoButton}
-            </Button>
           </div>
 
           <div className="text-sm text-gray-500 space-y-2">
@@ -125,9 +112,6 @@ export function CTASection({ dict }: CTASectionProps) {
           </div>
         </div>
       </div>
-
-      {/* Demo Request Modal */}
-      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </section>
   )
 }

@@ -1,10 +1,13 @@
+"use client"
+
 import type React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Bot, MessageSquare, BookOpen, BarChart3, Zap, CheckCircle, ArrowRight } from "lucide-react"
-import Link from "next/link"
+import { CalendlyButton } from "@/components/calendly-button"
 
 export function VitoAIFeature({ dict }: { dict: any }) {
+  
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -21,16 +24,14 @@ export function VitoAIFeature({ dict }: { dict: any }) {
               <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-xl">
                 {dict.hero.subtitle}
               </p>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="rounded-md font-medium">
-                  <Link href="/get-started">
-                    {dict.hero.getStarted}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="rounded-md font-medium">
-                  <Link href="/schedule-demo">{dict.hero.requestDemo}</Link>
-                </Button>
+              <div className="mt-8">
+                <CalendlyButton
+                  size="lg"
+                  className="rounded-md font-medium"
+                  showArrow={true}
+                >
+                  {dict.hero.getStarted}
+                </CalendlyButton>
               </div>
             </div>
             <div className="relative">

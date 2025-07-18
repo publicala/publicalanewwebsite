@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { CalendlyButton } from "@/components/calendly-button"
 
 export function PublishersCTA() {
+  
   return (
     <section className="w-full py-20 px-6 bg-primary/5">
       <div className="max-w-4xl mx-auto text-center">
@@ -11,16 +11,14 @@ export function PublishersCTA() {
           Join leading publishers who are using our platform to create exceptional digital content experiences, engage
           readers, and drive revenue growth.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button asChild size="lg" className="text-lg px-8 py-6 rounded-md">
-            <Link href="/get-started">
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-          <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 rounded-md">
-            <Link href="/schedule-demo">Schedule a Demo</Link>
-          </Button>
+        <div className="flex justify-center">
+          <CalendlyButton
+            size="lg"
+            className="text-lg px-8 py-6 rounded-md"
+            showArrow={true}
+          >
+            Get Started
+          </CalendlyButton>
         </div>
         <div className="mt-12 p-6 bg-white rounded-lg border border-gray-200 shadow-sm">
           <p className="text-lg font-medium mb-4">Trusted by publishers worldwide</p>

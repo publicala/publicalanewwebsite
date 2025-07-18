@@ -1,8 +1,10 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+"use client"
+
 import { ArrowRight, CheckCircle } from "lucide-react"
+import { CalendlyButton } from "@/components/calendly-button"
 
 export function LibrariesCTA() {
+  
   return (
     <section className="w-full py-20 px-6 bg-primary/5">
       <div className="max-w-4xl mx-auto text-center">
@@ -10,16 +12,14 @@ export function LibrariesCTA() {
         <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
           Join hundreds of libraries worldwide that have transformed their digital services with Publica.la
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button asChild size="lg" className="text-lg px-8 py-6 rounded-md">
-            <Link href="/get-started">
-              Start Your Digital Transformation
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-          <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 rounded-md">
-            <Link href="/schedule-demo">Schedule a Demo</Link>
-          </Button>
+        <div className="flex justify-center mb-12">
+          <CalendlyButton
+            size="lg"
+            className="text-lg px-8 py-6 rounded-md"
+            showArrow={true}
+          >
+            Start Your Digital Transformation
+          </CalendlyButton>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
