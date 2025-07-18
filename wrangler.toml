@@ -3,10 +3,12 @@ name = "publicala-website"
 compatibility_date = "2025-03-25"
 compatibility_flags = ["nodejs_compat"]
 
+# Redirect apex domain to www
 [[routes]]
 pattern = "publica.la"
 custom_domain = true
 
+# Main site on www
 [[routes]]
 pattern = "www.publica.la"
 custom_domain = true

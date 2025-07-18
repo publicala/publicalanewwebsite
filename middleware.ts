@@ -6,6 +6,15 @@ const locales = ['en', 'es', 'pt']
 const defaultLocale = 'en'
 
 export function middleware(request: NextRequest) {
+  const hostname = request.headers.get('host')
+  
+  // Redirect apex domain to www
+  if (hostname === 'publica.la') {
+    const url = new URL(request.url)
+    url.hostname = 'www.publica.la'
+    return NextResponse.redirect(url, 301)
+  }
+
   // Check if there is any supported locale in the pathname
   const pathname = request.nextUrl.pathname
   const pathnameHasLocale = locales.some(
