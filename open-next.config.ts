@@ -1,6 +1,8 @@
-// OpenNext configuration for Cloudflare Workers
+// OpenNext configuration for Cloudflare Workers (SSG site)
 import { defineCloudflareConfig } from "@opennextjs/cloudflare/config";
+import staticAssetsIncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cache/static-assets-incremental-cache";
 
 export default defineCloudflareConfig({
-	// Use default caching instead of R2 for simplicity
+	incrementalCache: staticAssetsIncrementalCache,
+	enableCacheInterception: true,
 });
