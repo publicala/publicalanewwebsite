@@ -4,11 +4,11 @@ compatibility_date = "2025-03-25"
 compatibility_flags = ["nodejs_compat"]
 
 [[routes]]
-pattern = "publica.la/*"
+pattern = "publica.la"
 custom_domain = true
 
 [[routes]]
-pattern = "www.publica.la/*"
+pattern = "www.publica.la"
 custom_domain = true
 
 [assets]
