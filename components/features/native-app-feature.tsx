@@ -1,13 +1,9 @@
 "use client"
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
 import { ArrowRight, Smartphone } from "lucide-react"
 import { CalendlyButton } from "@/components/calendly-button"
-import { DemoRequestModal } from "@/components/demo-request-modal"
 
 export function NativeAppFeature({ dict }: { dict: any }) {
-  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
   
   return (
     <section className="relative w-full py-16 md:py-24 px-6 bg-gradient-to-b from-primary/5 to-white">
@@ -22,7 +18,7 @@ export function NativeAppFeature({ dict }: { dict: any }) {
             <p className="text-lg text-gray-600 mb-8">
               {dict.subtitle}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div>
               <CalendlyButton
                 size="lg"
                 className="rounded-md"
@@ -30,14 +26,6 @@ export function NativeAppFeature({ dict }: { dict: any }) {
               >
                 {dict.learnMore}
               </CalendlyButton>
-              <Button
-                variant="outline"
-                size="lg"
-                className="rounded-md"
-                onClick={() => setIsDemoModalOpen(true)}
-              >
-                {dict.requestDemo}
-              </Button>
             </div>
           </div>
           <div className="relative">
@@ -49,9 +37,6 @@ export function NativeAppFeature({ dict }: { dict: any }) {
           </div>
         </div>
       </div>
-      
-      {/* Demo Request Modal */}
-      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </section>
   )
 }

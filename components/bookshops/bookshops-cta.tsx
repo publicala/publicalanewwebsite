@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle } from "lucide-react"
+import { CalendlyButton } from "@/components/calendly-button"
 
 export function BookshopsCTA({ dict }: { dict: any }) {
   return (
@@ -29,13 +29,10 @@ export function BookshopsCTA({ dict }: { dict: any }) {
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="text-lg px-8 py-6">
+            <div className="flex justify-center mb-8">
+              <CalendlyButton size="lg" className="text-lg px-8 py-6">
                 {dict.scheduleButton}
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-                {dict.watchDemoButton}
-              </Button>
+              </CalendlyButton>
             </div>
 
             <div className="space-y-3">

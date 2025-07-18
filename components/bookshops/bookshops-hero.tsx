@@ -1,14 +1,10 @@
 "use client"
 
-import { ArrowRight, Play } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { CalendlyButton } from "@/components/calendly-button"
-import { DemoVideoModal } from "@/components/demo-video-modal"
-import { useState } from "react"
 
 export function BookshopsHero({ dict }: { dict: any }) {
-  const [isDemoVideoOpen, setIsDemoVideoOpen] = useState(false)
   return (
     <section className="relative w-full py-20 md:py-32 px-6 overflow-hidden">
       <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/5 via-background to-primary/10"></div>
@@ -30,15 +26,6 @@ export function BookshopsHero({ dict }: { dict: any }) {
               >
                 {dict.getStarted}
               </CalendlyButton>
-              <Button
-                variant="outline"
-                size="lg"
-                className="rounded-xl font-medium border-2 hover:bg-gray-50 transition-all duration-300"
-                onClick={() => setIsDemoVideoOpen(true)}
-              >
-                <Play className="mr-2 h-4 w-4" />
-                {dict.requestDemo}
-              </Button>
             </div>
             <div className="grid grid-cols-2 gap-6 mt-8">
               {dict.stats.map((stat: any) => (
@@ -69,7 +56,6 @@ export function BookshopsHero({ dict }: { dict: any }) {
           </div>
         </div>
       </div>
-      <DemoVideoModal isOpen={isDemoVideoOpen} onClose={() => setIsDemoVideoOpen(false)} />
     </section>
   )
 }

@@ -1,15 +1,12 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Bot, MessageSquare, BookOpen, BarChart3, Zap, CheckCircle, ArrowRight } from "lucide-react"
 import { CalendlyButton } from "@/components/calendly-button"
-import { DemoRequestModal } from "@/components/demo-request-modal"
 
 export function VitoAIFeature({ dict }: { dict: any }) {
-  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
   
   return (
     <div className="w-full">
@@ -27,7 +24,7 @@ export function VitoAIFeature({ dict }: { dict: any }) {
               <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-xl">
                 {dict.hero.subtitle}
               </p>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <div className="mt-8">
                 <CalendlyButton
                   size="lg"
                   className="rounded-md font-medium"
@@ -35,14 +32,6 @@ export function VitoAIFeature({ dict }: { dict: any }) {
                 >
                   {dict.hero.getStarted}
                 </CalendlyButton>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="rounded-md font-medium"
-                  onClick={() => setIsDemoModalOpen(true)}
-                >
-                  {dict.hero.requestDemo}
-                </Button>
               </div>
             </div>
             <div className="relative">
@@ -213,9 +202,6 @@ export function VitoAIFeature({ dict }: { dict: any }) {
           </div>
         </div>
       </section>
-      
-      {/* Demo Request Modal */}
-      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </div>
   )
 }

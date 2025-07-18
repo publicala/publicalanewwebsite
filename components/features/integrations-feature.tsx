@@ -1,17 +1,13 @@
 "use client"
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
 import { ArrowRight, Plug } from "lucide-react"
 import { CalendlyButton } from "@/components/calendly-button"
-import { DemoRequestModal } from "@/components/demo-request-modal"
 
 interface IntegrationsFeatureProps {
   dict: any
 }
 
 export function IntegrationsFeature({ dict }: IntegrationsFeatureProps) {
-  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
   const integrationsDict = dict.integrationsFeature
   
   return (
@@ -27,7 +23,7 @@ export function IntegrationsFeature({ dict }: IntegrationsFeatureProps) {
             <p className="text-lg text-gray-600 mb-8">
               {integrationsDict.subtitle}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div>
               <CalendlyButton
                 size="lg"
                 className="rounded-md"
@@ -35,14 +31,6 @@ export function IntegrationsFeature({ dict }: IntegrationsFeatureProps) {
               >
                 {integrationsDict.exploreButton}
               </CalendlyButton>
-              <Button
-                variant="outline"
-                size="lg"
-                className="rounded-md"
-                onClick={() => setIsDemoModalOpen(true)}
-              >
-                {integrationsDict.demoButton}
-              </Button>
             </div>
           </div>
           <div className="relative">
@@ -54,9 +42,6 @@ export function IntegrationsFeature({ dict }: IntegrationsFeatureProps) {
           </div>
         </div>
       </div>
-      
-      {/* Demo Request Modal */}
-      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </section>
   )
 }

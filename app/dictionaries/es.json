@@ -436,7 +436,7 @@
     "title": "Somos publica.la",
     "description": "Somos una empresa de tecnología que empodera a creadores, editoriales e instituciones para distribuir y gestionar su contenido digital — de manera simple, segura y con control total. Trabajamos globalmente, nos movemos con agilidad y colaboramos como un solo equipo.",
     "getStartedButton": "Comenzar",
-    "scheduleDemoButton": "Programar una demo"
+    "scheduleDemoButton": "Programar Reunión"
   },
   "aboutStory": {
     "stats": {
@@ -565,7 +565,7 @@
         },
         {
           "value": "demo",
-          "label": "Solicitar una Demo"
+          "label": "Programar Reunión"
         },
         {
           "value": "billing",
@@ -1385,7 +1385,7 @@
       "title": "Transforma tu Negocio de <1>Publicación</1>",
       "subtitle": "Potencia tu estrategia de publicación con nuestra plataforma digital integral diseñada para ayudarte a distribuir y monetizar contenido de manera efectiva.",
       "getStarted": "Comenzar",
-      "requestDemo": "Solicitar Demo",
+      "requestDemo": "Programar Reunión",
       "videoTitle": "Descripción General de la Plataforma Publica.la"
     },
     "customerLogos": {
@@ -1512,7 +1512,7 @@
       "title": "Expande tu librería con <1>Ofertas Digitales</1>",
       "subtitle": "Complementa tu inventario físico con una librería digital curada. Vende ebooks, audiolibros y contenido digital para llegar a más clientes y crear nuevas fuentes de ingresos.",
       "getStarted": "Comenzar",
-      "requestDemo": "Solicitar Demo",
+      "requestDemo": "Programar Reunión",
       "videoTitle": "Descripción General de la Plataforma Publica.la",
       "videoDescription": "Ve cómo las librerías están expandiendo su alcance digital",
       "stats": [
@@ -1747,7 +1747,7 @@
       "title": "Potencia tu <1>Negocio Creativo</1>",
       "subtitle": "Vende cualquier tipo de contenido digital - desde fotos y audio hasta libros, PDFs y más. Enfócate en crear mientras nosotros manejamos la distribución y monetización.",
       "getStarted": "Comenzar",
-      "requestDemo": "Solicitar Demo",
+      "requestDemo": "Programar Reunión",
       "videoTitle": "Visión General de la Plataforma Publica.la",
       "videoDescription": "Ve cómo los creadores de contenido están construyendo negocios exitosos",
       "stats": [
@@ -1871,7 +1871,7 @@
       "title": "Moderniza tus <1>Servicios de Biblioteca</1>",
       "subtitle": "Transforma tu biblioteca con colecciones digitales, mayor compromiso de usuarios y análisis poderosos. Sirve mejor a tu comunidad con herramientas digitales modernas.",
       "getStarted": "Comenzar",
-      "requestDemo": "Solicitar Demo",
+      "requestDemo": "Programar Reunión",
       "videoTitle": "Visión General de la Plataforma Publica.la",
       "videoDescription": "Ve cómo las bibliotecas están modernizando sus servicios",
       "stats": [
@@ -1974,7 +1974,7 @@
     "title": "Integraciones Poderosas",
     "subtitle": "Conecta tu plataforma de publicación con tus herramientas y servicios favoritos a través de nuestras extensas opciones de integración.",
     "exploreButton": "Explorar Integraciones",
-    "demoButton": "Solicitar Demo",
+    "demoButton": "Programar Reunión",
     "previewText": "Vista Previa de Integraciones"
   },
   "compare": {
@@ -2007,7 +2007,7 @@
     "cta": {
       "title": "¿Listo para Ver publica.la en Acción?",
       "subtitle": "Programa una demo personalizada para ver cómo publica.la puede transformar tu estrategia de publicación digital.",
-      "button": "Programar Demo"
+      "button": "Programar Reunión"
     }
   },
   "magazinesNewspapersSolution": {
@@ -2016,7 +2016,7 @@
       "title": "Transforma tu <1>Publicación Digital</1>",
       "subtitle": "Moderniza tu revista o periódico con herramientas de publicación digital-first, mayor compromiso de lectores y opciones poderosas de monetización.",
       "getStarted": "Comenzar",
-      "requestDemo": "Solicitar Demo",
+      "requestDemo": "Programar Reunión",
       "videoTitle": "Visión General de la Plataforma Publica.la",
       "videoDescription": "Ve cómo las revistas y periódicos se están digitalizando",
       "stats": [
@@ -2119,7 +2119,7 @@
     "title": "Integraciones Poderosas",
     "subtitle": "Conecta tu plataforma de publicación con tus herramientas y servicios favoritos a través de nuestras extensas opciones de integración.",
     "exploreButton": "Explorar Integraciones",
-    "demoButton": "Solicitar Demo",
+    "demoButton": "Programar Reunión",
     "previewText": "Vista Previa de Integraciones"
   },
   "compare": {
@@ -2152,7 +2152,7 @@
     "cta": {
       "title": "¿Listo para Ver publica.la en Acción?",
       "subtitle": "Programa una demo personalizada para ver cómo publica.la puede transformar tu estrategia de publicación digital.",
-      "button": "Programar Demo"
+      "button": "Programar Reunión"
     }
   },
   "vitoAIFeature": {
@@ -2162,7 +2162,7 @@
       "title2": "Vito AI",
       "subtitle": "Un compañero de lectura inteligente que mejora la comprensión a través de resúmenes interactivos, autoevaluaciones y experiencias de aprendizaje personalizadas.",
       "getStarted": "Probar Vito AI",
-      "requestDemo": "Ver Demo",
+      "requestDemo": "Programar Reunión",
       "assistantName": "Asistente Vito AI",
       "assistantStatus": "En línea",
       "chat1": "¡Hola! Acabo de terminar de leer el Capítulo 3. ¿Puedes darme un resumen?",
@@ -2212,7 +2212,7 @@
     "title": "App Nativa para iOS y Android",
     "subtitle": "Ofrece a tus lectores una experiencia móvil fluida a través de nuestras apps nativas personalizables para iOS y Android.",
     "learnMore": "Saber Más",
-    "requestDemo": "Solicitar Demo",
+    "requestDemo": "Programar Reunión",
     "previewText": "Vista Previa de la App Nativa"
   },
   "caseStudy": {

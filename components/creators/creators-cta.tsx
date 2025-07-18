@@ -1,11 +1,7 @@
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { CalendlyButton } from "@/components/calendly-button"
-import { DemoRequestModal } from "@/components/demo-request-modal"
 
 export function CreatorsCTA() {
-  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
   
   return (
     <section className="w-full py-20 px-6 bg-primary/5">
@@ -15,7 +11,7 @@ export function CreatorsCTA() {
           Join thousands of content creators who are building sustainable businesses by selling directly to their
           audience.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex justify-center">
           <CalendlyButton
             size="lg"
             className="text-lg px-8 py-6 rounded-md"
@@ -23,14 +19,6 @@ export function CreatorsCTA() {
           >
             Start Creating
           </CalendlyButton>
-          <Button
-            variant="outline"
-            size="lg"
-            className="text-lg px-8 py-6 rounded-md"
-            onClick={() => setIsDemoModalOpen(true)}
-          >
-            See How It Works
-          </Button>
         </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -48,9 +36,6 @@ export function CreatorsCTA() {
           </div>
         </div>
       </div>
-      
-      {/* Demo Request Modal */}
-      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </section>
   )
 }

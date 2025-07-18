@@ -50,7 +50,7 @@
       "title": "Transform Your <1>Publishing</1> Business",
       "subtitle": "Empower your publishing strategy with our comprehensive digital platform designed to help you distribute and monetize content effectively.",
       "getStarted": "Get Started",
-      "requestDemo": "Request a Demo",
+      "requestDemo": "Schedule a Meeting",
       "videoTitle": "Publica.la Platform Overview"
     },
     "customerLogos": {
@@ -448,7 +448,7 @@
     "title": "We are publica.la",
     "description": "We are a tech company that empowers creators, publishers, and institutions to distribute and manage their digital content — simply, securely, and with full control. We work globally, move with agility, and collaborate as one team.",
     "getStartedButton": "Get started",
-    "scheduleDemoButton": "Schedule a demo"
+    "scheduleDemoButton": "Schedule a Meeting"
   },
   "aboutStory": {
     "stats": {
@@ -577,7 +577,7 @@
         },
         {
           "value": "demo",
-          "label": "Request a Demo"
+          "label": "Schedule a Meeting"
         },
         {
           "value": "billing",
@@ -1397,7 +1397,7 @@
       "title": "Transform Your <1>Publishing</1> Business",
       "subtitle": "Empower your publishing strategy with our comprehensive digital platform designed to help you distribute and monetize content effectively.",
       "getStarted": "Get Started",
-      "requestDemo": "Request a Demo",
+      "requestDemo": "Schedule a Meeting",
       "videoTitle": "Publica.la Platform Overview"
     },
     "customerLogos": {
@@ -1524,7 +1524,7 @@
       "title": "Expand Your Bookshop with <1>Digital Offerings</1>",
       "subtitle": "Complement your physical inventory with a curated digital bookstore. Sell ebooks, audiobooks, and digital content to reach more customers and create new revenue streams.",
       "getStarted": "Get Started",
-      "requestDemo": "Request a Demo",
+      "requestDemo": "Schedule a Meeting",
       "videoTitle": "Publica.la Platform Overview",
       "videoDescription": "See how bookshops are expanding their digital reach",
       "stats": [
@@ -1759,7 +1759,7 @@
       "title": "Empower Your <1>Creative Business</1>",
       "subtitle": "Sell any type of digital content - from photos and audio to books, PDFs, and more. Focus on creating while we handle distribution and monetization.",
       "getStarted": "Get Started",
-      "requestDemo": "Request a Demo",
+      "requestDemo": "Schedule a Meeting",
       "videoTitle": "Publica.la Platform Overview",
       "videoDescription": "See how content creators are building successful businesses",
       "stats": [
@@ -1883,7 +1883,7 @@
       "title": "Modernize Your <1>Library Services</1>",
       "subtitle": "Transform your library with digital collections, enhanced patron engagement, and powerful analytics. Serve your community better with modern digital tools.",
       "getStarted": "Get Started",
-      "requestDemo": "Request a Demo",
+      "requestDemo": "Schedule a Meeting",
       "videoTitle": "Publica.la Platform Overview",
       "videoDescription": "See how libraries are modernizing their services",
       "stats": [
@@ -1987,7 +1987,7 @@
       "title": "Transform Your <1>Digital Publishing</1>",
       "subtitle": "Modernize your magazine or newspaper with digital-first publishing tools, enhanced reader engagement, and powerful monetization options.",
       "getStarted": "Get Started",
-      "requestDemo": "Request a Demo",
+      "requestDemo": "Schedule a Meeting",
       "videoTitle": "Publica.la Platform Overview",
       "videoDescription": "See how magazines and newspapers are going digital",
       "stats": [
@@ -2090,7 +2090,7 @@
     "title": "Powerful Integrations",
     "subtitle": "Connect your publishing platform with your favorite tools and services through our extensive integration options.",
     "exploreButton": "Explore Integrations",
-    "demoButton": "Request a Demo",
+    "demoButton": "Schedule a Meeting",
     "previewText": "Integrations Preview"
   },
   "compare": {
@@ -2123,7 +2123,7 @@
     "cta": {
       "title": "Ready to See publica.la in Action?",
       "subtitle": "Schedule a personalized demo to see how publica.la can transform your digital publishing strategy.",
-      "button": "Schedule a Demo"
+      "button": "Schedule a Meeting"
     }
   },
   "vitoAIFeature": {
@@ -2133,7 +2133,7 @@
       "title2": "Vito AI",
       "subtitle": "An intelligent reading companion that enhances comprehension through interactive summaries, self-assessments, and personalized learning experiences.",
       "getStarted": "Try Vito AI",
-      "requestDemo": "See Demo",
+      "requestDemo": "Schedule a Meeting",
       "assistantName": "Vito AI Assistant",
       "assistantStatus": "Online",
       "chat1": "Hi! I've just finished reading Chapter 3. Can you provide a summary?",
@@ -2183,7 +2183,7 @@
     "title": "Native App for iOS and Android",
     "subtitle": "Provide your readers with a seamless mobile experience through our customizable native apps for iOS and Android.",
     "learnMore": "Learn More",
-    "requestDemo": "Request a Demo",
+    "requestDemo": "Schedule a Meeting",
     "previewText": "Native App Preview"
   }
 }

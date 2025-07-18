@@ -436,7 +436,7 @@
     "title": "Somos publica.la",
     "description": "Somos uma empresa de tecnologia que capacita criadores, editoras e instituições a distribuir e gerenciar seu conteúdo digital — de forma simples, segura e com controle total. Trabalhamos globalmente, nos movemos com agilidade e colaboramos como uma equipe.",
     "getStartedButton": "Começar",
-    "scheduleDemoButton": "Agendar uma demonstração"
+    "scheduleDemoButton": "Agendar Reunião"
   },
   "aboutStory": {
     "stats": {
@@ -565,7 +565,7 @@
         },
         {
           "value": "demo",
-          "label": "Solicitar uma Demonstração"
+          "label": "Agendar Reunião"
         },
         {
           "value": "billing",
@@ -1397,7 +1397,7 @@
       "title": "Expanda sua livraria com <1>Ofertas Digitais</1>",
       "subtitle": "Complemente seu inventário físico com uma livraria digital curada. Venda ebooks, audiolivros e conteúdo digital para alcançar mais clientes e criar novas fontes de receita.",
       "getStarted": "Começar",
-      "requestDemo": "Solicitar Demo",
+      "requestDemo": "Agendar Reunião",
       "videoTitle": "Visão Geral da Plataforma Publica.la",
       "videoDescription": "Veja como as livrarias estão expandindo seu alcance digital",
       "stats": [
@@ -1643,7 +1643,7 @@
       "title": "Transforme seu Negócio de <1>Publicação</1>",
       "subtitle": "Potencialize sua estratégia de publicação com nossa plataforma digital abrangente projetada para ajudá-lo a distribuir e monetizar conteúdo de forma eficaz.",
       "getStarted": "Começar",
-      "requestDemo": "Solicitar Demo",
+      "requestDemo": "Agendar Reunião",
       "videoTitle": "Visão Geral da Plataforma Publica.la"
     },
     "customerLogos": {
@@ -1770,7 +1770,7 @@
       "title": "Potencialize seu <1>Negócio Criativo</1>",
       "subtitle": "Venda qualquer tipo de conteúdo digital - desde fotos e áudio até livros, PDFs e muito mais. Foque em criar enquanto nós cuidamos da distribuição e monetização.",
       "getStarted": "Começar",
-      "requestDemo": "Solicitar Demo",
+      "requestDemo": "Agendar Reunião",
       "videoTitle": "Visão Geral da Plataforma Publica.la",
       "videoDescription": "Veja como os criadores de conteúdo estão construindo negócios de sucesso",
       "stats": [
@@ -1914,7 +1914,7 @@
       "title": "Modernize seus <1>Serviços de Biblioteca</1>",
       "subtitle": "Transforme sua biblioteca com coleções digitais, maior engajamento de usuários e análises poderosas. Sirva melhor sua comunidade com ferramentas digitais modernas.",
       "getStarted": "Começar",
-      "requestDemo": "Solicitar Demo",
+      "requestDemo": "Agendar Reunião",
       "videoTitle": "Visão Geral da Plataforma Publica.la",
       "videoDescription": "Veja como as bibliotecas estão modernizando seus serviços",
       "stats": [
@@ -2018,7 +2018,7 @@
       "title": "Transforme sua <1>Publicação Digital</1>",
       "subtitle": "Modernize sua revista ou jornal com ferramentas de publicação digital-first, maior engajamento de leitores e opções poderosas de monetização.",
       "getStarted": "Começar",
-      "requestDemo": "Solicitar Demo",
+      "requestDemo": "Agendar Reunião",
       "videoTitle": "Visão Geral da Plataforma Publica.la",
       "videoDescription": "Veja como revistas e jornais estão se digitalizando",
       "stats": [
@@ -2121,7 +2121,7 @@
     "title": "Integrações Poderosas",
     "subtitle": "Conecte sua plataforma de publicação com suas ferramentas e serviços favoritos através de nossas extensas opções de integração.",
     "exploreButton": "Explorar Integrações",
-    "demoButton": "Solicitar Demo",
+    "demoButton": "Agendar Reunião",
     "previewText": "Prévia de Integrações"
   },
   "compare": {
@@ -2154,7 +2154,7 @@
     "cta": {
       "title": "Pronto para Ver a publica.la em Ação?",
       "subtitle": "Agende uma demo personalizada para ver como a publica.la pode transformar sua estratégia de publicação digital.",
-      "button": "Agendar Demo"
+      "button": "Agendar Reunião"
     }
   },
   "vitoAIFeature": {
@@ -2164,7 +2164,7 @@
       "title2": "Vito AI",
       "subtitle": "Um companheiro de leitura inteligente que aprimora a compreensão por meio de resumos interativos, autoavaliações e experiências de aprendizado personalizadas.",
       "getStarted": "Experimentar Vito AI",
-      "requestDemo": "Ver Demo",
+      "requestDemo": "Agendar Reunião",
       "assistantName": "Assistente Vito AI",
       "assistantStatus": "Online",
       "chat1": "Olá! Acabei de terminar de ler o Capítulo 3. Você pode fornecer um resumo?",
@@ -2214,7 +2214,7 @@
     "title": "App Nativo para iOS e Android",
     "subtitle": "Ofereça aos seus leitores uma experiência mobile fluida através dos nossos apps nativos personalizáveis para iOS e Android.",
     "learnMore": "Saiba Mais",
-    "requestDemo": "Solicitar Demo",
+    "requestDemo": "Agendar Reunião",
     "previewText": "Prévia do App Nativo"
   }
 }
