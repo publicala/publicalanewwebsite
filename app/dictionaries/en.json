@@ -165,7 +165,7 @@
         "button": "Subscribe"
       }
     },
-    "copyright": "© {year} Publica.la. All rights reserved.",
+    "copyright": "© {year} Publica.la. All rights reserved. deploy test",
     "legal": [
       {
         "href": "/terms",
