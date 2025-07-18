@@ -9,10 +9,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Add Cloudflare Workers configuration
-  experimental: {
-    runtime: 'nodejs', // Explicitly use Node.js runtime (NOT edge)
-  },
   output: 'standalone', // Required for Workers deployment
 }
 
