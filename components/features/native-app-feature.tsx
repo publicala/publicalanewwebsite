@@ -1,8 +1,14 @@
+"use client"
+
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import { ArrowRight, Smartphone } from "lucide-react"
+import { CalendlyButton } from "@/components/calendly-button"
+import { DemoRequestModal } from "@/components/demo-request-modal"
 
 export function NativeAppFeature({ dict }: { dict: any }) {
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
+  
   return (
     <section className="relative w-full py-16 md:py-24 px-6 bg-gradient-to-b from-primary/5 to-white">
       <div className="max-w-7xl mx-auto">
@@ -17,14 +23,20 @@ export function NativeAppFeature({ dict }: { dict: any }) {
               {dict.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="rounded-md">
-                <Link href="/get-started">
-                  {dict.learnMore}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-md">
-                <Link href="/schedule-demo">{dict.requestDemo}</Link>
+              <CalendlyButton
+                size="lg"
+                className="rounded-md"
+                showArrow={true}
+              >
+                {dict.learnMore}
+              </CalendlyButton>
+              <Button
+                variant="outline"
+                size="lg"
+                className="rounded-md"
+                onClick={() => setIsDemoModalOpen(true)}
+              >
+                {dict.requestDemo}
               </Button>
             </div>
           </div>
@@ -37,6 +49,9 @@ export function NativeAppFeature({ dict }: { dict: any }) {
           </div>
         </div>
       </div>
+      
+      {/* Demo Request Modal */}
+      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </section>
   )
 }

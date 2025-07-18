@@ -29,7 +29,7 @@ export default async function AboutUsPage({
       <AboutStory dict={dict} />
       <AboutMission dict={dict} />
       <AboutValues dict={dict} />
-      <AboutTeam dict={dict} />
+      <AboutTeam dict={dict} locale={locale} />
       <CTASection dict={dict} />
       <Footer dict={dict} locale={locale} />
     </main>

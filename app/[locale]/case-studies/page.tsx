@@ -19,7 +19,7 @@ export default async function CaseStudiesPage({ params }: { params: Promise<{ lo
         variant="case-studies"
         dict={dict}
       />
-      <CaseStudiesList dict={dict} />
+      <CaseStudiesList dict={dict} locale={locale} />
       <Footer dict={dict} locale={locale} />
     </main>
   )

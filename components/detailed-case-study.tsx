@@ -1,7 +1,11 @@
+"use client"
+
+import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, TrendingUp, Users, Quote } from "lucide-react"
-import Link from "next/link"
+import { CalendlyButton } from "@/components/calendly-button"
+import { DemoRequestModal } from "@/components/demo-request-modal"
 
 interface DetailedCaseStudyProps {
   logoAlt: string
@@ -50,6 +54,7 @@ export function DetailedCaseStudy({
   logoSrc,
   sectionTitles,
 }: DetailedCaseStudyProps) {
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
   const companyName = logoAlt.replace(" Logo", "")
   const companyInitials = companyName
     .split(" ")
@@ -220,20 +225,27 @@ export function DetailedCaseStudy({
             Join {companyName} and hundreds of other publishers who are growing their business with Publica.la.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="rounded-md font-medium">
-              <Link href="/get-started">Get Started Free</Link>
-            </Button>
+            <CalendlyButton
+              size="lg"
+              variant="secondary"
+              className="rounded-md font-medium"
+            >
+              Get Started Free
+            </CalendlyButton>
             <Button
-              asChild
               size="lg"
               variant="outline"
               className="rounded-md font-medium border-white text-white hover:bg-white hover:text-primary"
+              onClick={() => setIsDemoModalOpen(true)}
             >
-              <Link href="/schedule-demo">Schedule a Demo</Link>
+              Schedule a Demo
             </Button>
           </div>
         </div>
       </section>
+      
+      {/* Demo Request Modal */}
+      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </div>
   )
 }

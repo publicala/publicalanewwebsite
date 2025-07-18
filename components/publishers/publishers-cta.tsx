@@ -1,8 +1,12 @@
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { CalendlyButton } from "@/components/calendly-button"
+import { DemoRequestModal } from "@/components/demo-request-modal"
 
 export function PublishersCTA() {
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
+  
   return (
     <section className="w-full py-20 px-6 bg-primary/5">
       <div className="max-w-4xl mx-auto text-center">
@@ -12,14 +16,20 @@ export function PublishersCTA() {
           readers, and drive revenue growth.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button asChild size="lg" className="text-lg px-8 py-6 rounded-md">
-            <Link href="/get-started">
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-          <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 rounded-md">
-            <Link href="/schedule-demo">Schedule a Demo</Link>
+          <CalendlyButton
+            size="lg"
+            className="text-lg px-8 py-6 rounded-md"
+            showArrow={true}
+          >
+            Get Started
+          </CalendlyButton>
+          <Button
+            variant="outline"
+            size="lg"
+            className="text-lg px-8 py-6 rounded-md"
+            onClick={() => setIsDemoModalOpen(true)}
+          >
+            Schedule a Demo
           </Button>
         </div>
         <div className="mt-12 p-6 bg-white rounded-lg border border-gray-200 shadow-sm">
@@ -40,6 +50,9 @@ export function PublishersCTA() {
           </div>
         </div>
       </div>
+      
+      {/* Demo Request Modal */}
+      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </section>
   )
 }

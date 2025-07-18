@@ -6,8 +6,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
 import Link from "next/link"
+import { CalendlyButton } from "@/components/calendly-button"
+import { DemoRequestModal } from "@/components/demo-request-modal"
 
 interface PricingTiersProps {
+  locale?: string
   dict: {
     pricingTiers: {
       toggle: {
@@ -58,8 +61,9 @@ interface PricingTiersProps {
   }
 }
 
-export function PricingTiers({ dict }: PricingTiersProps) {
+export function PricingTiers({ dict, locale }: PricingTiersProps) {
   const [isAnnual, setIsAnnual] = useState(false)
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
 
   const plans = {
     starter: {
@@ -85,6 +89,13 @@ export function PricingTiers({ dict }: PricingTiersProps) {
 
   const getSavings = (plan: keyof typeof plans) => {
     return plans[plan].savings
+  }
+
+  const getLocalizedHref = (href: string) => {
+    if (href.startsWith('/')) {
+      return `/${locale}${href}`
+    }
+    return href
   }
 
   return (
@@ -148,9 +159,12 @@ export function PricingTiers({ dict }: PricingTiersProps) {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button asChild className="w-full rounded-md" variant="outline">
-                <Link href="/signup?plan=starter">{dict.pricingTiers.plans.starter.buttonText}</Link>
-              </Button>
+              <CalendlyButton
+                className="w-full rounded-md"
+                variant="outline"
+              >
+                {dict.pricingTiers.plans.starter.buttonText}
+              </CalendlyButton>
             </CardFooter>
           </Card>
 
@@ -191,9 +205,11 @@ export function PricingTiers({ dict }: PricingTiersProps) {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button asChild className="w-full rounded-md">
-                <Link href="/signup?plan=growth">{dict.pricingTiers.plans.growth.buttonText}</Link>
-              </Button>
+              <CalendlyButton
+                className="w-full rounded-md"
+              >
+                {dict.pricingTiers.plans.growth.buttonText}
+              </CalendlyButton>
             </CardFooter>
           </Card>
 
@@ -231,8 +247,12 @@ export function PricingTiers({ dict }: PricingTiersProps) {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button asChild className="w-full rounded-md" variant="outline">
-                <Link href="/signup?plan=enterprise">{dict.pricingTiers.plans.enterprise.buttonText}</Link>
+              <Button
+                className="w-full rounded-md"
+                variant="outline"
+                onClick={() => setIsDemoModalOpen(true)}
+              >
+                {dict.pricingTiers.plans.enterprise.buttonText}
               </Button>
             </CardFooter>
           </Card>
@@ -241,12 +261,15 @@ export function PricingTiers({ dict }: PricingTiersProps) {
         <div className="mt-12 text-center">
           <p className="text-gray-500">
             {dict.pricingTiers.customPlan.text}{" "}
-            <Link href="/contact" className="text-primary font-medium hover:underline">
+            <Link href={getLocalizedHref("/contact")} className="text-primary font-medium hover:underline">
               {dict.pricingTiers.customPlan.linkText}
             </Link>
           </p>
         </div>
       </div>
+      
+      {/* Demo Request Modal */}
+      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </section>
   )
 }

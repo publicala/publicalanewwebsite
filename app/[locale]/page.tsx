@@ -29,7 +29,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         variant="homepage"
       />
       <PlatformShowcase dict={dict} />
-      <SolutionsSection dict={dict} />
+      <SolutionsSection dict={dict} locale={locale} />
       <FeaturesSection dict={dict} />
       <TestimonialsSection dict={dict} />
       <CTASection dict={dict} />

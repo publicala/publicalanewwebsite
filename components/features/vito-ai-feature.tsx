@@ -1,10 +1,16 @@
+"use client"
+
 import type React from "react"
+import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Bot, MessageSquare, BookOpen, BarChart3, Zap, CheckCircle, ArrowRight } from "lucide-react"
-import Link from "next/link"
+import { CalendlyButton } from "@/components/calendly-button"
+import { DemoRequestModal } from "@/components/demo-request-modal"
 
 export function VitoAIFeature({ dict }: { dict: any }) {
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
+  
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -22,14 +28,20 @@ export function VitoAIFeature({ dict }: { dict: any }) {
                 {dict.hero.subtitle}
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="rounded-md font-medium">
-                  <Link href="/get-started">
-                    {dict.hero.getStarted}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="rounded-md font-medium">
-                  <Link href="/schedule-demo">{dict.hero.requestDemo}</Link>
+                <CalendlyButton
+                  size="lg"
+                  className="rounded-md font-medium"
+                  showArrow={true}
+                >
+                  {dict.hero.getStarted}
+                </CalendlyButton>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="rounded-md font-medium"
+                  onClick={() => setIsDemoModalOpen(true)}
+                >
+                  {dict.hero.requestDemo}
                 </Button>
               </div>
             </div>
@@ -201,6 +213,9 @@ export function VitoAIFeature({ dict }: { dict: any }) {
           </div>
         </div>
       </section>
+      
+      {/* Demo Request Modal */}
+      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </div>
   )
 }

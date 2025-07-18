@@ -1,5 +1,9 @@
+"use client"
+
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { CalendlyButton } from "@/components/calendly-button"
+import { DemoRequestModal } from "@/components/demo-request-modal"
 
 interface AboutHeroProps {
   dict: {
@@ -13,6 +17,8 @@ interface AboutHeroProps {
 }
 
 export function AboutHero({ dict }: AboutHeroProps) {
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
+  
   return (
     <section className="relative w-full py-24 md:py-32 px-6 overflow-hidden">
       <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
@@ -31,25 +37,25 @@ export function AboutHero({ dict }: AboutHeroProps) {
           {dict.aboutHero.description}
         </p>
         <div className="flex flex-col sm:flex-row gap-6">
-          <Button
-            asChild
+          <CalendlyButton
             size="lg"
             className="rounded-md font-medium bg-blue-600 hover:bg-blue-700 text-white px-8 py-6"
           >
-            <Link href="/get-started">{dict.aboutHero.getStartedButton}</Link>
-          </Button>
+            {dict.aboutHero.getStartedButton}
+          </CalendlyButton>
           <Button
-            asChild
             variant="ghost"
             size="lg"
             className="rounded-md font-medium text-blue-600 hover:bg-blue-50 px-8 py-6 group"
+            onClick={() => setIsDemoModalOpen(true)}
           >
-            <Link href="/schedule-demo" className="flex items-center">
-              {dict.aboutHero.scheduleDemoButton}
-            </Link>
+            {dict.aboutHero.scheduleDemoButton}
           </Button>
         </div>
       </div>
+      
+      {/* Demo Request Modal */}
+      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </section>
   )
 }
