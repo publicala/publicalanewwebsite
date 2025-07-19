@@ -62,8 +62,8 @@ export function TermsContent() {
             &quot;Subscription Plan&quot;). The features, limitations, and requirements for each Subscription Plan,
             including any applicable Subscription Fees (as defined below), are as set forth on the Publica.la website
             (the &quot;Site&quot;) at{" "}
-            <Link href="https://publica.la/en/plans-and-pricing/" className="text-primary hover:underline">
-              https://publica.la/en/plans-and-pricing/
+            <Link href="/pricing" className="text-primary hover:underline">
+              /pricing
             </Link>
             . Subscription Plans that require subscription fees have subscription terms that are monthly, annually, or
             such other terms as may be offered by Publica and selected by Seller (the &quot;Subscription Term&quot;).
@@ -120,8 +120,8 @@ export function TermsContent() {
           <p>
             Certain Subscription Plans may require payment of a one-time set up fee (the &quot;Set-Up Fee&quot;) and/or
             a subscription fee (the &quot;Subscription Fee&quot;), as set forth on our Site at{" "}
-            <Link href="https://publica.la/en/plans-and-pricing/" className="text-primary hover:underline">
-              https://publica.la/en/plans-and-pricing/
+            <Link href="/pricing" className="text-primary hover:underline">
+              /pricing
             </Link>
             . In addition, Publica reserves the right to charge the following transaction fees: (a) a transaction fee of
             $0.43 on each End User transaction in the event that the Revenue Share (as defined below) on such
