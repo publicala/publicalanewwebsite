@@ -1,9 +1,13 @@
+"use client"
+
 import type React from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react"
+import { useState } from "react"
+import { CalendlyModal } from "@/components/calendly-modal"
 
 // Custom X (Twitter) icon component
 const XIcon = ({ size = 18 }: { size?: number }) => (
@@ -91,8 +95,6 @@ const defaultFooterDict = {
           { href: "/about-us", text: "About Us" },
           { href: "/compare", text: "Compare Platforms" },
           { href: "/careers", text: "Careers" },
-          { href: "/blog", text: "Blog" },
-          { href: "/press", text: "Press" },
           { href: "/contact", text: "Contact" }
         ]
       },
@@ -107,14 +109,14 @@ const defaultFooterDict = {
     legal: [
       { href: "/terms", text: "Terms of Service" },
       { href: "/privacy", text: "Privacy Policy" },
-      { href: "/cookies", text: "Cookie Policy" },
-      { href: "https://app.publica.la/platform/sign-up/init?lang=en&plan=basic_store&interval=monthly&utm_medium=Website&utm_campaign=New_website&utm_source=Direct+Traffic&utm_content=Website", text: "Create tenant", external: true }
+      { href: "#", text: "Create tenant", action: "calendly" }
     ]
   }
 }
 
 export function Footer({ dict, locale = "en" }: FooterProps) {
   const footerDict = dict || defaultFooterDict
+  const [isCalendlyModalOpen, setIsCalendlyModalOpen] = useState(false)
 
   // Helper function to add locale to internal links
   const getLocalizedHref = (href: string) => {
@@ -196,20 +198,37 @@ export function Footer({ dict, locale = "en" }: FooterProps) {
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">{footerDict.footer.copyright.replace('{year}', new Date().getFullYear().toString())}</p>
           <div className="flex gap-6">
-            {footerDict.footer.legal.map((link, index) => (
-              <Link 
-                key={index} 
-                href={link.external ? link.href : getLocalizedHref(link.href)} 
-                className="text-sm text-gray-400 hover:text-white"
-                target={link.external ? "_blank" : undefined}
-                rel={link.external ? "noopener noreferrer" : undefined}
-              >
-                {link.text}
-              </Link>
-            ))}
+            {footerDict.footer.legal.map((link, index) => {
+              if ((link as any).action === "calendly") {
+                return (
+                  <button
+                    key={index}
+                    onClick={() => setIsCalendlyModalOpen(true)}
+                    className="text-sm text-gray-400 hover:text-white"
+                  >
+                    {link.text}
+                  </button>
+                )
+              }
+              
+              return (
+                <Link 
+                  key={index} 
+                  href={(link as any).external ? link.href : getLocalizedHref(link.href)} 
+                  className="text-sm text-gray-400 hover:text-white"
+                  target={(link as any).external ? "_blank" : undefined}
+                  rel={(link as any).external ? "noopener noreferrer" : undefined}
+                >
+                  {link.text}
+                </Link>
+              )
+            })}
           </div>
         </div>
       </div>
+      
+      {/* Calendly Modal */}
+      <CalendlyModal isOpen={isCalendlyModalOpen} onClose={() => setIsCalendlyModalOpen(false)} />
     </footer>
   )
 }

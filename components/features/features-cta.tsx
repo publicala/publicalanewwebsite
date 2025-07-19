@@ -2,9 +2,11 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { DemoRequestModal } from "@/components/demo-request-modal"
+import { CalendlyModal } from "@/components/calendly-modal"
 
 export function FeaturesCTA() {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
+  const [isCalendlyModalOpen, setIsCalendlyModalOpen] = useState(false)
   
   return (
     <section className="w-full py-20 px-6 bg-primary/5">
@@ -15,11 +17,13 @@ export function FeaturesCTA() {
           experiences.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button asChild size="lg" className="text-lg px-8 py-6 rounded-md">
-            <a href="https://app.publica.la/platform/sign-up/register/" target="_blank" rel="noopener noreferrer">
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
+          <Button 
+            size="lg" 
+            className="text-lg px-8 py-6 rounded-md"
+            onClick={() => setIsCalendlyModalOpen(true)}
+          >
+            Get Started
+            <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
           <Button
             variant="outline"
@@ -34,6 +38,9 @@ export function FeaturesCTA() {
       
       {/* Demo Request Modal */}
       <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
+      
+      {/* Calendly Modal */}
+      <CalendlyModal isOpen={isCalendlyModalOpen} onClose={() => setIsCalendlyModalOpen(false)} />
     </section>
   )
 }
