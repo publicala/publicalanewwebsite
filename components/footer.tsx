@@ -107,7 +107,7 @@ const defaultFooterDict = {
     },
     copyright: "© {year} Publica.la. All rights reserved.",
     legal: [
-      { href: "/pricing", text: "Terms of Service" },
+      { href: "/terms", text: "Terms of Service" },
       { href: "/privacy", text: "Privacy Policy" },
       { href: "#", text: "Create tenant", action: "calendly" }
     ]

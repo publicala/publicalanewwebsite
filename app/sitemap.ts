@@ -153,7 +153,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Legal Pages
     {
-      url: `${baseUrl}/pricing`,
+      url: `${baseUrl}/terms`,
       lastModified: currentDate,
       changeFrequency: "yearly" as const,
       priority: 0.3,

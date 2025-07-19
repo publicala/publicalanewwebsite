@@ -110,7 +110,7 @@ export default async function SitemapPage({ params }: { params: Promise<{ locale
               <CardContent>
                 <ul className="space-y-2">
                   <SitemapLink href={`/${locale}/pricing`} text="Pricing Plans" />
-                  <SitemapLink href={`/${locale}/pricing`} text="Terms of Service" />
+                  <SitemapLink href={`/${locale}/terms`} text="Terms of Service" />
                   <SitemapLink href={`/${locale}/privacy`} text="Privacy Policy" />
                 </ul>
               </CardContent>
