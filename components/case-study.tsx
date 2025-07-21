@@ -41,12 +41,14 @@ export function CaseStudy({
 
         <Card className="border-0 shadow-lg overflow-hidden">
           <CardContent className="p-0">
-            <div className={`grid grid-cols-1 lg:grid-cols-2 gap-0 ${reversed ? "flex-row-reverse" : ""}`}>
-              <div className={`order-2 lg:order-${reversed ? "2" : "1"} h-full`}>
-                <div className="relative h-full min-h-[300px] lg:min-h-[500px]">
-                  <Image src={imageSrc || "/placeholder.svg"} alt={imageAlt} fill className="object-cover" />
+            <div className={`grid grid-cols-1 ${imageSrc ? "lg:grid-cols-2" : ""} gap-0 ${reversed ? "flex-row-reverse" : ""}`}>
+              {imageSrc && (
+                <div className={`order-2 lg:order-${reversed ? "2" : "1"} h-full`}>
+                  <div className="relative h-full min-h-[300px] lg:min-h-[500px]">
+                    <Image src={imageSrc} alt={imageAlt} fill className="object-cover" />
+                  </div>
                 </div>
-              </div>
+              )}
 
               <div className={`order-1 lg:order-${reversed ? "1" : "2"} p-8 lg:p-12 bg-white`}>
                 <div className="space-y-6">
