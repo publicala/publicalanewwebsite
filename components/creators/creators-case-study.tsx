@@ -23,8 +23,8 @@ export function CreatorsCaseStudy() {
       quote="Having my own platform has completely transformed my photography business. I'm making more money while having direct relationships with my customers, and I love the freedom to package and price my work in ways that reflect its true value."
       quoteName="Sarah Martinez"
       quoteRole="Professional Photographer"
-      imageSrc="/placeholder.svg?height=600&width=800"
-      imageAlt="Sarah Martinez photography portfolio and digital storefront"
+      imageSrc=""
+      imageAlt=""
       reversed={true}
     />
   )

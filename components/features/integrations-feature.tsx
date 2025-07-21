@@ -34,9 +34,6 @@ export function IntegrationsFeature({ dict }: IntegrationsFeatureProps) {
             </div>
           </div>
           <div className="relative">
-            <div className="relative z-10 rounded-lg shadow-xl overflow-hidden border border-gray-200 bg-gray-100 h-80 flex items-center justify-center">
-              <p className="text-gray-500">{integrationsDict.previewText}</p>
-            </div>
             <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-primary/5 rounded-full z-0"></div>
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/5 rounded-full z-0"></div>
           </div>
