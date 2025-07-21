@@ -74,10 +74,10 @@ export function CustomerLogosShowcase({
         ]
       case "libraries":
         return [
-          { name: "Public Library System", width: 140, height: 60 },
-          { name: "University Library", width: 130, height: 55 },
-          { name: "Research Library", width: 125, height: 52 },
-          { name: "Digital Library", width: 135, height: 58 },
+          { name: "CANOPUS Lector", src: "/images/logos/canopus-lector.png", width: 160, height: 60 },
+          { name: "Libros y Libros", src: "/images/logos/libros-y-libros.jpeg", width: 160, height: 60 },
+          { name: "Alpha CLOUD", src: "/images/logos/alpha-cloud.png", width: 160, height: 60 },
+          { name: "Biblioteca virtual AMOLCA", src: "/images/logos/amolca.png", width: 160, height: 60 },
         ]
       case "magazines":
         return [
