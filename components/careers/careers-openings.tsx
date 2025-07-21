@@ -1,7 +1,13 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { MapPin, Clock, Users } from "lucide-react"
 
-export function CareersOpenings() {
+interface CareersOpeningsProps {
+  dict?: any
+}
+
+export function CareersOpenings({ dict }: CareersOpeningsProps) {
   const openings = [
     {
       title: "Senior Frontend Developer",
@@ -70,7 +76,21 @@ export function CareersOpenings() {
                   <p className="text-gray-600">{job.description}</p>
                 </div>
                 <div className="flex-shrink-0">
-                  <Button>Apply Now</Button>
+                  <Button 
+                    onClick={() => {
+                      const subject = `Application for ${job.title} Position`
+                      const body = `Hi,
+
+I'm interested in applying for the ${job.title} position in the ${job.department} department.
+
+Please find my resume attached, and I look forward to hearing from you.
+
+Best regards`
+                      window.open(`mailto:jobs@publica.la?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`)
+                    }}
+                  >
+                    Apply Now
+                  </Button>
                 </div>
               </div>
             </div>
@@ -79,7 +99,22 @@ export function CareersOpenings() {
 
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">Don't see a role that fits? We're always looking for talented people.</p>
-          <Button variant="outline">Send Us Your Resume</Button>
+          <Button 
+            variant="outline"
+            onClick={() => {
+              const subject = "General Application - Open to Opportunities"
+              const body = `Hi,
+
+I don't see a specific role that matches my background right now, but I'm very interested in joining the publica.la team.
+
+Please find my resume attached. I'd love to discuss potential opportunities that might be a good fit.
+
+Best regards`
+              window.open(`mailto:jobs@publica.la?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`)
+            }}
+          >
+            Send Us Your Resume
+          </Button>
         </div>
       </div>
     </section>

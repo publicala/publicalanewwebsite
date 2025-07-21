@@ -125,14 +125,6 @@
             "text": "Carreras"
           },
           {
-            "href": "/blog",
-            "text": "Blog"
-          },
-          {
-            "href": "/press",
-            "text": "Prensa"
-          },
-          {
             "href": "/contact",
             "text": "Contacto"
           },
@@ -162,10 +154,6 @@
       {
         "href": "/privacy",
         "text": "Política de Privacidad"
-      },
-      {
-        "href": "/cookies",
-        "text": "Política de Cookies"
       },
       {
         "href": "https://app.publica.la/platform/sign-up/init?lang=es&plan=basic_store&interval=monthly&utm_medium=Website&utm_campaign=New_website&utm_source=Direct+Traffic&utm_content=Website",

@@ -137,14 +137,6 @@
             "text": "Careers"
           },
           {
-            "href": "/blog",
-            "text": "Blog"
-          },
-          {
-            "href": "/press",
-            "text": "Press"
-          },
-          {
             "href": "/contact",
             "text": "Contact"
           },
@@ -174,10 +166,6 @@
       {
         "href": "/privacy",
         "text": "Privacy Policy"
-      },
-      {
-        "href": "/cookies",
-        "text": "Cookie Policy"
       },
       {
         "href": "https://app.publica.la/platform/sign-up/init?lang=en&plan=basic_store&interval=monthly&utm_medium=Website&utm_campaign=New_website&utm_source=Direct+Traffic&utm_content=Website",

@@ -1,7 +1,13 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Mail, FileText, Users } from "lucide-react"
 
-export function CareersApplication() {
+interface CareersApplicationProps {
+  dict?: any
+}
+
+export function CareersApplication({ dict }: CareersApplicationProps) {
   const steps = [
     {
       icon: <FileText className="h-6 w-6" />,
@@ -52,7 +58,20 @@ export function CareersApplication() {
           <p className="text-gray-600 mb-6">
             Have questions about our open positions or want to learn more about working at publica.la?
           </p>
-          <Button size="lg">
+          <Button 
+            size="lg"
+            onClick={() => {
+              const subject = "Inquiry About Career Opportunities"
+              const body = `Hi,
+
+I have questions about your open positions and would like to learn more about working at publica.la.
+
+I'd appreciate the opportunity to discuss potential career opportunities with your team.
+
+Best regards`
+              window.open(`mailto:jobs@publica.la?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`)
+            }}
+          >
             <Mail className="h-4 w-4 mr-2" />
             Contact Our HR Team
           </Button>
