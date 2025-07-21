@@ -44,7 +44,19 @@
     "scheduleMeeting": "Agendar Reunião",
     "watchDemo": "Ver Demo",
     "joinLeaders": "Junte-se aos líderes da indústria",
-    "noCreditCard": "Não é necessário cartão de crédito"
+    "noCreditCard": "Não é necessário cartão de crédito",
+    "hero": {
+      "badge": "Soluções para Editoras",
+      "title": "Transforme Seu Negócio <1>Editorial</1>",
+      "subtitle": "Potencialize sua estratégia editorial com nossa plataforma digital abrangente projetada para ajudá-lo a distribuir e monetizar conteúdo de forma eficaz.",
+      "getStarted": "Começar",
+      "requestDemo": "Agendar uma Reunião",
+      "videoTitle": "Visão Geral da Plataforma Publica.la"
+    },
+    "customerLogos": {
+      "title": "Confiado por Editoras em Todo o Mundo",
+      "subtitle": "As principais editoras escolhem Publica.la para sua transformação digital"
+    }
   },
   "solutions": {
     "publishers": "Editoras",
@@ -1670,7 +1682,15 @@
       },
       "revenueCard": {"monthlyRevenue": "$12,450", "monthlyRevenueLabel": "Receita Mensal", "monthlyRevenueChange": "+24% do mês passado", "activeSubscribers": "1,247", "activeSubscribersLabel": "Assinantes Ativos", "activeSubscribersChange": "+156 este mês"},
       "revenueGrowth": "Crescimento de Receita ao Longo do Tempo",
-      "paymentMethods": ["Cartões de Crédito", "PayPal", "Cripto"]
+      "paymentMethods": ["Cartões de Crédito", "PayPal", "Cripto"],
+      "options": [
+        { "title": "Vendas Únicas", "description": "Venda peças individuais de conteúdo pelo preço escolhido" },
+        { "title": "Assinaturas", "description": "Crie receita recorrente com modelos de assinatura" },
+        { "title": "Pacotes", "description": "Agrupe vários itens para melhor valor" },
+        { "title": "Pague o Quanto Quiser", "description": "Deixe os clientes escolherem seu preço" },
+        { "title": "Acesso Escalonado", "description": "Ofereça diferentes níveis de acesso e conteúdo" },
+        { "title": "Programas de Afiliados", "description": "Faça parcerias com outros para expandir seu alcance" }
+      ]
     },
     "engagement": {
       "title": "Ferramentas Poderosas de Engajamento de Audiência",
@@ -1814,7 +1834,15 @@
       },
       "revenueCard": {"monthlyRevenue": "$12,450", "monthlyRevenueLabel": "Receita Mensal", "monthlyRevenueChange": "+24% do mês passado", "activeSubscribers": "1,247", "activeSubscribersLabel": "Assinantes Ativos", "activeSubscribersChange": "+156 este mês"},
       "revenueGrowth": "Crescimento de Receita ao Longo do Tempo",
-      "paymentMethods": ["Cartões de Crédito", "PayPal", "Cripto"]
+      "paymentMethods": ["Cartões de Crédito", "PayPal", "Cripto"],
+      "options": [
+        { "title": "Vendas Únicas", "description": "Venda peças individuais de conteúdo pelo preço escolhido" },
+        { "title": "Assinaturas", "description": "Crie receita recorrente com modelos de assinatura" },
+        { "title": "Pacotes", "description": "Agrupe vários itens para melhor valor" },
+        { "title": "Pague o Quanto Quiser", "description": "Deixe os clientes escolherem seu preço" },
+        { "title": "Acesso Escalonado", "description": "Ofereça diferentes níveis de acesso e conteúdo" },
+        { "title": "Programas de Afiliados", "description": "Faça parcerias com outros para expandir seu alcance" }
+      ]
     },
     "engagement": {
       "title": "Ferramentas Poderosas de Engajamento de Audiência",
@@ -1894,6 +1922,54 @@
       "quoteName": "Sarah Johnson",
       "quoteRole": "Diretora Digital, Casa Editorial Global",
       "imageAlt": "Plataforma digital e painel de análise da Casa Editorial Global"
+    },
+    "workflow": {
+      "title": "Fluxo de Trabalho de Conteúdo Otimizado",
+      "subtitle": "Da criação à venda, tornamos o processo simples e eficiente",
+      "steps": [
+        { "title": "Enviar Conteúdo", "description": "Faça upload facilmente de seus arquivos em qualquer formato" },
+        { "title": "Definir Preços", "description": "Escolha sua estratégia de preços e defina valores" },
+        { "title": "Personalizar Loja", "description": "Personalize sua vitrine para combinar com seu estilo" },
+        { "title": "Lançar e Promover", "description": "Entre no ar e comece a vender imediatamente" },
+        { "title": "Acompanhar Desempenho", "description": "Monitore vendas e engajamento dos clientes" },
+        { "title": "Escalar e Crescer", "description": "Expanda seu negócio com novo conteúdo e estratégias" }
+      ]
+    },
+    "audience": {
+      "title": "Construa sua Audiência",
+      "subtitle": "Conecte-se com seus clientes e faça sua comunidade crescer",
+      "features": [
+        { "title": "Perfis de Clientes", "description": "Entenda sua audiência com insights detalhados dos clientes" },
+        { "title": "Email Marketing", "description": "Construa relacionamentos com campanhas de email automatizadas" },
+        { "title": "Integração Social", "description": "Compartilhe e promova seu conteúdo nas redes sociais" },
+        { "title": "Recursos de Comunidade", "description": "Fomente o engajamento com comentários e discussões" },
+        { "title": "Programas de Referência", "description": "Incentive o marketing boca a boca" },
+        { "title": "Painel de Análises", "description": "Acompanhe o crescimento da audiência e métricas de engajamento" }
+      ]
+    },
+    "testimonials": {
+      "title": "O que Dizem os Criadores de Conteúdo",
+      "subtitle": "Ouça criadores que construíram negócios de sucesso com nossa plataforma",
+      "testimonials": [
+        {
+          "quote": "A Publica.la tornou incrivelmente fácil começar a vender minha arte digital. A plataforma é intuitiva e a equipe de suporte é incrível.",
+          "name": "Alex Chen",
+          "role": "Artista Digital",
+          "rating": 5
+        },
+        {
+          "quote": "Já tentei muitas plataformas, mas a Publica.la é a única que realmente entende os criadores de conteúdo. A flexibilidade e os recursos são incomparáveis.",
+          "name": "Maria Rodriguez",
+          "role": "Criadora de Cursos",
+          "rating": 5
+        },
+        {
+          "quote": "As análises e insights dos clientes me ajudaram a entender melhor meu público e crescer meu negócio significativamente.",
+          "name": "David Kim",
+          "role": "Autor e Educador",
+          "rating": 5
+        }
+      ]
     }
   },
   "librariesSolution": {
