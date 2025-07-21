@@ -52,23 +52,24 @@ export function CaseStudiesList({ dict, locale }: CaseStudiesListProps) {
         </div>
 
         <div className="space-y-16">
-          {Object.entries(dict.caseStudies.list.categories).map(([key, category]: [string, any]) => {
-            const IconComponent = icons[key as keyof typeof icons]
-            const color = colors[key as keyof typeof colors]
+          {Object.entries(dict.caseStudies.list.categories)
+            .filter(([_, category]: [string, any]) => category.cases.length > 0)
+            .map(([key, category]: [string, any]) => {
+              const IconComponent = icons[key as keyof typeof icons]
+              const color = colors[key as keyof typeof colors]
 
-            return (
-              <div key={key} className="space-y-8">
-                <div className="flex items-center gap-3">
-                  <div className={`p-2 rounded-lg ${color}`}>
-                    <IconComponent className="h-6 w-6" />
+              return (
+                <div key={key} className="space-y-8">
+                  <div className="flex items-center gap-3">
+                    <div className={`p-2 rounded-lg ${color}`}>
+                      <IconComponent className="h-6 w-6" />
+                    </div>
+                    <h3 className="text-2xl font-bold">{category.title}</h3>
+                    <Badge variant="outline" className={color}>
+                      {category.cases.length} {category.cases.length === 1 ? dict.caseStudies.list.caseStudy : dict.caseStudies.list.caseStudies}
+                    </Badge>
                   </div>
-                  <h3 className="text-2xl font-bold">{category.title}</h3>
-                  <Badge variant="outline" className={color}>
-                    {category.cases.length} {category.cases.length === 1 ? dict.caseStudies.list.caseStudy : dict.caseStudies.list.caseStudies}
-                  </Badge>
-                </div>
 
-                {category.cases.length > 0 ? (
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {category.cases.map((caseStudy: any) => (
                       <Card
@@ -122,19 +123,9 @@ export function CaseStudiesList({ dict, locale }: CaseStudiesListProps) {
                       </Card>
                     ))}
                   </div>
-                ) : (
-                  <Card className="border-2 border-dashed border-gray-300">
-                    <CardContent className="p-12 text-center">
-                      <div className={`inline-flex p-3 rounded-full ${color} mb-4`}>
-                        <IconComponent className="h-8 w-8" />
-                      </div>
-                      <p className="text-gray-500">No case studies available yet for this category.</p>
-                    </CardContent>
-                  </Card>
-                )}
-              </div>
-            )
-          })}
+                </div>
+              )
+            })}
         </div>
 
         <div className="mt-16 text-center">
