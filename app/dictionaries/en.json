@@ -1863,6 +1863,65 @@
           "rating": 5
         }
       ]
+    },
+    "engagement": {
+      "title": "Powerful Audience Engagement Tools",
+      "subtitle": "Build stronger relationships with your readers and keep them coming back for more",
+      "tabs": {
+        "readerExperience": "Reader Experience",
+        "customization": "Customization",
+        "interaction": "Interaction"
+      },
+      "readerExperience": {
+        "title": "Exceptional Reading Experience",
+        "desc": "Provide your readers with a beautiful and intuitive reading experience that keeps them engaged with your content.",
+        "features": [
+          {"title": "Responsive Design", "desc": "Content adapts perfectly to any device, from desktops to smartphones."},
+          {"title": "Reading Preferences", "desc": "Readers can customize font size, background color, and layout to suit their preferences."},
+          {"title": "Bookmarks & Progress", "desc": "Automatic bookmarking and progress tracking across all devices."},
+          {"title": "Offline Reading", "desc": "Readers can download content for offline access, ensuring uninterrupted reading."}
+        ]
+      },
+      "customization": {
+        "title": "Brand Customization",
+        "desc": "Showcase your unique brand identity with customizable stores and reading experiences."
+      },
+      "interaction": {
+        "title": "Interactive Features",
+        "desc": "Engage readers with comments, highlights, and sharing options."
+      },
+      "dashboard": {
+        "readerDashboard": "Reader Dashboard",
+        "activeReaders": "Active Readers",
+        "avgReading": "Avg. Reading",
+        "readingProgress": "Reading Progress",
+        "recentActivity": "Recent Activity",
+        "newBookmark": "New bookmark added",
+        "commentPosted": "Comment posted",
+        "contentShared": "Content shared",
+        "continueReading": "Continue Reading"
+      }
+    },
+    "analytics": {
+      "title": "Data-Driven Publishing Decisions",
+      "subtitle": "Gain valuable insights into your content performance and reader behavior with our comprehensive analytics dashboard.",
+      "cards": [
+        {"title": "Reader Engagement", "desc": "+12% from last month", "value": "87%"},
+        {"title": "Content Views", "desc": "+18% from last month", "value": "24.5K"}
+      ],
+      "features": [
+        {"title": "Reader Behavior Analytics", "desc": "Track how readers interact with your content, including reading time, completion rates, and popular sections."},
+        {"title": "Sales & Revenue Tracking", "desc": "Monitor sales performance, subscription growth, and revenue streams with detailed financial analytics."},
+        {"title": "Audience Demographics", "desc": "Understand your audience with demographic data, geographic distribution, and device usage statistics."}
+      ],
+      "dashboard": {
+        "title": "Analytics Dashboard",
+        "pageViews": "Page Views",
+        "avgReading": "Avg. Reading",
+        "monthlyRevenue": "Monthly Revenue",
+        "topLocations": "Top Locations",
+        "countries": ["United States", "United Kingdom", "Canada"]
+      }
     }
   },
   "librariesSolution": {
