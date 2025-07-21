@@ -1,13 +1,9 @@
-"use client"
-
 import type React from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react"
-import { useState } from "react"
-import { CalendlyModal } from "@/components/calendly-modal"
 
 // Custom X (Twitter) icon component
 const XIcon = ({ size = 18 }: { size?: number }) => (
@@ -66,57 +62,24 @@ interface FooterProps {
   locale?: string
 }
 
-// Default English values for backward compatibility
-const defaultFooterDict = {
-  footer: {
-    description: "The most robust and dynamic digital content platform for publishers and content creators, empowering you to create, manage, and distribute exceptional content.",
+export function Footer({ dict, locale = "en" }: FooterProps) {
+  // Fallback footer data in case dict is not provided (should be avoided)
+  const fallbackFooter = {
+    description: "The most robust and dynamic digital content platform for publishers and content creators.",
     sections: {
-      solutions: {
-        title: "Solutions",
-        links: [
-          { href: "/solutions/publishers", text: "For Publishers" },
-          { href: "/solutions/bookshops", text: "For Bookshops" },
-          { href: "/solutions/content-creators", text: "For Content Creators" },
-          { href: "/solutions/libraries", text: "For Libraries" },
-          { href: "/solutions/magazines-newspapers", text: "For Magazines & Newspapers" }
-        ]
-      },
-      features: {
-        title: "Features",
-        links: [
-          { href: "/features/vito-ai", text: "Vito AI" },
-          { href: "/features/native-app", text: "Native App" },
-          { href: "/features/integrations", text: "Integrations" }
-        ]
-      },
-      company: {
-        title: "Company",
-        links: [
-          { href: "/about-us", text: "About Us" },
-          { href: "/compare", text: "Compare Platforms" },
-          { href: "/careers", text: "Careers" },
-          { href: "/contact", text: "Contact" }
-        ]
-      },
-      subscribe: {
-        title: "Subscribe",
-        description: "Stay updated with the latest news and features",
-        placeholder: "Your email",
-        button: "Subscribe"
-      }
+      solutions: { title: "Solutions", links: [] },
+      features: { title: "Features", links: [] },
+      company: { title: "Company", links: [] },
+      subscribe: { title: "Subscribe", description: "Stay updated", placeholder: "Your email", button: "Subscribe" }
     },
     copyright: "© {year} Publica.la. All rights reserved.",
     legal: [
       { href: "/terms", text: "Terms of Service" },
-      { href: "/privacy", text: "Privacy Policy" },
-      { href: "#", text: "Create tenant", action: "calendly" }
+      { href: "/privacy", text: "Privacy Policy" }
     ]
   }
-}
-
-export function Footer({ dict, locale = "en" }: FooterProps) {
-  const footerDict = dict || defaultFooterDict
-  const [isCalendlyModalOpen, setIsCalendlyModalOpen] = useState(false)
+  
+  const footerData = dict?.footer || fallbackFooter
 
   // Helper function to add locale to internal links
   const getLocalizedHref = (href: string) => {
@@ -143,7 +106,7 @@ export function Footer({ dict, locale = "en" }: FooterProps) {
               </div>
             </Link>
             <p className="text-gray-400 mb-4">
-              {footerDict.footer.description}
+              {footerData.description}
             </p>
             <div className="flex gap-4">
               <SocialLink href="https://www.facebook.com/getpublicala" icon={<Facebook size={18} />} />
@@ -155,80 +118,63 @@ export function Footer({ dict, locale = "en" }: FooterProps) {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">{footerDict.footer.sections.solutions.title}</h3>
+            <h3 className="font-bold text-lg mb-4">{footerData.sections.solutions.title}</h3>
             <ul className="space-y-2">
-              {footerDict.footer.sections.solutions.links.map((link, index) => (
+              {footerData.sections.solutions.links.map((link, index) => (
                 <FooterLink key={index} href={getLocalizedHref(link.href)}>{link.text}</FooterLink>
               ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">{footerDict.footer.sections.features.title}</h3>
+            <h3 className="font-bold text-lg mb-4">{footerData.sections.features.title}</h3>
             <ul className="space-y-2">
-              {footerDict.footer.sections.features.links.map((link, index) => (
+              {footerData.sections.features.links.map((link, index) => (
                 <FooterLink key={index} href={getLocalizedHref(link.href)}>{link.text}</FooterLink>
               ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">{footerDict.footer.sections.company.title}</h3>
+            <h3 className="font-bold text-lg mb-4">{footerData.sections.company.title}</h3>
             <ul className="space-y-2">
-              {footerDict.footer.sections.company.links.map((link, index) => (
+              {footerData.sections.company.links.map((link, index) => (
                 <FooterLink key={index} href={getLocalizedHref(link.href)}>{link.text}</FooterLink>
               ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">{footerDict.footer.sections.subscribe.title}</h3>
-            <p className="text-gray-400 mb-4">{footerDict.footer.sections.subscribe.description}</p>
+            <h3 className="font-bold text-lg mb-4">{footerData.sections.subscribe.title}</h3>
+            <p className="text-gray-400 mb-4">{footerData.sections.subscribe.description}</p>
             <div className="flex gap-2">
               <Input 
                 type="email" 
-                placeholder={footerDict.footer.sections.subscribe.placeholder} 
+                placeholder={footerData.sections.subscribe.placeholder} 
                 className="bg-gray-800 border-gray-700 text-white" 
               />
-              <Button>{footerDict.footer.sections.subscribe.button}</Button>
+              <Button>{footerData.sections.subscribe.button}</Button>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">{footerDict.footer.copyright.replace('{year}', new Date().getFullYear().toString())}</p>
+          <p className="text-gray-400 text-sm">{footerData.copyright.replace('{year}', new Date().getFullYear().toString())}</p>
           <div className="flex gap-6">
-            {footerDict.footer.legal.map((link, index) => {
-              if ((link as any).action === "calendly") {
-                return (
-                  <button
-                    key={index}
-                    onClick={() => setIsCalendlyModalOpen(true)}
-                    className="text-sm text-gray-400 hover:text-white"
-                  >
-                    {link.text}
-                  </button>
-                )
-              }
-              
-              return (
-                <Link 
-                  key={index} 
-                  href={(link as any).external ? link.href : getLocalizedHref(link.href)} 
-                  className="text-sm text-gray-400 hover:text-white"
-                  target={(link as any).external ? "_blank" : undefined}
-                  rel={(link as any).external ? "noopener noreferrer" : undefined}
-                >
-                  {link.text}
-                </Link>
-              )
-            })}
+            {footerData.legal.map((link, index) => (
+              <Link 
+                key={index} 
+                href={(link as any).external ? link.href : getLocalizedHref(link.href)} 
+                className="text-sm text-gray-400 hover:text-white"
+                target={(link as any).external ? "_blank" : undefined}
+                rel={(link as any).external ? "noopener noreferrer" : undefined}
+              >
+                {link.text}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
-      
-      {/* Calendly Modal */}
-      <CalendlyModal isOpen={isCalendlyModalOpen} onClose={() => setIsCalendlyModalOpen(false)} />
     </footer>
   )
 }
