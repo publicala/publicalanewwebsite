@@ -12,7 +12,7 @@ export function PublishersCaseStudy({ dict }: { dict: any }) {
       quote={dict.quote}
       quoteName={dict.quoteName}
       quoteRole={dict.quoteRole}
-      imageSrc="/placeholder.svg?height=600&width=800"
+      imageSrc=""
       imageAlt={dict.imageAlt}
     />
   )
