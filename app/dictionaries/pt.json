@@ -521,7 +521,53 @@
     },
     "careers": {
       "description": "Sempre estamos procurando mentes curiosas que amam construir coisas úteis e querem moldar o futuro da publicação digital.",
-      "linkText": "Ver posições abertas"
+      "linkText": "Ver posições abertas",
+      "openings": {
+        "title": "Posições Abertas",
+        "subtitle": "Junte-se à nossa equipe em crescimento e ajude a moldar o futuro da publicação digital",
+        "applyButton": "Candidatar-se Agora",
+        "noRoleMessage": "Não vê uma vaga que se encaixe? Estamos sempre procurando pessoas talentosas.",
+        "sendResumeButton": "Envie-nos Seu Currículo",
+        "emailSubject": "Candidatura para a vaga de {{position}}",
+        "generalEmailSubject": "Candidatura Geral - Aberto a Oportunidades",
+        "emailBody": "Olá,\n\nEstou interessado(a) em me candidatar para a vaga de {{position}} no departamento de {{department}}.\n\nSegue meu currículo em anexo e aguardo ansiosamente seu retorno.\n\nAtenciosamente",
+        "generalEmailBody": "Olá,\n\nNão vejo uma vaga específica que corresponda ao meu perfil neste momento, mas estou muito interessado(a) em me juntar à equipe da publica.la.\n\nSegue meu currículo em anexo. Adoraria discutir possíveis oportunidades que possam ser adequadas.\n\nAtenciosamente",
+        "department": "Departamento",
+        "location": "Localização",
+        "type": "Tipo",
+        "fullTime": "Tempo integral",
+        "remote": "Remoto",
+        "jobs": [
+          {
+            "title": "Desenvolvedor Frontend Sênior",
+            "department": "Engenharia",
+            "location": "Remoto / Santiago, Chile",
+            "type": "Tempo integral",
+            "description": "Junte-se à nossa equipe de frontend para construir interfaces bonitas e responsivas para nossa plataforma de publicação digital usando React, TypeScript e tecnologias web modernas."
+          },
+          {
+            "title": "Gerente de Produto",
+            "department": "Produto",
+            "location": "Remoto / Santiago, Chile",
+            "type": "Tempo integral",
+            "description": "Lidere a estratégia e o roadmap do produto para nossa plataforma principal de publicação, trabalhando em estreita colaboração com as equipes de engenharia e design para oferecer experiências excepcionais ao usuário."
+          },
+          {
+            "title": "Gerente de Sucesso do Cliente",
+            "department": "Sucesso do Cliente",
+            "location": "Remoto / Cidade do México, México",
+            "type": "Tempo integral",
+            "description": "Ajude nossos clientes editores a ter sucesso fornecendo orientação estratégica, suporte técnico e garantindo que eles maximizem o valor de nossa plataforma."
+          },
+          {
+            "title": "Engenheiro DevOps",
+            "department": "Engenharia",
+            "location": "Remoto / Santiago, Chile",
+            "type": "Tempo integral",
+            "description": "Construa e mantenha nossa infraestrutura em nuvem, pipelines CI/CD e sistemas de monitoramento para garantir que nossa plataforma escale de forma confiável para milhões de usuários."
+          }
+        ]
+      }
     }
   },
   "contactHero": {
@@ -585,6 +631,16 @@
       "sending": "Enviando...",
       "default": "Enviar Mensagem"
     }
+  },
+  "demoModal": {
+    "title": "Agendar uma Demonstração",
+    "description": "Preencha o formulário abaixo e nossa equipe entrará em contato em breve para agendar uma demonstração personalizada."
+  },
+  "chatWidget": {
+    "header": "Suporte Empresarial",
+    "defaultMessage": "Olá! Como nossa equipe empresarial pode ajudá-lo hoje?",
+    "placeholder": "Digite sua mensagem...",
+    "sendButton": "Enviar"
   },
   "contactInfo": {
     "title": "Informações de Contato",
@@ -1389,6 +1445,12 @@
         "results": "Os Resultados",
         "whyChoose": "Por que {company} escolheu Publica.la"
       }
+    },
+    "cta": {
+      "title": "Quer Ser Nossa Próxima História de Sucesso?",
+      "description": "Junte-se a centenas de organizações que transformaram sua publicação digital com Publica.la. Vamos discutir como podemos ajudá-lo a alcançar resultados semelhantes.",
+      "getStartedButton": "Começar Gratuitamente",
+      "requestDemoButton": "Solicitar uma Demonstração"
     }
   },
   "bookshopsSolution": {

@@ -1,4 +1,13 @@
-export function PrivacyContent() {
+interface PrivacyContentProps {
+  dict?: any
+  locale?: string
+}
+
+export function PrivacyContent({ dict, locale = "en" }: PrivacyContentProps) {
+  // TODO: Legal documents require professional translation
+  // Currently only available in English
+  // Spanish and Portuguese translations should be added when available
+  
   return (
     <div className="max-w-4xl mx-auto py-16 px-6">
       <h1 className="text-3xl md:text-4xl font-bold mb-8">PRIVACY POLICY</h1>

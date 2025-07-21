@@ -521,7 +521,53 @@
     },
     "careers": {
       "description": "We're always looking for curious minds who love building useful things and want to shape the future of digital publishing.",
-      "linkText": "View open positions"
+      "linkText": "View open positions",
+      "openings": {
+        "title": "Open Positions",
+        "subtitle": "Join our growing team and help shape the future of digital publishing",
+        "applyButton": "Apply Now",
+        "noRoleMessage": "Don't see a role that fits? We're always looking for talented people.",
+        "sendResumeButton": "Send Us Your Resume",
+        "emailSubject": "Application for {{position}} Position",
+        "generalEmailSubject": "General Application - Open to Opportunities",
+        "emailBody": "Hi,\n\nI'm interested in applying for the {{position}} position in the {{department}} department.\n\nPlease find my resume attached, and I look forward to hearing from you.\n\nBest regards",
+        "generalEmailBody": "Hi,\n\nI don't see a specific role that matches my background right now, but I'm very interested in joining the publica.la team.\n\nPlease find my resume attached. I'd love to discuss potential opportunities that might be a good fit.\n\nBest regards",
+        "department": "Department",
+        "location": "Location", 
+        "type": "Type",
+        "fullTime": "Full-time",
+        "remote": "Remote",
+        "jobs": [
+          {
+            "title": "Senior Frontend Developer",
+            "department": "Engineering",
+            "location": "Remote / Santiago, Chile",
+            "type": "Full-time",
+            "description": "Join our frontend team to build beautiful, responsive interfaces for our digital publishing platform using React, TypeScript, and modern web technologies."
+          },
+          {
+            "title": "Product Manager",
+            "department": "Product",
+            "location": "Remote / Santiago, Chile",
+            "type": "Full-time",
+            "description": "Lead product strategy and roadmap for our core publishing platform, working closely with engineering and design teams to deliver exceptional user experiences."
+          },
+          {
+            "title": "Customer Success Manager",
+            "department": "Customer Success",
+            "location": "Remote / Mexico City, Mexico",
+            "type": "Full-time",
+            "description": "Help our publisher customers succeed by providing strategic guidance, technical support, and ensuring they maximize value from our platform."
+          },
+          {
+            "title": "DevOps Engineer",
+            "department": "Engineering",
+            "location": "Remote / Santiago, Chile",
+            "type": "Full-time",
+            "description": "Build and maintain our cloud infrastructure, CI/CD pipelines, and monitoring systems to ensure our platform scales reliably for millions of users."
+          }
+        ]
+      }
     }
   },
   "contactHero": {
@@ -585,6 +631,16 @@
       "sending": "Sending...",
       "default": "Send Message"
     }
+  },
+  "demoModal": {
+    "title": "Schedule a Demo",
+    "description": "Fill out the form below and our team will get in touch with you shortly to schedule a personalized demo."
+  },
+  "chatWidget": {
+    "header": "Enterprise Support",
+    "defaultMessage": "Hello! How can our enterprise team assist you today?",
+    "placeholder": "Type your message...",
+    "sendButton": "Send"
   },
   "contactInfo": {
     "title": "Contact Information",
@@ -1377,6 +1433,12 @@
         "results": "The Results",
         "whyChoose": "Why {company} Chose Publica.la"
       }
+    },
+    "cta": {
+      "title": "Want to Be Our Next Success Story?",
+      "description": "Join hundreds of organizations that have transformed their digital publishing with Publica.la. Let's discuss how we can help you achieve similar results.",
+      "getStartedButton": "Get Started For Free",
+      "requestDemoButton": "Request a Demo"
     }
   },
   "publishersSolution": {

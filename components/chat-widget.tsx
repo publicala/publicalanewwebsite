@@ -6,7 +6,11 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { MessageCircle, X } from "lucide-react"
 
-export function ChatWidget() {
+interface ChatWidgetProps {
+  dict?: any
+}
+
+export function ChatWidget({ dict }: ChatWidgetProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [message, setMessage] = useState("")
 
@@ -15,7 +19,7 @@ export function ChatWidget() {
       {isOpen ? (
         <Card className="w-80 shadow-xl border border-gray-200">
           <CardHeader className="bg-primary text-white p-4 flex flex-row justify-between items-center">
-            <h3 className="font-medium">Enterprise Support</h3>
+            <h3 className="font-medium">{dict?.chatWidget?.header || "Enterprise Support"}</h3>
             <Button
               variant="ghost"
               size="icon"
@@ -28,7 +32,7 @@ export function ChatWidget() {
           <CardContent className="p-4 h-64 overflow-y-auto">
             <div className="space-y-4">
               <div className="bg-muted p-3 rounded-lg rounded-tl-none max-w-[80%]">
-                <p className="text-sm">Hello! How can our enterprise team assist you today?</p>
+                <p className="text-sm">{dict?.chatWidget?.defaultMessage || "Hello! How can our enterprise team assist you today?"}</p>
               </div>
             </div>
           </CardContent>
@@ -44,13 +48,13 @@ export function ChatWidget() {
               }}
             >
               <Input
-                placeholder="Type your message..."
+                placeholder={dict?.chatWidget?.placeholder || "Type your message..."}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 className="flex-1"
               />
               <Button type="submit" size="sm">
-                Send
+                {dict?.chatWidget?.sendButton || "Send"}
               </Button>
             </form>
           </CardFooter>
