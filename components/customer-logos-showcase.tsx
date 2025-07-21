@@ -285,7 +285,7 @@ export function CustomerLogosShowcase({
           {/* Carousel container */}
           <div
             ref={carouselRef}
-            className="flex overflow-x-auto scrollbar-hide gap-8 py-4 px-2"
+            className="flex overflow-x-auto overflow-y-hidden scrollbar-hide gap-8 py-4 px-2"
             style={{
               scrollbarWidth: "none",
               msOverflowStyle: "none",
