@@ -1,8 +1,13 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
+import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { ArrowRight, Building2, Newspaper, BookOpen, Users, Library } from "lucide-react"
+import { CalendlyModal } from "@/components/calendly-modal"
 
 interface CaseStudiesListProps {
   dict: any
@@ -34,6 +39,8 @@ const images = {
 }
 
 export function CaseStudiesList({ dict, locale }: CaseStudiesListProps) {
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false)
+  
   const getLocalizedHref = (href: string) => {
     if (href.startsWith('/')) {
       return `/${locale}${href}`
@@ -42,6 +49,7 @@ export function CaseStudiesList({ dict, locale }: CaseStudiesListProps) {
   }
   
   return (
+    <>
     <section className="w-full py-20 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
@@ -143,17 +151,20 @@ export function CaseStudiesList({ dict, locale }: CaseStudiesListProps) {
                 >
                   Get Started For Free
                 </Link>
-                <Link
-                  href={getLocalizedHref("/about-us")}
+                <Button
+                  variant="outline"
                   className="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary/5 transition-colors font-medium"
+                  onClick={() => setIsCalendlyOpen(true)}
                 >
                   Request a Demo
-                </Link>
+                </Button>
               </div>
             </CardContent>
           </Card>
         </div>
       </div>
     </section>
+    <CalendlyModal isOpen={isCalendlyOpen} onClose={() => setIsCalendlyOpen(false)} />
+    </>
   )
 }
