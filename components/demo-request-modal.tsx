@@ -6,9 +6,11 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 export function DemoRequestModal({
   isOpen,
   onClose,
+  dict,
 }: {
   isOpen: boolean
   onClose: () => void
+  dict?: any
 }) {
   const [isMounted, setIsMounted] = useState(false)
 
@@ -45,9 +47,9 @@ export function DemoRequestModal({
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="sm:max-w-[600px]">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold">Schedule a Demo</DialogTitle>
+          <DialogTitle className="text-2xl font-bold">{dict?.demoModal?.title || "Schedule a Demo"}</DialogTitle>
           <DialogDescription>
-            Fill out the form below and our team will get in touch with you shortly to schedule a personalized demo.
+            {dict?.demoModal?.description || "Fill out the form below and our team will get in touch with you shortly to schedule a personalized demo."}
           </DialogDescription>
         </DialogHeader>
         <div id="hubspot-form-container" className="mt-4 min-h-[400px]">

@@ -4,7 +4,11 @@ import { ArrowRight } from "lucide-react"
 import { DemoRequestModal } from "@/components/demo-request-modal"
 import { CalendlyModal } from "@/components/calendly-modal"
 
-export function FeaturesCTA() {
+interface FeaturesCTAProps {
+  dict?: any
+}
+
+export function FeaturesCTA({ dict }: FeaturesCTAProps = {}) {
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false)
   const [isCalendlyModalOpen, setIsCalendlyModalOpen] = useState(false)
   
@@ -37,7 +41,7 @@ export function FeaturesCTA() {
       </div>
       
       {/* Demo Request Modal */}
-      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
+      <DemoRequestModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} dict={dict} />
       
       {/* Calendly Modal */}
       <CalendlyModal isOpen={isCalendlyModalOpen} onClose={() => setIsCalendlyModalOpen(false)} />

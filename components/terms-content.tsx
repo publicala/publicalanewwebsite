@@ -1,6 +1,15 @@
 import Link from "next/link"
 
-export function TermsContent() {
+interface TermsContentProps {
+  dict?: any
+  locale?: string
+}
+
+export function TermsContent({ dict, locale = "en" }: TermsContentProps) {
+  // TODO: Legal documents require professional translation
+  // Currently only available in English
+  // Spanish and Portuguese translations should be added when available
+  
   return (
     <section className="w-full py-16 px-6 bg-white">
       <div className="max-w-4xl mx-auto">

@@ -139,24 +139,23 @@ export function CaseStudiesList({ dict, locale }: CaseStudiesListProps) {
         <div className="mt-16 text-center">
           <Card className="bg-gradient-to-r from-primary/5 to-primary/10 border-primary/20">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4">Want to Be Our Next Success Story?</h3>
+              <h3 className="text-2xl font-bold mb-4">{dict.caseStudies.cta.title}</h3>
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Join hundreds of organizations that have transformed their digital publishing with Publica.la. Let's
-                discuss how we can help you achieve similar results.
+                {dict.caseStudies.cta.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href={getLocalizedHref("/pricing")}
                   className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
                 >
-                  Get Started For Free
+                  {dict.caseStudies.cta.getStartedButton}
                 </Link>
                 <Button
                   variant="outline"
                   className="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary/5 transition-colors font-medium"
                   onClick={() => setIsCalendlyOpen(true)}
                 >
-                  Request a Demo
+                  {dict.caseStudies.cta.requestDemoButton}
                 </Button>
               </div>
             </CardContent>
