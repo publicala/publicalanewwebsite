@@ -4,7 +4,7 @@ This file provides guidance to Claude Code when working with the Publica.la mark
 
 ## Project Overview
 
-This is the **Publica.la Marketing Website** - a modern, multi-language marketing site built with Next.js and deployed on Vercel. The site showcases Publica.la's digital publishing platform and serves as the primary customer-facing website.
+This is the **Publica.la Marketing Website** - a modern, multi-language marketing site built with Next.js and deployed on Cloudflare Workers using OpenNext. The site showcases Publica.la's digital publishing platform and serves as the primary customer-facing website.
 
 ## Technology Stack
 
@@ -12,7 +12,7 @@ This is the **Publica.la Marketing Website** - a modern, multi-language marketin
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS + shadcn/ui components
 - **Package Manager**: pnpm
-- **Deployment**: Vercel (with v0.dev integration)
+- **Deployment**: Cloudflare Workers (using OpenNext)
 - **Internationalization**: Built-in i18n support (English, Spanish, Portuguese)
 
 ## Development Environment
@@ -31,8 +31,11 @@ pnpm dev
 # Build for production
 pnpm build
 
-# Start production server
-pnpm start
+# Build for Cloudflare Workers
+pnpm build:openext
+
+# Deploy to Cloudflare Workers
+pnpm deploy
 
 # Lint code
 pnpm lint
@@ -80,10 +83,10 @@ Translations are managed through static JSON files in `app/dictionaries/`:
 - Consistent design system
 - Responsive components
 
-### v0.dev Integration
-- Synchronized with v0.dev for rapid development
-- Automatic deployment pipeline
-- Changes flow from v0.dev → repository → Vercel
+### Deployment Pipeline
+- Built using OpenNext for Cloudflare Workers compatibility
+- Deployed to Cloudflare Workers with edge performance
+- Automatic deployments via GitHub Actions (or manual via `pnpm deploy`)
 
 ## Development Guidelines
 
@@ -106,25 +109,28 @@ Translations are managed through static JSON files in `app/dictionaries/`:
 ## Deployment
 
 ### Current Setup
-- **Primary**: Vercel deployment with v0.dev integration
-- **Future**: Potential migration to Cloudflare
-- **Build**: Standard Next.js build process
+- **Platform**: Cloudflare Workers using OpenNext adapter
+- **Domain**: www.publica.la (with apex redirect)
+- **Build**: OpenNext build process for Workers compatibility
+- **Assets**: Served from Cloudflare's global edge network
 
 ### Build Configuration
-- ESLint and TypeScript errors ignored during builds (for v0.dev compatibility)
-- Images are unoptimized for static export compatibility
-- No special build steps required
+- ESLint and TypeScript errors ignored during builds for rapid iteration
+- Images currently unoptimized (considering enabling optimization)
+- OpenNext handles Next.js → Workers transformation
+- Standalone output mode for Workers compatibility
 
 ## Development Workflow
 
 1. **Local Development**: Run `pnpm dev` directly on host
 2. **Content Changes**: Edit dictionary files or create new components
-3. **Testing**: Use `pnpm build` to verify builds
-4. **Deployment**: Automatic via Vercel integration
+3. **Testing**: Use `pnpm build:openext` to verify Workers build
+4. **Deployment**: Deploy via `pnpm deploy` to Cloudflare Workers
 
 ## Important Notes
 
 - **No Docker**: This project does not use Zoo or any Docker containers
 - **Host Development**: All development happens directly on the host system
-- **v0.dev Sync**: Changes may be automatically synced from v0.dev
+- **Edge Deployment**: Leverages Cloudflare's global edge network for performance
 - **Static Content**: All marketing content is statically defined in JSON files
+- **OpenNext Compatibility**: Uses OpenNext adapter for seamless Next.js → Workers deployment
