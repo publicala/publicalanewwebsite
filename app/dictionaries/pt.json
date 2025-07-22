@@ -519,7 +519,10 @@
       "title": "E nossa equipe apaixonada",
       "description": "Indivíduos dedicados trabalhando juntos para moldar o futuro da publicação digital. Aqui estão alguns momentos com nossa incrível equipe."
     },
-    "_note_careers": "CAREERS CONTENT REMOVED - Careers page always displays in English regardless of locale. See /careers page component for details."
+    "careers": {
+      "description": "Estamos sempre procurando mentes curiosas que amam construir coisas úteis e querem moldar o futuro da publicação digital.",
+      "linkText": "Ver posições abertas"
+    }
   },
   "contactHero": {
     "title": "Entre em Contato",
