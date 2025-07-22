@@ -13,33 +13,35 @@ export function CreatorsFormats() {
         </div>
 
         <Tabs defaultValue="text" className="w-full">
-          <div className="flex justify-center mb-8 overflow-x-auto">
-            <TabsList className="grid grid-cols-6 w-full max-w-3xl">
-              <TabsTrigger value="text" className="flex flex-col gap-1 py-3">
-                <FileText className="h-5 w-5 mx-auto" />
-                <span>Text</span>
-              </TabsTrigger>
-              <TabsTrigger value="audio" className="flex flex-col gap-1 py-3">
-                <Music className="h-5 w-5 mx-auto" />
-                <span>Audio</span>
-              </TabsTrigger>
-              <TabsTrigger value="images" className="flex flex-col gap-1 py-3">
-                <ImageIcon className="h-5 w-5 mx-auto" />
-                <span>Images</span>
-              </TabsTrigger>
-              <TabsTrigger value="video" className="flex flex-col gap-1 py-3">
-                <Video className="h-5 w-5 mx-auto" />
-                <span>Video</span>
-              </TabsTrigger>
-              <TabsTrigger value="interactive" className="flex flex-col gap-1 py-3">
-                <FileCode className="h-5 w-5 mx-auto" />
-                <span>Interactive</span>
-              </TabsTrigger>
-              <TabsTrigger value="bundles" className="flex flex-col gap-1 py-3">
-                <File className="h-5 w-5 mx-auto" />
-                <span>Bundles</span>
-              </TabsTrigger>
-            </TabsList>
+          <div className="flex justify-center mb-8 w-full">
+            <div className="overflow-x-auto scrollbar-hide w-full max-w-4xl">
+              <TabsList className="flex w-full min-w-fit h-auto p-1">
+                <TabsTrigger value="text" className="flex flex-col gap-1 py-3 px-4 min-w-[80px] flex-shrink-0">
+                  <FileText className="h-5 w-5 mx-auto" />
+                  <span className="text-sm whitespace-nowrap">Text</span>
+                </TabsTrigger>
+                <TabsTrigger value="audio" className="flex flex-col gap-1 py-3 px-4 min-w-[80px] flex-shrink-0">
+                  <Music className="h-5 w-5 mx-auto" />
+                  <span className="text-sm whitespace-nowrap">Audio</span>
+                </TabsTrigger>
+                <TabsTrigger value="images" className="flex flex-col gap-1 py-3 px-4 min-w-[80px] flex-shrink-0">
+                  <ImageIcon className="h-5 w-5 mx-auto" />
+                  <span className="text-sm whitespace-nowrap">Images</span>
+                </TabsTrigger>
+                <TabsTrigger value="video" className="flex flex-col gap-1 py-3 px-4 min-w-[80px] flex-shrink-0">
+                  <Video className="h-5 w-5 mx-auto" />
+                  <span className="text-sm whitespace-nowrap">Video</span>
+                </TabsTrigger>
+                <TabsTrigger value="interactive" className="flex flex-col gap-1 py-3 px-4 min-w-[90px] flex-shrink-0">
+                  <FileCode className="h-5 w-5 mx-auto" />
+                  <span className="text-sm whitespace-nowrap">Interactive</span>
+                </TabsTrigger>
+                <TabsTrigger value="bundles" className="flex flex-col gap-1 py-3 px-4 min-w-[80px] flex-shrink-0">
+                  <File className="h-5 w-5 mx-auto" />
+                  <span className="text-sm whitespace-nowrap">Bundles</span>
+                </TabsTrigger>
+              </TabsList>
+            </div>
           </div>
 
           <TabsContent value="text" className="mt-0">
