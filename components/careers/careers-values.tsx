@@ -1,5 +1,12 @@
 import { Heart, Users, Zap, Globe } from "lucide-react"
 
+/**
+ * CAREERS VALUES COMPONENT - ENGLISH ONLY
+ * 
+ * This component displays company values and is hardcoded in English.
+ * Values and culture messaging should remain consistent in English
+ * for all candidates to ensure clear understanding of our principles.
+ */
 export function CareersValues() {
   const values = [
     {

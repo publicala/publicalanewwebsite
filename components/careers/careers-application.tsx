@@ -3,11 +3,14 @@
 import { Button } from "@/components/ui/button"
 import { Mail, FileText, Users } from "lucide-react"
 
-interface CareersApplicationProps {
-  dict?: any
-}
-
-export function CareersApplication({ dict }: CareersApplicationProps) {
+/**
+ * CAREERS APPLICATION COMPONENT - ENGLISH ONLY
+ * 
+ * This component displays the application process and is hardcoded in English.
+ * Application process steps should remain consistent in English for all candidates
+ * to ensure clear understanding of hiring procedures.
+ */
+export function CareersApplication() {
   const steps = [
     {
       icon: <FileText className="h-6 w-6" />,

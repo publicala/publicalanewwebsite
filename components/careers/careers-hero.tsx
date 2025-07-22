@@ -1,5 +1,12 @@
 import { SectionHeader } from "@/components/ui/section-header"
 
+/**
+ * CAREERS HERO COMPONENT - ENGLISH ONLY
+ * 
+ * This component displays the careers hero section and is hardcoded in English.
+ * All text content is intentionally fixed in English to ensure consistent
+ * messaging for all candidates regardless of their browser locale.
+ */
 export function CareersHero() {
   return (
     <section className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">

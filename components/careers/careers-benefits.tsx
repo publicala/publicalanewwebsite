@@ -1,5 +1,12 @@
 import { Check } from "lucide-react"
 
+/**
+ * CAREERS BENEFITS COMPONENT - ENGLISH ONLY
+ * 
+ * This component displays employee benefits and is hardcoded in English.
+ * Benefits information should remain consistent in English for all candidates
+ * to ensure clear understanding of compensation and perks.
+ */
 export function CareersBenefits() {
   const benefits = [
     "Competitive salary and equity packages",
