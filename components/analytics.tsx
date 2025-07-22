@@ -8,9 +8,9 @@ export function Analytics() {
       {/* Google Analytics GA4 */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-347437097"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -22,12 +22,12 @@ export function Analytics() {
       {/* HubSpot Tracking Code */}
       <Script
         src="//js-na1.hs-scripts.com/4911580.js"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         id="hs-script-loader"
       />
 
       {/* HubSpot Chat Widget Configuration */}
-      <Script id="hubspot-chat-config" strategy="afterInteractive">
+      <Script id="hubspot-chat-config" strategy="lazyOnload">
         {`
           window.addEventListener('load', function() {
             // Wait for HubSpot to load
@@ -50,7 +50,7 @@ export function Analytics() {
       {/* HubSpot Forms API for Chat Widget */}
       <Script
         src="//js-na1.hsforms.net/forms/embed/v2.js"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         id="hs-forms-loader"
       />
     </>
