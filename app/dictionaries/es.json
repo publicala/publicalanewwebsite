@@ -44,7 +44,19 @@
     "scheduleMeeting": "Programar Reunión",
     "watchDemo": "Ver Demo",
     "joinLeaders": "Únete a líderes de la industria",
-    "noCreditCard": "No se requiere tarjeta de crédito"
+    "noCreditCard": "No se requiere tarjeta de crédito",
+    "hero": {
+      "badge": "Soluciones para Editoriales",
+      "title": "Transforma Tu Negocio <1>Editorial</1>",
+      "subtitle": "Potencia tu estrategia editorial con nuestra plataforma digital integral diseñada para ayudarte a distribuir y monetizar contenido de manera efectiva.",
+      "getStarted": "Comenzar",
+      "requestDemo": "Programar una Reunión",
+      "videoTitle": "Resumen de la Plataforma Publica.la"
+    },
+    "customerLogos": {
+      "title": "Confiado por Editoriales en Todo el Mundo",
+      "subtitle": "Las principales editoriales eligen Publica.la para su transformación digital"
+    }
   },
   "solutions": {
     "publishers": "Editoriales",
