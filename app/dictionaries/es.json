@@ -1,4 +1,78 @@
 {
+  "seo": {
+    "defaultMeta": {
+      "title": "Publica.la - Plataforma de Publicación Digital",
+      "titleTemplate": "%s | Publica.la",
+      "description": "La plataforma de contenido digital más robusta para editoriales y creadores de contenido. Crea, gestiona y distribuye contenido excepcional.",
+      "keywords": "publicación digital, plataforma ebook, gestión de contenido, software editorial",
+      "ogImage": "/images/og-default.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Plataforma de Publicación Digital para Editoriales y Creadores",
+        "description": "Transforma tu negocio editorial con Publica.la. Herramientas integrales para gestionar, mostrar y monetizar tu catálogo de contenido digital.",
+        "keywords": "plataforma publicación digital, distribución ebooks, monetización contenido"
+      },
+      "about": {
+        "title": "Acerca de Publica.la - Nuestra Historia y Misión",
+        "description": "Conoce la misión de Publica.la de empoderar a editoriales y creadores de contenido con soluciones innovadoras de publicación digital.",
+        "keywords": "acerca de publica.la, empresa publicación digital, tecnología editorial"
+      },
+      "pricing": {
+        "title": "Planes de Precios - Elige tu Solución Editorial",
+        "description": "Planes de precios flexibles para editoriales de todos los tamaños. Comienza gratis y escala según crezcas con precios transparentes.",
+        "keywords": "precios plataforma editorial, costo plataforma ebook, planes publicación digital"
+      },
+      "features": {
+        "title": "Características - Kit Completo de Publicación Digital",
+        "description": "Explora las características integrales de Publica.la incluyendo gestión de contenido, distribución, análisis y herramientas con IA.",
+        "keywords": "características plataforma editorial, herramientas contenido digital, gestión ebooks"
+      },
+      "caseStudies": {
+        "title": "Historias de Éxito - Casos de Estudio de Publicación Digital",
+        "description": "Descubre cómo editoriales y creadores de contenido líderes logran resultados notables con la plataforma de Publica.la.",
+        "keywords": "casos de estudio editorial, historias de éxito, transformación digital"
+      },
+      "careers": {
+        "title": "Carreras en Publica.la - Únete a Nuestro Equipo",
+        "description": "Únete a un equipo apasionado que da forma al futuro de la publicación digital. Explora oportunidades laborales en Publica.la.",
+        "keywords": "carreras publica.la, empleos editorial, carreras tecnología"
+      },
+      "contact": {
+        "title": "Contáctanos - Ponte en Contacto con Publica.la",
+        "description": "¿Tienes preguntas? Contacta a nuestro equipo para soporte, demos u oportunidades de asociación. Estamos aquí para ayudarte a tener éxito.",
+        "keywords": "contactar publica.la, soporte plataforma editorial, programar demo"
+      },
+      "solutions": {
+        "publishers": {
+          "title": "Soluciones Editoriales para Editoriales Profesionales",
+          "description": "Optimiza tu flujo de trabajo de ebooks y audiolibros con nuestra plataforma integral diseñada para editoriales de todos los tamaños.",
+          "keywords": "soluciones editoriales, plataforma publicación ebooks, herramientas publicación digital"
+        },
+        "bookshops": {
+          "title": "Soluciones Digitales para Librerías y Minoristas",
+          "description": "Expande el alcance de tu librería con ofertas digitales. Crea nuevas fuentes de ingresos sin costos de inventario.",
+          "keywords": "soluciones digitales librerías, plataforma retail ebooks, librería digital"
+        },
+        "contentCreators": {
+          "title": "Plataforma de Publicación para Creadores de Contenido",
+          "description": "Enfócate en crear mientras nosotros manejamos la distribución y monetización de tu contenido digital. Comienza a vender en minutos.",
+          "keywords": "plataforma creadores contenido, herramientas autopublicación, distribución contenido digital"
+        },
+        "libraries": {
+          "title": "Soluciones para Bibliotecas Digitales - Moderniza tus Servicios",
+          "description": "Transforma tu biblioteca con soluciones digitales que hacen el contenido más accesible para tu comunidad.",
+          "keywords": "plataforma biblioteca digital, soluciones ebooks bibliotecas, accesibilidad contenido"
+        },
+        "magazinesNewspapers": {
+          "title": "Publicación Digital para Revistas y Periódicos",
+          "description": "Distribuye tus publicaciones digitalmente con herramientas avanzadas para revistas y periódicos. Alcanza lectores en cualquier lugar.",
+          "keywords": "plataforma revista digital, digitalización periódicos, publicación periódica"
+        }
+      }
+    }
+  },
   "navigation": {
     "home": "Inicio",
     "solutions": "Soluciones",
