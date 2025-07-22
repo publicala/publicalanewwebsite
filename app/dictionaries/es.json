@@ -1863,6 +1863,65 @@
           "rating": 5
         }
       ]
+    },
+    "engagement": {
+      "title": "Herramientas Poderosas de Compromiso con la Audiencia",
+      "subtitle": "Construye relaciones más fuertes con tus lectores y manténlos regresando por más",
+      "tabs": {
+        "readerExperience": "Experiencia del Lector",
+        "customization": "Personalización",
+        "interaction": "Interacción"
+      },
+      "readerExperience": {
+        "title": "Experiencia de Lectura Excepcional",
+        "desc": "Proporciona a tus lectores una experiencia de lectura hermosa e intuitiva que los mantenga comprometidos con tu contenido.",
+        "features": [
+          {"title": "Diseño Responsivo", "desc": "El contenido se adapta perfectamente a cualquier dispositivo, desde computadoras de escritorio hasta teléfonos inteligentes."},
+          {"title": "Preferencias de Lectura", "desc": "Los lectores pueden personalizar el tamaño de fuente, color de fondo y diseño según sus preferencias."},
+          {"title": "Marcadores y Progreso", "desc": "Marcado automático y seguimiento del progreso en todos los dispositivos."},
+          {"title": "Lectura Sin Conexión", "desc": "Los lectores pueden descargar contenido para acceso sin conexión, asegurando una lectura ininterrumpida."}
+        ]
+      },
+      "customization": {
+        "title": "Personalización de Marca",
+        "desc": "Muestra tu identidad de marca única con tiendas y experiencias de lectura personalizables."
+      },
+      "interaction": {
+        "title": "Características Interactivas",
+        "desc": "Involucra a los lectores con comentarios, resaltados y opciones para compartir."
+      },
+      "dashboard": {
+        "readerDashboard": "Panel del Lector",
+        "activeReaders": "Lectores Activos",
+        "avgReading": "Lectura Promedio",
+        "readingProgress": "Progreso de Lectura",
+        "recentActivity": "Actividad Reciente",
+        "newBookmark": "Nuevo marcador agregado",
+        "commentPosted": "Comentario publicado",
+        "contentShared": "Contenido compartido",
+        "continueReading": "Continuar Leyendo"
+      }
+    },
+    "analytics": {
+      "title": "Decisiones de Publicación Basadas en Datos",
+      "subtitle": "Obtén información valiosa sobre el rendimiento de tu contenido y el comportamiento del lector con nuestro panel de análisis integral.",
+      "cards": [
+        {"title": "Compromiso del Lector", "desc": "+12% del mes pasado", "value": "87%"},
+        {"title": "Vistas de Contenido", "desc": "+18% del mes pasado", "value": "24.5K"}
+      ],
+      "features": [
+        {"title": "Análisis del Comportamiento del Lector", "desc": "Rastrea cómo los lectores interactúan con tu contenido, incluyendo tiempo de lectura, tasas de finalización y secciones populares."},
+        {"title": "Seguimiento de Ventas e Ingresos", "desc": "Monitorea el rendimiento de ventas, crecimiento de suscripciones y flujos de ingresos con análisis financieros detallados."},
+        {"title": "Demografía de la Audiencia", "desc": "Comprende a tu audiencia con datos demográficos, distribución geográfica y estadísticas de uso de dispositivos."}
+      ],
+      "dashboard": {
+        "title": "Panel de Análisis",
+        "pageViews": "Vistas de Página",
+        "avgReading": "Lectura Promedio",
+        "monthlyRevenue": "Ingresos Mensuales",
+        "topLocations": "Ubicaciones Principales",
+        "countries": ["Estados Unidos", "Reino Unido", "Canadá"]
+      }
     }
   },
   "librariesSolution": {
@@ -2214,27 +2273,5 @@
     "learnMore": "Saber Más",
     "requestDemo": "Programar Reunión",
     "previewText": "Vista Previa de la App Nativa"
-  },
-  "caseStudy": {
-    "title": "Éxito Editorial: Editorial Hammurabi",
-    "subtitle": "Cómo una editorial jurídica líder modernizó sus operaciones con la publicación digital",
-    "overview": "Editorial Hammurabi es una pyme familiar y una de las principales editoriales de textos jurídicos en Argentina. Con décadas de experiencia y una sólida reputación en el sector legal, la empresa buscaba modernizar sus operaciones y servir mejor a una audiencia en evolución ingresando al mundo digital.",
-    "challenges": [
-      "Transición del formato impreso tradicional al digital",
-      "Superar el escepticismo de los profesionales jurídicos poco familiarizados con plataformas de lectura digital",
-      "Encontrar una solución confiable y escalable para distribuir y monetizar su contenido en línea",
-      "Crear una experiencia fluida tanto para sus equipos internos como para los usuarios finales"
-    ],
-    "solution": "Asociarse con publica.la le brindó a Hammurabi las herramientas necesarias para triunfar en el espacio digital. La plataforma les permitió crear una tienda digital de contenido con su marca para exhibir y vender sus publicaciones jurídicas, agilizar la distribución de contenido con acceso de un clic para los usuarios, actualizar materiales continuamente para mantener a su audiencia informada con los últimos desarrollos legales y lanzar un modelo de suscripción con acceso ilimitado a toda su biblioteca. La opción de ofrecer pruebas gratuitas fue clave para generar confianza entre los profesionales jurídicos, ayudándolos a experimentar los beneficios del acceso digital de primera mano.",
-    "results": [
-      "Un aumento significativo en ventas y nuevos suscriptores",
-      "Mayor colaboración interna y eficiencia en la gestión de contenido digital",
-      "Una audiencia nacional e internacional ampliada, gracias a la facilidad de acceso y flexibilidad de la plataforma",
-      "Posición fortalecida como editorial jurídica innovadora, brindando acceso instantáneo y confiable a textos jurídicos de alta calidad"
-    ],
-    "quote": "Publica.la ha transformado la forma en que entregamos nuestro contenido jurídico a profesionales de toda Argentina y más allá. La flexibilidad y facilidad de uso de la plataforma nos ayudaron a superar el escepticismo inicial de nuestra audiencia tradicional y abrieron nuevas oportunidades de crecimiento.",
-    "quoteName": "Equipo Editorial Hammurabi",
-    "quoteRole": "Equipo Directivo, Editorial Hammurabi S.R.L.",
-    "imageAlt": "Plataforma digital de Hammurabi en una laptop mostrando una publicación jurídica"
   }
 }
