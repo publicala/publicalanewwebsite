@@ -23,7 +23,7 @@ export function HomeCaseStudy() {
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 flex-shrink-0 rounded-lg bg-black flex items-center justify-center overflow-hidden">
                     <Image
-                      src="/images/logos/hammurabi-logo.png"
+                      src="/images/logos/hammurabi-logo.webp"
                       alt="Hammurabi Logo"
                       width={64}
                       height={64}

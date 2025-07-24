@@ -97,10 +97,10 @@ export function HeroSection({ dict }: HeroSectionProps) {
             <div className="flex items-center gap-4">
               <div className="flex -space-x-2">
                 {[
-                  { src: "/images/isologos/santillana-iso.png", alt: "Santillana" },
-                  { src: "/images/isologos/penguin-iso.jpeg", alt: "Penguin Random House" },
-                  { src: "/images/isologos/forbes-iso.png", alt: "Forbes" },
-                  { src: "/images/isologos/planeta-iso.gif", alt: "Grupo Planeta" },
+                  { src: "/images/isologos/santillana-iso.webp", alt: "Santillana" },
+                  { src: "/images/isologos/penguin-iso.webp", alt: "Penguin Random House" },
+                  { src: "/images/isologos/forbes-iso.webp", alt: "Forbes" },
+                  { src: "/images/isologos/planeta-iso.webp", alt: "Grupo Planeta" },
                 ].map((logo, index) => (
                   <div
                     key={index}

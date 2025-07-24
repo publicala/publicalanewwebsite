@@ -71,11 +71,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.webp", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.webp", sizes: "16x16", type: "image/png" },
     ],
-    apple: [{ url: "/favicon.png", sizes: "180x180", type: "image/png" }],
-    shortcut: "/favicon.png",
+    apple: [{ url: "/favicon.webp", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.webp",
   },
   manifest: "/site.webmanifest",
   generator: "v0.dev",
@@ -89,8 +89,8 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.png" sizes="any" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.webp" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon.webp" />
         <meta name="theme-color" content="#ec4899" />
         <meta name="msapplication-TileColor" content="#ec4899" />
         <link rel="alternate" href="https://publica.la/en" hrefLang="en" />

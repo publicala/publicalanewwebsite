@@ -51,7 +51,7 @@ export default async function ComparePage({ params }: { params: Promise<{ locale
                     />
                     <span className="text-2xl font-bold text-gray-400">vs</span>
                     <Image
-                      src="/images/logos/supadu-logo.png"
+                      src="/images/logos/supadu-logo.webp"
                       alt="Supadu"
                       width={120}
                       height={40}

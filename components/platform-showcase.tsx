@@ -136,7 +136,7 @@ export function PlatformShowcase({ dict }: PlatformShowcaseProps) {
                     {activeFeature === "content" && (
                       <div className="rounded-lg overflow-hidden">
                         <img
-                          src="/images/marketplace-interface.png"
+                          src="/images/marketplace-interface.webp"
                           alt="Publica.la marketplace interface showing content inventory management"
                           className="w-full h-auto"
                         />

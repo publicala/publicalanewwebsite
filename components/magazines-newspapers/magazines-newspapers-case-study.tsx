@@ -17,7 +17,7 @@ export function MagazinesNewspapersCaseStudy() {
     },
     {
       name: "Forbes Colombia",
-      logo: "/images/logos/forbes.png",
+      logo: "/images/logos/forbes.webp",
       description:
         "Forbes Colombia is a prestigious international and local magazine specializing in business, economics, finance, and lifestyle in Colombia.",
       industry: "Business & Finance",
