@@ -32,9 +32,9 @@ const colors = {
 
 const images = {
   "hammurabi-publishing": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Disen%CC%83o%20sin%20ti%CC%81tulo%20%2815%29-AM2SIFCXWmh7VmITCRm8rsY0Q7kdME.png",
-  "bajalibros": "/images/logos/bajalibros.png",
-  "antartica-libreria": "/antarctica-digital-bookstore.png",
-  "ebooks-patagonia": "/patagonia-ebooks-montage.png",
+  "bajalibros": "/images/logos/bajalibros.webp",
+  "antartica-libreria": "/antarctica-digital-bookstore.webp",
+  "ebooks-patagonia": "/patagonia-ebooks-montage.webp",
   "forbes-colombia": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Disen%CC%83o%20sin%20ti%CC%81tulo%20%2823%29-nGfFDP1fjrcLQcjPTdbSwt6bMGHjp8.png",
 }
 

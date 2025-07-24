@@ -39,12 +39,12 @@ export function AboutTeam({ dict, locale }: AboutTeamProps) {
   }
   
   const teamImages = [
-    { src: "/images/team/team-dinner-1.jpg", alt: "Publica.la team dinner" },
-    { src: "/images/team/team-gathering-1.jpg", alt: "Publica.la team gathering" },
-    { src: "/images/team/team-virtual-meeting.jpg", alt: "Publica.la team virtual meeting" },
-    { src: "/images/team/team-dinner-2.jpg", alt: "Publica.la team at a restaurant" },
-    { src: "/images/team/team-dinner-3.jpg", alt: "Another Publica.la team dinner" },
-    { src: "/images/team/founders-pablo-franco.jpg", alt: "Publica.la founders at a conference" },
+    { src: "/images/team/team-dinner-1.webp", alt: "Publica.la team dinner" },
+    { src: "/images/team/team-gathering-1.webp", alt: "Publica.la team gathering" },
+    { src: "/images/team/team-virtual-meeting.webp", alt: "Publica.la team virtual meeting" },
+    { src: "/images/team/team-dinner-2.webp", alt: "Publica.la team at a restaurant" },
+    { src: "/images/team/team-dinner-3.webp", alt: "Another Publica.la team dinner" },
+    { src: "/images/team/founders-pablo-franco.webp", alt: "Publica.la founders at a conference" },
   ]
 
   return (
@@ -59,7 +59,7 @@ export function AboutTeam({ dict, locale }: AboutTeamProps) {
           <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg text-center">
             <div className="relative w-full h-96 md:h-[480px] mb-6 rounded-md overflow-hidden">
               <Image
-                src="/images/team/founders-at-booth.jpg"
+                src="/images/team/founders-at-booth.webp"
                 alt={dict.aboutTeam.founders.imageAlt}
                 layout="fill"
                 objectFit="cover"

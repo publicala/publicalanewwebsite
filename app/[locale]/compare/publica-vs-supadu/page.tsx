@@ -25,7 +25,7 @@ export default async function PublicaVsSupaduPage({ params }: { params: Promise<
               />
               <span className="text-4xl font-bold text-gray-400">vs</span>
               <Image
-                src="/images/logos/supadu-logo.png"
+                src="/images/logos/supadu-logo.webp"
                 alt="Supadu"
                 width={200}
                 height={60}
@@ -71,7 +71,7 @@ export default async function PublicaVsSupaduPage({ params }: { params: Promise<
               <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8">
                 <div className="flex items-center mb-6">
                   <Image
-                    src="/images/logos/supadu-logo.png"
+                    src="/images/logos/supadu-logo.webp"
                     alt="Supadu"
                     width={150}
                     height={40}

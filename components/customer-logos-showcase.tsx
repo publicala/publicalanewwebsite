@@ -53,55 +53,55 @@ export function CustomerLogosShowcase({
     switch (industry) {
       case "publishers":
         return [
-          { name: "Penguin Random House", src: "/images/logos/penguin-random-house.png", width: 180, height: 70 },
-          { name: "Grupo Planeta", src: "/images/logos/grupo-planeta.jpeg", width: 170, height: 65 },
-          { name: "Santillana", src: "/images/logos/santillana.png", width: 160, height: 60 },
+          { name: "Penguin Random House", src: "/images/logos/penguin-random-house.webp", width: 180, height: 70 },
+          { name: "Grupo Planeta", src: "/images/logos/grupo-planeta.webp", width: 170, height: 65 },
+          { name: "Santillana", src: "/images/logos/santillana.webp", width: 160, height: 60 },
           { name: "SAGA Egmont", src: "/images/logos/saga-egmont.webp", width: 160, height: 70 },
         ]
       case "bookshops":
         return [
-          { name: "BajaLibros", src: "/images/logos/bajalibros.png", width: 160, height: 60 },
-          { name: "Antártica Libros", src: "/images/logos/antartica-libros.png", width: 180, height: 70 },
-          { name: "Bookshop", src: "/images/logos/bookshop.png", width: 140, height: 50 },
+          { name: "BajaLibros", src: "/images/logos/bajalibros.webp", width: 160, height: 60 },
+          { name: "Antártica Libros", src: "/images/logos/antartica-libros.webp", width: 180, height: 70 },
+          { name: "Bookshop", src: "/images/logos/bookshop.webp", width: 140, height: 50 },
           { name: "Sanborns", src: "/images/logos/sanborns.webp", width: 150, height: 55 },
-          { name: "Christianbook", src: "/images/logos/christianbook.png", width: 180, height: 65 },
-          { name: "Ebooks Patagonia", src: "/images/logos/ebooks-patagonia-logo.png", width: 170, height: 60 },
+          { name: "Christianbook", src: "/images/logos/christianbook.webp", width: 180, height: 65 },
+          { name: "Ebooks Patagonia", src: "/images/logos/ebooks-patagonia-logo.webp", width: 170, height: 60 },
         ]
       case "creators":
         return [
-          { name: "Patrick Mork", src: "/images/logos/mork.png", width: 160, height: 60 },
+          { name: "Patrick Mork", src: "/images/logos/mork.webp", width: 160, height: 60 },
           { name: "Draper", src: "/images/logos/draper.webp", width: 160, height: 60 },
         ]
       case "libraries":
         return [
-          { name: "CANOPUS Lector", src: "/images/logos/canopus-lector.png", width: 160, height: 60 },
-          { name: "Libros y Libros", src: "/images/logos/libros-y-libros.jpeg", width: 160, height: 60 },
-          { name: "Alpha CLOUD", src: "/images/logos/alpha-cloud.png", width: 160, height: 60 },
-          { name: "Biblioteca virtual AMOLCA", src: "/images/logos/amolca.png", width: 160, height: 60 },
+          { name: "CANOPUS Lector", src: "/images/logos/canopus-lector.webp", width: 160, height: 60 },
+          { name: "Libros y Libros", src: "/images/logos/libros-y-libros.webp", width: 160, height: 60 },
+          { name: "Alpha CLOUD", src: "/images/logos/alpha-cloud.webp", width: 160, height: 60 },
+          { name: "Biblioteca virtual AMOLCA", src: "/images/logos/amolca.webp", width: 160, height: 60 },
         ]
       case "magazines":
         return [
-          { name: "Forbes", src: "/images/logos/forbes.png", width: 120, height: 45 }, // Path remains the same, content updated
-          { name: "La Tercera", src: "/images/logos/la-tercera.png", width: 140, height: 50 },
+          { name: "Forbes", src: "/images/logos/forbes.webp", width: 120, height: 45 }, // Path remains the same, content updated
+          { name: "La Tercera", src: "/images/logos/la-tercera.webp", width: 140, height: 50 },
           { name: "Barcelona", src: "/images/logos/barcelona.webp", width: 140, height: 50 },
-          { name: "Página 12", src: "/images/logos/pagina12.png", width: 140, height: 50 },
-          { name: "La Diaria", src: "/images/logos/ladiaria.png", width: 140, height: 50 },
-          { name: "Caras y Caretas", src: "/images/logos/carasycaretas.png", width: 140, height: 50 },
+          { name: "Página 12", src: "/images/logos/pagina12.webp", width: 140, height: 50 },
+          { name: "La Diaria", src: "/images/logos/ladiaria.webp", width: 140, height: 50 },
+          { name: "Caras y Caretas", src: "/images/logos/carasycaretas.webp", width: 140, height: 50 },
         ]
       default: // Homepage / General
         return [
-          { name: "BajaLibros", src: "/images/logos/bajalibros.png", width: 160, height: 60 },
-          { name: "Penguin Random House", src: "/images/logos/penguin-random-house.png", width: 180, height: 70 },
-          { name: "Grupo Planeta", src: "/images/logos/grupo-planeta.jpeg", width: 170, height: 65 },
-          { name: "La Tercera", src: "/images/logos/la-tercera.png", width: 140, height: 50 },
-          { name: "Santillana", src: "/images/logos/santillana.png", width: 160, height: 60 },
-          { name: "Forbes", src: "/images/logos/forbes.png", width: 120, height: 45 }, // Path remains the same, content updated
-          { name: "Christianbook", src: "/images/logos/christianbook.png", width: 180, height: 65 },
+          { name: "BajaLibros", src: "/images/logos/bajalibros.webp", width: 160, height: 60 },
+          { name: "Penguin Random House", src: "/images/logos/penguin-random-house.webp", width: 180, height: 70 },
+          { name: "Grupo Planeta", src: "/images/logos/grupo-planeta.webp", width: 170, height: 65 },
+          { name: "La Tercera", src: "/images/logos/la-tercera.webp", width: 140, height: 50 },
+          { name: "Santillana", src: "/images/logos/santillana.webp", width: 160, height: 60 },
+          { name: "Forbes", src: "/images/logos/forbes.webp", width: 120, height: 45 }, // Path remains the same, content updated
+          { name: "Christianbook", src: "/images/logos/christianbook.webp", width: 180, height: 65 },
           { name: "SAGA Egmont", src: "/images/logos/saga-egmont.webp", width: 160, height: 70 },
-          { name: "Antártica Libros", src: "/images/logos/antartica-libros.png", width: 180, height: 70 },
-          { name: "Bookshop", src: "/images/logos/bookshop.png", width: 140, height: 50 },
+          { name: "Antártica Libros", src: "/images/logos/antartica-libros.webp", width: 180, height: 70 },
+          { name: "Bookshop", src: "/images/logos/bookshop.webp", width: 140, height: 50 },
           { name: "Sanborns", src: "/images/logos/sanborns.webp", width: 150, height: 55 },
-          { name: "Ebooks Patagonia", src: "/images/logos/ebooks-patagonia-logo.png", width: 170, height: 60 },
+          { name: "Ebooks Patagonia", src: "/images/logos/ebooks-patagonia-logo.webp", width: 170, height: 60 },
         ]
     }
   }
