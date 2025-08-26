@@ -78,6 +78,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
+
+    // Savings Calculator
+    {
+      url: `${baseUrl}/savings-calculator`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
     {
       url: `${baseUrl}/case-studies/forbes-colombia`,
       lastModified: currentDate,
