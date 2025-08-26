@@ -76,6 +76,65 @@
     "getStarted": "Começar",
     "contactSales": "Contatar Vendas"
   },
+  "savingsCalculator": {
+    "title": "Calculadora de Economia de Receita | publica.la",
+    "description": "Calcule quanto mais receita você pode manter com a plataforma tudo-em-um da publica.la. Mantenha 85% vs 45% da média da indústria.",
+    "hero": {
+      "title": "Calculadora de Economia de Receita",
+      "subtitle": "Descubra quanto mais receita você pode manter com a plataforma tudo-em-um da publica.la",
+      "badge": "Mantenha 85% vs 45% da média da indústria",
+      "trustedBy": "Confiado por mais de 1000 criadores de conteúdo em todo o mundo"
+    },
+    "calculator": {
+      "title": "Digite Sua Receita Mensal",
+      "subtitle": "Digite sua receita mensal atual para calcular economias potenciais",
+      "label": "Receita Mensal (USD)",
+      "placeholder": "45000",
+      "button": "Calcular Minhas Economias"
+    },
+    "results": {
+      "title": "Suas Economias Potenciais",
+      "subtitle": "Veja como publica.la se compara aos padrões da indústria",
+      "monthly": "Receita mensal adicional",
+      "annual": "Receita anual adicional",
+      "moreThanAverage": "89% mais que a média da indústria"
+    },
+    "comparison": {
+      "title": "Comparação de Receita",
+      "industry": {
+        "title": "Média da Indústria",
+        "description": "Mantenha 45% (55% custos da plataforma)"
+      },
+      "publica": {
+        "title": "Com publica.la",
+        "description": "Mantenha 85% (15% custos da plataforma)"
+      }
+    },
+    "whyChoose": {
+      "title": "Por Que Escolher publica.la?",
+      "allInOne": {
+        "title": "Plataforma Tudo-em-Um",
+        "description": "Não precisa de múltiplas soluções - e-commerce, gestão de conteúdo e leitor tudo incluído"
+      },
+      "revenue": {
+        "title": "Mantenha 85% da Receita",
+        "description": "Participação de receita líder da indústria vs 45% média"
+      },
+      "enterprise": {
+        "title": "Plataforma de Nível Empresarial",
+        "description": "Mais robusta e confiável que juntar múltiplas ferramentas"
+      }
+    },
+    "cta": {
+      "title": "Pronto para Manter Mais da Sua Receita?",
+      "subtitle": "Junte-se a milhares de criadores de conteúdo e empresas que já estão maximizando sua receita com a plataforma abrangente de e-commerce da publica.la.",
+      "button": "Começar Teste Gratuito"
+    },
+    "features": {
+      "allInOne": "Plataforma tudo-em-um",
+      "noMultipleSolutions": "Não são necessárias múltiplas soluções"
+    }
+  },
   "footer": {
     "description": "A plataforma de conteúdo digital mais robusta e dinâmica para editoras e criadores de conteúdo, capacitando você a criar, gerenciar e distribuir conteúdo excepcional.",
     "sections": {

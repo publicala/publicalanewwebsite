@@ -76,6 +76,65 @@
     "getStarted": "Get Started",
     "contactSales": "Contact Sales"
   },
+  "savingsCalculator": {
+    "title": "Revenue Savings Calculator | publica.la",
+    "description": "Calculate how much more revenue you can keep with publica.la's all-in-one ecommerce platform. Keep 85% vs 45% industry average.",
+    "hero": {
+      "title": "Revenue Savings Calculator",
+      "subtitle": "Discover how much more revenue you can keep with publica.la's all-in-one ecommerce platform",
+      "badge": "Keep 85% vs 45% industry average",
+      "trustedBy": "Trusted by 1000+ content creators worldwide"
+    },
+    "calculator": {
+      "title": "Enter Your Monthly Revenue",
+      "subtitle": "Input your current monthly revenue to calculate potential savings",
+      "label": "Monthly Revenue (USD)",
+      "placeholder": "45000",
+      "button": "Calculate My Savings"
+    },
+    "results": {
+      "title": "Your Potential Savings",
+      "subtitle": "See how publica.la compares to industry standards",
+      "monthly": "Additional monthly revenue",
+      "annual": "Additional annual revenue",
+      "moreThanAverage": "89% more than industry average"
+    },
+    "comparison": {
+      "title": "Revenue Comparison",
+      "industry": {
+        "title": "Industry Average",
+        "description": "Keep 45% (55% platform costs)"
+      },
+      "publica": {
+        "title": "With publica.la",
+        "description": "Keep 85% (15% platform costs)"
+      }
+    },
+    "whyChoose": {
+      "title": "Why Choose publica.la?",
+      "allInOne": {
+        "title": "All-in-One Platform",
+        "description": "No need for multiple solutions - ecommerce, content management, and reader all included"
+      },
+      "revenue": {
+        "title": "Keep 85% of Revenue",
+        "description": "Industry-leading revenue share vs 45% average"
+      },
+      "enterprise": {
+        "title": "Enterprise-Grade Platform",
+        "description": "More robust and reliable than piecing together multiple tools"
+      }
+    },
+    "cta": {
+      "title": "Ready to Keep More of Your Revenue?",
+      "subtitle": "Join thousands of content creators and businesses already maximizing their revenue with publica.la's comprehensive ecommerce platform.",
+      "button": "Start Your Free Trial"
+    },
+    "features": {
+      "allInOne": "All-in-one platform",
+      "noMultipleSolutions": "No multiple solutions needed"
+    }
+  },
   "footer": {
     "description": "The most robust and dynamic digital content platform for publishers and content creators, empowering you to create, manage, and distribute exceptional content.",
     "sections": {

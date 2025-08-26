@@ -76,6 +76,65 @@
     "getStarted": "Comenzar",
     "contactSales": "Contactar Ventas"
   },
+  "savingsCalculator": {
+    "title": "Calculadora de Ahorros de Ingresos | publica.la",
+    "description": "Calcula cuántos más ingresos puedes mantener con la plataforma todo en uno de publica.la. Mantén 85% vs 45% del promedio de la industria.",
+    "hero": {
+      "title": "Calculadora de Ahorros de Ingresos",
+      "subtitle": "Descubre cuántos más ingresos puedes mantener con la plataforma todo en uno de publica.la",
+      "badge": "Mantén 85% vs 45% del promedio de la industria",
+      "trustedBy": "Confiado por más de 1000 creadores de contenido en todo el mundo"
+    },
+    "calculator": {
+      "title": "Ingresa Tus Ingresos Mensuales",
+      "subtitle": "Ingresa tus ingresos mensuales actuales para calcular ahorros potenciales",
+      "label": "Ingresos Mensuales (USD)",
+      "placeholder": "45000",
+      "button": "Calcular Mis Ahorros"
+    },
+    "results": {
+      "title": "Tus Ahorros Potenciales",
+      "subtitle": "Ve cómo publica.la se compara con los estándares de la industria",
+      "monthly": "Ingresos mensuales adicionales",
+      "annual": "Ingresos anuales adicionales",
+      "moreThanAverage": "89% más que el promedio de la industria"
+    },
+    "comparison": {
+      "title": "Comparación de Ingresos",
+      "industry": {
+        "title": "Promedio de la Industria",
+        "description": "Mantén 45% (55% costos de plataforma)"
+      },
+      "publica": {
+        "title": "Con publica.la",
+        "description": "Mantén 85% (15% costos de plataforma)"
+      }
+    },
+    "whyChoose": {
+      "title": "¿Por Qué Elegir publica.la?",
+      "allInOne": {
+        "title": "Plataforma Todo en Uno",
+        "description": "No necesitas múltiples soluciones - comercio electrónico, gestión de contenido y lector todo incluido"
+      },
+      "revenue": {
+        "title": "Mantén 85% de los Ingresos",
+        "description": "Participación de ingresos líder en la industria vs 45% promedio"
+      },
+      "enterprise": {
+        "title": "Plataforma de Grado Empresarial",
+        "description": "Más robusta y confiable que juntar múltiples herramientas"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Mantener Más de Tus Ingresos?",
+      "subtitle": "Únete a miles de creadores de contenido y empresas que ya están maximizando sus ingresos con la plataforma integral de comercio electrónico de publica.la.",
+      "button": "Comenzar Prueba Gratuita"
+    },
+    "features": {
+      "allInOne": "Plataforma todo en uno",
+      "noMultipleSolutions": "No se necesitan múltiples soluciones"
+    }
+  },
   "footer": {
     "description": "La plataforma de contenido digital más robusta y dinámica para editoriales y creadores de contenido, empoderándote para crear, gestionar y distribuir contenido excepcional.",
     "sections": {
