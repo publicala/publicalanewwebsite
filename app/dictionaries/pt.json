@@ -82,7 +82,7 @@
     "hero": {
       "title": "Calculadora de Economia de Receita",
       "subtitle": "Descubra quanto mais receita você pode manter com a plataforma tudo-em-um da publica.la",
-      "badge": "Mantenha 85% vs 45% da média da indústria",
+      "badge": "Mantenha 85% vs 55% da média da indústria",
       "trustedBy": "Confiado por mais de 1.000 editoras em todo o mundo"
     },
     "calculator": {
@@ -103,7 +103,7 @@
       "title": "Comparação de Receita",
       "industry": {
         "title": "Média da Indústria",
-        "description": "Mantenha 45% (55% custos da plataforma)"
+        "description": "Mantenha 55% (45% custos da plataforma)"
       },
       "publica": {
         "title": "Com publica.la",
@@ -128,7 +128,7 @@
     "cta": {
       "title": "Pronto para Manter Mais da Sua Receita?",
       "subtitle": "Junte-se a milhares de criadores de conteúdo e empresas que já estão maximizando sua receita com a plataforma abrangente de e-commerce da publica.la.",
-      "button": "Começar Teste Gratuito"
+              "button": "Agendar Reunião para Saber Mais"
     },
     "features": {
       "allInOne": "Plataforma tudo-em-um",

@@ -82,7 +82,7 @@
     "hero": {
       "title": "Revenue Savings Calculator",
       "subtitle": "Discover how much more revenue you can keep with publica.la's all-in-one ecommerce platform",
-      "badge": "Keep 85% vs 45% industry average",
+      "badge": "Keep 85% vs 55% industry average",
       "trustedBy": "Trusted by 1,000+ publishers worldwide"
     },
     "calculator": {
@@ -103,7 +103,7 @@
       "title": "Revenue Comparison",
       "industry": {
         "title": "Industry Average",
-        "description": "Keep 45% (55% platform costs)"
+        "description": "Keep 55% (45% platform costs)"
       },
       "publica": {
         "title": "With publica.la",
@@ -125,11 +125,11 @@
         "description": "More robust and reliable than piecing together multiple tools"
       }
     },
-    "cta": {
-      "title": "Ready to Keep More of Your Revenue?",
-      "subtitle": "Join thousands of content creators and businesses already maximizing their revenue with publica.la's comprehensive ecommerce platform.",
-      "button": "Start Your Free Trial"
-    },
+          "cta": {
+        "title": "Ready to Keep More of Your Revenue?",
+        "subtitle": "Join thousands of content creators and businesses already maximizing their revenue with publica.la's comprehensive ecommerce platform.",
+        "button": "Book a Meeting to Learn More"
+      },
     "features": {
       "allInOne": "All-in-one platform",
       "noMultipleSolutions": "No multiple solutions needed"

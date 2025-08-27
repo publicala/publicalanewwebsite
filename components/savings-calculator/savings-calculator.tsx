@@ -16,7 +16,7 @@ export function SavingsCalculator({ locale, dict }: SavingsCalculatorProps) {
   const [monthlyRevenue, setMonthlyRevenue] = useState(45000)
   const [calculated, setCalculated] = useState(false)
 
-  const industryAverage = 0.45 // 45%
+  const industryAverage = 0.55 // 55%
   const publicaShare = 0.85 // 85%
   
   const industryRevenue = monthlyRevenue * industryAverage
@@ -238,8 +238,15 @@ export function SavingsCalculator({ locale, dict }: SavingsCalculatorProps) {
             <Button 
               size="lg" 
               className="bg-purple-600 hover:bg-purple-700 text-lg font-semibold px-8 py-4 h-14"
+              asChild
             >
-              {dict.cta.button}
+              <a 
+                href="https://meetings.hubspot.com/ignacio-van-gelderen/making-a-calculated-move?embed=true" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                {dict.cta.button}
+              </a>
             </Button>
           </CardContent>
         </Card>
