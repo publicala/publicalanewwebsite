@@ -45,7 +45,7 @@ export function SavingsCalculator({ locale, dict }: SavingsCalculatorProps) {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <img 
-            src="/images/publica-logo.png" 
+            src="/images/publica-logo-new.svg" 
             alt="publica.la" 
             className="h-16 md:h-20"
           />

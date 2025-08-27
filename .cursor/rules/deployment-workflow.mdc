@@ -1,0 +1,24 @@
+# Deployment Workflow Rules
+
+## Automatic Deployments
+- **Production**: Automatic deployment to production when pushing to `main` branch
+- **Feature Branches**: Automatic deployment to unique subdomains when opening PRs on GitHub
+- **No Local Builds**: Do not generate builds locally - deployments are fully automated
+- **No Local Deploys**: Do not deploy builds locally - all deployments happen automatically
+
+## Wrangler.toml Modifications
+**⚠️ IMPORTANT**: Always ask for confirmation before modifying wrangler.toml
+- Changes to wrangler.toml can affect production deployment
+- Get explicit user approval before any modifications
+- Explain what changes will be made and why
+
+## Workflow Summary
+1. Code changes → Push to branch
+2. GitHub Actions automatically builds and deploys
+3. No manual build or deploy steps needed
+4. Production updates automatically from main branch
+5. Feature previews available on PR subdomains
+description:
+globs:
+alwaysApply: false
+---
