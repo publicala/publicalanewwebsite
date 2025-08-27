@@ -42,6 +42,15 @@ export function SavingsCalculator({ locale, dict }: SavingsCalculatorProps) {
     <div className="max-w-6xl mx-auto px-4 py-16">
       {/* Hero Section */}
       <div className="text-center mb-16">
+        {/* Logo */}
+        <div className="flex justify-center mb-8">
+          <img 
+            src="/images/publica-logo.png" 
+            alt="publica.la" 
+            className="h-16 md:h-20"
+          />
+        </div>
+        
         <h1 className="text-5xl font-bold text-gray-900 mb-6">
           {dict.hero.title}
         </h1>
