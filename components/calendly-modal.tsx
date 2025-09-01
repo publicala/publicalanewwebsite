@@ -27,7 +27,7 @@ export function CalendlyModal({
         </DialogHeader>
         <div className="calendly-container h-[600px] w-full">
           <iframe
-            src="https://calendly.com/plaurino-publica/30min?embed=true&hide_gdpr_banner=1"
+            src="https://calendly.com/d/csdv-jmz-c22/publica-la-demo?embed=true&hide_gdpr_banner=1"
             width="100%"
             height="100%"
             frameBorder="0"
