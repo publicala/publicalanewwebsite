@@ -160,18 +160,30 @@ export function Footer({ dict, locale = "en" }: FooterProps) {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">{footerData.copyright.replace('{year}', new Date().getFullYear().toString())}</p>
-          <div className="flex gap-6">
-            {footerData.legal.map((link, index) => (
-              <Link 
-                key={index} 
-                href={(link as any).external ? link.href : getLocalizedHref(link.href)} 
-                className="text-sm text-gray-400 hover:text-white"
-                target={(link as any).external ? "_blank" : undefined}
-                rel={(link as any).external ? "noopener noreferrer" : undefined}
-              >
-                {link.text}
-              </Link>
-            ))}
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="flex gap-6">
+              {footerData.legal.map((link, index) => (
+                <Link 
+                  key={index} 
+                  href={(link as any).external ? link.href : getLocalizedHref(link.href)} 
+                  className="text-sm text-gray-400 hover:text-white"
+                  target={(link as any).external ? "_blank" : undefined}
+                  rel={(link as any).external ? "noopener noreferrer" : undefined}
+                >
+                  {link.text}
+                </Link>
+              ))}
+            </div>
+            <div className="mt-4 md:mt-0">
+              <iframe 
+                src="https://scores.securityscorecard.io/security-rating/badge/publica.la"
+                width="256"
+                height="100"
+                frameBorder="0"
+                title="SecurityScoreCard Security Rating"
+                className="rounded"
+              />
+            </div>
           </div>
         </div>
       </div>
