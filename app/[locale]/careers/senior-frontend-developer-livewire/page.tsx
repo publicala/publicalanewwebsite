@@ -9,12 +9,12 @@ import { MapPin, Clock, Users } from "lucide-react"
  * SEO METADATA - ALWAYS IN ENGLISH
  */
 export const metadata: Metadata = {
-  title: "Senior Full Stack Developer (Backend Focus) - Careers | Publica.la",
-  description: "Join our Product Engineering team as a Senior Full Stack Developer focused on backend. Build scalable multi-tenant SaaS platform with Laravel, PHP, SingleStore, and modern web technologies. 8+ years experience required.",
-  keywords: ["senior full stack developer", "laravel", "php", "backend developer", "singlestore", "remote work", "publica.la"],
+  title: "Senior Frontend Developer (Livewire & TALL Stack) - Careers | Publica.la",
+  description: "Join our Product Engineering team as a Senior Frontend Developer to build beautiful, accessible interfaces with Livewire, Alpine.js, and TailwindCSS. Remote position, UTC-3 to UTC+2 preferred.",
+  keywords: ["senior frontend developer", "livewire", "alpine.js", "tailwindcss", "tall stack", "vue.js", "remote work", "publica.la"],
   openGraph: {
-    title: "Senior Full Stack Developer (Backend Focus) - Careers | Publica.la",
-    description: "Build scalable multi-tenant SaaS platform with Laravel, PHP, SingleStore, and modern web technologies",
+    title: "Senior Frontend Developer (Livewire & TALL Stack) - Careers | Publica.la",
+    description: "Build beautiful, accessible user interfaces with Livewire, Alpine.js, and TailwindCSS at Publica.la",
     type: "website",
   },
 }
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 /**
  * JOB POSTING PAGE - ALWAYS IN ENGLISH
  */
-export default async function SeniorFullStackBackendPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function SeniorFrontendDeveloperPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const userDict = await getDictionary(locale as "en" | "es" | "pt")
 
@@ -33,7 +33,7 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
       <main className="max-w-4xl mx-auto px-6 py-20">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold mb-4">Senior Full Stack Developer (Backend Focus)</h1>
+          <h1 className="text-4xl font-bold mb-4">Senior Frontend Developer (Livewire & TALL Stack)</h1>
 
           <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-6">
             <div className="flex items-center gap-2">
@@ -51,7 +51,7 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
           </div>
 
           <ApplyButton
-            jobTitle="Senior Full Stack Developer (Backend Focus)"
+            jobTitle="Senior Frontend Developer (Livewire & TALL Stack)"
             department="Product Engineering"
             size="lg"
           />
@@ -64,7 +64,7 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
           <section id="what-we-do" className="mb-12">
             <h2 className="text-2xl font-bold mb-4">What we do</h2>
             <p className="text-gray-700 leading-relaxed">
-              Publica.la is a B2B SaaS platform trusted by hundreds of publishers, bookshops, and libraries worldwide to power their digital content sales. Our multi-tenant platform processes millions of transactions across 156 countries, managing digital libraries, subscriptions, and e-commerce at scale. We're looking for a Senior Full Stack Developer with strong backend expertise to help us build and scale the core systems that power this growth—working with Laravel/PHP, SingleStore, multi-tenant architecture, and distributed systems.
+              Publica.la is a B2B SaaS platform trusted by hundreds of publishers, bookshops, and libraries worldwide to power their digital content sales. Our multi-tenant platform processes millions of transactions across 156 countries, managing digital libraries, subscriptions, and e-commerce at scale. We're looking for a Senior Frontend Developer to build beautiful, accessible user interfaces using Livewire, Alpine.js, and TailwindCSS—creating experiences used by thousands of publishers and millions of readers daily.
             </p>
           </section>
 
@@ -72,15 +72,15 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
           <section id="responsibilities" className="mb-12">
             <h2 className="text-2xl font-bold mb-4">What you will do</h2>
             <ul className="space-y-3 text-gray-700 list-disc list-inside">
-              <li>Design and develop new features for our multi-tenant SaaS platform, with focus on backend services.</li>
-              <li>Build and maintain scalable Laravel applications with PHP, SingleStore, and Valkey/Redis.</li>
-              <li>Work with distributed SQL databases (SingleStore) and implement efficient multi-tenant data isolation patterns.</li>
-              <li>Develop and optimize queue-based background processing for content ingestion, payments, and analytics.</li>
-              <li>Collaborate with frontend developers on Livewire and Alpine.js integration.</li>
-              <li>Ensure code quality through testing (PHPUnit/Pest), static analysis (PHPStan), and code reviews.</li>
-              <li>Participate in architecture decisions and technical planning for platform scalability.</li>
-              <li>Work directly with customers to understand their needs and improve the product.</li>
-              <li>Maintain and improve existing features, ensuring platform reliability and performance.</li>
+              <li>Build responsive, accessible interfaces for our multi-tenant publisher dashboard and admin tools.</li>
+              <li>Develop Livewire components for real-time, interactive features with server-side rendering.</li>
+              <li>Create lightweight interactions with Alpine.js following mobile-first design principles.</li>
+              <li>Style interfaces with TailwindCSS, ensuring WCAG 2.1 AA compliance.</li>
+              <li>Work with Vue.js components where needed for complex client-side interactions.</li>
+              <li>Collaborate with backend developers on API contracts and component integration.</li>
+              <li>Optimize frontend performance: lazy loading, bundle optimization, caching strategies.</li>
+              <li>Write tests and maintain code quality with modern tooling.</li>
+              <li>Participate in design reviews and contribute to UI/UX improvements.</li>
             </ul>
           </section>
 
@@ -89,10 +89,10 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
             <h2 className="text-2xl font-bold mb-4">Our stack</h2>
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-700 mb-3">
-                <strong>Technologies:</strong> PHP with Laravel, Livewire, Alpine.js, TailwindCSS, Laravel Nova, Valkey/Redis
+                <strong>Technologies:</strong> Livewire, Alpine.js, TailwindCSS, Vue.js
               </p>
               <p className="text-gray-700">
-                <strong>Infrastructure:</strong> SingleStore, AWS Lambda, AWS S3, Cloudflare Workers, Docker, GitLab CI/CD
+                <strong>Also in the project:</strong> Laravel, PHP, SingleStore, Valkey/Redis, Docker, GitLab CI/CD
               </p>
             </div>
           </section>
@@ -101,12 +101,12 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
           <section id="requirements" className="mb-12">
             <h2 className="text-2xl font-bold mb-4">You might be a fit if you have</h2>
             <ul className="space-y-3 text-gray-700 list-disc list-inside">
-              <li>6+ years of full stack development experience with strong backend focus.</li>
-              <li>Deep expertise in PHP and Laravel framework (at least 3 years with Laravel).</li>
-              <li>Strong SQL database knowledge.</li>
-              <li>Experience building and scaling multi-tenant SaaS applications.</li>
-              <li>Solid understanding of queue-based architectures and background processing.</li>
-              <li>Experience with testing frameworks (PHPUnit/Pest) and static analysis tools.</li>
+              <li>5+ years of frontend development experience with strong component architecture expertise.</li>
+              <li>Deep understanding of Livewire, Alpine.js, or similar reactive frameworks (at least 2 years).</li>
+              <li>Experience with Tailwind CSS and utility-first CSS frameworks.</li>
+              <li>Strong focus on accessibility (WCAG 2.1 AA) and mobile-first design.</li>
+              <li>Experience building responsive, performant user interfaces for SaaS platforms.</li>
+              <li>Comfortable working with Laravel ecosystem and PHP (basic understanding is fine).</li>
               <li>Strong communication skills in written English (90% of our communication is async and written). Portuguese is valued.</li>
               <li>Proactive mindset and ability to work effectively in a remote team environment.</li>
             </ul>
@@ -116,17 +116,14 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
           <section id="nice-to-have" className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Nice to have</h2>
             <ul className="space-y-3 text-gray-700 list-disc list-inside">
-              <li>Understanding of UX principles and ability to collaborate with designers.</li>
-              <li>Frontend experience with modern JavaScript frameworks and component-based architectures.</li>
-              <li>Experience with SingleStore or other distributed SQL databases (TiDB, CockroachDB).</li>
-              <li>Livewire and Alpine.js development experience.</li>
-              <li>Laravel Nova administration panel experience.</li>
-              <li>Experience with AWS Lambda and serverless architectures.</li>
-              <li>Payment gateway integration experience (Stripe, MercadoPago).</li>
-              <li>Experience with content processing pipelines (PDF, EPUB, audio files).</li>
-              <li>Familiarity with SAML 2.0 and OAuth implementations.</li>
-              <li>Experience with e-commerce platforms and subscription billing.</li>
-              <li>Contributions to open-source Laravel packages or projects.</li>
+              <li>Vue.js development experience.</li>
+              <li>Experience with multi-tenant SaaS interfaces and role-based access control.</li>
+              <li>Understanding of Laravel Blade templating and server-side rendering.</li>
+              <li>Knowledge of modern build tools (Vite, Webpack).</li>
+              <li>Experience with Playwright for frontend testing.</li>
+              <li>Understanding of web performance optimization techniques.</li>
+              <li>Experience with design systems and component libraries.</li>
+              <li>Contributions to open-source frontend projects.</li>
             </ul>
           </section>
 
@@ -136,7 +133,7 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
             <ul className="space-y-3 text-gray-700 list-disc list-inside">
               <li>100% remote team working across different time zones.</li>
               <li>Async-first communication with clear written documentation.</li>
-              <li>We value code quality, testing, and maintainability.</li>
+              <li>We value clean code, accessibility, and maintainability.</li>
               <li>Continuous learning and staying updated with technology advancements.</li>
               <li>Strong focus on developer experience and productivity.</li>
               <li>Collaborative environment where your opinion matters in key decisions.</li>
@@ -149,7 +146,7 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
             <h2 className="text-2xl font-bold mb-4">Hiring process</h2>
             <ol className="space-y-3 text-gray-700 list-decimal list-inside">
               <li>Initial conversation about your experience and career goals.</li>
-              <li>Technical assessment focused on Laravel and backend architecture.</li>
+              <li>Frontend assessment focused on Livewire and component architecture.</li>
               <li>Technical interview with the engineering team to review your assessment.</li>
               <li>Chat with our CEO about company vision and culture fit.</li>
               <li>Offer.</li>
@@ -181,15 +178,15 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
             </p>
             <ul className="space-y-2 text-gray-700 list-disc list-inside mb-4">
               <li>Your CV/resume</li>
-              <li>Links to projects you've worked on (GitHub profile, portfolio, etc.)</li>
+              <li>Links to projects you've worked on (GitHub profile, portfolio, CodePen, etc.)</li>
               <li>Salary expectations</li>
               <li>Why you want to be part of Publica.la</li>
             </ul>
             <p className="text-gray-700 mb-6">
-              Email: <a href="mailto:jobs@publica.la" className="text-primary hover:underline">jobs@publica.la</a> with subject <strong>Senior Full Stack Developer (Backend Focus)</strong>.
+              Email: <a href="mailto:jobs@publica.la" className="text-primary hover:underline">jobs@publica.la</a> with subject <strong>Senior Frontend Developer (Livewire & TALL Stack)</strong>.
             </p>
             <ApplyButton
-              jobTitle="Senior Full Stack Developer (Backend Focus)"
+              jobTitle="Senior Frontend Developer (Livewire & TALL Stack)"
               department="Product Engineering"
               size="lg"
             />

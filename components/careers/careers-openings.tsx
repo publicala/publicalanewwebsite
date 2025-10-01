@@ -41,6 +41,14 @@ export function CareersOpenings() {
       detailsUrl: "/en/careers/senior-fullstack-backend"
     },
     {
+      title: "Senior Frontend Developer (Livewire & TALL Stack)",
+      department: "Product Engineering",
+      location: "Remote",
+      type: "Full-time",
+      description: "Build beautiful, accessible user interfaces with Livewire, Alpine.js, and TailwindCSS. Create experiences used by thousands of publishers and millions of readers daily.",
+      detailsUrl: "/en/careers/senior-frontend-developer-livewire"
+    },
+    {
       title: "Senior Frontend Developer",
       department: "Engineering",
       location: "Remote / Santiago, Chile",
