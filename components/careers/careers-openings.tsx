@@ -14,6 +14,13 @@ export function CareersOpenings() {
   // Hardcoded job openings in English - consistent for all users
   const openings = [
     {
+      title: "Full Stack Developer (TypeScript & Mobile)",
+      department: "Product Engineering",
+      location: "Remote",
+      type: "Full-time",
+      description: "Build mobile and web apps with React Native, TypeScript, and modern frontend technologies. Ship features end-to-end while sharing code across our React, Vue, and React Native applications."
+    },
+    {
       title: "Senior Frontend Developer",
       department: "Engineering",
       location: "Remote / Santiago, Chile",

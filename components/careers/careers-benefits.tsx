@@ -10,10 +10,9 @@ import { Check } from "lucide-react"
 export function CareersBenefits() {
   const benefits = [
     "Competitive salary and equity packages",
-    "Comprehensive health, dental, and vision insurance",
     "Flexible work arrangements and remote options",
     "Professional development and learning budget",
-    "Generous vacation and parental leave policies",
+    "Unlimited time off",
     "State-of-the-art equipment and tools",
     "Team retreats and company events",
     "Opportunity to work with cutting-edge technology",
