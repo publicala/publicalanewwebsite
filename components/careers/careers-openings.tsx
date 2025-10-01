@@ -33,6 +33,14 @@ export function CareersOpenings() {
       detailsUrl: "/en/careers/full-stack-developer-typescript-mobile"
     },
     {
+      title: "Senior Full Stack Developer (Backend Focus)",
+      department: "Product Engineering",
+      location: "Remote",
+      type: "Full-time",
+      description: "Build and scale our multi-tenant SaaS platform with Laravel, PHP, SingleStore, and modern web technologies. 8+ years experience with strong backend expertise required.",
+      detailsUrl: "/en/careers/senior-fullstack-backend"
+    },
+    {
       title: "Senior Frontend Developer",
       department: "Engineering",
       location: "Remote / Santiago, Chile",
