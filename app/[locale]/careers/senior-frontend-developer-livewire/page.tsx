@@ -10,11 +10,11 @@ import { MapPin, Clock, Users } from "lucide-react"
  */
 export const metadata: Metadata = {
   title: "Senior Frontend Developer (Livewire & TALL Stack) - Careers | Publica.la",
-  description: "Join our Product Engineering team as a Senior Frontend Developer to build beautiful, accessible interfaces with Livewire, Alpine.js, and TailwindCSS. Remote position, UTC-3 to UTC+2 preferred.",
-  keywords: ["senior frontend developer", "livewire", "alpine.js", "tailwindcss", "tall stack", "vue.js", "remote work", "publica.la"],
+  description: "Join our Product Engineering team as a Senior Frontend Developer to build beautiful, accessible interfaces with Livewire, Alpine.js, and Tailwind CSS. Remote position, UTC-3 to UTC+2 preferred.",
+  keywords: ["senior frontend developer", "livewire", "alpine.js", "tailwind css", "tall stack", "vue.js", "remote work", "publica.la"],
   openGraph: {
     title: "Senior Frontend Developer (Livewire & TALL Stack) - Careers | Publica.la",
-    description: "Build beautiful, accessible user interfaces with Livewire, Alpine.js, and TailwindCSS at Publica.la",
+    description: "Build beautiful, accessible user interfaces with Livewire, Alpine.js, and Tailwind CSS at Publica.la",
     type: "website",
   },
 }
@@ -64,7 +64,7 @@ export default async function SeniorFrontendDeveloperPage({ params }: { params: 
           <section id="what-we-do" className="mb-12">
             <h2 className="text-2xl font-bold mb-4">What we do</h2>
             <p className="text-gray-700 leading-relaxed">
-              Publica.la is a B2B SaaS platform trusted by hundreds of publishers, bookshops, and libraries worldwide to power their digital content sales. Our multi-tenant platform processes millions of transactions across 156 countries, managing digital libraries, subscriptions, and e-commerce at scale. We're looking for a Senior Frontend Developer to build beautiful, accessible user interfaces using Livewire, Alpine.js, and TailwindCSS—creating experiences used by thousands of publishers and millions of readers daily.
+              Publica.la is a B2B SaaS platform trusted by hundreds of publishers, bookshops, and libraries worldwide to power their digital content sales. Our multi-tenant platform processes millions of transactions across 156 countries, managing digital libraries, subscriptions, and e-commerce at scale. We're looking for a Senior Frontend Developer to build beautiful, accessible user interfaces using Livewire, Alpine.js, and Tailwind CSS—creating experiences used by thousands of publishers and millions of readers daily.
             </p>
           </section>
 
@@ -75,7 +75,7 @@ export default async function SeniorFrontendDeveloperPage({ params }: { params: 
               <li>Build responsive, accessible interfaces for our multi-tenant publisher dashboard and admin tools.</li>
               <li>Develop Livewire components for real-time, interactive features with server-side rendering.</li>
               <li>Create lightweight interactions with Alpine.js following mobile-first design principles.</li>
-              <li>Style interfaces with TailwindCSS, ensuring WCAG 2.1 AA compliance.</li>
+              <li>Style interfaces with Tailwind CSS, ensuring WCAG 2.1 AA compliance.</li>
               <li>Work with Vue.js components where needed for complex client-side interactions.</li>
               <li>Collaborate with backend developers on API contracts and component integration.</li>
               <li>Optimize frontend performance: lazy loading, bundle optimization, caching strategies.</li>
@@ -89,10 +89,10 @@ export default async function SeniorFrontendDeveloperPage({ params }: { params: 
             <h2 className="text-2xl font-bold mb-4">Our stack</h2>
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-700 mb-3">
-                <strong>Technologies:</strong> Livewire, Alpine.js, TailwindCSS, Vue.js
+                <strong>Technologies:</strong> Laravel, Livewire, Alpine.js, Tailwind CSS, Vue.js
               </p>
               <p className="text-gray-700">
-                <strong>Also in the project:</strong> Laravel, PHP, SingleStore, Valkey/Redis, Docker, GitLab CI/CD
+                <strong>Also in the project:</strong> PHP, SingleStore, Valkey/Redis, Docker, GitLab CI/CD
               </p>
             </div>
           </section>
@@ -107,7 +107,7 @@ export default async function SeniorFrontendDeveloperPage({ params }: { params: 
               <li>Strong focus on accessibility (WCAG 2.1 AA) and mobile-first design.</li>
               <li>Experience building responsive, performant user interfaces for SaaS platforms.</li>
               <li>Comfortable working with Laravel ecosystem and PHP (basic understanding is fine).</li>
-              <li>Strong communication skills in written English (90% of our communication is async and written). Portuguese is valued.</li>
+              <li>Strong communication skills in written English (90% of our communication is async and written). Portuguese is a plus.</li>
               <li>Proactive mindset and ability to work effectively in a remote team environment.</li>
             </ul>
           </section>
