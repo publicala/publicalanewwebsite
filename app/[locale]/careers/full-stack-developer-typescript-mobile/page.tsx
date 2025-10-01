@@ -9,11 +9,11 @@ import { MapPin, Clock, Users } from "lucide-react"
  * SEO METADATA - ALWAYS IN ENGLISH
  */
 export const metadata: Metadata = {
-  title: "Full Stack Developer (TypeScript & Mobile) - Careers | Publica.la",
-  description: "Join our Product Engineering team to build mobile and web apps with React Native, TypeScript, and modern frontend technologies. Remote position, UTC-3 to UTC+2 preferred.",
-  keywords: ["full stack developer", "typescript", "react native", "mobile developer", "remote work", "publica.la"],
+  title: "Senior Full Stack Developer (TypeScript & Mobile) - Careers | Publica.la",
+  description: "Join our Product Engineering team as a Senior Full Stack Developer to build mobile and web apps with React Native, TypeScript, and modern frontend technologies. Remote position, UTC-3 to UTC+2 preferred.",
+  keywords: ["senior full stack developer", "typescript", "react native", "mobile developer", "remote work", "publica.la"],
   openGraph: {
-    title: "Full Stack Developer (TypeScript & Mobile) - Careers | Publica.la",
+    title: "Senior Full Stack Developer (TypeScript & Mobile) - Careers | Publica.la",
     description: "Build mobile and web apps with React Native, TypeScript, and modern frontend technologies at Publica.la",
     type: "website",
   },
@@ -33,7 +33,7 @@ export default async function FullStackDeveloperPage({ params }: { params: Promi
       <main className="max-w-4xl mx-auto px-6 py-20">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold mb-4">Full Stack Developer (TypeScript & Mobile)</h1>
+          <h1 className="text-4xl font-bold mb-4">Senior Full Stack Developer (TypeScript & Mobile)</h1>
 
           <div className="flex flex-wrap items-center gap-4 text-gray-600 mb-6">
             <div className="flex items-center gap-2">
@@ -51,7 +51,7 @@ export default async function FullStackDeveloperPage({ params }: { params: Promi
           </div>
 
           <ApplyButton
-            jobTitle="Full Stack Developer (TypeScript & Mobile)"
+            jobTitle="Senior Full Stack Developer (TypeScript & Mobile)"
             department="Product Engineering"
             size="lg"
           />
@@ -167,10 +167,10 @@ export default async function FullStackDeveloperPage({ params }: { params: Promi
               Send your GitHub or portfolio plus a short note about something you shipped that made users happier.
             </p>
             <p className="text-gray-700 mb-6">
-              Email: <a href="mailto:jobs@publica.la" className="text-primary hover:underline">jobs@publica.la</a> with subject <strong>Full Stack Developer (TypeScript & Mobile)</strong>.
+              Email: <a href="mailto:jobs@publica.la" className="text-primary hover:underline">jobs@publica.la</a> with subject <strong>Senior Full Stack Developer (TypeScript & Mobile)</strong>.
             </p>
             <ApplyButton
-              jobTitle="Full Stack Developer (TypeScript & Mobile)"
+              jobTitle="Senior Full Stack Developer (TypeScript & Mobile)"
               department="Product Engineering"
               size="lg"
             />

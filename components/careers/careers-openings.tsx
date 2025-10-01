@@ -25,7 +25,7 @@ export function CareersOpenings() {
   // Hardcoded job openings in English - consistent for all users
   const openings: JobOpening[] = [
     {
-      title: "Full Stack Developer (TypeScript & Mobile)",
+      title: "Senior Full Stack Developer (TypeScript & Mobile)",
       department: "Product Engineering",
       location: "Remote",
       type: "Full-time",
