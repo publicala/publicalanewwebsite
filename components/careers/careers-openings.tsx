@@ -2,23 +2,35 @@
 
 import { Button } from "@/components/ui/button"
 import { MapPin, Clock, Users } from "lucide-react"
+import Link from "next/link"
 
 /**
  * CAREERS OPENINGS COMPONENT - ENGLISH ONLY
- * 
+ *
  * This component displays job openings and is hardcoded in English.
- * Job descriptions, requirements, and application processes are consistent 
+ * Job descriptions, requirements, and application processes are consistent
  * for all candidates regardless of their browser locale.
  */
+
+interface JobOpening {
+  title: string
+  department: string
+  location: string
+  type: string
+  description: string
+  detailsUrl?: string
+}
+
 export function CareersOpenings() {
   // Hardcoded job openings in English - consistent for all users
-  const openings = [
+  const openings: JobOpening[] = [
     {
       title: "Full Stack Developer (TypeScript & Mobile)",
       department: "Product Engineering",
       location: "Remote",
       type: "Full-time",
-      description: "Build mobile and web apps with React Native, TypeScript, and modern frontend technologies. Ship features end-to-end while sharing code across our React, Vue, and React Native applications."
+      description: "Build mobile and web apps with React Native, TypeScript, and modern frontend technologies. Ship features end-to-end while sharing code across our React, Vue, and React Native applications.",
+      detailsUrl: "/en/careers/full-stack-developer-typescript-mobile"
     },
     {
       title: "Senior Frontend Developer",
@@ -83,21 +95,30 @@ export function CareersOpenings() {
                   <p className="text-gray-600">{job.description}</p>
                 </div>
                 <div className="flex-shrink-0">
-                  <Button 
-                    onClick={() => {
-                      const subject = `Application for ${job.title} Position`
-                      const body = `Hi,
+                  {job.detailsUrl ? (
+                    <Link href={job.detailsUrl} aria-label={`View details for ${job.title} position`}>
+                      <Button>
+                        View Details
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Button
+                      onClick={() => {
+                        const subject = `Application for ${job.title} Position`
+                        const body = `Hi,
 
 I'm interested in applying for the ${job.title} position in the ${job.department} department.
 
 Please find my resume attached, and I look forward to hearing from you.
 
 Best regards`
-                      window.open(`mailto:jobs@publica.la?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`)
-                    }}
-                  >
-                    Apply Now
-                  </Button>
+                        window.open(`mailto:jobs@publica.la?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`)
+                      }}
+                      aria-label={`Apply for ${job.title} position`}
+                    >
+                      Apply Now
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
