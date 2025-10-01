@@ -64,7 +64,7 @@ export default async function FullStackDeveloperPage({ params }: { params: Promi
           <section id="what-we-do" className="mb-12">
             <h2 className="text-2xl font-bold mb-4">What we do</h2>
             <p className="text-gray-700 leading-relaxed">
-              Publica.la helps publishers sell and deliver digital content directly to their readers. We are growing our mobile and web apps with a shared TypeScript core. You will work mostly on React Native and the frontend, and jump into light Node.js scripting when it helps.
+              Publica.la is a B2B SaaS platform trusted by hundreds of publishers worldwide to sell and deliver digital content directly to their readers. We're building mobile and web applications with React Native and a shared TypeScript core that serves thousands of daily readers across iOS, Android, and the web. You'll work primarily on React Native and modern frontend development, with opportunities to contribute across our entire TypeScript stack.
             </p>
           </section>
 

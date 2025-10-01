@@ -64,7 +64,7 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
           <section id="what-we-do" className="mb-12">
             <h2 className="text-2xl font-bold mb-4">What we do</h2>
             <p className="text-gray-700 leading-relaxed">
-              Publica.la is a digital publishing SaaS platform trusted by hundreds of publishers worldwide. We're looking for a Senior Full Stack Developer with strong backend expertise to join our multidisciplinary team building and scaling our core platform. You'll work with modern Laravel/PHP backend systems, multi-tenant architecture, and distributed databases, while also contributing to our Vue.js/Livewire frontend.
+              Publica.la is a B2B SaaS platform trusted by hundreds of publishers, bookshops, and libraries worldwide to power their digital content sales. Our multi-tenant platform processes millions of transactions across 156 countries, managing digital libraries, subscriptions, and e-commerce at scale. We're looking for a Senior Full Stack Developer with strong backend expertise to help us build and scale the core systems that power this growth—working with Laravel/PHP, SingleStore, multi-tenant architecture, and distributed systems.
             </p>
           </section>
 
