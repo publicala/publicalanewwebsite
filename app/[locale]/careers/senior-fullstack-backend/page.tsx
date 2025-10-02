@@ -10,7 +10,7 @@ import { MapPin, Clock, Users } from "lucide-react"
  */
 export const metadata: Metadata = {
   title: "Senior Full Stack Developer (Backend Focus) - Careers | Publica.la",
-  description: "Join our Product Engineering team as a Senior Full Stack Developer focused on backend. Build scalable multi-tenant SaaS platform with Laravel, PHP, SingleStore, and modern web technologies. 8+ years experience required.",
+  description: "Join our Product Engineering team as a Senior Full Stack Developer focused on backend. Build scalable multi-tenant SaaS platform with Laravel, PHP, SingleStore, and modern web technologies. 6+ years experience required.",
   keywords: ["senior full stack developer", "laravel", "php", "backend developer", "singlestore", "remote work", "publica.la"],
   openGraph: {
     title: "Senior Full Stack Developer (Backend Focus) - Careers | Publica.la",
@@ -107,7 +107,7 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
               <li>Experience building and scaling multi-tenant SaaS applications.</li>
               <li>Solid understanding of queue-based architectures and background processing.</li>
               <li>Experience with testing frameworks (PHPUnit/Pest) and static analysis tools.</li>
-              <li>Strong communication skills in written English (90% of our communication is async and written). Portuguese is valued.</li>
+              <li>Strong communication skills in written English and Spanish (most of our communication is async and written). Portuguese is a plus.</li>
               <li>Proactive mindset and ability to work effectively in a remote team environment.</li>
             </ul>
           </section>

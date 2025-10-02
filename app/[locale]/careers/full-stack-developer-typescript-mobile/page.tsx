@@ -79,7 +79,7 @@ export default async function FullStackDeveloperPage({ params }: { params: Promi
               <li>Improve performance and reliability: cold start, bundle size, offline, retries, error boundaries.</li>
               <li>Collaborate with design, product and support to turn feedback into improvements.</li>
               <li>Write short, clear docs and propose pragmatic changes when needed.</li>
-              <li>Nice bonus: touch Laravel/PHP services, SingleStore and Redis, and help with AWS or Cloudflare when relevant.</li>
+              <li>Collaborate on Laravel/PHP services, SingleStore, and Valkey/Redis when needed. Help with AWS or Cloudflare infrastructure when relevant.</li>
             </ul>
           </section>
 
@@ -91,7 +91,7 @@ export default async function FullStackDeveloperPage({ params }: { params: Promi
                 <strong>Main focus:</strong> React Native, Electron, React, Vue, TypeScript, JavaScript, Tailwind, Node.js scripting, GitLab CI, fastlane
               </p>
               <p className="text-gray-700">
-                <strong>Also in other projects:</strong> Laravel (PHP), SingleStore, Redis, AWS, Cloudflare
+                <strong>Also in other projects:</strong> Laravel (PHP), SingleStore, Valkey/Redis, AWS, Cloudflare
               </p>
             </div>
           </section>
@@ -106,7 +106,7 @@ export default async function FullStackDeveloperPage({ params }: { params: Promi
               <li>Solid CSS fundamentals and responsive design. Tailwind experience is a plus.</li>
               <li>Testing mindset: unit and integration tests, Detox.</li>
               <li>Comfortable with Git, code reviews and CI.</li>
-              <li>Communicate clearly in English. Spanish and Portuguese are valued.</li>
+              <li>Strong communication skills in written English and Spanish (most of our communication is async and written). Portuguese is a plus.</li>
             </ul>
           </section>
 
@@ -164,8 +164,14 @@ export default async function FullStackDeveloperPage({ params }: { params: Promi
           <section id="how-to-apply" className="mb-12">
             <h2 className="text-2xl font-bold mb-4">How to apply</h2>
             <p className="text-gray-700 mb-4">
-              Send your GitHub or portfolio plus a short note about something you shipped that made users happier.
+              Send us the following:
             </p>
+            <ul className="space-y-2 text-gray-700 list-disc list-inside mb-4">
+              <li>Your CV/resume</li>
+              <li>Links to projects you've worked on (GitHub profile, portfolio, etc.)</li>
+              <li>Salary expectations</li>
+              <li>Why you want to be part of Publica.la</li>
+            </ul>
             <p className="text-gray-700 mb-6">
               Email: <a href="mailto:jobs@publica.la" className="text-primary hover:underline">jobs@publica.la</a> with subject <strong>Senior Full Stack Developer (TypeScript & Mobile)</strong>.
             </p>

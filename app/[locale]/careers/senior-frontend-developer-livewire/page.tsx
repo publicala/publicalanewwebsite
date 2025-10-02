@@ -101,13 +101,13 @@ export default async function SeniorFrontendDeveloperPage({ params }: { params: 
           <section id="requirements" className="mb-12">
             <h2 className="text-2xl font-bold mb-4">You might be a fit if you have</h2>
             <ul className="space-y-3 text-gray-700 list-disc list-inside">
-              <li>5+ years of frontend development experience with strong component architecture expertise.</li>
-              <li>Deep understanding of Livewire, Alpine.js, or similar reactive frameworks (at least 2 years).</li>
+              <li>6+ years of frontend development experience with strong component architecture expertise.</li>
+              <li>Deep understanding of Livewire, Alpine.js, or similar reactive frameworks (at least 1 year).</li>
               <li>Experience with Tailwind CSS and utility-first CSS frameworks.</li>
               <li>Strong focus on accessibility (WCAG 2.1 AA) and mobile-first design.</li>
               <li>Experience building responsive, performant user interfaces for SaaS platforms.</li>
               <li>Comfortable working with Laravel ecosystem and PHP (basic understanding is fine).</li>
-              <li>Strong communication skills in written English (90% of our communication is async and written). Portuguese is a plus.</li>
+              <li>Strong communication skills in written English and Spanish (90% of our communication is async and written). Portuguese is a plus.</li>
               <li>Proactive mindset and ability to work effectively in a remote team environment.</li>
             </ul>
           </section>
