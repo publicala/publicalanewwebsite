@@ -107,7 +107,7 @@ export default async function SeniorFrontendDeveloperPage({ params }: { params: 
               <li>Strong focus on accessibility (WCAG 2.1 AA) and mobile-first design.</li>
               <li>Experience building responsive, performant user interfaces for SaaS platforms.</li>
               <li>Comfortable working with Laravel ecosystem and PHP (basic understanding is fine).</li>
-              <li>Strong communication skills in written English and Spanish (90% of our communication is async and written). Portuguese is a plus.</li>
+              <li>Native Spanish speaker or conversational-level proficiency required. Strong written communication skills in English and Spanish (90% of our communication is async and written). Portuguese is a plus.</li>
               <li>Proactive mindset and ability to work effectively in a remote team environment.</li>
             </ul>
           </section>

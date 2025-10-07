@@ -107,7 +107,7 @@ export default async function SeniorFullStackBackendPage({ params }: { params: P
               <li>Experience building and scaling multi-tenant SaaS applications.</li>
               <li>Solid understanding of queue-based architectures and background processing.</li>
               <li>Experience with testing frameworks (PHPUnit/Pest) and static analysis tools.</li>
-              <li>Strong communication skills in written English and Spanish (most of our communication is async and written). Portuguese is a plus.</li>
+              <li>Native Spanish speaker or conversational-level proficiency required. Strong written communication skills in English and Spanish (most of our communication is async and written). Portuguese is a plus.</li>
               <li>Proactive mindset and ability to work effectively in a remote team environment.</li>
             </ul>
           </section>

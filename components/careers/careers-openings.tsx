@@ -25,7 +25,7 @@ export function CareersOpenings() {
   // Hardcoded job openings in English - consistent for all users
   const openings: JobOpening[] = [
     {
-      title: "Senior Full Stack Developer (TypeScript & Mobile)",
+      title: "Senior Full Stack Developer (TypeScript & Mobile) - Spanish: Native or Conversational",
       department: "Product Engineering",
       location: "Remote",
       type: "Full-time",
@@ -33,7 +33,7 @@ export function CareersOpenings() {
       detailsUrl: "/en/careers/full-stack-developer-typescript-mobile"
     },
     {
-      title: "Senior Full Stack Developer (Backend Focus)",
+      title: "Senior Full Stack Developer (Backend Focus) - Spanish: Native or Conversational",
       department: "Product Engineering",
       location: "Remote",
       type: "Full-time",
@@ -41,7 +41,7 @@ export function CareersOpenings() {
       detailsUrl: "/en/careers/senior-fullstack-backend"
     },
     {
-      title: "Senior Frontend Developer (Livewire & TALL Stack)",
+      title: "Senior Frontend Developer (Livewire & TALL Stack) - Spanish: Native or Conversational",
       department: "Product Engineering",
       location: "Remote",
       type: "Full-time",

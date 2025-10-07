@@ -106,7 +106,7 @@ export default async function FullStackDeveloperPage({ params }: { params: Promi
               <li>Solid CSS fundamentals and responsive design. Tailwind experience is a plus.</li>
               <li>Testing mindset: unit and integration tests, Detox.</li>
               <li>Comfortable with Git, code reviews and CI.</li>
-              <li>Strong communication skills in written English and Spanish (most of our communication is async and written). Portuguese is a plus.</li>
+              <li>Native Spanish speaker or conversational-level proficiency required. Strong written communication skills in English and Spanish (most of our communication is async and written). Portuguese is a plus.</li>
             </ul>
           </section>
 
