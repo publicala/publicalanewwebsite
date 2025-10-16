@@ -61,7 +61,7 @@ export function CareersApplication() {
           <p className="text-gray-600 mb-6">
             Have questions about our open positions or want to learn more about working at publica.la?
           </p>
-          <Button 
+          <Button
             size="lg"
             onClick={() => {
               const subject = "Inquiry About Career Opportunities"
@@ -76,7 +76,7 @@ Best regards`
             }}
           >
             <Mail className="h-4 w-4 mr-2" />
-            Contact Our HR Team
+            Get in Touch
           </Button>
         </div>
       </div>

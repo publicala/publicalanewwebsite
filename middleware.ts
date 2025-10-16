@@ -7,7 +7,7 @@ const defaultLocale = 'en'
 
 export function middleware(request: NextRequest) {
   const hostname = request.headers.get('host')
-  
+
   // Redirect apex domain to www with HTTPS
   if (hostname === 'publica.la') {
     const url = new URL(request.url)
@@ -15,9 +15,9 @@ export function middleware(request: NextRequest) {
     url.protocol = 'https:'
     return NextResponse.redirect(url, 301)
   }
-  
-  // Force HTTPS for all requests
-  if (request.nextUrl.protocol === 'http:') {
+
+  // Force HTTPS for all requests (except localhost)
+  if (request.nextUrl.protocol === 'http:' && !hostname?.includes('localhost')) {
     const url = new URL(request.url)
     url.protocol = 'https:'
     return NextResponse.redirect(url, 301)
