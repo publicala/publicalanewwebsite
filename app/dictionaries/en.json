@@ -2353,5 +2353,12 @@
     "learnMore": "Learn More",
     "requestDemo": "Schedule a Meeting",
     "previewText": "Native App Preview"
+  },
+  "thankYou": {
+    "title": "Thank You!",
+    "subtitle": "Your demo request has been received successfully.",
+    "description": "We'll be in touch soon to schedule your personalized demo. In the meantime, feel free to explore our platform and learn more about how we can help transform your digital publishing business.",
+    "backToHome": "Back to Home",
+    "contactInfo": "Questions? Contact us at support@publica.la"
   }
 }

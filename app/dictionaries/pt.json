@@ -2355,5 +2355,12 @@
     "learnMore": "Saiba Mais",
     "requestDemo": "Agendar Reunião",
     "previewText": "Prévia do App Nativo"
+  },
+  "thankYou": {
+    "title": "Obrigado!",
+    "subtitle": "Sua solicitação de demo foi recebida com sucesso.",
+    "description": "Entraremos em contato em breve para agendar sua demo personalizada. Enquanto isso, sinta-se à vontade para explorar nossa plataforma e saber mais sobre como podemos ajudar a transformar seu negócio de publicação digital.",
+    "backToHome": "Voltar ao Início",
+    "contactInfo": "Dúvidas? Entre em contato conosco em support@publica.la"
   }
 }

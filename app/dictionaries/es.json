@@ -2348,5 +2348,12 @@
     "learnMore": "Saber Más",
     "requestDemo": "Programar Reunión",
     "previewText": "Vista Previa de la App Nativa"
+  },
+  "thankYou": {
+    "title": "¡Gracias!",
+    "subtitle": "Tu solicitud de demo ha sido recibida exitosamente.",
+    "description": "Nos pondremos en contacto pronto para programar tu demo personalizada. Mientras tanto, siéntete libre de explorar nuestra plataforma y conocer más sobre cómo podemos ayudar a transformar tu negocio de publicación digital.",
+    "backToHome": "Volver al Inicio",
+    "contactInfo": "¿Preguntas? Contáctanos en support@publica.la"
   }
 }
