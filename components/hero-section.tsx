@@ -6,6 +6,7 @@ import { Sparkles } from "lucide-react"
 import { AnimatedBackground } from "@/components/ui/animated-background"
 import { CalendlyButton } from "@/components/calendly-button"
 import Image from "next/image"
+import { SocialProofInline } from "@/components/social-proof-inline"
 
 interface HeroSectionProps {
   dict?: {
@@ -93,35 +94,14 @@ export function HeroSection({ dict }: HeroSectionProps) {
                 {dict?.hero.scheduleMeeting || "Schedule a Meeting"}
               </CalendlyButton>
             </div>
-
-            <div className="flex items-center gap-4">
-              <div className="flex -space-x-2">
-                {[
-                  { src: "/images/isologos/santillana-iso.webp", alt: "Santillana" },
-                  { src: "/images/isologos/penguin-iso.webp", alt: "Penguin Random House" },
-                  { src: "/images/isologos/forbes-iso.webp", alt: "Forbes" },
-                  { src: "/images/isologos/planeta-iso.webp", alt: "Grupo Planeta" },
-                ].map((logo, index) => (
-                  <div
-                    key={index}
-                    className="w-10 h-10 rounded-full bg-white border-2 border-white shadow-sm flex items-center justify-center overflow-hidden hover:scale-110 transition-transform duration-300"
-                  >
-                    <Image
-                      src={logo.src || "/placeholder.svg"}
-                      alt={logo.alt}
-                      width={28}
-                      height={28}
-                      className="object-contain"
-                    />
-                  </div>
-                ))}
-              </div>
-              <div className="text-sm text-gray-600">
-                <span className="font-medium">{dict?.hero.joinLeaders || "Join industry leaders"}</span>
-                <br />
-                <span className="text-xs">{dict?.hero.noCreditCard || "No credit card required"}</span>
-              </div>
-            </div>
+            <SocialProofInline
+              text={dict?.hero.trustedBy || "Trusted by 50+ countries and thousands of organizations"}
+              className="mt-2"
+              stats={[
+                { value: "50+", label: "Countries" },
+                { value: "1,000+", label: "Organizations" },
+              ]}
+            />
           </div>
 
           {/* Enhanced video section */}

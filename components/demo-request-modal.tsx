@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { FormReassurance } from "@/components/form-reassurance"
 
 export function DemoRequestModal({
   isOpen,
@@ -57,6 +58,7 @@ export function DemoRequestModal({
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
           </div>
         </div>
+        <FormReassurance className="mt-4" />
       </DialogContent>
     </Dialog>
   )

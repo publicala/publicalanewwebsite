@@ -6,6 +6,7 @@ import { Users, Globe, TrendingUp, Star, Sparkles } from "lucide-react"
 import { StatsCard } from "@/components/ui/stats-card"
 import { AnimatedBackground } from "@/components/ui/animated-background"
 import { CalendlyButton } from "@/components/calendly-button"
+import { SocialProofInline } from "@/components/social-proof-inline"
 
 interface CTASectionProps {
   dict?: {
@@ -103,6 +104,14 @@ export function CTASection({ dict }: CTASectionProps) {
             >
               {ctaSection.scheduleButton}
             </CalendlyButton>
+          </div>
+
+          <div className="flex justify-center">
+            <SocialProofInline
+              text="Trusted by 50+ countries and 1,000+ organizations"
+              className="mt-4"
+              stats={ctaSection.stats}
+            />
           </div>
 
           <div className="text-sm text-gray-500 space-y-2">
