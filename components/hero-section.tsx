@@ -93,6 +93,7 @@ export function HeroSection({ dict }: HeroSectionProps) {
               >
                 {dict?.hero.scheduleMeeting || "Schedule a Meeting"}
               </CalendlyButton>
+              <a href="/savings-calculator" className="text-sm text-gray-600 underline text-center sm:text-left">Try the ROI calculator</a>
             </div>
             <SocialProofInline
               text={dict?.hero.trustedBy || "Trusted by 50+ countries and thousands of organizations"}

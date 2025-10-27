@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next"
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://publica.la"
   const currentDate = new Date().toISOString()
+  const locales = ["en", "es", "pt"]
 
   return [
     // Homepage
@@ -14,12 +15,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     // Solutions
-    {
-      url: `${baseUrl}/solutions/publishers`,
+    ...locales.map((l) => ({
+      url: `${baseUrl}/${l}/solutions/publishers`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
       priority: 0.9,
-    },
+      alternates: {
+        languages: Object.fromEntries(locales.map((ll) => [ll, `${baseUrl}/${ll}/solutions/publishers`]))
+      }
+    })),
     {
       url: `${baseUrl}/solutions/bookshops`,
       lastModified: currentDate,
@@ -46,12 +50,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     // Features
-    {
-      url: `${baseUrl}/features`,
+    ...locales.map((l) => ({
+      url: `${baseUrl}/${l}/features`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
       priority: 0.8,
-    },
+      alternates: {
+        languages: Object.fromEntries(locales.map((ll) => [ll, `${baseUrl}/${ll}/features`]))
+      }
+    })),
     {
       url: `${baseUrl}/features/vito-ai`,
       lastModified: currentDate,
@@ -112,12 +119,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     // Comparison Pages
-    {
-      url: `${baseUrl}/compare`,
+    ...locales.map((l) => ({
+      url: `${baseUrl}/${l}/compare`,
       lastModified: currentDate,
       changeFrequency: "monthly" as const,
       priority: 0.7,
-    },
+      alternates: {
+        languages: Object.fromEntries(locales.map((ll) => [ll, `${baseUrl}/${ll}/compare`]))
+      }
+    })),
     {
       url: `${baseUrl}/compare/publica-vs-supadu`,
       lastModified: currentDate,

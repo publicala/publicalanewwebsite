@@ -9,6 +9,8 @@ import { PublishersAnalytics } from "@/components/publishers/publishers-analytic
 import { CTASection } from "@/components/cta-section"
 import { PublishersCaseStudy } from "@/components/publishers/publishers-case-study"
 import { getDictionary } from "@/app/dictionaries"
+import { FaqSection } from "@/components/faq-section"
+import Script from "next/script"
 
 export const metadata = {
   title: "Solutions for Publishers | Publica.la",
@@ -20,6 +22,7 @@ export default async function PublishersPage({ params }: { params: Promise<{ loc
   const { locale } = await params
   const dict = await getDictionary(locale as "en" | "es" | "pt")
   const pubDict = dict.publishersSolution
+  const faq = (pubDict as any)?.faq
 
   return (
     <main className="min-h-screen flex flex-col">
@@ -36,6 +39,22 @@ export default async function PublishersPage({ params }: { params: Promise<{ loc
       <PublishersEngagement dict={pubDict.engagement} />
       <PublishersAnalytics dict={pubDict.analytics} />
       <PublishersCaseStudy dict={pubDict.caseStudy} />
+      {faq?.questions?.length ? (
+        <>
+          <FaqSection title={faq.title} subtitle={faq.subtitle} items={faq.questions} />
+          <Script id="faq-schema-publishers" type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": (faq?.questions || []).map((q: any) => ({
+                "@type": "Question",
+                name: q.question,
+                acceptedAnswer: { "@type": "Answer", text: q.answer }
+              }))
+            })}
+          </Script>
+        </>
+      ) : null}
       <CTASection dict={dict} />
       <Footer dict={dict} locale={locale} />
     </main>
