@@ -3,6 +3,7 @@
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { CalendlyButton } from "@/components/calendly-button"
+import { SocialProofInline } from "@/components/social-proof-inline"
 
 export function BookshopsHero({ dict }: { dict: any }) {
   return (
@@ -24,8 +25,11 @@ export function BookshopsHero({ dict }: { dict: any }) {
                 className="rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 group"
                 showArrow={true}
               >
-                {dict.getStarted}
+                Get a demo
               </CalendlyButton>
+            </div>
+            <div className="mt-4">
+              <SocialProofInline />
             </div>
             <div className="grid grid-cols-2 gap-6 mt-8">
               {dict.stats.map((stat: any) => (

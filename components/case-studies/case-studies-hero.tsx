@@ -19,6 +19,11 @@ export function CaseStudiesHero({ dict }: CaseStudiesHeroProps) {
         <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
           {dict.caseStudies.hero.subtitle}
         </p>
+        <div className="mt-6 flex justify-center">
+          <span className="inline-flex items-center rounded-full border border-gray-200 bg-white px-3 py-1 text-sm text-gray-700">
+            <span className="font-semibold mr-1 text-gray-900">300%+</span> Avg growth after launch
+          </span>
+        </div>
       </div>
     </section>
   )

@@ -16,7 +16,7 @@ interface CalendlyButtonProps {
 }
 
 export function CalendlyButton({
-  children = "Schedule a Meeting",
+  children = "Get a demo",
   className,
   variant = "default",
   size = "default",

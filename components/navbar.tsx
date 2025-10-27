@@ -176,7 +176,7 @@ export function Navbar({ dict, locale = "en" }: NavbarProps) {
             </a>
           </Button>
           <CalendlyButton size="sm" className="rounded-md font-medium">
-            {navbarDict.navbar.startNow}
+            Get a demo
           </CalendlyButton>
         </div>
       </div>
@@ -239,7 +239,7 @@ export function Navbar({ dict, locale = "en" }: NavbarProps) {
                   </a>
                 </Button>
                 <CalendlyButton size="sm" className="rounded-md font-medium">
-                  {navbarDict.navbar.startNow}
+                  Get a demo
                 </CalendlyButton>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import { SectionHeader } from "@/components/ui/section-header"
+import { SocialProofInline } from "@/components/social-proof-inline"
 
 interface ContactHeroProps {
   dict: {
@@ -21,6 +22,9 @@ export function ContactHero({ dict }: ContactHeroProps) {
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
           {dict.contactHero.description}
         </p>
+        <div className="mt-6 flex justify-center">
+          <SocialProofInline />
+        </div>
       </div>
     </section>
   )

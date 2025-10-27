@@ -1,6 +1,7 @@
 "use client"
 
 import { CalendlyButton } from "@/components/calendly-button"
+import { SocialProofInline } from "@/components/social-proof-inline"
 
 interface AboutHeroProps {
   dict: {
@@ -36,8 +37,11 @@ export function AboutHero({ dict }: AboutHeroProps) {
             size="lg"
             className="rounded-md font-medium bg-blue-600 hover:bg-blue-700 text-white px-8 py-6"
           >
-            {dict.aboutHero.getStartedButton}
+            Get a demo
           </CalendlyButton>
+        </div>
+        <div className="mt-6">
+          <SocialProofInline />
         </div>
       </div>
     </section>
