@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { FeaturesOverview } from "@/components/features-overview"
 import { CTASection } from "@/components/cta-section"
 import { getDictionary } from "@/app/dictionaries"
+import Script from "next/script"
 
 export const metadata = {
   title: "Features | Publica.la",
@@ -33,6 +34,17 @@ export default async function FeaturesPage({
       </section>
       <FeaturesOverview dict={dict} />
       <CTASection dict={dict} secondary={{ text: "See pricing", href: `/${locale}/pricing` }} />
+      <Script id="faq-schema-features" type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": ((dict as any)?.featuresFAQ?.questions || []).map((item: any) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: { "@type": "Answer", text: item.answer }
+          }))
+        })}
+      </Script>
       <Footer dict={dict} locale={locale} />
     </main>
   )

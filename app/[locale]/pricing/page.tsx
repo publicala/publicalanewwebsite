@@ -6,6 +6,7 @@ import { PricingFeatures } from "@/components/pricing/pricing-features"
 import { PricingFAQ } from "@/components/pricing/pricing-faq"
 import { CTASection } from "@/components/cta-section"
 import { getDictionary } from "@/app/dictionaries"
+import Script from "next/script"
 
 export const metadata = {
   title: "Pricing | Publica.la",
@@ -29,6 +30,17 @@ export default async function PricingPage({
       <PricingFeatures dict={dict} />
       <PricingFAQ dict={dict} />
       <CTASection dict={dict} secondary={{ text: "See pricing details", href: `/${locale}/pricing#plans` }} />
+      <Script id="faq-schema-pricing" type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": (dict as any)?.pricingFAQ?.questions?.map((item: any) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: { "@type": "Answer", text: item.answer }
+          })) || []
+        })}
+      </Script>
       <Footer dict={dict} locale={locale} />
     </main>
   )

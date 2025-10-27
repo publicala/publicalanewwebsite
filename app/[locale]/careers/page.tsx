@@ -7,6 +7,7 @@ import { CareersBenefits } from "@/components/careers/careers-benefits"
 import { CareersApplication } from "@/components/careers/careers-application"
 import { getDictionary } from "@/app/dictionaries"
 import { Metadata } from "next"
+import Script from "next/script"
 
 /**
  * SEO METADATA - ALWAYS IN ENGLISH
@@ -54,6 +55,23 @@ export default async function CareersPage({ params }: { params: Promise<{ locale
         <CareersBenefits />
         <CareersOpenings />
         <CareersApplication />
+        <Script id="jobposting-schema" type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "JobPosting",
+            title: "Multiple Roles (Engineering, Product, Success)",
+            hiringOrganization: {
+              "@type": "Organization",
+              name: "Publica.la",
+              sameAs: "https://publica.la"
+            },
+            jobLocationType: "TELECOMMUTE",
+            employmentType: ["FULL_TIME", "CONTRACT"],
+            applicantLocationRequirements: { "@type": "Country", name: "Remote" },
+            description: "Join our team to build the leading digital publishing platform. We hire across Engineering, Product, and Customer Success.",
+            validThrough: new Date(Date.now() + 1000*60*60*24*180).toISOString()
+          })}
+        </Script>
       </main>
       <Footer dict={userDict} locale={locale} />
     </div>
