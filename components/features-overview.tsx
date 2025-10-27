@@ -42,6 +42,11 @@ export function FeaturesOverview({ dict }: FeaturesOverviewProps) {
             />
           ))}
         </div>
+        <div className="mt-12 text-center text-sm text-gray-600">
+          <Link href={`/compare`} className="underline hover:text-primary">Compare Publica.la vs alternatives</Link>
+          <span className="mx-2">·</span>
+          <Link href={`/compare/alternatives`} className="underline hover:text-primary">Alternatives hub</Link>
+        </div>
       </div>
     </section>
   )
