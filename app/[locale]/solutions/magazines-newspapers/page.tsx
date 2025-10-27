@@ -9,11 +9,14 @@ import { MagazinesNewspapersCaseStudy } from "@/components/magazines-newspapers/
 import { MagazinesNewspapersCta } from "@/components/magazines-newspapers/magazines-newspapers-cta"
 import { CustomerLogosShowcase } from "@/components/customer-logos-showcase"
 import { getDictionary } from "@/app/dictionaries"
+import { FaqSection } from "@/components/faq-section"
+import Script from "next/script"
 
 export default async function MagazinesNewspapersPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const dict = await getDictionary(locale as "en" | "es" | "pt")
   const magazinesNewspapersDict = dict.magazinesNewspapersSolution
+  const faq = (magazinesNewspapersDict as any)?.faq
   return (
     <>
       <Navbar dict={dict} locale={locale} />
@@ -43,6 +46,22 @@ export default async function MagazinesNewspapersPage({ params }: { params: Prom
         <MagazinesNewspapersAnalytics />
         <MagazinesNewspapersMonetization />
         <MagazinesNewspapersCaseStudy />
+        {faq?.questions?.length ? (
+          <>
+            <FaqSection title={faq.title} subtitle={faq.subtitle} items={faq.questions} />
+            <Script id="faq-schema-magazines" type="application/ld+json">
+              {JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": (faq?.questions || []).map((q: any) => ({
+                  "@type": "Question",
+                  name: q.question,
+                  acceptedAnswer: { "@type": "Answer", text: q.answer }
+                }))
+              })}
+            </Script>
+          </>
+        ) : null}
         <MagazinesNewspapersCta />
       </main>
       <Footer dict={dict} locale={locale} />

@@ -93,6 +93,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
+    // Guides
+    ...locales.map((l) => ({
+      url: `${baseUrl}/${l}/guides/how-to-launch-digital-library`,
+      lastModified: currentDate,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+      alternates: {
+        languages: Object.fromEntries(locales.map((ll) => [ll, `${baseUrl}/${ll}/guides/how-to-launch-digital-library`]))
+      }
+    })),
     {
       url: `${baseUrl}/case-studies/forbes-colombia`,
       lastModified: currentDate,

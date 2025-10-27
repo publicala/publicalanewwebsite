@@ -11,6 +11,8 @@ import { CTASection } from "@/components/cta-section"
 import { CreatorsCaseStudy } from "@/components/creators/creators-case-study"
 import { CustomerLogosShowcase } from "@/components/customer-logos-showcase"
 import { getDictionary } from "@/app/dictionaries"
+import { FaqSection } from "@/components/faq-section"
+import Script from "next/script"
 
 export const metadata = {
   title: "Solutions for Content Creators | Publica.la",
@@ -22,6 +24,7 @@ export default async function ContentCreatorsPage({ params }: { params: Promise<
   const { locale } = await params
   const dict = await getDictionary(locale as "en" | "es" | "pt")
   const creatorsDict = dict.creatorsSolution
+  const faq = (creatorsDict as any)?.faq
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar dict={dict} locale={locale} />
@@ -32,13 +35,29 @@ export default async function ContentCreatorsPage({ params }: { params: Promise<
         variant="solution"
         industry="creators"
       />
-      <CreatorsFeatures dict={creatorsDict.features} />
-      <CreatorsFormats dict={creatorsDict.formats} />
-      <CreatorsMonetization dict={creatorsDict.monetization} />
-      <CreatorsWorkflow dict={creatorsDict.workflow} />
-      <CreatorsAudience dict={creatorsDict.audience} />
-      <CreatorsCaseStudy dict={creatorsDict.caseStudy} />
-      <CreatorsTestimonials dict={creatorsDict.testimonials} />
+      <CreatorsFeatures />
+      <CreatorsFormats />
+      <CreatorsMonetization />
+      <CreatorsWorkflow />
+      <CreatorsAudience />
+      <CreatorsCaseStudy />
+      <CreatorsTestimonials />
+      {faq?.questions?.length ? (
+        <>
+          <FaqSection title={faq.title} subtitle={faq.subtitle} items={faq.questions} />
+          <Script id="faq-schema-creators" type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": (faq?.questions || []).map((q: any) => ({
+                "@type": "Question",
+                name: q.question,
+                acceptedAnswer: { "@type": "Answer", text: q.answer }
+              }))
+            })}
+          </Script>
+        </>
+      ) : null}
       <CTASection dict={dict} />
       <Footer dict={dict} locale={locale} />
     </main>

@@ -10,11 +10,14 @@ import { LibrariesIntegration } from "@/components/libraries/libraries-integrati
 import { LibrariesCaseStudy } from "@/components/libraries/libraries-case-study"
 import { LibrariesCTA } from "@/components/libraries/libraries-cta"
 import { getDictionary } from "@/app/dictionaries"
+import { FaqSection } from "@/components/faq-section"
+import Script from "next/script"
 
 export default async function LibrariesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   const dict = await getDictionary(locale as "en" | "es" | "pt")
   const librariesDict = dict.librariesSolution
+  const faq = (librariesDict as any)?.faq
   return (
     <>
       <Navbar dict={dict} locale={locale} />
@@ -26,13 +29,29 @@ export default async function LibrariesPage({ params }: { params: Promise<{ loca
           variant="solution"
           industry="libraries"
         />
-        <LibrariesFeatures dict={librariesDict.features} />
-        <LibrariesDigitalCollection dict={librariesDict.digitalCollection} />
-        <LibrariesPatronEngagement dict={librariesDict.patronEngagement} />
-        <LibrariesAnalytics dict={librariesDict.analytics} />
-        <LibrariesIntegration dict={librariesDict.integration} />
-        <LibrariesCaseStudy dict={librariesDict.caseStudy} />
-        <LibrariesCTA dict={librariesDict.cta} />
+        <LibrariesFeatures />
+        <LibrariesDigitalCollection />
+        <LibrariesPatronEngagement />
+        <LibrariesAnalytics />
+        <LibrariesIntegration />
+        <LibrariesCaseStudy />
+        {faq?.questions?.length ? (
+          <>
+            <FaqSection title={faq.title} subtitle={faq.subtitle} items={faq.questions} />
+            <Script id="faq-schema-libraries" type="application/ld+json">
+              {JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": (faq?.questions || []).map((q: any) => ({
+                  "@type": "Question",
+                  name: q.question,
+                  acceptedAnswer: { "@type": "Answer", text: q.answer }
+                }))
+              })}
+            </Script>
+          </>
+        ) : null}
+        <LibrariesCTA />
       </main>
       <Footer dict={dict} locale={locale} />
     </>

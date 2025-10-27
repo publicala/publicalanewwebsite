@@ -34,6 +34,22 @@ export default async function FeaturesPage({
       </section>
       <FeaturesOverview dict={dict} />
       <CTASection dict={dict} secondary={{ text: "See pricing", href: `/${locale}/pricing` }} />
+      <Script id="product-schema" type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: "Publica.la Digital Publishing Platform",
+          brand: { "@type": "Brand", name: "Publica.la" },
+          description: dict.featuresHero.subtitle,
+          url: `https://publica.la/${locale}/features`,
+          offers: {
+            "@type": "Offer",
+            url: `https://publica.la/${locale}/pricing`,
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock"
+          }
+        })}
+      </Script>
       <Script id="faq-schema-features" type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",

@@ -12,6 +12,8 @@ import { CTASection } from "@/components/cta-section"
 import { BookshopsCaseStudy } from "@/components/bookshops/bookshops-case-study"
 import { BookshopsCTA } from "@/components/bookshops/bookshops-cta"
 import { getDictionary } from "@/app/dictionaries"
+import { FaqSection } from "@/components/faq-section"
+import Script from "next/script"
 
 export const metadata = {
   title: "Solutions for Bookshops and Retailers | Publica.la",
@@ -23,6 +25,7 @@ export default async function BookshopsPage({ params }: { params: Promise<{ loca
   const { locale } = await params
   const dict = await getDictionary(locale as "en" | "es" | "pt")
   const bookshopsDict = dict.bookshopsSolution
+  const faq = (bookshopsDict as any)?.faq
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar dict={dict} locale={locale} />
@@ -40,6 +43,22 @@ export default async function BookshopsPage({ params }: { params: Promise<{ loca
       <BookshopsIntegration dict={bookshopsDict.integration} />
       <BookshopsCaseStudy dict={bookshopsDict.caseStudy} />
       <BookshopsTestimonials dict={bookshopsDict.testimonials} />
+      {faq?.questions?.length ? (
+        <>
+          <FaqSection title={faq.title} subtitle={faq.subtitle} items={faq.questions} />
+          <Script id="faq-schema-bookshops" type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": (faq?.questions || []).map((q: any) => ({
+                "@type": "Question",
+                name: q.question,
+                acceptedAnswer: { "@type": "Answer", text: q.answer }
+              }))
+            })}
+          </Script>
+        </>
+      ) : null}
       <BookshopsCTA dict={bookshopsDict.cta} />
       <CTASection dict={dict} />
       <Footer dict={dict} locale={locale} />
