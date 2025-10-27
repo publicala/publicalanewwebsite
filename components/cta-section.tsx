@@ -7,6 +7,7 @@ import { StatsCard } from "@/components/ui/stats-card"
 import { AnimatedBackground } from "@/components/ui/animated-background"
 import { CalendlyButton } from "@/components/calendly-button"
 import { SocialProofInline } from "@/components/social-proof-inline"
+import Link from "next/link"
 
 interface CTASectionProps {
   dict?: {
@@ -26,6 +27,7 @@ interface CTASectionProps {
       }>
     }
   }
+  secondary?: { text: string; href: string }
 }
 
 // Default English values for backward compatibility
@@ -51,7 +53,7 @@ const defaultCTADict = {
   }
 }
 
-export function CTASection({ dict }: CTASectionProps) {
+export function CTASection({ dict, secondary }: CTASectionProps) {
   // Handle both cases: when dict is the entire dictionary or just the ctaSection
   const ctaDict = dict || defaultCTADict
   const ctaSection = ctaDict.ctaSection || ctaDict
@@ -96,7 +98,7 @@ export function CTASection({ dict }: CTASectionProps) {
             ))}
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center gap-3 flex-wrap">
             <CalendlyButton
               size="lg"
               className="text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
@@ -104,6 +106,14 @@ export function CTASection({ dict }: CTASectionProps) {
             >
               {ctaSection.scheduleButton}
             </CalendlyButton>
+            {secondary ? (
+              <Link
+                href={secondary.href}
+                className="text-lg px-6 py-5 rounded-xl border border-gray-300 text-gray-700 hover:bg-gray-50 transition"
+              >
+                {secondary.text}
+              </Link>
+            ) : null}
           </div>
 
           <div className="flex justify-center">

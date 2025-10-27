@@ -32,7 +32,7 @@ export default async function FeaturesPage({
         </div>
       </section>
       <FeaturesOverview dict={dict} />
-      <CTASection dict={dict} />
+      <CTASection dict={dict} secondary={{ text: "See pricing", href: `/${locale}/pricing` }} />
       <Footer dict={dict} locale={locale} />
     </main>
   )

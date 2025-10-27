@@ -28,7 +28,7 @@ export default async function PricingPage({
       <PricingTiers dict={dict} locale={locale} />
       <PricingFeatures dict={dict} />
       <PricingFAQ dict={dict} />
-      <CTASection dict={dict} />
+      <CTASection dict={dict} secondary={{ text: "See pricing details", href: `/${locale}/pricing#plans` }} />
       <Footer dict={dict} locale={locale} />
     </main>
   )

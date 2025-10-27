@@ -99,7 +99,7 @@ export function PricingTiers({ dict, locale }: PricingTiersProps) {
   }
 
   return (
-    <section className="w-full py-12 px-6 bg-white">
+    <section className="w-full py-12 px-6 bg-white" id="plans">
       <div className="max-w-7xl mx-auto">
         {/* Pricing Toggle */}
         <div className="flex justify-center mb-8">
