@@ -1,5 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
+import { StickyCTA } from "@/components/sticky-cta"
+import { IntentOffers } from "@/components/intent-offers"
 
 export async function generateStaticParams() {
   return [
@@ -38,6 +40,8 @@ export default async function LocaleLayout({
   return (
     <>
       {children}
+      <StickyCTA />
+      <IntentOffers />
     </>
   )
 }
