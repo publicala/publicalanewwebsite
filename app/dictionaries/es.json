@@ -1,4 +1,78 @@
 {
+  "seo": {
+    "defaultMeta": {
+      "title": "Publica.la - Plataforma de Publicación Digital",
+      "titleTemplate": "%s | Publica.la",
+      "description": "La plataforma de contenido digital más robusta para editoriales y creadores de contenido. Crea, gestiona y distribuye contenido excepcional.",
+      "keywords": "publicación digital, plataforma ebook, gestión de contenido, software editorial",
+      "ogImage": "/images/og-default.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Plataforma de Publicación Digital para Editoriales y Creadores",
+        "description": "Transforma tu negocio editorial con Publica.la. Herramientas integrales para gestionar, mostrar y monetizar tu catálogo de contenido digital.",
+        "keywords": "plataforma publicación digital, distribución ebooks, monetización contenido"
+      },
+      "about": {
+        "title": "Acerca de Publica.la - Nuestra Historia y Misión",
+        "description": "Conoce la misión de Publica.la de empoderar a editoriales y creadores de contenido con soluciones innovadoras de publicación digital.",
+        "keywords": "acerca de publica.la, empresa publicación digital, tecnología editorial"
+      },
+      "pricing": {
+        "title": "Planes de Precios - Elige tu Solución Editorial",
+        "description": "Planes de precios flexibles para editoriales de todos los tamaños. Comienza gratis y escala según crezcas con precios transparentes.",
+        "keywords": "precios plataforma editorial, costo plataforma ebook, planes publicación digital"
+      },
+      "features": {
+        "title": "Características - Kit Completo de Publicación Digital",
+        "description": "Explora las características integrales de Publica.la incluyendo gestión de contenido, distribución, análisis y herramientas con IA.",
+        "keywords": "características plataforma editorial, herramientas contenido digital, gestión ebooks"
+      },
+      "caseStudies": {
+        "title": "Historias de Éxito - Casos de Estudio de Publicación Digital",
+        "description": "Descubre cómo editoriales y creadores de contenido líderes logran resultados notables con la plataforma de Publica.la.",
+        "keywords": "casos de estudio editorial, historias de éxito, transformación digital"
+      },
+      "careers": {
+        "title": "Carreras en Publica.la - Únete a Nuestro Equipo",
+        "description": "Únete a un equipo apasionado que da forma al futuro de la publicación digital. Explora oportunidades laborales en Publica.la.",
+        "keywords": "carreras publica.la, empleos editorial, carreras tecnología"
+      },
+      "contact": {
+        "title": "Contáctanos - Ponte en Contacto con Publica.la",
+        "description": "¿Tienes preguntas? Contacta a nuestro equipo para soporte, demos u oportunidades de asociación. Estamos aquí para ayudarte a tener éxito.",
+        "keywords": "contactar publica.la, soporte plataforma editorial, programar demo"
+      },
+      "solutions": {
+        "publishers": {
+          "title": "Soluciones Editoriales para Editoriales Profesionales",
+          "description": "Optimiza tu flujo de trabajo de ebooks y audiolibros con nuestra plataforma integral diseñada para editoriales de todos los tamaños.",
+          "keywords": "soluciones editoriales, plataforma publicación ebooks, herramientas publicación digital"
+        },
+        "bookshops": {
+          "title": "Soluciones Digitales para Librerías y Minoristas",
+          "description": "Expande el alcance de tu librería con ofertas digitales. Crea nuevas fuentes de ingresos sin costos de inventario.",
+          "keywords": "soluciones digitales librerías, plataforma retail ebooks, librería digital"
+        },
+        "contentCreators": {
+          "title": "Plataforma de Publicación para Creadores de Contenido",
+          "description": "Enfócate en crear mientras nosotros manejamos la distribución y monetización de tu contenido digital. Comienza a vender en minutos.",
+          "keywords": "plataforma creadores contenido, herramientas autopublicación, distribución contenido digital"
+        },
+        "libraries": {
+          "title": "Soluciones para Bibliotecas Digitales - Moderniza tus Servicios",
+          "description": "Transforma tu biblioteca con soluciones digitales que hacen el contenido más accesible para tu comunidad.",
+          "keywords": "plataforma biblioteca digital, soluciones ebooks bibliotecas, accesibilidad contenido"
+        },
+        "magazinesNewspapers": {
+          "title": "Publicación Digital para Revistas y Periódicos",
+          "description": "Distribuye tus publicaciones digitalmente con herramientas avanzadas para revistas y periódicos. Alcanza lectores en cualquier lugar.",
+          "keywords": "plataforma revista digital, digitalización periódicos, publicación periódica"
+        }
+      }
+    }
+  },
   "navigation": {
     "home": "Inicio",
     "solutions": "Soluciones",
@@ -75,65 +149,6 @@
     "title": "Precios",
     "getStarted": "Comenzar",
     "contactSales": "Contactar Ventas"
-  },
-  "savingsCalculator": {
-    "title": "Calculadora de Ahorros de Ingresos | publica.la",
-    "description": "Calcula cuántos más ingresos puedes mantener con la plataforma todo en uno de publica.la. Mantén 85% vs 45% del promedio de la industria.",
-    "hero": {
-      "title": "Calculadora de Ahorros de Ingresos",
-      "subtitle": "Descubre cuántos más ingresos puedes mantener con la plataforma todo en uno de publica.la",
-      "badge": "Mantén 85% vs 55% del promedio de la industria",
-      "trustedBy": "Confiado por más de 1,000 editoriales en todo el mundo"
-    },
-    "calculator": {
-      "title": "Ingresa Tus Ingresos Mensuales",
-      "subtitle": "Ingresa tus ingresos mensuales actuales para calcular ahorros potenciales",
-      "label": "Ingresos Mensuales (USD)",
-      "placeholder": "45000",
-      "button": "Calcular Mis Ahorros"
-    },
-    "results": {
-      "title": "Tus Ahorros Potenciales",
-      "subtitle": "Ve cómo publica.la se compara con los estándares de la industria",
-      "monthly": "Ingresos mensuales adicionales",
-      "annual": "Ingresos anuales adicionales",
-      "moreThanAverage": "89% más que el promedio de la industria"
-    },
-    "comparison": {
-      "title": "Comparación de Ingresos",
-      "industry": {
-        "title": "Promedio de la Industria",
-        "description": "Mantén 55% (45% costos de plataforma)"
-      },
-      "publica": {
-        "title": "Con publica.la",
-        "description": "Mantén 85% (15% costos de plataforma)"
-      }
-    },
-    "whyChoose": {
-      "title": "¿Por Qué Elegir publica.la?",
-      "allInOne": {
-        "title": "Plataforma Todo en Uno",
-        "description": "No necesitas múltiples soluciones - comercio electrónico, gestión de contenido y lector todo incluido"
-      },
-      "revenue": {
-        "title": "Mantén 85% de los Ingresos",
-        "description": "Participación de ingresos líder en la industria vs 45% promedio"
-      },
-      "enterprise": {
-        "title": "Plataforma de Grado Empresarial",
-        "description": "Más robusta y confiable que juntar múltiples herramientas"
-      }
-    },
-    "cta": {
-      "title": "¿Listo para Mantener Más de Tus Ingresos?",
-      "subtitle": "Únete a miles de creadores de contenido y empresas que ya están maximizando sus ingresos con la plataforma integral de comercio electrónico de publica.la.",
-              "button": "Agendar Reunión para Saber Más"
-    },
-    "features": {
-      "allInOne": "Plataforma todo en uno",
-      "noMultipleSolutions": "No se necesitan múltiples soluciones"
-    }
   },
   "footer": {
     "description": "La plataforma de contenido digital más robusta y dinámica para editoriales y creadores de contenido, empoderándote para crear, gestionar y distribuir contenido excepcional.",
@@ -579,8 +594,54 @@
       "description": "Individuos dedicados trabajando juntos para dar forma al futuro de la publicación digital. Aquí hay algunos momentos con nuestro increíble equipo."
     },
     "careers": {
-      "description": "Siempre estamos buscando mentes curiosas que amen construir cosas útiles y quieran dar forma al futuro de la publicación digital.",
-      "linkText": "Ver posiciones abiertas"
+      "description": "Siempre estamos buscando mentes curiosas que aman construir cosas útiles y quieren dar forma al futuro de la publicación digital.",
+      "linkText": "Ver posiciones abiertas",
+      "openings": {
+        "title": "Posiciones Abiertas",
+        "subtitle": "Únete a nuestro equipo en crecimiento y ayuda a dar forma al futuro de la publicación digital",
+        "applyButton": "Aplicar Ahora",
+        "noRoleMessage": "¿No ves un rol que se ajuste? Siempre estamos buscando personas talentosas.",
+        "sendResumeButton": "Envíanos Tu Currículum",
+        "emailSubject": "Solicitud para el puesto de {{position}}",
+        "generalEmailSubject": "Solicitud General - Abierto a Oportunidades",
+        "emailBody": "Hola,\n\nEstoy interesado/a en aplicar para el puesto de {{position}} en el departamento de {{department}}.\n\nAdjunto mi currículum y espero tener noticias suyas pronto.\n\nSaludos cordiales",
+        "generalEmailBody": "Hola,\n\nNo veo un rol específico que coincida con mi experiencia en este momento, pero estoy muy interesado/a en unirme al equipo de publica.la.\n\nAdjunto mi currículum. Me encantaría discutir posibles oportunidades que puedan ser adecuadas.\n\nSaludos cordiales",
+        "department": "Departamento",
+        "location": "Ubicación",
+        "type": "Tipo",
+        "fullTime": "Tiempo completo",
+        "remote": "Remoto",
+        "jobs": [
+          {
+            "title": "Desarrollador Frontend Senior",
+            "department": "Ingeniería",
+            "location": "Remoto / Santiago, Chile",
+            "type": "Tiempo completo",
+            "description": "Únete a nuestro equipo frontend para construir interfaces hermosas y responsivas para nuestra plataforma de publicación digital usando React, TypeScript y tecnologías web modernas."
+          },
+          {
+            "title": "Gerente de Producto",
+            "department": "Producto",
+            "location": "Remoto / Santiago, Chile",
+            "type": "Tiempo completo",
+            "description": "Lidera la estrategia y hoja de ruta del producto para nuestra plataforma principal de publicación, trabajando en estrecha colaboración con los equipos de ingeniería y diseño para ofrecer experiencias de usuario excepcionales."
+          },
+          {
+            "title": "Gerente de Éxito del Cliente",
+            "department": "Éxito del Cliente",
+            "location": "Remoto / Ciudad de México, México",
+            "type": "Tiempo completo",
+            "description": "Ayuda a nuestros clientes editores a tener éxito brindando orientación estratégica, soporte técnico y asegurando que maximicen el valor de nuestra plataforma."
+          },
+          {
+            "title": "Ingeniero DevOps",
+            "department": "Ingeniería",
+            "location": "Remoto / Santiago, Chile",
+            "type": "Tiempo completo",
+            "description": "Construye y mantén nuestra infraestructura en la nube, pipelines CI/CD y sistemas de monitoreo para garantizar que nuestra plataforma escale de manera confiable para millones de usuarios."
+          }
+        ]
+      }
     }
   },
   "contactHero": {
@@ -782,7 +843,7 @@
         "description2": "Todo lo que necesitas para comenzar a publicar contenido digital",
         "keyFeatures": [
           "Hasta 10 publicaciones",
-          "Gana 65% de cada venta"
+          "Gana 70% de cada venta"
         ],
         "features": [
           "Análisis básico de lectores",
@@ -798,7 +859,7 @@
         "description2": "Características avanzadas para editoriales profesionales",
         "keyFeatures": [
           "Hasta 300 publicaciones",
-          "Gana 75% de cada venta"
+          "Gana 80% de cada venta"
         ],
         "features": [
           "Análisis avanzado de lectores",
@@ -817,7 +878,7 @@
         "description2": "Todo lo que necesitas para publicación a gran escala",
         "keyFeatures": [
           "Publicaciones ilimitadas",
-          "Gana 85% de cada venta"
+          "Gana 90% de cada venta"
         ],
         "features": [
           "Panel de análisis integral",
@@ -2348,6 +2409,65 @@
     "learnMore": "Saber Más",
     "requestDemo": "Programar Reunión",
     "previewText": "Vista Previa de la App Nativa"
+  },
+  "savingsCalculator": {
+    "title": "Calculadora de Ahorros de Ingresos | publica.la",
+    "description": "Calcula cuántos más ingresos puedes mantener con la plataforma todo en uno de publica.la. Mantén 85% vs 45% del promedio de la industria.",
+    "hero": {
+      "title": "Calculadora de Ahorros de Ingresos",
+      "subtitle": "Descubre cuántos más ingresos puedes mantener con la plataforma todo en uno de publica.la",
+      "badge": "Mantén 85% vs 55% del promedio de la industria",
+      "trustedBy": "Confiado por más de 1,000 editoriales en todo el mundo"
+    },
+    "calculator": {
+      "title": "Ingresa Tus Ingresos Mensuales",
+      "subtitle": "Ingresa tus ingresos mensuales actuales para calcular ahorros potenciales",
+      "label": "Ingresos Mensuales (USD)",
+      "placeholder": "45000",
+      "button": "Calcular Mis Ahorros"
+    },
+    "results": {
+      "title": "Tus Ahorros Potenciales",
+      "subtitle": "Ve cómo publica.la se compara con los estándares de la industria",
+      "monthly": "Ingresos mensuales adicionales",
+      "annual": "Ingresos anuales adicionales",
+      "moreThanAverage": "89% más que el promedio de la industria"
+    },
+    "comparison": {
+      "title": "Comparación de Ingresos",
+      "industry": {
+        "title": "Promedio de la Industria",
+        "description": "Mantén 55% (45% costos de plataforma)"
+      },
+      "publica": {
+        "title": "Con publica.la",
+        "description": "Mantén 85% (15% costos de plataforma)"
+      }
+    },
+    "whyChoose": {
+      "title": "¿Por Qué Elegir publica.la?",
+      "allInOne": {
+        "title": "Plataforma Todo en Uno",
+        "description": "No necesitas múltiples soluciones - comercio electrónico, gestión de contenido y lector todo incluido"
+      },
+      "revenue": {
+        "title": "Mantén 85% de los Ingresos",
+        "description": "Participación de ingresos líder en la industria vs 45% promedio"
+      },
+      "enterprise": {
+        "title": "Plataforma de Grado Empresarial",
+        "description": "Más robusta y confiable que juntar múltiples herramientas"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Mantener Más de Tus Ingresos?",
+      "subtitle": "Únete a miles de creadores de contenido y empresas que ya están maximizando sus ingresos con la plataforma integral de comercio electrónico de publica.la.",
+      "button": "Agendar Reunión para Saber Más"
+    },
+    "features": {
+      "allInOne": "Plataforma todo en uno",
+      "noMultipleSolutions": "No se necesitan múltiples soluciones"
+    }
   },
   "thankYou": {
     "title": "¡Gracias!",

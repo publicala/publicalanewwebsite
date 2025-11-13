@@ -4,193 +4,96 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://publica.la"
   const currentDate = new Date().toISOString()
   const locales = ["en", "es", "pt"]
-
-  return [
+  
+  // Define all routes without locale prefix
+  const routes = [
     // Homepage
-    {
-      url: baseUrl,
-      lastModified: currentDate,
-      changeFrequency: "weekly" as const,
-      priority: 1.0,
-    },
-
+    { path: "", priority: 1.0, changeFrequency: "weekly" },
+    
     // Solutions
-    ...locales.map((l) => ({
-      url: `${baseUrl}/${l}/solutions/publishers`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-      alternates: {
-        languages: Object.fromEntries(locales.map((ll) => [ll, `${baseUrl}/${ll}/solutions/publishers`]))
-      }
-    })),
-    {
-      url: `${baseUrl}/solutions/bookshops`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/content-creators`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/libraries`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/solutions/magazines-newspapers`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-
+    { path: "/solutions/publishers", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/solutions/bookshops", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/solutions/content-creators", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/solutions/libraries", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/solutions/magazines-newspapers", priority: 0.9, changeFrequency: "monthly" },
+    
     // Features
-    ...locales.map((l) => ({
-      url: `${baseUrl}/${l}/features`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-      alternates: {
-        languages: Object.fromEntries(locales.map((ll) => [ll, `${baseUrl}/${ll}/features`]))
-      }
-    })),
-    {
-      url: `${baseUrl}/features/vito-ai`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/features/native-app`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/features/integrations`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-
+    { path: "/features", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/features/vito-ai", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/features/native-app", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/features/integrations", priority: 0.8, changeFrequency: "monthly" },
+    
     // Case Studies
-    {
-      url: `${baseUrl}/case-studies`,
-      lastModified: currentDate,
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    },
-
+    { path: "/case-studies", priority: 0.8, changeFrequency: "weekly" },
+    { path: "/case-studies/forbes-colombia", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/case-studies/hammurabi-publishing", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/case-studies/bajalibros", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/case-studies/ebooks-patagonia", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/case-studies/antartica-libreria", priority: 0.7, changeFrequency: "monthly" },
+    
     // Savings Calculator
-    {
-      url: `${baseUrl}/savings-calculator`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
+    { path: "/savings-calculator", priority: 0.9, changeFrequency: "monthly" },
+    
     // Guides
-    ...locales.map((l) => ({
-      url: `${baseUrl}/${l}/guides/how-to-launch-digital-library`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-      alternates: {
-        languages: Object.fromEntries(locales.map((ll) => [ll, `${baseUrl}/${ll}/guides/how-to-launch-digital-library`]))
-      }
-    })),
-    {
-      url: `${baseUrl}/case-studies/forbes-colombia`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/case-studies/hammurabi-publishing`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/case-studies/bajalibros`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/case-studies/antartica-libreria`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-
+    { path: "/guides/how-to-launch-digital-library", priority: 0.6, changeFrequency: "monthly" },
+    
     // Comparison Pages
-    ...locales.map((l) => ({
-      url: `${baseUrl}/${l}/compare`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-      alternates: {
-        languages: Object.fromEntries(locales.map((ll) => [ll, `${baseUrl}/${ll}/compare`]))
-      }
-    })),
-    {
-      url: `${baseUrl}/compare/publica-vs-supadu`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/compare/publica-vs-vitalsource`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    },
-
+    { path: "/compare", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/compare/publica-vs-supadu", priority: 0.6, changeFrequency: "monthly" },
+    { path: "/compare/publica-vs-vitalsource", priority: 0.6, changeFrequency: "monthly" },
+    { path: "/compare/alternatives", priority: 0.6, changeFrequency: "monthly" },
+    
     // Company Pages
-    {
-      url: `${baseUrl}/about-us`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/careers`,
-      lastModified: currentDate,
-      changeFrequency: "weekly" as const,
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-
+    { path: "/about-us", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/careers", priority: 0.6, changeFrequency: "weekly" },
+    { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
+    
     // Pricing
-    {
-      url: `${baseUrl}/pricing`,
-      lastModified: currentDate,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
-
+    { path: "/pricing", priority: 0.8, changeFrequency: "monthly" },
+    
     // Legal Pages
-    {
-      url: `${baseUrl}/terms`,
-      lastModified: currentDate,
-      changeFrequency: "yearly" as const,
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/privacy`,
-      lastModified: currentDate,
-      changeFrequency: "yearly" as const,
-      priority: 0.3,
-    },
+    { path: "/terms", priority: 0.3, changeFrequency: "yearly" },
+    { path: "/privacy", priority: 0.3, changeFrequency: "yearly" },
   ]
+  
+  // Generate sitemap entries for each locale
+  const sitemapEntries: MetadataRoute.Sitemap = []
+  
+  for (const route of routes) {
+    // Add root URL without locale (defaults to English)
+    if (route.path === "") {
+      sitemapEntries.push({
+        url: baseUrl,
+        lastModified: currentDate,
+        changeFrequency: route.changeFrequency as any,
+        priority: route.priority,
+        alternates: {
+          languages: {
+            en: `${baseUrl}/en`,
+            es: `${baseUrl}/es`,
+            pt: `${baseUrl}/pt`,
+          }
+        }
+      })
+    }
+    
+    // Add locale-specific URLs
+    for (const locale of locales) {
+      sitemapEntries.push({
+        url: `${baseUrl}/${locale}${route.path}`,
+        lastModified: currentDate,
+        changeFrequency: route.changeFrequency as any,
+        priority: route.priority,
+        alternates: {
+          languages: {
+            en: `${baseUrl}/en${route.path}`,
+            es: `${baseUrl}/es${route.path}`,
+            pt: `${baseUrl}/pt${route.path}`,
+          }
+        }
+      })
+    }
+  }
+  
+  return sitemapEntries
 }

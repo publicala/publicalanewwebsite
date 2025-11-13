@@ -1,4 +1,78 @@
 {
+  "seo": {
+    "defaultMeta": {
+      "title": "Publica.la - Digital Publishing Platform",
+      "titleTemplate": "%s | Publica.la",
+      "description": "The most robust digital content platform for publishers and content creators. Create, manage, and distribute exceptional content.",
+      "keywords": "digital publishing, ebook platform, content management, publishing software",
+      "ogImage": "/images/og-default.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Digital Publishing Platform for Publishers & Content Creators",
+        "description": "Transform your publishing business with Publica.la. Comprehensive tools to manage, showcase, and monetize your digital content catalog.",
+        "keywords": "digital publishing platform, ebook distribution, content monetization"
+      },
+      "about": {
+        "title": "About Publica.la - Our Story and Mission",
+        "description": "Learn about Publica.la's mission to empower publishers and content creators with innovative digital publishing solutions.",
+        "keywords": "about publica.la, digital publishing company, publishing technology"
+      },
+      "pricing": {
+        "title": "Pricing Plans - Choose Your Publishing Solution",
+        "description": "Flexible pricing plans for publishers of all sizes. Start free and scale as you grow with transparent, scalable pricing.",
+        "keywords": "publishing platform pricing, ebook platform cost, digital publishing plans"
+      },
+      "features": {
+        "title": "Features - Complete Digital Publishing Toolkit",
+        "description": "Explore Publica.la's comprehensive features including content management, distribution, analytics, and AI-powered tools.",
+        "keywords": "publishing platform features, digital content tools, ebook management"
+      },
+      "caseStudies": {
+        "title": "Success Stories - Digital Publishing Case Studies",
+        "description": "Discover how leading publishers and content creators achieve remarkable results with Publica.la's platform.",
+        "keywords": "publishing case studies, success stories, digital transformation"
+      },
+      "careers": {
+        "title": "Careers at Publica.la - Join Our Team",
+        "description": "Join a passionate team shaping the future of digital publishing. Explore career opportunities at Publica.la.",
+        "keywords": "publica.la careers, publishing jobs, tech careers"
+      },
+      "contact": {
+        "title": "Contact Us - Get in Touch with Publica.la",
+        "description": "Have questions? Contact our team for support, demos, or partnership opportunities. We're here to help you succeed.",
+        "keywords": "contact publica.la, publishing platform support, schedule demo"
+      },
+      "solutions": {
+        "publishers": {
+          "title": "Publishing Solutions for Professional Publishers",
+          "description": "Streamline your ebook and audiobook workflow with our comprehensive platform designed for publishers of all sizes.",
+          "keywords": "publisher solutions, ebook publishing platform, digital publishing tools"
+        },
+        "bookshops": {
+          "title": "Digital Solutions for Bookshops and Retailers",
+          "description": "Expand your bookshop's reach with digital offerings. Create new revenue streams without inventory costs.",
+          "keywords": "bookshop digital solutions, ebook retail platform, digital bookstore"
+        },
+        "contentCreators": {
+          "title": "Publishing Platform for Content Creators",
+          "description": "Focus on creating while we handle distribution and monetization of your digital content. Start selling in minutes.",
+          "keywords": "content creator platform, self-publishing tools, digital content distribution"
+        },
+        "libraries": {
+          "title": "Digital Library Solutions - Modernize Your Services",
+          "description": "Transform your library with digital solutions that make content more accessible to your community.",
+          "keywords": "digital library platform, library ebook solutions, content accessibility"
+        },
+        "magazinesNewspapers": {
+          "title": "Digital Publishing for Magazines & Newspapers",
+          "description": "Distribute your publications digitally with advanced tools for magazines and newspapers. Reach readers anywhere.",
+          "keywords": "digital magazine platform, newspaper digitization, periodical publishing"
+        }
+      }
+    }
+  },
   "navigation": {
     "home": "Home",
     "solutions": "Solutions",
@@ -75,65 +149,6 @@
     "title": "Pricing",
     "getStarted": "Get Started",
     "contactSales": "Contact Sales"
-  },
-  "savingsCalculator": {
-    "title": "Revenue Savings Calculator | publica.la",
-    "description": "Calculate how much more revenue you can keep with publica.la's all-in-one ecommerce platform. Keep 85% vs 45% industry average.",
-    "hero": {
-      "title": "Revenue Savings Calculator",
-      "subtitle": "Discover how much more revenue you can keep with publica.la's all-in-one ecommerce platform",
-      "badge": "Keep 85% vs 55% industry average",
-      "trustedBy": "Trusted by 1,000+ publishers worldwide"
-    },
-    "calculator": {
-      "title": "Enter Your Monthly Revenue",
-      "subtitle": "Input your current monthly revenue to calculate potential savings",
-      "label": "Monthly Revenue (USD)",
-      "placeholder": "45000",
-      "button": "Calculate My Savings"
-    },
-    "results": {
-      "title": "Your Potential Savings",
-      "subtitle": "See how publica.la compares to industry standards",
-      "monthly": "Additional monthly revenue",
-      "annual": "Additional annual revenue",
-      "moreThanAverage": "89% more than industry average"
-    },
-    "comparison": {
-      "title": "Revenue Comparison",
-      "industry": {
-        "title": "Industry Average",
-        "description": "Keep 55% (45% platform costs)"
-      },
-      "publica": {
-        "title": "With publica.la",
-        "description": "Keep 85% (15% platform costs)"
-      }
-    },
-    "whyChoose": {
-      "title": "Why Choose publica.la?",
-      "allInOne": {
-        "title": "All-in-One Platform",
-        "description": "No need for multiple solutions - ecommerce, content management, and reader all included"
-      },
-      "revenue": {
-        "title": "Keep 85% of Revenue",
-        "description": "Industry-leading revenue share vs 45% average"
-      },
-      "enterprise": {
-        "title": "Enterprise-Grade Platform",
-        "description": "More robust and reliable than piecing together multiple tools"
-      }
-    },
-          "cta": {
-        "title": "Ready to Keep More of Your Revenue?",
-        "subtitle": "Join thousands of content creators and businesses already maximizing their revenue with publica.la's comprehensive ecommerce platform.",
-        "button": "Book a Meeting to Learn More"
-      },
-    "features": {
-      "allInOne": "All-in-one platform",
-      "noMultipleSolutions": "No multiple solutions needed"
-    }
   },
   "footer": {
     "description": "The most robust and dynamic digital content platform for publishers and content creators, empowering you to create, manage, and distribute exceptional content.",
@@ -828,7 +843,7 @@
         "description2": "Everything you need to start publishing digital content",
         "keyFeatures": [
           "Up to 10 publications",
-          "Earn 65% from each sale"
+          "Earn 70% from each sale"
         ],
         "features": [
           "Basic reader analytics",
@@ -844,7 +859,7 @@
         "description2": "Advanced features for professional publishers",
         "keyFeatures": [
           "Up to 300 publications",
-          "Earn 75% from each sale"
+          "Earn 80% from each sale"
         ],
         "features": [
           "Advanced reader analytics",
@@ -863,7 +878,7 @@
         "description2": "Everything you need for large-scale publishing",
         "keyFeatures": [
           "Unlimited publications",
-          "Earn 85% from each sale"
+          "Earn 90% from each sale"
         ],
         "features": [
           "Comprehensive analytics dashboard",
@@ -2353,6 +2368,65 @@
     "learnMore": "Learn More",
     "requestDemo": "Schedule a Meeting",
     "previewText": "Native App Preview"
+  },
+  "savingsCalculator": {
+    "title": "Revenue Savings Calculator | publica.la",
+    "description": "Calculate how much more revenue you can keep with publica.la's all-in-one ecommerce platform. Keep 85% vs 45% industry average.",
+    "hero": {
+      "title": "Revenue Savings Calculator",
+      "subtitle": "Discover how much more revenue you can keep with publica.la's all-in-one ecommerce platform",
+      "badge": "Keep 85% vs 55% industry average",
+      "trustedBy": "Trusted by 1,000+ publishers worldwide"
+    },
+    "calculator": {
+      "title": "Enter Your Monthly Revenue",
+      "subtitle": "Input your current monthly revenue to calculate potential savings",
+      "label": "Monthly Revenue (USD)",
+      "placeholder": "45000",
+      "button": "Calculate My Savings"
+    },
+    "results": {
+      "title": "Your Potential Savings",
+      "subtitle": "See how publica.la compares to industry standards",
+      "monthly": "Additional monthly revenue",
+      "annual": "Additional annual revenue",
+      "moreThanAverage": "89% more than industry average"
+    },
+    "comparison": {
+      "title": "Revenue Comparison",
+      "industry": {
+        "title": "Industry Average",
+        "description": "Keep 55% (45% platform costs)"
+      },
+      "publica": {
+        "title": "With publica.la",
+        "description": "Keep 85% (15% platform costs)"
+      }
+    },
+    "whyChoose": {
+      "title": "Why Choose publica.la?",
+      "allInOne": {
+        "title": "All-in-One Platform",
+        "description": "No need for multiple solutions - ecommerce, content management, and reader all included"
+      },
+      "revenue": {
+        "title": "Keep 85% of Revenue",
+        "description": "Industry-leading revenue share vs 45% average"
+      },
+      "enterprise": {
+        "title": "Enterprise-Grade Platform",
+        "description": "More robust and reliable than piecing together multiple tools"
+      }
+    },
+    "cta": {
+      "title": "Ready to Keep More of Your Revenue?",
+      "subtitle": "Join thousands of content creators and businesses already maximizing their revenue with publica.la's comprehensive ecommerce platform.",
+      "button": "Book a Meeting to Learn More"
+    },
+    "features": {
+      "allInOne": "All-in-one platform",
+      "noMultipleSolutions": "No multiple solutions needed"
+    }
   },
   "thankYou": {
     "title": "Thank You!",

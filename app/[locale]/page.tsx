@@ -8,11 +8,42 @@ import { FeaturesSection } from "@/components/features-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { CTASection } from "@/components/cta-section"
 import { getDictionary } from "@/app/dictionaries"
+import type { Metadata } from "next"
 
-export const metadata = {
-  title: "publica.la - Digital Publishing Platform for Modern Publishers",
-  description:
-    "Transform your printed content into engaging digital experiences with publica.la. The leading ePaper platform trusted by 400+ publishers, bookshops, magazines, and newspapers worldwide. Features Smart Zoom technology, global distribution, AI-powered insights, and seamless monetization tools.",
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const dict = await getDictionary(locale as "en" | "es" | "pt")
+  
+  return {
+    title: dict.seo.pages.home.title,
+    description: dict.seo.pages.home.description,
+    keywords: dict.seo.pages.home.keywords,
+    openGraph: {
+      title: dict.seo.pages.home.title,
+      description: dict.seo.pages.home.description,
+      images: [dict.seo.defaultMeta.ogImage],
+      locale: locale === 'en' ? 'en_US' : locale === 'es' ? 'es_ES' : 'pt_BR',
+      type: 'website',
+    },
+    twitter: {
+      card: dict.seo.defaultMeta.twitterCard as any,
+      title: dict.seo.pages.home.title,
+      description: dict.seo.pages.home.description,
+      images: [dict.seo.defaultMeta.ogImage],
+    },
+    alternates: {
+      canonical: `https://publica.la/${locale}`,
+      languages: {
+        'en': 'https://publica.la/en',
+        'es': 'https://publica.la/es',
+        'pt': 'https://publica.la/pt',
+      }
+    }
+  }
 }
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
