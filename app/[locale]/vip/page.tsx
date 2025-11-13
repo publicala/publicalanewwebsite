@@ -1,6 +1,14 @@
 import { Metadata } from "next"
 import Script from "next/script"
 
+export async function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'es' },
+    { locale: 'pt' },
+  ]
+}
+
 export const metadata: Metadata = {
   title: "Account Manager Access",
   robots: {
@@ -15,7 +23,13 @@ export const metadata: Metadata = {
   },
 }
 
-export default function VIPPage() {
+export default async function VIPPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/5 via-white to-purple/5 flex items-center justify-center px-6">
       <div className="max-w-2xl w-full text-center">
