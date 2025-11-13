@@ -1,5 +1,8 @@
 import { Metadata } from "next"
 import Script from "next/script"
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
+import { getDictionary } from "@/app/dictionaries"
 
 export async function generateStaticParams() {
   return [
@@ -29,9 +32,12 @@ export default async function VIPPage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
+  const dict = await getDictionary(locale as "en" | "es" | "pt")
   
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/5 via-white to-purple/5 flex items-center justify-center px-6">
+    <main className="min-h-screen flex flex-col">
+      <Navbar dict={dict} locale={locale} />
+      <div className="flex-1 bg-gradient-to-br from-primary/5 via-white to-purple/5 flex items-center justify-center px-6 py-20">
       <div className="max-w-2xl w-full text-center">
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 md:p-12">
           <div className="mb-8">
@@ -74,6 +80,7 @@ export default async function VIPPage({
           </div>
         </div>
       </div>
+      </div>
 
       {/* HubSpot Chat Embed */}
       <Script
@@ -84,7 +91,8 @@ export default async function VIPPage({
         async
         defer
       />
-    </div>
+      <Footer dict={dict} locale={locale} />
+    </main>
   )
 }
 
