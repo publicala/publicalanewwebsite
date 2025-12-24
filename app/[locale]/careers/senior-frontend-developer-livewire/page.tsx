@@ -64,7 +64,7 @@ export default async function SeniorFrontendDeveloperPage({ params }: { params: 
           <section id="what-we-do" className="mb-12">
             <h2 className="text-2xl font-bold mb-4">What we do</h2>
             <p className="text-gray-700 leading-relaxed">
-              Publica.la is a B2B SaaS platform trusted by hundreds of publishers, bookshops, and libraries worldwide to power their digital content sales. Our multi-tenant platform processes millions of transactions across 156 countries, managing digital libraries, subscriptions, and e-commerce at scale. We're looking for a Senior Frontend Developer to build beautiful, accessible user interfaces using Livewire, Alpine.js, and Tailwind CSS—creating experiences used by thousands of publishers and millions of readers daily.
+              Publica.la is a B2B SaaS platform trusted by hundreds of publishers, bookshops, and libraries worldwide to power their digital content sales. Our multi-tenant platform processes millions of transactions across 156 countries, managing digital libraries, subscriptions, and e-commerce at scale. We're looking for a Senior Frontend Developer to build beautiful, accessible user interfaces using Livewire, Alpine.js, and Tailwind CSS. You'll create experiences used by thousands of publishers and millions of readers daily.
             </p>
           </section>
 
